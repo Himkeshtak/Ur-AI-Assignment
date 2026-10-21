@@ -4,7 +4,7 @@ models/
 
 # Local documents and generated results
 data/
-output/
+#
 tmp/
 
 # Python environments and caches

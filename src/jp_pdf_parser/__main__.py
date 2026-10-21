@@ -66,6 +66,16 @@ def main(argv: list[str] | None = None) -> int:
     run.add_argument("--output-dir", type=Path, default=Path("output"))
     check = commands.add_parser("doctor", help="Check configuration and dependency presence")
     check.add_argument("--config", type=Path, default=Path("config.toml"))
+    download = commands.add_parser(
+        "download-tatr", help="Download and checksum the official TATR assets"
+    )
+    download.add_argument("--config", type=Path, default=Path("config.toml"))
+    tatr = commands.add_parser("check-tatr", help="Run both TATR checkpoints locally on CPU")
+    tatr.add_argument("--config", type=Path, default=Path("config.toml"))
+    tatr.add_argument("--output-dir", type=Path, default=Path("output/tatr-check"))
+    tatr.add_argument(
+        "--image", type=Path, help="Optional page image; defaults to a synthetic table"
+    )
     schema = commands.add_parser("schema", help="Export the application's JSON Schema")
     schema.add_argument("--output", type=Path, required=True)
     args = parser.parse_args(argv)
@@ -77,6 +87,15 @@ def main(argv: list[str] | None = None) -> int:
         config = Config.load(args.config)
         if args.command == "doctor":
             return 0 if doctor(config) else 1
+        if args.command in ("download-tatr", "check-tatr"):
+            from .checkpoints import check_tatr, download_tatr
+
+            if args.command == "download-tatr":
+                print(json.dumps(download_tatr(config), indent=2))
+            else:
+                check_tatr(config, args.output_dir, args.image)
+                print(args.output_dir / "report.json")
+            return 0
         from .pipeline import Pipeline
 
         result = Pipeline(config).run(args.pdf, args.output_dir)
@@ -84,7 +103,7 @@ def main(argv: list[str] | None = None) -> int:
             json.dumps({"status": result.document.status, "run_directory": str(result.directory)})
         )
         return {"checks_passed": 0, "needs_review": 2, "failed": 1}[result.document.status]
-    except (OSError, ValueError) as exc:
+    except (OSError, ValueError, RuntimeError) as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
 

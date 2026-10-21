@@ -1,0 +1,46 @@
+{
+  "detection": {
+    "model_id": "microsoft/table-transformer-detection",
+    "revision": "2357cbe2b5a5d1c03e54f32764f06058933b65ab",
+    "files": {
+      "README.md": {
+        "bytes": 1174,
+        "sha256": "c91e7f8199313c4d24b09e73a2f6df3141268666969346cb7b94ccb59900f5dd"
+      },
+      "config.json": {
+        "bytes": 1228,
+        "sha256": "ed5b93df2c3a59d473ddea853553a6d545d52bd4e9f8f72bf40b8a974aba4c1d"
+      },
+      "model.safetensors": {
+        "bytes": 115317516,
+        "sha256": "8f1aa73170102c038d40155e2734b343bf07e0fe12594228a8590943b01dccf7"
+      },
+      "preprocessor_config.json": {
+        "bytes": 273,
+        "sha256": "86a8837ae440456b0a9aef788b064921df29c20f0b67040954ce5c2fbd352c4f"
+      }
+    }
+  },
+  "structure": {
+    "model_id": "microsoft/table-transformer-structure-recognition-v1.1-all",
+    "revision": "7587a7ef111d9dcbf8ac695f1376ab7014340a0c",
+    "files": {
+      "README.md": {
+        "bytes": 1056,
+        "sha256": "01eed360e0f54ad297ab347cfef208d68d8ac2c108b808147bb7af9f8d9132c8"
+      },
+      "config.json": {
+        "bytes": 76761,
+        "sha256": "17a8a6edfb9e394263fa6ba9b82176ebccdfcc5d6cd29121ec91572c7d6be22c"
+      },
+      "model.safetensors": {
+        "bytes": 115437156,
+        "sha256": "9df416575a3a36ebd0129342d4f597f14d6e5170268f3d52d28584ab4466a501"
+      },
+      "preprocessor_config.json": {
+        "bytes": 374,
+        "sha256": "eead409bb80e36ae85b8377642c54550f0504f65688ba3a4967950cafe461df2"
+      }
+    }
+  }
+}

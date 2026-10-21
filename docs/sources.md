@@ -3,6 +3,13 @@
 Reviewed on 2026-10-21. Sources below informed the architecture; proposed design
 choices and untested behavior are distinguished in the architecture document.
 
+CPU TATR assets and API availability were additionally checked on 2026-10-22;
+see [CPU setup and model recommendations](cpu-setup.md). Both pinned TATR
+checkpoints are downloaded to `models/tatr/` with a versioned SHA-256 catalog at
+`src/jp_pdf_parser/tatr_checkpoints.json`. Their original model cards and processor
+configs are preserved unchanged, and the MIT source license is included under
+`docs/licenses/`. The reference-clone commands below still fetch source only.
+
 ## PaddleOCR
 
 - [Official repository](https://github.com/PaddlePaddle/PaddleOCR)

@@ -1,0 +1,647 @@
+{
+  "id": "p1-t1",
+  "page_number": 1,
+  "grid_revision": 1,
+  "bbox": [
+    34.0,
+    93.0,
+    635.0,
+    381.0
+  ],
+  "coordinate_frame": "rendered_page_pixels",
+  "table_to_page": [
+    1.0,
+    0.0,
+    34.0,
+    0.0,
+    1.0,
+    93.0
+  ],
+  "image_path": "structure-input.png",
+  "rows": [
+    {
+      "id": "p1-t1-g1-r1",
+      "index": 1,
+      "bbox": [
+        14.230964660644531,
+        15.94509506225586,
+        594.4970092773438,
+        61.508201599121094
+      ],
+      "coordinate_frame": "upright_table_pixels",
+      "score": 0.9995062351226807,
+      "is_header": true
+    },
+    {
+      "id": "p1-t1-g1-r2",
+      "index": 2,
+      "bbox": [
+        14.230964660644531,
+        61.508201599121094,
+        594.4970092773438,
+        144.32537841796875
+      ],
+      "coordinate_frame": "upright_table_pixels",
+      "score": 0.9972034692764282,
+      "is_header": false
+    },
+    {
+      "id": "p1-t1-g1-r3",
+      "index": 3,
+      "bbox": [
+        14.230964660644531,
+        144.32537841796875,
+        594.4970092773438,
+        226.365478515625
+      ],
+      "coordinate_frame": "upright_table_pixels",
+      "score": 0.999377429485321,
+      "is_header": false
+    },
+    {
+      "id": "p1-t1-g1-r4",
+      "index": 4,
+      "bbox": [
+        14.230964660644531,
+        226.365478515625,
+        594.4970092773438,
+        268.76025390625
+      ],
+      "coordinate_frame": "upright_table_pixels",
+      "score": 0.9978519678115845,
+      "is_header": false
+    }
+  ],
+  "columns": [
+    {
+      "id": "p1-t1-g1-c1",
+      "index": 1,
+      "bbox": [
+        14.230964660644531,
+        15.94509506225586,
+        118.65749740600586,
+        268.76025390625
+      ],
+      "coordinate_frame": "upright_table_pixels",
+      "score": 0.99901282787323,
+      "is_header": false
+    },
+    {
+      "id": "p1-t1-g1-c2",
+      "index": 2,
+      "bbox": [
+        118.65749740600586,
+        15.94509506225586,
+        306.59320068359375,
+        268.76025390625
+      ],
+      "coordinate_frame": "upright_table_pixels",
+      "score": 0.9999324083328247,
+      "is_header": false
+    },
+    {
+      "id": "p1-t1-g1-c3",
+      "index": 3,
+      "bbox": [
+        306.59320068359375,
+        15.94509506225586,
+        488.5914001464844,
+        268.76025390625
+      ],
+      "coordinate_frame": "upright_table_pixels",
+      "score": 0.9988250136375427,
+      "is_header": false
+    },
+    {
+      "id": "p1-t1-g1-c4",
+      "index": 4,
+      "bbox": [
+        488.5914001464844,
+        15.94509506225586,
+        594.4970092773438,
+        268.76025390625
+      ],
+      "coordinate_frame": "upright_table_pixels",
+      "score": 0.9997809529304504,
+      "is_header": false
+    }
+  ],
+  "cells": [
+    {
+      "id": "p1-t1-g1-r1-c1",
+      "row": 1,
+      "column": 1,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        48.23096466064453,
+        108.94509506225586,
+        152.65749740600586,
+        154.5082015991211
+      ],
+      "table_bbox": [
+        14.230964660644531,
+        15.94509506225586,
+        118.65749740600586,
+        61.508201599121094
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r1"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c1"
+      ],
+      "is_header": true,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r1-c2",
+      "row": 1,
+      "column": 2,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        152.65749740600586,
+        108.94509506225586,
+        340.59320068359375,
+        154.5082015991211
+      ],
+      "table_bbox": [
+        118.65749740600586,
+        15.94509506225586,
+        306.59320068359375,
+        61.508201599121094
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r1"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c2"
+      ],
+      "is_header": true,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r1-c3",
+      "row": 1,
+      "column": 3,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        340.59320068359375,
+        108.94509506225586,
+        522.5914001464844,
+        154.5082015991211
+      ],
+      "table_bbox": [
+        306.59320068359375,
+        15.94509506225586,
+        488.5914001464844,
+        61.508201599121094
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r1"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c3"
+      ],
+      "is_header": true,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r1-c4",
+      "row": 1,
+      "column": 4,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        522.5914001464844,
+        108.94509506225586,
+        628.4970092773438,
+        154.5082015991211
+      ],
+      "table_bbox": [
+        488.5914001464844,
+        15.94509506225586,
+        594.4970092773438,
+        61.508201599121094
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r1"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c4"
+      ],
+      "is_header": true,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r2-c1",
+      "row": 2,
+      "column": 1,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        48.23096466064453,
+        154.5082015991211,
+        152.65749740600586,
+        237.32537841796875
+      ],
+      "table_bbox": [
+        14.230964660644531,
+        61.508201599121094,
+        118.65749740600586,
+        144.32537841796875
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r2"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c1"
+      ],
+      "is_header": false,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r2-c2",
+      "row": 2,
+      "column": 2,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        152.65749740600586,
+        154.5082015991211,
+        340.59320068359375,
+        237.32537841796875
+      ],
+      "table_bbox": [
+        118.65749740600586,
+        61.508201599121094,
+        306.59320068359375,
+        144.32537841796875
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r2"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c2"
+      ],
+      "is_header": false,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r2-c3",
+      "row": 2,
+      "column": 3,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        340.59320068359375,
+        154.5082015991211,
+        522.5914001464844,
+        237.32537841796875
+      ],
+      "table_bbox": [
+        306.59320068359375,
+        61.508201599121094,
+        488.5914001464844,
+        144.32537841796875
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r2"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c3"
+      ],
+      "is_header": false,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r2-c4",
+      "row": 2,
+      "column": 4,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        522.5914001464844,
+        154.5082015991211,
+        628.4970092773438,
+        237.32537841796875
+      ],
+      "table_bbox": [
+        488.5914001464844,
+        61.508201599121094,
+        594.4970092773438,
+        144.32537841796875
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r2"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c4"
+      ],
+      "is_header": false,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r3-c1",
+      "row": 3,
+      "column": 1,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        48.23096466064453,
+        237.32537841796875,
+        152.65749740600586,
+        319.365478515625
+      ],
+      "table_bbox": [
+        14.230964660644531,
+        144.32537841796875,
+        118.65749740600586,
+        226.365478515625
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r3"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c1"
+      ],
+      "is_header": false,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r3-c2",
+      "row": 3,
+      "column": 2,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        152.65749740600586,
+        237.32537841796875,
+        340.59320068359375,
+        319.365478515625
+      ],
+      "table_bbox": [
+        118.65749740600586,
+        144.32537841796875,
+        306.59320068359375,
+        226.365478515625
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r3"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c2"
+      ],
+      "is_header": false,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r3-c3",
+      "row": 3,
+      "column": 3,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        340.59320068359375,
+        237.32537841796875,
+        522.5914001464844,
+        319.365478515625
+      ],
+      "table_bbox": [
+        306.59320068359375,
+        144.32537841796875,
+        488.5914001464844,
+        226.365478515625
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r3"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c3"
+      ],
+      "is_header": false,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r3-c4",
+      "row": 3,
+      "column": 4,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        522.5914001464844,
+        237.32537841796875,
+        628.4970092773438,
+        319.365478515625
+      ],
+      "table_bbox": [
+        488.5914001464844,
+        144.32537841796875,
+        594.4970092773438,
+        226.365478515625
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r3"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c4"
+      ],
+      "is_header": false,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r4-c1",
+      "row": 4,
+      "column": 1,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        48.23096466064453,
+        319.365478515625,
+        152.65749740600586,
+        361.76025390625
+      ],
+      "table_bbox": [
+        14.230964660644531,
+        226.365478515625,
+        118.65749740600586,
+        268.76025390625
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r4"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c1"
+      ],
+      "is_header": false,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r4-c2",
+      "row": 4,
+      "column": 2,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        152.65749740600586,
+        319.365478515625,
+        340.59320068359375,
+        361.76025390625
+      ],
+      "table_bbox": [
+        118.65749740600586,
+        226.365478515625,
+        306.59320068359375,
+        268.76025390625
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r4"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c2"
+      ],
+      "is_header": false,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r4-c3",
+      "row": 4,
+      "column": 3,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        340.59320068359375,
+        319.365478515625,
+        522.5914001464844,
+        361.76025390625
+      ],
+      "table_bbox": [
+        306.59320068359375,
+        226.365478515625,
+        488.5914001464844,
+        268.76025390625
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r4"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c3"
+      ],
+      "is_header": false,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    },
+    {
+      "id": "p1-t1-g1-r4-c4",
+      "row": 4,
+      "column": 4,
+      "row_span": 1,
+      "column_span": 1,
+      "bbox": [
+        522.5914001464844,
+        319.365478515625,
+        628.4970092773438,
+        361.76025390625
+      ],
+      "table_bbox": [
+        488.5914001464844,
+        226.365478515625,
+        594.4970092773438,
+        268.76025390625
+      ],
+      "coordinate_frame": "rendered_page_pixels",
+      "bbox_source": "tatr_grid_reconstruction",
+      "row_ids": [
+        "p1-t1-g1-r4"
+      ],
+      "column_ids": [
+        "p1-t1-g1-c4"
+      ],
+      "is_header": false,
+      "raw_text": null,
+      "normalized_text": null,
+      "number": null,
+      "readings": []
+    }
+  ],
+  "geometry_valid": true,
+  "issues": [],
+  "annotated_reading": null,
+  "invoice": null
+}

@@ -17,34 +17,53 @@ class TATR:
     def __init__(self, detection: ObjectSettings, structure: ObjectSettings):
         self.detection = detection
         self.structure = structure
-        self._models: dict[tuple[str, str, str], tuple] = {}
+        self._models: dict[tuple[str, str, str, str | None], tuple] = {}
 
-    def _predict(self, image: Image.Image, spec: ObjectSettings) -> list[Detection]:
+    def load(self, spec: ObjectSettings) -> tuple:
         try:
-            import torch
             from transformers import AutoImageProcessor, AutoModelForObjectDetection
         except ImportError as exc:
-            raise RuntimeError("Install the 'models' extra to run TATR") from exc
-        key = spec.model_id, spec.revision, spec.device
+            raise RuntimeError("Install the 'tatr' extra to run TATR") from exc
+        key = spec.model_id, spec.revision, spec.device, str(spec.local_dir)
         if key not in self._models:
+            if spec.local_dir is not None:
+                from .checkpoints import verify_checkpoint
+
+                verify_checkpoint(spec)
+            source = str(spec.local_dir) if spec.local_dir is not None else spec.model_id
+            options = {
+                "local_files_only": spec.local_dir is not None,
+                "cache_dir": spec.cache_dir,
+                "revision": spec.revision,
+            }
             processor = AutoImageProcessor.from_pretrained(
-                spec.model_id,
-                revision=spec.revision,
-                cache_dir=spec.cache_dir,
+                source,
+                use_fast=False,
+                **options,
             )
+            # The structure checkpoint stores a longest-edge-only size. Transformers
+            # 4.57's slow DETR processor requires both keys; equal limits retain
+            # the same aspect-preserving longest-edge resize. Keep upstream files intact.
+            if set(processor.size) == {"longest_edge"}:
+                edge = processor.size["longest_edge"]
+                processor.size = {"shortest_edge": edge, "longest_edge": edge}
             model = (
                 AutoModelForObjectDetection.from_pretrained(
-                    spec.model_id,
-                    revision=spec.revision,
+                    source,
                     use_safetensors=True,
                     use_pretrained_backbone=False,
-                    cache_dir=spec.cache_dir,
+                    **options,
                 )
                 .to(spec.device)
                 .eval()
             )
             self._models[key] = processor, model
-        processor, model = self._models[key]
+        return self._models[key]
+
+    def _predict(self, image: Image.Image, spec: ObjectSettings) -> list[Detection]:
+        import torch
+
+        processor, model = self.load(spec)
         inputs = processor(images=image, return_tensors="pt").to(spec.device)
         with torch.inference_mode():
             output = model(**inputs)

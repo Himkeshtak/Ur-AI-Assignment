@@ -1,5 +1,6 @@
 # Checkpoint revisions are immutable Hugging Face commit IDs.
-# The model extra is optional for installation, but required for a real parse.
+# The tatr extra runs CPU geometry; models adds the existing full local pipeline.
+# Hosted PaddleOCR/Japanese API adapters are still pending.
 [render]
 dpi = 300
 max_pages = 30
@@ -11,12 +12,14 @@ table_padding = 12
 [detection]
 model_id = "microsoft/table-transformer-detection"
 revision = "2357cbe2b5a5d1c03e54f32764f06058933b65ab"
+local_dir = "models/tatr/detection"
 device = "cpu"
 threshold = 0.7
 
 [structure]
 model_id = "microsoft/table-transformer-structure-recognition-v1.1-all"
 revision = "7587a7ef111d9dcbf8ac695f1376ab7014340a0c"
+local_dir = "models/tatr/structure"
 device = "cpu"
 threshold = 0.6
 

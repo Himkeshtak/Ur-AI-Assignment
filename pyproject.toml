@@ -15,11 +15,15 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-models = [
+tatr = [
   "torch>=2.8,<2.9",
   "torchvision>=0.23,<0.24",
   "transformers==4.57.6",
   "timm>=1.0,<2",
+  "huggingface-hub>=0.36,<1",
+]
+models = [
+  "jp-pdf-parser[tatr]",
   "paddleocr[doc-parser]==3.7.0",
   "paddlepaddle==3.3.1",
   "sentencepiece>=0.2,<0.3",

@@ -29,6 +29,7 @@ class ModelSettings(Settings):
 
 class ObjectSettings(ModelSettings):
     threshold: float = Field(default=0.6, ge=0, le=1)
+    local_dir: Path | None = None
 
 
 class RenderSettings(Settings):

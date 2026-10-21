@@ -8,6 +8,8 @@ and a small Japanese language model for text review.
 validation, and artifact export follow the approved pipeline below. Core tests use
 real PDF rendering and injected model responses; they do not establish Japanese
 invoice recognition accuracy. See [implementation status](docs/progress.md).
+Both real TATR checkpoints are downloaded and verified on CPU, including offline
+inference. PaddleOCR and Japanese-review API adapters are still pending.
 
 ```mermaid
 flowchart TD
@@ -63,7 +65,27 @@ uv run --locked ruff check src tests
 uv run --locked ruff format --check src tests
 ```
 
-For real model inference, install the optional runtime dependencies:
+For local CPU TATR, use the smaller runtime extra:
+
+```powershell
+uv sync --locked --extra tatr
+uv run --locked --extra tatr jp-pdf-parser download-tatr
+uv run --locked --extra tatr jp-pdf-parser check-tatr
+```
+
+The two pinned checkpoints, image processor configs, and model cards live under
+`models/tatr/detection/` and `models/tatr/structure/` (about 231 MB total).
+They are present on this workstation and ignored by Git. `download-tatr` checks
+SHA-256 hashes and skips intact files. Once downloaded, TATR loads only local
+files and never downloads another backbone. Missing or altered files fail with a
+clear error. See [CPU setup and model/API choices](docs/cpu-setup.md).
+
+`check-tatr` runs both actual models on a synthetic table and writes timings,
+raw objects, input images, and provenance to `output/tatr-check/`. It can also
+accept `--image data/page.png`. This checks execution; it does not measure invoice
+accuracy. No PaddleOCR or language-model inference is run by this command.
+
+For the existing full **local** inference path, install the complete extra:
 
 ```powershell
 uv sync --locked --extra models
@@ -72,13 +94,12 @@ uv run --locked --extra models jp-pdf-parser run data/invoice.pdf --config confi
 ```
 
 `doctor` checks dependency presence and configuration; it does not download
-weights or certify inference. A real `run` downloads the fixed checkpoint
-revisions into `.cache/huggingface` on first use. The CPU defaults prioritize
-compatibility and can require substantial RAM and time. Configure devices before
-a GPU run: TATR/LLM-jp use PyTorch device names such as `cuda:0`; Paddle uses
-Paddle device names such as `gpu:0` and requires a matching GPU runtime.
-The tested Windows installation uses CPU builds of PyTorch and Paddle. GPU runs
-require matching GPU runtime packages and separate verification.
+weights or certify inference. A real `run` uses the local TATR files; its current
+PaddleOCR and LLM-jp adapters still download their pinned revisions into
+`.cache/huggingface` on first use. Hosted API adapters are not implemented yet,
+so providing a token alone does not switch this command to remote inference.
+Full local CPU inference can require substantial RAM and time. The tested Windows
+installation uses CPU builds of PyTorch and Paddle.
 
 Export the JSON Schema without installing model dependencies:
 
@@ -122,6 +143,7 @@ applied to OCR text or financial values.
 - [Architecture, contracts, and proposed repository structure](docs/architecture.md)
 - [Official sources and reference revision](docs/sources.md)
 - [Implementation status and remaining work](docs/progress.md)
+- [Local CPU TATR and hosted model options](docs/cpu-setup.md)
 
 Reference clones live at `.reference/PaddleOCR/` and
 `.reference/table-transformer/` and are ignored by this repository. Application

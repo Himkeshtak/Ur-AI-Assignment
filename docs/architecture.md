@@ -53,9 +53,10 @@ database, queue, or agent framework until a concrete requirement calls for one.
 Python 3.11.14, the dependency graph, and model revisions are now pinned. Core
 tests run in the repository's managed virtual environment; the workstation's
 system Python is 3.13.5. Model-runtime verification is tracked separately in
-progress.md. Direct local inference is the initial integration path;
-GPU serving can use Linux/WSL2 or containers after hardware is established. Native
-Windows support for every acceleration backend is not assumed.
+progress.md. TATR checkpoints now live under `models/tatr/`, load only verified
+local files, and run on this Windows CPU machine. Hosted PaddleOCR and Japanese
+review are the planned next integration; the current full-run adapters still use
+local inference. See [CPU setup and API choices](cpu-setup.md).
 
 ## Pipeline responsibilities
 
@@ -342,6 +343,8 @@ accuracy is separate from core pipeline verification.
 |       |-- pipeline.py          # Stage order, retries, status aggregation
 |       |-- pdf.py               # Intake, rendering, geometry
 |       |-- structure.py         # TATR detection and structure model adapters
+|       |-- checkpoints.py       # Reproducible TATR downloads and CPU verification
+|       |-- tatr_checkpoints.json # Pinned asset sizes and SHA-256 digests
 |       |-- grid.py              # Geometry, spans, transforms, IDs, coverage
 |       |-- ocr.py               # Paddle cell and annotated-table recognition
 |       |-- tables.py            # Bind cell readings and map invoice fields
@@ -357,13 +360,17 @@ accuracy is separate from core pipeline verification.
 |   |-- test_pdf.py              # Real PDF rasterization and resource limits
 |   |-- test_ocr.py              # Paddle adapter contract
 |   |-- test_japanese.py         # Reviewer JSON and coverage
+|   |-- test_checkpoints.py      # Corruption, offline loading, resize compatibility
 |   `-- fixtures/               # Small synthetic/licensed PDFs and expected data
 |-- docs/
 |   |-- architecture.md
 |   |-- sources.md
+|   |-- cpu-setup.md
+|   |-- licenses/table-transformer.txt
 |   `-- progress.md
 |-- .reference/PaddleOCR/        # Ignored, pinned upstream reference checkout
 |-- .reference/table-transformer/ # Ignored, pinned Microsoft reference
+|-- models/tatr/                # Ignored, verified local CPU model assets
 |-- data/                       # Ignored local input PDFs
 `-- output/                     # Ignored generated run artifacts
 ```
