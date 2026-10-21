@@ -1,0 +1,50 @@
+{
+  "provider": "vlmrun",
+  "method": "ocr",
+  "response": {
+    "id": "chatcmpl-0100289342e94ee3b146f99ae0d",
+    "object": "chat.completion",
+    "created": 1792614871,
+    "model": "paddlepaddle/paddleocr-vl-1.6",
+    "served_model_id": "paddlepaddle/paddleocr-vl-1.6",
+    "backend": "vllm",
+    "provider": null,
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "极倾我巨庆0起版火（机韵）"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 223,
+      "completion_tokens": 14,
+      "total_tokens": 237,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": null,
+      "cost": 0.001
+    }
+  },
+  "input_sha256": "3702860000db9269d63b5b5d6c08582fa8f81d9789eac890503651bf0f3ee80b",
+  "original_size": [
+    835,
+    25
+  ],
+  "sent_size": [
+    835,
+    25
+  ],
+  "sent_to_original": [
+    1.0,
+    0,
+    0,
+    0,
+    1.0,
+    0
+  ]
+}

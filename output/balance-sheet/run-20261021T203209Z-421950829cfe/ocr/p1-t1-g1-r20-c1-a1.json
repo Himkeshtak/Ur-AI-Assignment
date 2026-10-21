@@ -1,0 +1,50 @@
+{
+  "provider": "vlmrun",
+  "method": "ocr",
+  "response": {
+    "id": "chatcmpl-4c5691afd4b6425ca13421733b0",
+    "object": "chat.completion",
+    "created": 1792614859,
+    "model": "paddlepaddle/paddleocr-vl-1.6",
+    "served_model_id": "paddlepaddle/paddleocr-vl-1.6",
+    "backend": "vllm",
+    "provider": null,
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "機械装置及７ド運搬目"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 178,
+      "completion_tokens": 12,
+      "total_tokens": 190,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": null,
+      "cost": 0.001
+    }
+  },
+  "input_sha256": "3f6ee42c18425a0a57ec6d99381fb60da9b8aa87606f41fd499c5773ec99ba27",
+  "original_size": [
+    835,
+    40
+  ],
+  "sent_size": [
+    835,
+    40
+  ],
+  "sent_to_original": [
+    1.0,
+    0,
+    0,
+    0,
+    1.0,
+    0
+  ]
+}

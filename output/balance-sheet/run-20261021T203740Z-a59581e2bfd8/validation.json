@@ -1,0 +1,246 @@
+{
+  "status": "needs_review",
+  "issues": [
+    {
+      "code": "annotated_alignment_uncertain",
+      "stage": "K",
+      "message": "Annotated table topology differs from the fixed grid",
+      "cell_ids": [],
+      "severity": "warning"
+    },
+    {
+      "code": "suspicious_text",
+      "stage": "M",
+      "message": "請求書の表見出しとして、複雑な数式（LaTeX形式）が記載されていることは極めて不自然です。通常、この位置には「金額（千円）」などの単位や「科目」などの見出しが来るべきです。",
+      "cell_ids": [
+        "p1-t1-g1-r1-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "suspicious_text",
+      "stage": "M",
+      "message": "「流動資產」は中国語（繁体字）の表記です。日本語の請求書・財務諸表では「流動資産」が正しい表記です。 Suggested reading (not applied): 流動資産",
+      "cell_ids": [
+        "p1-t1-g1-r3-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "suspicious_text",
+      "stage": "M",
+      "message": "「壳掛金」は日本語の会計用語として不自然です。通常は「前払金」または「未払金」などの用語が使用されますが、OCR誤認識（例：「前」が「壳」に）の可能性があります。",
+      "cell_ids": [
+        "p1-t1-g1-r6-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "encoding_error",
+      "stage": "M",
+      "message": "数値「564, 667」にカンマの後にスペースが入っています。数値表記としては不自然です。",
+      "cell_ids": [
+        "p1-t1-g1-r7-c2"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "encoding_error",
+      "stage": "M",
+      "message": "数値「370, 468」にカンマの後にスペースが入っています。数値表記としては不自然です。",
+      "cell_ids": [
+        "p1-t1-g1-r7-c3"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "encoding_error",
+      "stage": "M",
+      "message": "数値「589, 488」にカンマの後にスペースが入っています。数値表記としては不自然です。",
+      "cell_ids": [
+        "p1-t1-g1-r8-c2"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "suspicious_text",
+      "stage": "M",
+      "message": "「固定資產合計」は中国語の表記です。日本語の請求書・財務諸表では「固定資産合計」が一般的です。 Suggested reading (not applied): 固定資産合計",
+      "cell_ids": [
+        "p1-t1-g1-r51-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "suspicious_text",
+      "stage": "M",
+      "message": "「資產合計」は中国語の表記です。日本語の請求書・財務諸表では「資産合計」が一般的です。 Suggested reading (not applied): 資産合計",
+      "cell_ids": [
+        "p1-t1-g1-r52-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "invalid_japanese_review",
+      "stage": "M",
+      "message": "Reviewer did not return valid, complete JSON",
+      "cell_ids": [
+        "p1-t1-g1-r11-c1",
+        "p1-t1-g1-r11-c2",
+        "p1-t1-g1-r11-c3",
+        "p1-t1-g1-r12-c1",
+        "p1-t1-g1-r12-c2",
+        "p1-t1-g1-r12-c3",
+        "p1-t1-g1-r13-c1",
+        "p1-t1-g1-r13-c2",
+        "p1-t1-g1-r13-c3",
+        "p1-t1-g1-r14-c1",
+        "p1-t1-g1-r14-c2",
+        "p1-t1-g1-r14-c3",
+        "p1-t1-g1-r15-c1",
+        "p1-t1-g1-r15-c2"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "invalid_japanese_review",
+      "stage": "M",
+      "message": "Reviewer did not return valid, complete JSON",
+      "cell_ids": [
+        "p1-t1-g1-r15-c3",
+        "p1-t1-g1-r16-c1",
+        "p1-t1-g1-r17-c1",
+        "p1-t1-g1-r17-c2",
+        "p1-t1-g1-r17-c3",
+        "p1-t1-g1-r18-c1",
+        "p1-t1-g1-r18-c2",
+        "p1-t1-g1-r18-c3",
+        "p1-t1-g1-r19-c1",
+        "p1-t1-g1-r19-c2",
+        "p1-t1-g1-r19-c3",
+        "p1-t1-g1-r20-c1",
+        "p1-t1-g1-r20-c2",
+        "p1-t1-g1-r20-c3"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "invalid_japanese_review",
+      "stage": "M",
+      "message": "Reviewer did not return valid, complete JSON",
+      "cell_ids": [
+        "p1-t1-g1-r21-c1",
+        "p1-t1-g1-r21-c2",
+        "p1-t1-g1-r21-c3",
+        "p1-t1-g1-r22-c1",
+        "p1-t1-g1-r22-c2",
+        "p1-t1-g1-r22-c3",
+        "p1-t1-g1-r23-c1",
+        "p1-t1-g1-r23-c2",
+        "p1-t1-g1-r23-c3",
+        "p1-t1-g1-r24-c1",
+        "p1-t1-g1-r24-c2",
+        "p1-t1-g1-r24-c3",
+        "p1-t1-g1-r25-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "encoding_error",
+      "stage": "M",
+      "message": "「广 贷 贷座」は日本語の会計用語として不自然であり、文字化けまたはOCR誤認識の疑いがあります。",
+      "cell_ids": [
+        "p1-t1-g1-r28-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "suspicious_text",
+      "stage": "M",
+      "message": "「減価儻却累計額」の「儻」は誤字の疑いがあります。通常は「減価償却累計額」です。",
+      "cell_ids": [
+        "p1-t1-g1-r29-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "encoding_error",
+      "stage": "M",
+      "message": "「∧147.599」は数値として不自然です。マイナス記号の誤認識（例: -147,599）または文字化けの疑いがあります。",
+      "cell_ids": [
+        "p1-t1-g1-r29-c2"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "encoding_error",
+      "stage": "M",
+      "message": "「\\(\\forall 172, 066\\)」は数値として不自然です。マイナス記号や括弧の誤認識、またはLaTeX記法の混入による文字化けの疑いがあります。",
+      "cell_ids": [
+        "p1-t1-g1-r29-c3"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "invalid_japanese_review",
+      "stage": "M",
+      "message": "Reviewer did not return valid, complete JSON",
+      "cell_ids": [
+        "p1-t1-g1-r30-c1",
+        "p1-t1-g1-r30-c2",
+        "p1-t1-g1-r30-c3",
+        "p1-t1-g1-r31-c1",
+        "p1-t1-g1-r31-c2",
+        "p1-t1-g1-r31-c3",
+        "p1-t1-g1-r32-c1",
+        "p1-t1-g1-r32-c2",
+        "p1-t1-g1-r32-c3",
+        "p1-t1-g1-r33-c1",
+        "p1-t1-g1-r33-c2",
+        "p1-t1-g1-r33-c3",
+        "p1-t1-g1-r34-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "invalid_japanese_review",
+      "stage": "M",
+      "message": "Reviewer did not return valid, complete JSON",
+      "cell_ids": [
+        "p1-t1-g1-r34-c2",
+        "p1-t1-g1-r34-c3",
+        "p1-t1-g1-r35-c1",
+        "p1-t1-g1-r35-c2",
+        "p1-t1-g1-r35-c3",
+        "p1-t1-g1-r36-c1",
+        "p1-t1-g1-r36-c2",
+        "p1-t1-g1-r36-c3",
+        "p1-t1-g1-r37-c1",
+        "p1-t1-g1-r37-c2",
+        "p1-t1-g1-r37-c3",
+        "p1-t1-g1-r38-c1",
+        "p1-t1-g1-r38-c2",
+        "p1-t1-g1-r38-c3"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "review_coverage",
+      "stage": "M",
+      "message": "Japanese review must cover every cell exactly once",
+      "cell_ids": [],
+      "severity": "warning"
+    }
+  ],
+  "checks": [
+    {
+      "rule": "invoice_mapping",
+      "status": "not_applicable",
+      "cell_ids": [],
+      "expected": null,
+      "observed": null,
+      "difference": null,
+      "detail": "Generic-table mode was explicitly selected"
+    }
+  ]
+}

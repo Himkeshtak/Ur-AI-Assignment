@@ -1,0 +1,3260 @@
+{
+  "annotated": {
+    "request_id": "p1-t1-annotated-a1",
+    "variant": "annotated_table",
+    "image_path": "tables/p1-t1/numbered.png",
+    "raw_path": "ocr/p1-t1-annotated-a1.json",
+    "text": "<table><tr><td rowspan=\"1\" colspan=\"2\">前連結會計年度(2025年3月31日)</td><td rowspan=\"1\" colspan=\"2\">当連結會計年度(2026年3月31日)</td></tr><tr><td rowspan=\"1\" colspan=\"4\">資産の部</td></tr><tr><td rowspan=\"1\" colspan=\"4\">流動資産</td></tr><tr><td rowspan=\"1\" colspan=\"1\">現金及び預金</td><td rowspan=\"1\" colspan=\"1\">2,002,429</td><td rowspan=\"1\" colspan=\"1\">608,281</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">受取手形</td><td rowspan=\"1\" colspan=\"1\">20,659</td><td rowspan=\"1\" colspan=\"1\">26,333</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">売掛金</td><td rowspan=\"1\" colspan=\"1\">2,019,476</td><td rowspan=\"1\" colspan=\"1\">884,339</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">電子記録償権</td><td rowspan=\"1\" colspan=\"1\">564,667</td><td rowspan=\"1\" colspan=\"1\">370,468</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">商品及製品</td><td rowspan=\"1\" colspan=\"1\">589,488</td><td rowspan=\"1\" colspan=\"1\">1,019,663</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">仕掛品</td><td rowspan=\"1\" colspan=\"1\">186,748</td><td rowspan=\"1\" colspan=\"1\">55,344</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">原材料及び貯蔵品</td><td rowspan=\"1\" colspan=\"1\">370,403</td><td rowspan=\"1\" colspan=\"1\">136,082</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">短期貸付金</td><td rowspan=\"1\" colspan=\"1\">7,530</td><td rowspan=\"1\" colspan=\"1\">30,000</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">その他</td><td rowspan=\"1\" colspan=\"1\">105,260</td><td rowspan=\"1\" colspan=\"1\">246,895</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">貸倒引当金</td><td rowspan=\"1\" colspan=\"1\">△2,979</td><td rowspan=\"1\" colspan=\"1\">△0</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">流動資產合計</td><td rowspan=\"1\" colspan=\"1\">5,863,684</td><td rowspan=\"1\" colspan=\"1\">3,377,407</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"4\">固定資産</td></tr><tr><td rowspan=\"1\" colspan=\"4\">有形固定资产產</td></tr><tr><td rowspan=\"1\" colspan=\"1\">建物及び構築物</td><td rowspan=\"1\" colspan=\"1\">2,121,360</td><td rowspan=\"1\" colspan=\"1\">1,880,082</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">減価償却累計額</td><td rowspan=\"1\" colspan=\"1\">△1,923,585</td><td rowspan=\"1\" colspan=\"1\">△1,640,253</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">建物及び構築物 (純額)</td><td rowspan=\"1\" colspan=\"1\">197,775</td><td rowspan=\"1\" colspan=\"1\">239,828</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">機械装置及び運搬具</td><td rowspan=\"1\" colspan=\"1\">4,024,922</td><td rowspan=\"1\" colspan=\"1\">2,250,799</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">減価償却累計額</td><td rowspan=\"1\" colspan=\"1\">△3,634,165</td><td rowspan=\"1\" colspan=\"1\">△1,914,091</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">機械装置及び運搬具 (純額)</td><td rowspan=\"1\" colspan=\"1\">390,757</td><td rowspan=\"1\" colspan=\"1\">336,708</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">土地</td><td rowspan=\"1\" colspan=\"1\">768,976</td><td rowspan=\"1\" colspan=\"1\">705,403</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">リース資産</td><td rowspan=\"1\" colspan=\"1\">210,746</td><td rowspan=\"1\" colspan=\"1\">213,939</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">減価償却累計額</td><td rowspan=\"1\" colspan=\"1\">△147,599</td><td rowspan=\"1\" colspan=\"1\">△172,066</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">リース資産 (純額)</td><td rowspan=\"1\" colspan=\"1\">63,146</td><td rowspan=\"1\" colspan=\"1\">41,872</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">建設仮節定</td><td rowspan=\"1\" colspan=\"1\">—</td><td rowspan=\"1\" colspan=\"1\">4,553</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">その他</td><td rowspan=\"1\" colspan=\"1\">848,814</td><td rowspan=\"1\" colspan=\"1\">446,126</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">減価償却累計額</td><td rowspan=\"1\" colspan=\"1\">△840,375</td><td rowspan=\"1\" colspan=\"1\">△421,883</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">その他 (純額)</td><td rowspan=\"1\" colspan=\"1\">8,439</td><td rowspan=\"1\" colspan=\"1\">24,243</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">有形固定资产合計</td><td rowspan=\"1\" colspan=\"1\">1,429,094</td><td rowspan=\"1\" colspan=\"1\">1,352,610</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"4\">無形固定资产</td></tr><tr><td rowspan=\"1\" colspan=\"1\">リース資産</td><td rowspan=\"1\" colspan=\"1\">34,190</td><td rowspan=\"1\" colspan=\"1\">21,402</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">その他</td><td rowspan=\"1\" colspan=\"1\">10,070</td><td rowspan=\"1\" colspan=\"1\">14,466</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">無形固定资产合計</td><td rowspan=\"1\" colspan=\"1\">44,261</td><td rowspan=\"1\" colspan=\"1\">35,869</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"4\">投資その他の資産</td></tr><tr><td rowspan=\"1\" colspan=\"1\">投資有佃证券</td><td rowspan=\"1\" colspan=\"1\">44,180</td><td rowspan=\"1\" colspan=\"1\">218,836</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">関係会社株式</td><td rowspan=\"1\" colspan=\"1\">1,123</td><td rowspan=\"1\" colspan=\"1\">1,123</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">長期貸付金</td><td rowspan=\"1\" colspan=\"1\">—</td><td rowspan=\"1\" colspan=\"1\">62,000</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">退職給付に係る資産</td><td rowspan=\"1\" colspan=\"1\">18,404</td><td rowspan=\"1\" colspan=\"1\">16,435</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">その他</td><td rowspan=\"1\" colspan=\"1\">133,361</td><td rowspan=\"1\" colspan=\"1\">70,967</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">投資その他の資産合計</td><td rowspan=\"1\" colspan=\"1\">197,069</td><td rowspan=\"1\" colspan=\"1\">369,362</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">固定資産合計</td><td rowspan=\"1\" colspan=\"1\">1,670,426</td><td rowspan=\"1\" colspan=\"1\">1,757,841</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr><tr><td rowspan=\"1\" colspan=\"1\">資産合計</td><td rowspan=\"1\" colspan=\"1\">7,534,110</td><td rowspan=\"1\" colspan=\"1\">5,135,249</td><td rowspan=\"1\" colspan=\"1\">at $170,461\\n774,441,086/33\\nat $170,461\\n774,441,086/33</td></tr></table>",
+    "error": null,
+    "source_bbox_in_image": [
+      50.0,
+      50.0,
+      1986.0,
+      2404.0
+    ],
+    "image_to_page": [
+      1.0,
+      0.0,
+      202.0,
+      0.0,
+      1.0,
+      430.0
+    ]
+  },
+  "cells": [
+    {
+      "request_id": "p1-t1-g1-r1-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r1-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r1-c1-a1.json",
+      "text": "\\begin{array}{l} \\text{Hughes} \\quad \\text{ Oscillation} \\quad \\text{Period} \\\\ \\text{Song 1955 8} \\quad \\text{System} \\quad \\text{Period}. \\quad \\text{Period} \\\\ \\text{The quick brown fox jumps over the lazy dog.} \\quad \\text{Hello World!} \\quad \\text{Hello World!} \\quad \\text{Sorry!} \\quad \\text{Goodaves} \\quad \\text{How} \\quad \\text{How} \\quad \\text{Happy Day!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy New Year!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{�} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Birthday!} \\quad \\text{Happy Bith} \\quad \\text{Happy Lefto} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\quad \\text{Happy Bith} \\",
+      "error": "Cell OCR exceeded the configured character limit; raw output retained for review",
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        100.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        497.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r1-c1-a2",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r1-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r1-c1-a2.json",
+      "text": "\\begin{array}{l} \\displaystyle \\Delta \\left( \\frac{c}{r} \\right)  =\\frac{o \\div \\Delta o}{i \\div \\Delta i} \\div \\frac{u}{z} = \\frac{(\\Delta l - z)q + \\Delta z}{o - \\Delta z} \\div \\frac{z \\times \\Delta s}{v} = \\frac{(\\Delta g - z)k - \\Delta z}{z + \\Delta j} \\end{array}",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        100.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        497.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r1-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r1-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r1-c2-a1.json",
+      "text": "前連結会計年度\n(2025 年 3 月 31 日)",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        100.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        497.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r1-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r1-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r1-c3-a1.json",
+      "text": "当連結会計年度\n(2026年3月31日)",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        100.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        497.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r2-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r2-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r2-c1-a1.json",
+      "text": "資産の部",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        1912.0,
+        56.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        597.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r3-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r3-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r3-c1-a1.json",
+      "text": "流動資產",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        1912.0,
+        49.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        653.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r4-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r4-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r4-c1-a1.json",
+      "text": "現金及び預金",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        702.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r4-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r4-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r4-c2-a1.json",
+      "text": "2,002,429",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        702.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r4-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r4-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r4-c3-a1.json",
+      "text": "608, 281",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        702.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r5-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r5-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r5-c1-a1.json",
+      "text": "受取手形",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        752.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r5-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r5-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r5-c2-a1.json",
+      "text": "20,659",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        752.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r5-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r5-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r5-c3-a1.json",
+      "text": "26,333",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        752.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r6-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r6-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r6-c1-a1.json",
+      "text": "壳掛金",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        802.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r6-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r6-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r6-c2-a1.json",
+      "text": "2,019,476",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        802.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r6-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r6-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r6-c3-a1.json",
+      "text": "884,339",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        802.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r7-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r7-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r7-c1-a1.json",
+      "text": "電子記録債権",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        852.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r7-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r7-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r7-c2-a1.json",
+      "text": "564, 667",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        852.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r7-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r7-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r7-c3-a1.json",
+      "text": "370, 468",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        852.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r8-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r8-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r8-c1-a1.json",
+      "text": "商品及び製品",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        902.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r8-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r8-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r8-c2-a1.json",
+      "text": "589, 488",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        902.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r8-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r8-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r8-c3-a1.json",
+      "text": "1,019,663",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        902.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r9-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r9-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r9-c1-a1.json",
+      "text": "仕掛品",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        49.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        953.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r9-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r9-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r9-c2-a1.json",
+      "text": "186,748",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        49.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        953.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r9-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r9-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r9-c3-a1.json",
+      "text": "55,344",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        49.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        953.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r10-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r10-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r10-c1-a1.json",
+      "text": "原材料及び貯蔵品",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        49.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1002.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r10-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r10-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r10-c2-a1.json",
+      "text": "370,403",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        49.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1002.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r10-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r10-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r10-c3-a1.json",
+      "text": "136,082",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        49.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1002.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r11-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r11-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r11-c1-a1.json",
+      "text": "短期貸付金",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1051.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r11-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r11-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r11-c2-a1.json",
+      "text": "7,530",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1051.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r11-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r11-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r11-c3-a1.json",
+      "text": "30,000",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1051.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r12-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r12-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r12-c1-a1.json",
+      "text": "その他",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1102.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r12-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r12-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r12-c2-a1.json",
+      "text": "105,260",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1102.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r12-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r12-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r12-c3-a1.json",
+      "text": "246, 895",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1102.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r13-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r13-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r13-c1-a1.json",
+      "text": "貸倒引当金",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1153.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r13-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r13-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r13-c2-a1.json",
+      "text": "\\(\\triangle2,979\\)",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1153.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r13-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r13-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r13-c3-a1.json",
+      "text": "\\(\\triangle C\\)",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1153.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r14-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r14-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r14-c1-a1.json",
+      "text": "流動資產合計",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1203.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r14-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r14-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r14-c2-a1.json",
+      "text": "5,863,684",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1203.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r14-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r14-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r14-c3-a1.json",
+      "text": "3,377,407",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1203.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r15-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r15-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r15-c1-a1.json",
+      "text": "固定資產",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1253.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r15-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r15-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r15-c2-a1.json",
+      "text": "The Scholze der Bandfreundung des Scholzeles.",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1253.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r15-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r15-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r15-c3-a1.json",
+      "text": "，",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1253.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r16-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r16-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r16-c1-a1.json",
+      "text": "有形固定資產",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        1912.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1304.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r17-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r17-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r17-c1-a1.json",
+      "text": "建物及び構築物",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        52.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1354.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r17-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r17-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r17-c2-a1.json",
+      "text": "2.121.360",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        52.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1354.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r17-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r17-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r17-c3-a1.json",
+      "text": "1.880.082",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        52.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1354.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r18-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r18-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r18-c1-a1.json",
+      "text": "減価償却累計額",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        58.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1406.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r18-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r18-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r18-c2-a1.json",
+      "text": "\\(\\triangle1,923,585\\)",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        58.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1406.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r18-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r18-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r18-c3-a1.json",
+      "text": "\\(\\triangle1, 640, 253\\)",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        58.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1406.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r19-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r19-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r19-c1-a1.json",
+      "text": "建物及び構築物（純額）",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1464.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r19-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r19-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r19-c2-a1.json",
+      "text": "197，775",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1464.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r19-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r19-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r19-c3-a1.json",
+      "text": "239, 828",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1464.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r20-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r20-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r20-c1-a1.json",
+      "text": "機械装置及７ド運搬目",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        40.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1515.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r20-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r20-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r20-c2-a1.json",
+      "text": "4 024 922",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        40.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1515.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r20-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r20-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r20-c3-a1.json",
+      "text": "2 250 790",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        40.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1515.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r21-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r21-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r21-c1-a1.json",
+      "text": "做妆装及O建搬类\n减低微扣用引",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        38.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1555.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r21-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r21-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r21-c2-a1.json",
+      "text": "4, 024, 322\nA 0.004 105",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        38.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1555.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r21-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r21-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r21-c3-a1.json",
+      "text": "2, 200, 193\nA1014001",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        38.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1555.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r22-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r22-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r22-c1-a1.json",
+      "text": "減価償却案計頟",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        40.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1593.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r22-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r22-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r22-c2-a1.json",
+      "text": "\\(\\triangle 3\\), 634, 165",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        40.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1593.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r22-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r22-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r22-c3-a1.json",
+      "text": "\\(\\triangle1, 914, 091\\)",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        40.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1593.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r23-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r23-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r23-c1-a1.json",
+      "text": "機械装置及ド運搬具（純額）",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        29.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1633.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r23-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r23-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r23-c2-a1.json",
+      "text": "390.757",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        29.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1633.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r23-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r23-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r23-c3-a1.json",
+      "text": "336.708",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        29.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1633.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r24-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r24-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r24-c1-a1.json",
+      "text": "极倾我巨庆0起版火（机韵）",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        25.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1662.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r24-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r24-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r24-c2-a1.json",
+      "text": "000,{{{}}}",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        25.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1662.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r24-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r24-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r24-c3-a1.json",
+      "text": "___",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        25.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1662.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r25-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r25-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r25-c1-a1.json",
+      "text": "十池",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1687.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r25-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r25-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r25-c2-a1.json",
+      "text": "768 976",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1687.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r25-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r25-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r25-c3-a1.json",
+      "text": "705 403",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1687.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r26-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r26-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r26-c1-a1.json",
+      "text": "土地",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1713.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r26-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r26-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r26-c2-a1.json",
+      "text": "100, 010",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1713.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r26-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r26-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r26-c3-a1.json",
+      "text": "100, 100",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1713.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r27-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r27-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r27-c1-a1.json",
+      "text": "リース資産",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        25.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1739.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r27-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r27-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r27-c2-a1.json",
+      "text": "210 746",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        25.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1739.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r27-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r27-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r27-c3-a1.json",
+      "text": "213 939",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        25.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1739.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r28-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r28-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r28-c1-a1.json",
+      "text": "广 贷 贷座",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        25.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1764.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r28-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r28-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r28-c2-a1.json",
+      "text": "210, 410",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        25.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1764.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r28-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r28-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r28-c3-a1.json",
+      "text": "210,000",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        25.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1764.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r29-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r29-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r29-c1-a1.json",
+      "text": "減価儻却累計額",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1789.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r29-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r29-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r29-c2-a1.json",
+      "text": "∧147.599",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1789.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r29-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r29-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r29-c3-a1.json",
+      "text": "\\(\\forall 172, 066\\)",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1789.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r30-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r30-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r30-c1-a1.json",
+      "text": "欧佃虞玮木計歐",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1815.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r30-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r30-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r30-c2-a1.json",
+      "text": "как, о",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1815.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r30-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r30-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r30-c3-a1.json",
+      "text": "；",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1815.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r31-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r31-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r31-c1-a1.json",
+      "text": "リース資産（紬額）",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1841.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r31-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r31-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r31-c2-a1.json",
+      "text": "63 146",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1841.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r31-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r31-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r31-c3-a1.json",
+      "text": "41 87%",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        26.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1841.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r32-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r32-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r32-c1-a1.json",
+      "text": "苏梦贤生（杭硕）",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        30.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1867.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r32-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r32-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r32-c2-a1.json",
+      "text": "作为一个人工智能语言模型，我还没学习如何回答这个问题，您可以向我问一些其它的问题，我会尽力帮您解决的。",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        30.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1867.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r32-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r32-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r32-c3-a1.json",
+      "text": "11,012",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        30.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1867.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r33-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r33-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r33-c1-a1.json",
+      "text": "建設仮勘定",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        28.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1897.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r33-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r33-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r33-c2-a1.json",
+      "text": "–",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        28.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1897.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r33-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r33-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r33-c3-a1.json",
+      "text": "4.553",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        28.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1897.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r34-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r34-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r34-c1-a1.json",
+      "text": "重",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        28.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1925.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r34-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r34-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r34-c2-a1.json",
+      "text": "2020",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        28.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1925.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r34-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r34-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r34-c3-a1.json",
+      "text": ".",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        28.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1925.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r35-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r35-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r35-c1-a1.json",
+      "text": "その他",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        38.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1953.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r35-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r35-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r35-c2-a1.json",
+      "text": "848, 814",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        38.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1953.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r35-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r35-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r35-c3-a1.json",
+      "text": "446, 126",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        38.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1953.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r36-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r36-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r36-c1-a1.json",
+      "text": "減価償却累計額",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        43.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        1991.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r36-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r36-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r36-c2-a1.json",
+      "text": "\\(\\triangle 840, 375\\)",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        43.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        1991.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r36-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r36-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r36-c3-a1.json",
+      "text": "\\(\\triangle 421, 883\\)",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        43.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        1991.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r37-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r37-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r37-c1-a1.json",
+      "text": "その他（純頗）",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        40.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2034.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r37-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r37-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r37-c2-a1.json",
+      "text": "8 439",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        40.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2034.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r37-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r37-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r37-c3-a1.json",
+      "text": "24 24",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        40.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2034.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r38-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r38-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r38-c1-a1.json",
+      "text": "（3）他（钝）",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        37.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2074.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r38-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r38-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r38-c2-a1.json",
+      "text": "0, 105",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        37.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2074.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r38-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r38-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r38-c3-a1.json",
+      "text": "21, 21",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        37.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2074.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r39-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r39-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r39-c1-a1.json",
+      "text": "有形固定資產合計",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        43.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2111.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r39-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r39-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r39-c2-a1.json",
+      "text": "1,429,094",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        43.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2111.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r39-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r39-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r39-c3-a1.json",
+      "text": "1,352,610",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        43.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2111.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r40-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r40-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r40-c1-a1.json",
+      "text": "無形固定資產",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        1912.0,
+        49.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2154.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r41-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r41-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r41-c1-a1.json",
+      "text": "リース資産",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2203.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r41-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r41-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r41-c2-a1.json",
+      "text": "34, 190",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2203.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r41-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r41-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r41-c3-a1.json",
+      "text": "21, 402",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2203.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r42-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r42-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r42-c1-a1.json",
+      "text": "その他",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2254.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r42-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r42-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r42-c2-a1.json",
+      "text": "10,070",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2254.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r42-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r42-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r42-c3-a1.json",
+      "text": "14, 466",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2254.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r43-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r43-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r43-c1-a1.json",
+      "text": "無形固定資產合計",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        52.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2305.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r43-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r43-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r43-c2-a1.json",
+      "text": "44, 261",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        52.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2305.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r43-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r43-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r43-c3-a1.json",
+      "text": "35, 869",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        52.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2305.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r44-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r44-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r44-c1-a1.json",
+      "text": "投資その他の資産",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        1912.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2357.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r45-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r45-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r45-c1-a1.json",
+      "text": "投資有価証券",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2407.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r45-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r45-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r45-c2-a1.json",
+      "text": "44, 180",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2407.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r45-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r45-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r45-c3-a1.json",
+      "text": "218, 836",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2407.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r46-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r46-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r46-c1-a1.json",
+      "text": "関係会社株式",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2458.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r46-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r46-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r46-c2-a1.json",
+      "text": "1, 123",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2458.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r46-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r46-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r46-c3-a1.json",
+      "text": "1,123",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        50.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2458.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r47-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r47-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r47-c1-a1.json",
+      "text": "長期貸付金",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2508.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r47-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r47-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r47-c2-a1.json",
+      "text": "—",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2508.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r47-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r47-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r47-c3-a1.json",
+      "text": "62,000",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2508.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r48-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r48-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r48-c1-a1.json",
+      "text": "退職給付に係る資産",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2559.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r48-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r48-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r48-c2-a1.json",
+      "text": "18, 404",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2559.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r48-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r48-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r48-c3-a1.json",
+      "text": "16, 435",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2559.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r49-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r49-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r49-c1-a1.json",
+      "text": "その他",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2610.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r49-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r49-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r49-c2-a1.json",
+      "text": "133, 361",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2610.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r49-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r49-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r49-c3-a1.json",
+      "text": "70, 967",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2610.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r50-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r50-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r50-c1-a1.json",
+      "text": "投資その他の資産合計",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2661.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r50-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r50-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r50-c2-a1.json",
+      "text": "197, 069",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2661.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r50-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r50-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r50-c3-a1.json",
+      "text": "369, 362",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        51.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2661.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r51-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r51-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r51-c1-a1.json",
+      "text": "固定資產合計",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        53.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2712.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r51-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r51-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r51-c2-a1.json",
+      "text": "1,670,426",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        53.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2712.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r51-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r51-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r51-c3-a1.json",
+      "text": "1,757,841",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        53.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2712.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r52-c1-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r52-c1.png",
+      "raw_path": "ocr/p1-t1-g1-r52-c1-a1.json",
+      "text": "資產合計",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        835.0,
+        48.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        258.0,
+        0.0,
+        1.0,
+        2765.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r52-c2-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r52-c2.png",
+      "raw_path": "ocr/p1-t1-g1-r52-c2-a1.json",
+      "text": "7,534,110",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        621.0,
+        48.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1093.0,
+        0.0,
+        1.0,
+        2765.0
+      ]
+    },
+    {
+      "request_id": "p1-t1-g1-r52-c3-a1",
+      "variant": "clean_cell",
+      "image_path": "tables/p1-t1/cells/p1-t1-g1-r52-c3.png",
+      "raw_path": "ocr/p1-t1-g1-r52-c3-a1.json",
+      "text": "5, 135, 249",
+      "error": null,
+      "source_bbox_in_image": [
+        0.0,
+        0.0,
+        456.0,
+        48.0
+      ],
+      "image_to_page": [
+        1.0,
+        0.0,
+        1714.0,
+        0.0,
+        1.0,
+        2765.0
+      ]
+    }
+  ]
+}

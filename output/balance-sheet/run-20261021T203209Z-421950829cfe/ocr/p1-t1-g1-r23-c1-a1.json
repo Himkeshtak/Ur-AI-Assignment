@@ -1,0 +1,50 @@
+{
+  "provider": "vlmrun",
+  "method": "ocr",
+  "response": {
+    "id": "chatcmpl-70273aeb93104dd5a895d60ab91",
+    "object": "chat.completion",
+    "created": 1792614868,
+    "model": "paddlepaddle/paddleocr-vl-1.6",
+    "served_model_id": "paddlepaddle/paddleocr-vl-1.6",
+    "backend": "vllm",
+    "provider": null,
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "機械装置及ド運搬具（純額）"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 15,
+      "total_tokens": 223,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": null,
+      "cost": 0.001
+    }
+  },
+  "input_sha256": "8244b99d7a851fd4b0a4d342b9256dd929b90d9bd71e67c2cb3a1e4d5598611a",
+  "original_size": [
+    835,
+    29
+  ],
+  "sent_size": [
+    835,
+    29
+  ],
+  "sent_to_original": [
+    1.0,
+    0,
+    0,
+    0,
+    1.0,
+    0
+  ]
+}
