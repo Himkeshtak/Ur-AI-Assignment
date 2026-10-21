@@ -1,0 +1,25 @@
+# Reference checkouts and downloaded model weights
+.reference/
+models/
+
+# Local documents and generated results
+data/
+output/
+tmp/
+
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Local credentials and editor settings
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
