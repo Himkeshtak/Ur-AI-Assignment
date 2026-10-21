@@ -1,0 +1,50 @@
+{
+  "provider": "vlmrun",
+  "method": "ocr",
+  "response": {
+    "id": "chatcmpl-43506944d90c4b5195740cbff14",
+    "object": "chat.completion",
+    "created": 1792613523,
+    "model": "paddlepaddle/paddleocr-vl-1.6",
+    "served_model_id": "paddlepaddle/paddleocr-vl-1.6",
+    "backend": "vllm",
+    "provider": null,
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "| 単価"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 167,
+      "completion_tokens": 9,
+      "total_tokens": 176,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": null,
+      "cost": 0.001
+    }
+  },
+  "input_sha256": "6eec9501e3699c0157a1d51af6ee8c46a07865e8cb01ddf7fdb1df6a39832132",
+  "original_size": [
+    412,
+    129
+  ],
+  "sent_size": [
+    412,
+    129
+  ],
+  "sent_to_original": [
+    1.0,
+    0,
+    0,
+    0,
+    1.0,
+    0
+  ]
+}

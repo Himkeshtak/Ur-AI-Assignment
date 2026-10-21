@@ -1,0 +1,50 @@
+{
+  "provider": "vlmrun",
+  "method": "ocr",
+  "response": {
+    "id": "chatcmpl-a6ef471a2b1d4e63a06f665a83d",
+    "object": "chat.completion",
+    "created": 1792613191,
+    "model": "paddlepaddle/paddleocr-vl-1.6",
+    "served_model_id": "paddlepaddle/paddleocr-vl-1.6",
+    "backend": "vllm",
+    "provider": null,
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "!"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 175,
+      "completion_tokens": 2,
+      "total_tokens": 177,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": null,
+      "cost": 0.001
+    }
+  },
+  "input_sha256": "c9e285457bcb629a6e5ac6901e172bccbf032bcda85876d7f39a225e48af52e6",
+  "original_size": [
+    412,
+    203
+  ],
+  "sent_size": [
+    412,
+    203
+  ],
+  "sent_to_original": [
+    1.0,
+    0,
+    0,
+    0,
+    1.0,
+    0
+  ]
+}

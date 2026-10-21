@@ -1,0 +1,24 @@
+{
+  "transport_checks_passed": true,
+  "accuracy_evaluated": false,
+  "results": {
+    "clean_cell": {
+      "completed": true,
+      "has_text": true,
+      "comma_preserved": true
+    },
+    "annotated_table": {
+      "completed": true,
+      "has_text": true,
+      "html_available": true
+    },
+    "japanese": {
+      "completed": true,
+      "reviewed_cells": 4
+    }
+  },
+  "requests": {
+    "vlmrun": 2,
+    "groq": 1
+  }
+}

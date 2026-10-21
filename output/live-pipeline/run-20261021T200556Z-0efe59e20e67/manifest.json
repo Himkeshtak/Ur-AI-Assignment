@@ -1,0 +1,403 @@
+{
+  "started_at": "2026-10-21T20:05:56.521685+00:00",
+  "finished_at": "2026-10-21T20:07:10.701542+00:00",
+  "source_sha256": "68732a0019df21230492c921d6d367733943222a3fe614be6d1b55ba5112acb6",
+  "application_revision": "493d804224774b7a332f8125c400c3acd2a0afe9",
+  "working_tree_dirty": true,
+  "python": "3.11.14",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "jp-pdf-parser": "0.1.0",
+    "pydantic": "2.14.1",
+    "pillow": "11.3.0",
+    "pypdfium2": "5.14.0",
+    "httpx": "0.28.1",
+    "python-dotenv": "1.2.4",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "paddleocr": "3.7.0",
+    "paddlex": "3.7.2",
+    "paddlepaddle": "3.3.1"
+  },
+  "config": {
+    "env_file": ".env",
+    "render": {
+      "dpi": 300,
+      "max_pages": 30,
+      "max_file_mb": 50,
+      "max_pixels": 24000000,
+      "max_cells_per_table": 500,
+      "table_padding": 12
+    },
+    "detection": {
+      "model_id": "microsoft/table-transformer-detection",
+      "revision": "2357cbe2b5a5d1c03e54f32764f06058933b65ab",
+      "cache_dir": ".cache/huggingface",
+      "device": "cpu",
+      "threshold": 0.7,
+      "local_dir": "models\\tatr\\detection"
+    },
+    "structure": {
+      "model_id": "microsoft/table-transformer-structure-recognition-v1.1-all",
+      "revision": "7587a7ef111d9dcbf8ac695f1376ab7014340a0c",
+      "cache_dir": ".cache/huggingface",
+      "device": "cpu",
+      "threshold": 0.6,
+      "local_dir": "models\\tatr\\structure"
+    },
+    "ocr": {
+      "timeout_seconds": 120.0,
+      "max_requests": 40,
+      "min_interval_seconds": 1.0,
+      "max_pixels": 1605632,
+      "max_retries_per_table": 1,
+      "backend": "vlmrun",
+      "model_id": "paddlepaddle/paddleocr-vl-1.6",
+      "api_key_env": "VLMRUN_API_KEY"
+    },
+    "japanese": {
+      "timeout_seconds": 120.0,
+      "max_requests": 10,
+      "min_interval_seconds": 2.1,
+      "context_tokens": 4096,
+      "max_new_tokens": 512,
+      "format_retries": 1,
+      "backend": "groq",
+      "model_id": "qwen/qwen3.8-27b",
+      "api_key_env": "GROQ_API_KEY"
+    },
+    "financial": {
+      "mode": "invoice",
+      "tax_mode": "exclusive",
+      "money_scale": 0,
+      "rounding": "ROUND_HALF_UP",
+      "tax_rate": "0.10"
+    }
+  },
+  "backends": {
+    "structure": "jp_pdf_parser.structure.TATR",
+    "ocr": "jp_pdf_parser.ocr.VLMRunOCR",
+    "japanese": "jp_pdf_parser.japanese.GroqReviewer"
+  },
+  "application_source_sha256": {
+    "__init__.py": "586d50b867b432e466cc440ccbf9b7a0d80a9532a348f56d822e370ca9afbd1f",
+    "__main__.py": "2e92b15df0fa76e7ee8c3c670ebb8353a8792af2b08c9df3515479ddc7c0d281",
+    "api.py": "26f4848a8f583ad84c3c6b14778639fa95f2dfa9c648396159f332a172132df7",
+    "artifacts.py": "b794165f8ea31a4d4e484f94a582ba2b05caa385b3d82ceb203aa15f65275e78",
+    "check_api.py": "2e67a7dc4978a7c1b9703545251d5f5bcb9eb82869901075c895d3abfb0d319b",
+    "checkpoints.py": "4e87b1d43cdc25a3c1bbfebafaec1c4de2c0fd0f81d3d1124a199812cc7d871a",
+    "config.py": "a346534ed6b301bc7de1ff9e9af5428241ef5c1d2cfa64019b5ab9c5d0132ba9",
+    "grid.py": "d76d0b352b2b3a1133ddfe8520d443562d8b0e16cd682221aef68dd82baf4a65",
+    "japanese.py": "5ff34662cce360b4645fd3c5d902fc0ef0eba380003309fca8f64361b4f4e49a",
+    "models.py": "10f6634104a02cbd01c7c6499b3ca161c526349d27f284fd4d5633c859b8a82b",
+    "ocr.py": "c8306024900705057ab99494b16b7ae12a4100e040a26f72f4a023ffdef3aa43",
+    "pdf.py": "5a28968725cb4313175f349c8746ef28228409037b1d9b2416d47d5edbd2dabc",
+    "pipeline.py": "46713dd9ba19cd37cb09be78ab87e04a720d9d9273dbd3e65104e8189481c546",
+    "structure.py": "3698fa71154d832690792aa0574a558ed3d2ff181462b438563035bef7c8d519",
+    "table_format.py": "5f29ab5d9e05be46e844fd852e2a86216f777c453b2159dbeb8f5136a9087b3d",
+    "tables.py": "df1ec0606d8fed6249316d1573a6456fcc747717bc8e17a95900da6c2f9f5bcd",
+    "validation.py": "5dcb9b3990ab86afa9bdedb7556d20387e828c7becbd129da424bc87bc0b56c9"
+  },
+  "dependency_lock_sha256": "b09ab291b5a45c0e0766e0a5a8296514db5454f4d1bf62792ce9816b43a34989",
+  "timings": [
+    {
+      "stage": "A.inspect",
+      "seconds": 0.001357999979518354
+    },
+    {
+      "stage": "B.render.p1",
+      "seconds": 0.11755570000968874
+    },
+    {
+      "stage": "C.detect.p1",
+      "seconds": 10.631177500006743
+    },
+    {
+      "stage": "D.structure.p1-t1",
+      "seconds": 0.5354948000749573
+    },
+    {
+      "stage": "E.grid.p1-t1",
+      "seconds": 0.001016800059005618
+    },
+    {
+      "stage": "F.overlay.p1-t1",
+      "seconds": 0.05134560004808009
+    },
+    {
+      "stage": "H.p1-t1-annotated-a1",
+      "seconds": 2.190942900022492
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r1-c1",
+      "seconds": 0.0019577000057324767
+    },
+    {
+      "stage": "I.p1-t1-g1-r1-c1-a1",
+      "seconds": 0.5015763000119478
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r1-c2",
+      "seconds": 0.004323699977248907
+    },
+    {
+      "stage": "I.p1-t1-g1-r1-c2-a1",
+      "seconds": 0.994330000015907
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r1-c3",
+      "seconds": 0.0018853999208658934
+    },
+    {
+      "stage": "I.p1-t1-g1-r1-c3-a1",
+      "seconds": 1.0080868999939412
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r1-c4",
+      "seconds": 0.003920300048775971
+    },
+    {
+      "stage": "I.p1-t1-g1-r1-c4-a1",
+      "seconds": 1.0021102000027895
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r2-c1",
+      "seconds": 0.004969400004483759
+    },
+    {
+      "stage": "I.p1-t1-g1-r2-c1-a1",
+      "seconds": 0.9789833999238908
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r2-c2",
+      "seconds": 0.0027522000018507242
+    },
+    {
+      "stage": "I.p1-t1-g1-r2-c2-a1",
+      "seconds": 1.0219915999332443
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r2-c3",
+      "seconds": 0.0023538999957963824
+    },
+    {
+      "stage": "I.p1-t1-g1-r2-c3-a1",
+      "seconds": 0.992824999964796
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r2-c4",
+      "seconds": 0.004203799995593727
+    },
+    {
+      "stage": "I.p1-t1-g1-r2-c4-a1",
+      "seconds": 0.9858605000190437
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r3-c1",
+      "seconds": 0.004635700024664402
+    },
+    {
+      "stage": "I.p1-t1-g1-r3-c1-a1",
+      "seconds": 1.0086696000071242
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r3-c2",
+      "seconds": 0.0020936999935656786
+    },
+    {
+      "stage": "I.p1-t1-g1-r3-c2-a1",
+      "seconds": 0.9536899999948218
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r3-c3",
+      "seconds": 0.004654599935747683
+    },
+    {
+      "stage": "I.p1-t1-g1-r3-c3-a1",
+      "seconds": 1.0200507999397814
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r3-c4",
+      "seconds": 0.0038571999175474048
+    },
+    {
+      "stage": "I.p1-t1-g1-r3-c4-a1",
+      "seconds": 0.9654279000824317
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r4-c1",
+      "seconds": 0.002190300030633807
+    },
+    {
+      "stage": "I.p1-t1-g1-r4-c1-a1",
+      "seconds": 1.1049786999356002
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r4-c2",
+      "seconds": 0.004574400023557246
+    },
+    {
+      "stage": "I.p1-t1-g1-r4-c2-a1",
+      "seconds": 1.015222099958919
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r4-c3",
+      "seconds": 0.002306099981069565
+    },
+    {
+      "stage": "I.p1-t1-g1-r4-c3-a1",
+      "seconds": 7.916970900027081
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r4-c4",
+      "seconds": 0.002335699973627925
+    },
+    {
+      "stage": "I.p1-t1-g1-r4-c4-a1",
+      "seconds": 0.5398921999149024
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r5-c1",
+      "seconds": 0.0028089999686926603
+    },
+    {
+      "stage": "I.p1-t1-g1-r5-c1-a1",
+      "seconds": 0.9881603000685573
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r5-c2",
+      "seconds": 0.00471579993609339
+    },
+    {
+      "stage": "I.p1-t1-g1-r5-c2-a1",
+      "seconds": 26.639115200028755
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r5-c3",
+      "seconds": 0.0016964999958872795
+    },
+    {
+      "stage": "I.p1-t1-g1-r5-c3-a1",
+      "seconds": 0.511932700057514
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r5-c4",
+      "seconds": 0.001720299944281578
+    },
+    {
+      "stage": "I.p1-t1-g1-r5-c4-a1",
+      "seconds": 0.9857243000296876
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r6-c1",
+      "seconds": 0.0018631999846547842
+    },
+    {
+      "stage": "I.p1-t1-g1-r6-c1-a1",
+      "seconds": 0.9973301000427455
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r6-c2",
+      "seconds": 0.0015765000134706497
+    },
+    {
+      "stage": "I.p1-t1-g1-r6-c2-a1",
+      "seconds": 1.3757632999913767
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r6-c3",
+      "seconds": 0.003492700052447617
+    },
+    {
+      "stage": "I.p1-t1-g1-r6-c3-a1",
+      "seconds": 0.6187519999220967
+    },
+    {
+      "stage": "G.crop.p1-t1-g1-r6-c4",
+      "seconds": 0.002584800007753074
+    },
+    {
+      "stage": "I.p1-t1-g1-r6-c4-a1",
+      "seconds": 1.0020480999955907
+    },
+    {
+      "stage": "J.assemble.p1-t1",
+      "seconds": 0.00623759999871254
+    },
+    {
+      "stage": "K.validate",
+      "seconds": 0.005490700015798211
+    },
+    {
+      "stage": "M.japanese",
+      "seconds": 4.611249100067653
+    },
+    {
+      "stage": "L.export",
+      "seconds": 0.01541630004066974
+    }
+  ],
+  "artifact_sha256": {
+    "japanese-review.json": "98771d50f69c11e714527633dd809f99cf9c26d77fd673f5109dea749e73791d",
+    "japanese-traces.json": "96bd4fb3f3387511b987d941db04c4944cab36f9539183a3ec0e7a173058c272",
+    "ocr/p1-t1-annotated-a1.json": "6f084fe5117ddbd4df80523303696f944643dbe25bbdbeb32e4ddcadb3d5de83",
+    "ocr/p1-t1-g1-r1-c1-a1.json": "1582f5758cb88f43ccba7dd79874380da25832f0d868bbcf47a8d7f6da6e86b4",
+    "ocr/p1-t1-g1-r1-c2-a1.json": "a8eae202ea1410b08632d3984090f641e0d45e4209a9d967b71ff6bd19448d83",
+    "ocr/p1-t1-g1-r1-c3-a1.json": "86b20b4db8c40e58a06d4aa2aab4d71533c5c11e75efbdde4fae28608217a824",
+    "ocr/p1-t1-g1-r1-c4-a1.json": "fef7536bb53afd0bda6b22e5a45d409a36c3c45c6947b606c1df908895252b47",
+    "ocr/p1-t1-g1-r2-c1-a1.json": "c30a21d85663eb583b0c47021b4f85f0f0054ef7919998542d659d57124ad9e1",
+    "ocr/p1-t1-g1-r2-c2-a1.json": "2cad1b4d0cde261d43b7eff55de2f95ed4c1af4a94a15f3be764bfd82a824a7d",
+    "ocr/p1-t1-g1-r2-c3-a1.json": "b779e98da6ed5822c27914347d11c60502b872241620db750c133c3b981a6654",
+    "ocr/p1-t1-g1-r2-c4-a1.json": "a8f580a914ad9059412cdbbe4b867d8e06bc579d6ae4317dabee8d7c92a81458",
+    "ocr/p1-t1-g1-r3-c1-a1.json": "658c9be6ad2f0d159878088295806e9fbf224aeb9711b1c565fb72b6cabbc631",
+    "ocr/p1-t1-g1-r3-c2-a1.json": "670cb7ea7fc78cb75f3f11c1ccd30ba89dea2d136455b719718de9e6b036b2c0",
+    "ocr/p1-t1-g1-r3-c3-a1.json": "597e5d1a0d75c601c958ba595dad488a9eece9b4bced41ef12874301f51cd408",
+    "ocr/p1-t1-g1-r3-c4-a1.json": "94f14c66c9bb147980ee05d3bd35b4ae2b933634a154e205e92ceb5206807d92",
+    "ocr/p1-t1-g1-r4-c1-a1.json": "276a62f3c6bbeb63834ffba0084cdaa809bb3f7327c7588c49787da00727b6d7",
+    "ocr/p1-t1-g1-r4-c2-a1.json": "fcd703e1c541c6d45ebea210c4f4fba18121c6a48d07c60b2f999a9133bacb5f",
+    "ocr/p1-t1-g1-r4-c3-a1.json": "e78daff2419bb3210a3fb3bb3acb6ba58c59bf468ca73f2b5c17b633971ee3b6",
+    "ocr/p1-t1-g1-r4-c4-a1.json": "e1396c69a44b7ae0616dbbe3dc36bb09519f63fd59d6999196c73767f9a11fd8",
+    "ocr/p1-t1-g1-r5-c1-a1.json": "1ffa4e744784472ac5807574a47ee55533275144a8231c4a7132a9d0d03f0a32",
+    "ocr/p1-t1-g1-r5-c2-a1.json": "695dbaf25dcb53a5780109e50c7bd284bac427140da6f883add26be4bf57400b",
+    "ocr/p1-t1-g1-r5-c3-a1.json": "2571157c6a7bbe5c31b30e1f548f67b9504e1fdfc31e618245dd5b4331adfa7b",
+    "ocr/p1-t1-g1-r5-c4-a1.json": "bb8c9af274bbc7c1983297f3a057330c29d5e25e9408017d1a74ee46ffc77893",
+    "ocr/p1-t1-g1-r6-c1-a1.json": "29e3a7e70d7e066489814bb84850cae01b349530b7b302cd5d9817a5b4b3604c",
+    "ocr/p1-t1-g1-r6-c2-a1.json": "65b6d6aec6e88bfc7e261e7897acf04caf20a05fe995c610d7a77e58e515736c",
+    "ocr/p1-t1-g1-r6-c3-a1.json": "0b1b07233de7ee5eb984f32f6d427ee549d76f8e74f060bed9ae59ec03884a58",
+    "ocr/p1-t1-g1-r6-c4-a1.json": "54a78d7515d7c28c52f12af2ceea7e7c7ba0ff7b2750761f4495e0230bcf9d35",
+    "pages/p001-detections.json": "fca602a6bcffb2f38ea695eccb53ade93134e92f383b4e98db34d3d089d7deb4",
+    "pages/p001.png": "1d7908a155b4f9755400f0c0b835730ed2f950d19923cc296b3cc77cbf4a1204",
+    "result.json": "17e623f888a0e800c514d1f58a04df0ca7a042119ae0b494bc7f72c9190620f8",
+    "schema.json": "8cd60b68a7e124af2e2f9dd5f623faddb3dddf42a061e0b9cf3f8920acad83a3",
+    "tables/p1-t1/cells/p1-t1-g1-r1-c1.png": "8e54fd66e6b25f268a6f70fc8db9c437dcee624aca7f4e688e2b0e6e23e1bae5",
+    "tables/p1-t1/cells/p1-t1-g1-r1-c2.png": "b66d6aafeac2bad09d260a075072cb12d1d6734fd04e060a746bdf45d8021ed1",
+    "tables/p1-t1/cells/p1-t1-g1-r1-c3.png": "6eec9501e3699c0157a1d51af6ee8c46a07865e8cb01ddf7fdb1df6a39832132",
+    "tables/p1-t1/cells/p1-t1-g1-r1-c4.png": "42dd1eb073c23020844a5a2919bfd286e760a22927cfee53873deba7061b2b36",
+    "tables/p1-t1/cells/p1-t1-g1-r2-c1.png": "f0a0784b1cd6a26a67764a7632e9cb3221e0d77fed7666fe36a884d302aaa526",
+    "tables/p1-t1/cells/p1-t1-g1-r2-c2.png": "54156f7a4030937d3b41ad9ee21c87242c71a8f4023c54618e7c80eab33610e9",
+    "tables/p1-t1/cells/p1-t1-g1-r2-c3.png": "01a5a6e78c97200bdf646da30510e79a328028bd9522e230c2b5a8e06c9baa75",
+    "tables/p1-t1/cells/p1-t1-g1-r2-c4.png": "33c8847aa8394874986b92b9a37c9a8bf50572ede85d0cdaafb31522055cdd9b",
+    "tables/p1-t1/cells/p1-t1-g1-r3-c1.png": "a9093a01394b7cdc1bedab86f9c3c47223a41a4a7334586b479a28c5eff224a3",
+    "tables/p1-t1/cells/p1-t1-g1-r3-c2.png": "4a135869199a0a536f2ce3db7544f749a5226df86ca4c366fd6ecf1d69214c8b",
+    "tables/p1-t1/cells/p1-t1-g1-r3-c3.png": "f1ba50dbfec3d619901cf4de7b5c1a825f6dde7d10518f66068f5f25d10a786f",
+    "tables/p1-t1/cells/p1-t1-g1-r3-c4.png": "7e5f78615c0647a4cc3a70d62060cef8273e2bcba0fe388a9d8474da607ee992",
+    "tables/p1-t1/cells/p1-t1-g1-r4-c1.png": "9b50dede3ddeb00d8d5831ca022fbed75113a8d6e7b8c92daa6cd7bc211e886e",
+    "tables/p1-t1/cells/p1-t1-g1-r4-c2.png": "6e53e067698b38b6085a49ffcf37b236c9cea9b01f957a129a357c36fe7e3f4e",
+    "tables/p1-t1/cells/p1-t1-g1-r4-c3.png": "c9e285457bcb629a6e5ac6901e172bccbf032bcda85876d7f39a225e48af52e6",
+    "tables/p1-t1/cells/p1-t1-g1-r4-c4.png": "a92e5b4349e46674d4bad1d6b9a8f85fc1f86811bdaf7eef47b807fa69f4fef1",
+    "tables/p1-t1/cells/p1-t1-g1-r5-c1.png": "59ba8397db0777d2017d0fc4acbd9b3ca9117edbf631f586b141adf223bc1de8",
+    "tables/p1-t1/cells/p1-t1-g1-r5-c2.png": "9d637d7a78615dcc7f63f41a7c6592471fa5acf90ea6e747df7cd31e43e02c54",
+    "tables/p1-t1/cells/p1-t1-g1-r5-c3.png": "b74817a3ce51b6a884eeef1d2be0fb6805c0d07cd98fa4f8a3838ccad2552f7f",
+    "tables/p1-t1/cells/p1-t1-g1-r5-c4.png": "a3e52760db5919a2706459619c41ac9688e7b437ca2673d8456debb273060a0e",
+    "tables/p1-t1/cells/p1-t1-g1-r6-c1.png": "a3cb8c8f392af30cea0897d718eed83ebd34a75db15c6424a3c8ca85806b47c3",
+    "tables/p1-t1/cells/p1-t1-g1-r6-c2.png": "36d1ceb5d783b2e03e6f4f5d0aa300104a02dfb374a46b86edbf9a715e2fe711",
+    "tables/p1-t1/cells/p1-t1-g1-r6-c3.png": "90d370fd8aa30ccc5ce52432040c3a5dcdd2783776f549ed39fdc279e9f554ee",
+    "tables/p1-t1/cells/p1-t1-g1-r6-c4.png": "8bc0a69cb8e0ea98949b5e6e87268c7665216e346e2e60f59410e1698ed34961",
+    "tables/p1-t1/grid-g1.json": "409f1ac2f5ee09c83c2ed59cd8c2259e90fdeb2d7e58763890914bddb8cc248b",
+    "tables/p1-t1/numbered.png": "e99fde3eb8c89c204e71513c5d3d354de167c2d7009792c6417d7d51a5f8ad40",
+    "tables/p1-t1/ocr-requests.json": "beaa9b26e171b5af713db6baf984cf928e3041cab664d6d4244c4f9705703049",
+    "tables/p1-t1/source.png": "c027c578f898734c43294b416659307fd26332c3a97bd59062c1bcb6c28172f9",
+    "tables/p1-t1/structure.json": "e152c72778073166b37635ed773d0f2fa03d4cccfeb2884f0b37cc9bca907441",
+    "validation.json": "6b2b3fe83cab134dc4e2cd43dcf503e5297a3efbc5e0ec88140547b1e7b23f1a"
+  }
+}

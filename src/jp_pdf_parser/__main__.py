@@ -7,8 +7,9 @@ import sys
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 
+from .api import APIError, credential
 from .artifacts import write_json
-from .config import Config
+from .config import Config, GroqSettings, JapaneseSettings, OCRSettings, VLMRunSettings
 from .models import Document
 
 
@@ -21,9 +22,13 @@ def doctor(config: Config) -> bool:
         "torchvision": "torchvision",
         "transformers": "transformers",
         "timm": "timm",
-        "paddleocr": "paddleocr",
-        "paddlepaddle": "paddle",
+        "httpx": "httpx",
+        "python-dotenv": "dotenv",
     }
+    if isinstance(config.ocr, OCRSettings):
+        required.update({"paddleocr": "paddleocr", "paddlepaddle": "paddle"})
+    if isinstance(config.japanese, JapaneseSettings):
+        required["sentencepiece"] = "sentencepiece"
     packages = {}
     for package, module in required.items():
         try:
@@ -35,13 +40,23 @@ def doctor(config: Config) -> bool:
             "available": importlib.util.find_spec(module) is not None,
         }
     ready = all(package["available"] for package in packages.values())
+    credentials = {}
+    for spec in (config.ocr, config.japanese):
+        if isinstance(spec, (VLMRunSettings, GroqSettings)):
+            try:
+                credential(spec.api_key_env, config.env_file)
+                credentials[spec.api_key_env] = True
+            except APIError:
+                credentials[spec.api_key_env] = False
     print(
         json.dumps(
             {
                 "dependencies_present": ready,
                 "packages": packages,
+                "credentials_present": credentials,
+                "backends": {"ocr": config.ocr.backend, "japanese": config.japanese.backend},
                 "model_revisions": {
-                    name: getattr(config, name).revision
+                    name: getattr(getattr(config, name), "revision", None)
                     for name in (
                         "detection",
                         "structure",
@@ -49,12 +64,12 @@ def doctor(config: Config) -> bool:
                         "japanese",
                     )
                 },
-                "note": "Dependency presence only; weights and inference are not tested.",
+                "note": "Presence only; credentials, models, and inference are not verified here.",
             },
             indent=2,
         )
     )
-    return ready
+    return ready and all(credentials.values())
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -76,6 +91,9 @@ def main(argv: list[str] | None = None) -> int:
     tatr.add_argument(
         "--image", type=Path, help="Optional page image; defaults to a synthetic table"
     )
+    api = commands.add_parser("check-api", help="Make small live calls on synthetic inputs")
+    api.add_argument("--config", type=Path, default=Path("config.toml"))
+    api.add_argument("--output-dir", type=Path, default=Path("output/api-check"))
     schema = commands.add_parser("schema", help="Export the application's JSON Schema")
     schema.add_argument("--output", type=Path, required=True)
     args = parser.parse_args(argv)
@@ -87,6 +105,12 @@ def main(argv: list[str] | None = None) -> int:
         config = Config.load(args.config)
         if args.command == "doctor":
             return 0 if doctor(config) else 1
+        if args.command == "check-api":
+            from .check_api import check_api
+
+            passed, directory = check_api(config, args.output_dir)
+            print(directory / "report.json")
+            return 0 if passed else 1
         if args.command in ("download-tatr", "check-tatr"):
             from .checkpoints import check_tatr, download_tatr
 

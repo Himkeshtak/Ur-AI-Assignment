@@ -6,7 +6,7 @@ from pathlib import Path
 from PIL import Image
 
 from .artifacts import Artifacts
-from .config import Config
+from .config import Config, GroqSettings, VLMRunSettings
 from .grid import (
     OVERLAY_MARGIN,
     cell_crop,
@@ -16,9 +16,9 @@ from .grid import (
     suppress_duplicates,
     translate_input,
 )
-from .japanese import JapaneseBackend, JapaneseValidator
+from .japanese import GroqReviewer, JapaneseBackend, JapaneseValidator
 from .models import Document, Issue, JapaneseReview, Reading, Table
-from .ocr import OCRBackend, PaddleOCR
+from .ocr import OCRBackend, PaddleOCR, VLMRunOCR
 from .pdf import crop_table, inspect_pdf, render_pages
 from .structure import TATR, StructureBackend
 from .tables import attach_readings
@@ -42,8 +42,16 @@ class Pipeline:
     ):
         self.config = config
         self.structure = structure or TATR(config.detection, config.structure)
-        self.ocr = ocr or PaddleOCR(config.ocr)
-        self.japanese = japanese or JapaneseValidator(config.japanese)
+        self.ocr = ocr or (
+            VLMRunOCR(config.ocr, config.env_file)
+            if isinstance(config.ocr, VLMRunSettings)
+            else PaddleOCR(config.ocr)
+        )
+        self.japanese = japanese or (
+            GroqReviewer(config.japanese, config.env_file)
+            if isinstance(config.japanese, GroqSettings)
+            else JapaneseValidator(config.japanese)
+        )
 
     def run(self, source: Path, output_root: Path) -> RunResult:
         artifacts = Artifacts(output_root)
@@ -175,6 +183,7 @@ class Pipeline:
             raw_path = f"ocr/{request_id}.json"
             artifacts.write(raw_path, prediction.raw)
             reading.raw_path, reading.text = raw_path, prediction.text
+            reading.error = prediction.error
         except Exception as exc:
             reading.error = str(exc)
         return reading

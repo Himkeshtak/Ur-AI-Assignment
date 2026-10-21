@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from jp_pdf_parser.config import Config
+from jp_pdf_parser.config import Config, JapaneseSettings, OCRSettings
 from jp_pdf_parser.grid import reconstruct_grid
 from jp_pdf_parser.models import Detection
 
@@ -13,6 +13,15 @@ ROOT = Path(__file__).resolve().parents[1]
 @pytest.fixture
 def config():
     result = Config.load(ROOT / "config.toml")
+    # Legacy local-adapter contracts stay testable while the shipped config uses APIs.
+    result.ocr = OCRSettings(
+        model_id="PaddlePaddle/PaddleOCR-VL-1.6",
+        revision="c5630abae1d940eafe0697512a0325494b02ab42",
+    )
+    result.japanese = JapaneseSettings(
+        model_id="llm-jp/llm-jp-3-1.8b-instruct",
+        revision="413b7929df092690b0f9449f3045baaf8deba0a5",
+    )
     result.render.dpi = 72
     return result
 

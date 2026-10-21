@@ -1,0 +1,103 @@
+{
+  "completed": true,
+  "reviewed_cell_ids": [
+    "p1-t1-g1-r1-c1",
+    "p1-t1-g1-r1-c2",
+    "p1-t1-g1-r1-c3",
+    "p1-t1-g1-r1-c4",
+    "p1-t1-g1-r2-c1",
+    "p1-t1-g1-r2-c2",
+    "p1-t1-g1-r2-c3",
+    "p1-t1-g1-r2-c4",
+    "p1-t1-g1-r3-c1",
+    "p1-t1-g1-r3-c2",
+    "p1-t1-g1-r3-c3",
+    "p1-t1-g1-r3-c4",
+    "p1-t1-g1-r4-c1",
+    "p1-t1-g1-r4-c2",
+    "p1-t1-g1-r4-c3",
+    "p1-t1-g1-r4-c4",
+    "p1-t1-g1-r5-c1",
+    "p1-t1-g1-r5-c2",
+    "p1-t1-g1-r5-c3",
+    "p1-t1-g1-r5-c4",
+    "p1-t1-g1-r6-c1",
+    "p1-t1-g1-r6-c2",
+    "p1-t1-g1-r6-c3",
+    "p1-t1-g1-r6-c4"
+  ],
+  "issues": [
+    {
+      "code": "suspicious_text",
+      "stage": "M",
+      "message": "テキストの先頭に不要なパイプ記号 '|' が含まれています。",
+      "cell_ids": [
+        "p1-t1-g1-r1-c3"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "suspicious_text",
+      "stage": "M",
+      "message": "「封简」は中国語の表記であり、日本語の請求書では「封筒」が一般的です。OCR誤認識または文字化けの可能性があります。",
+      "cell_ids": [
+        "p1-t1-g1-r3-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "suspicious_text",
+      "stage": "M",
+      "message": "数値のセルにピリオド '.' のみが入力されており、数値として不自然です。",
+      "cell_ids": [
+        "p1-t1-g1-r4-c2"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "suspicious_text",
+      "stage": "M",
+      "message": "単独の閉じ括弧「)」のみが検出されました。通常、単位や注釈の一部であるはずですが、対応する開き括弧やテキストが欠落している可能性があります。",
+      "cell_ids": [
+        "p1-t1-g1-r4-c3"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "encoding_error",
+      "stage": "M",
+      "message": "「僧」は消費税の税率欄（通常は「10%」など）として不自然です。文字化けまたはOCR誤認識の疑いがあります。",
+      "cell_ids": [
+        "p1-t1-g1-r5-c2"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "encoding_error",
+      "stage": "M",
+      "message": "「銓」は消費税の金額欄（通常は数値）として不自然です。文字化けまたはOCR誤認識の疑いがあります。",
+      "cell_ids": [
+        "p1-t1-g1-r5-c3"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "suspicious_text",
+      "stage": "M",
+      "message": "「|」は合計行の税率欄として不自然です。通常は空欄または「-」であるべきですが、OCRで誤認識された可能性があります。",
+      "cell_ids": [
+        "p1-t1-g1-r6-c2"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "suspicious_text",
+      "stage": "M",
+      "message": "「l」は合計行の金額欄として不自然です。通常は空欄または「-」であるべきですが、OCRで誤認識された可能性があります。",
+      "cell_ids": [
+        "p1-t1-g1-r6-c3"
+      ],
+      "severity": "warning"
+    }
+  ]
+}

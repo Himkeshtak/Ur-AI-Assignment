@@ -1,0 +1,50 @@
+{
+  "provider": "vlmrun",
+  "method": "ocr",
+  "response": {
+    "id": "chatcmpl-6775141885434ef884320516813",
+    "object": "chat.completion",
+    "created": 1792613525,
+    "model": "paddlepaddle/paddleocr-vl-1.6",
+    "served_model_id": "paddlepaddle/paddleocr-vl-1.6",
+    "backend": "vllm",
+    "provider": null,
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "用紙"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 165,
+      "completion_tokens": 5,
+      "total_tokens": 170,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": null,
+      "cost": 0.001
+    }
+  },
+  "input_sha256": "f0a0784b1cd6a26a67764a7632e9cb3221e0d77fed7666fe36a884d302aaa526",
+  "original_size": [
+    465,
+    199
+  ],
+  "sent_size": [
+    465,
+    199
+  ],
+  "sent_to_original": [
+    1.0,
+    0,
+    0,
+    0,
+    1.0,
+    0
+  ]
+}

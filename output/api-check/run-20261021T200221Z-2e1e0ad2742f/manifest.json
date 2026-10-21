@@ -1,0 +1,114 @@
+{
+  "started_at": "2026-10-21T20:02:21.160979+00:00",
+  "finished_at": "2026-10-21T20:02:23.827189+00:00",
+  "source_sha256": null,
+  "application_revision": "493d804224774b7a332f8125c400c3acd2a0afe9",
+  "working_tree_dirty": true,
+  "python": "3.11.14",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "jp-pdf-parser": "0.1.0",
+    "pydantic": "2.14.1",
+    "pillow": "11.3.0",
+    "pypdfium2": "5.14.0",
+    "httpx": "0.28.1",
+    "python-dotenv": "1.2.4",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "paddleocr": "3.7.0",
+    "paddlex": "3.7.2",
+    "paddlepaddle": "3.3.1"
+  },
+  "config": {
+    "env_file": ".env",
+    "render": {
+      "dpi": 300,
+      "max_pages": 30,
+      "max_file_mb": 50,
+      "max_pixels": 24000000,
+      "max_cells_per_table": 500,
+      "table_padding": 12
+    },
+    "detection": {
+      "model_id": "microsoft/table-transformer-detection",
+      "revision": "2357cbe2b5a5d1c03e54f32764f06058933b65ab",
+      "cache_dir": ".cache/huggingface",
+      "device": "cpu",
+      "threshold": 0.7,
+      "local_dir": "models\\tatr\\detection"
+    },
+    "structure": {
+      "model_id": "microsoft/table-transformer-structure-recognition-v1.1-all",
+      "revision": "7587a7ef111d9dcbf8ac695f1376ab7014340a0c",
+      "cache_dir": ".cache/huggingface",
+      "device": "cpu",
+      "threshold": 0.6,
+      "local_dir": "models\\tatr\\structure"
+    },
+    "ocr": {
+      "timeout_seconds": 120.0,
+      "max_requests": 2000,
+      "min_interval_seconds": 1.0,
+      "max_pixels": 1605632,
+      "max_retries_per_table": 1,
+      "backend": "vlmrun",
+      "model_id": "paddlepaddle/paddleocr-vl-1.6",
+      "api_key_env": "VLMRUN_API_KEY"
+    },
+    "japanese": {
+      "timeout_seconds": 120.0,
+      "max_requests": 100,
+      "min_interval_seconds": 2.1,
+      "context_tokens": 4096,
+      "max_new_tokens": 512,
+      "format_retries": 1,
+      "backend": "groq",
+      "model_id": "qwen/qwen3.8-27b",
+      "api_key_env": "GROQ_API_KEY"
+    },
+    "financial": {
+      "mode": "invoice",
+      "tax_mode": "unknown",
+      "money_scale": 0,
+      "rounding": null,
+      "tax_rate": null
+    }
+  },
+  "backends": {
+    "ocr": "jp_pdf_parser.ocr.VLMRunOCR",
+    "japanese": "jp_pdf_parser.japanese.GroqReviewer"
+  },
+  "application_source_sha256": {
+    "__init__.py": "586d50b867b432e466cc440ccbf9b7a0d80a9532a348f56d822e370ca9afbd1f",
+    "__main__.py": "2e92b15df0fa76e7ee8c3c670ebb8353a8792af2b08c9df3515479ddc7c0d281",
+    "api.py": "26f4848a8f583ad84c3c6b14778639fa95f2dfa9c648396159f332a172132df7",
+    "artifacts.py": "b794165f8ea31a4d4e484f94a582ba2b05caa385b3d82ceb203aa15f65275e78",
+    "check_api.py": "2e67a7dc4978a7c1b9703545251d5f5bcb9eb82869901075c895d3abfb0d319b",
+    "checkpoints.py": "4e87b1d43cdc25a3c1bbfebafaec1c4de2c0fd0f81d3d1124a199812cc7d871a",
+    "config.py": "a346534ed6b301bc7de1ff9e9af5428241ef5c1d2cfa64019b5ab9c5d0132ba9",
+    "grid.py": "d76d0b352b2b3a1133ddfe8520d443562d8b0e16cd682221aef68dd82baf4a65",
+    "japanese.py": "5ff34662cce360b4645fd3c5d902fc0ef0eba380003309fca8f64361b4f4e49a",
+    "models.py": "10f6634104a02cbd01c7c6499b3ca161c526349d27f284fd4d5633c859b8a82b",
+    "ocr.py": "c8306024900705057ab99494b16b7ae12a4100e040a26f72f4a023ffdef3aa43",
+    "pdf.py": "5a28968725cb4313175f349c8746ef28228409037b1d9b2416d47d5edbd2dabc",
+    "pipeline.py": "46713dd9ba19cd37cb09be78ab87e04a720d9d9273dbd3e65104e8189481c546",
+    "structure.py": "3698fa71154d832690792aa0574a558ed3d2ff181462b438563035bef7c8d519",
+    "table_format.py": "5f29ab5d9e05be46e844fd852e2a86216f777c453b2159dbeb8f5136a9087b3d",
+    "tables.py": "df1ec0606d8fed6249316d1573a6456fcc747717bc8e17a95900da6c2f9f5bcd",
+    "validation.py": "5dcb9b3990ab86afa9bdedb7556d20387e828c7becbd129da424bc87bc0b56c9"
+  },
+  "dependency_lock_sha256": "ee9e9ef45340f8dba52dc8aa4ad8a1a942ced71a23c59c01750a1dd993b41145",
+  "timings": [],
+  "artifact_sha256": {
+    "annotated_table-text.json": "f1fb822219d87c6a5eeb75e75826bf20f2bb79981d90b63735818e70c7e9b2ae",
+    "annotated_table.json": "1fcfda99f79dd9ff35c104e8203764926e4545e23e063f14aa8e9c63acdb8fb0",
+    "cell.png": "c39a88fc76c476b9d567483e419ad4ab5b7e7dea8c6372ff946f0003a742f93c",
+    "clean_cell-text.json": "364110f980a0783f09b9d3a2e80cebe885b31091d8734bd4a194ae374d6c9ae6",
+    "clean_cell.json": "fa44328f2878010fa8baa7bce0706fa4808281255b80adbff7b602a96542c32c",
+    "japanese-review.json": "b17dd47535b57731d4e8c200c8d7ecb6b7d28707e3071d6cfa3d3f373a2523ea",
+    "japanese-traces.json": "b5e2b24b6137e3db0995f4375cf1095459d931c92e40fc0a0bd980e1e7461b25",
+    "numbered.png": "fb055f0140cc2d70723321f23494bf7ac13b2ea43aa01992159e8a5f7feeaa5b",
+    "report.json": "c6e542149c878a44c2176557d5b34c421e3ae0d1ab1f22481f52c4d40a84a6fa",
+    "table.png": "29088a3549d06e7bf0115655a11c33d7497cefd2ccb991bcbe359699cc866baf"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "provider": "vlmrun",
+  "method": "ocr",
+  "response": {
+    "id": "chatcmpl-2ef2ec623625499c87db7e7eae8",
+    "object": "chat.completion",
+    "created": 1792613539,
+    "model": "paddlepaddle/paddleocr-vl-1.6",
+    "served_model_id": "paddlepaddle/paddleocr-vl-1.6",
+    "backend": "vllm",
+    "provider": null,
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "銓"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 166,
+      "completion_tokens": 4,
+      "total_tokens": 170,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": null,
+      "cost": 0.001
+    }
+  },
+  "input_sha256": "b74817a3ce51b6a884eeef1d2be0fb6805c0d07cd98fa4f8a3838ccad2552f7f",
+  "original_size": [
+    412,
+    207
+  ],
+  "sent_size": [
+    412,
+    207
+  ],
+  "sent_to_original": [
+    1.0,
+    0,
+    0,
+    0,
+    1.0,
+    0
+  ]
+}

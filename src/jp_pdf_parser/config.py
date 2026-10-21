@@ -4,7 +4,7 @@ import re
 import tomllib
 from decimal import Decimal
 from pathlib import Path
-from typing import Literal
+from typing import Annotated, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
@@ -41,16 +41,45 @@ class RenderSettings(Settings):
     table_padding: int = Field(default=12, ge=0, le=100)
 
 
-class OCRSettings(ModelSettings):
-    max_new_tokens: int = Field(default=1024, ge=32)
+class OCRLimits(Settings):
     max_pixels: int = Field(default=1_605_632, ge=1024)
     max_retries_per_table: int = Field(default=1, ge=0, le=1)
 
 
-class JapaneseSettings(ModelSettings):
+class OCRSettings(ModelSettings, OCRLimits):
+    backend: Literal["local"] = "local"
+    max_new_tokens: int = Field(default=1024, ge=32)
+
+
+class APISettings(Settings):
+    timeout_seconds: float = Field(default=120, ge=1, le=600)
+    max_requests: int = Field(default=2000, ge=1, le=20000)
+    min_interval_seconds: float = Field(default=1, ge=0, le=60)
+
+
+class VLMRunSettings(OCRLimits, APISettings):
+    backend: Literal["vlmrun"] = "vlmrun"
+    model_id: Literal["paddlepaddle/paddleocr-vl-1.6"] = "paddlepaddle/paddleocr-vl-1.6"
+    api_key_env: str = "VLMRUN_API_KEY"
+    max_cell_characters: int = Field(default=2000, ge=32, le=16000)
+
+
+class ReviewSettings(Settings):
     context_tokens: int = Field(default=4096, ge=1024, le=4096)
     max_new_tokens: int = Field(default=512, ge=128, le=1024)
     format_retries: int = Field(default=1, ge=0, le=1)
+
+
+class JapaneseSettings(ModelSettings, ReviewSettings):
+    backend: Literal["local"] = "local"
+
+
+class GroqSettings(ReviewSettings, APISettings):
+    backend: Literal["groq"] = "groq"
+    model_id: Literal["qwen/qwen3.8-27b"] = "qwen/qwen3.8-27b"
+    api_key_env: str = "GROQ_API_KEY"
+    min_interval_seconds: float = Field(default=2.1, ge=0, le=60)
+    max_requests: int = Field(default=100, ge=1, le=1000)
 
 
 class FinancialSettings(Settings):
@@ -62,11 +91,12 @@ class FinancialSettings(Settings):
 
 
 class Config(Settings):
+    env_file: Path = Path(".env")
     render: RenderSettings = Field(default_factory=RenderSettings)
     detection: ObjectSettings
     structure: ObjectSettings
-    ocr: OCRSettings
-    japanese: JapaneseSettings
+    ocr: Annotated[OCRSettings | VLMRunSettings, Field(discriminator="backend")]
+    japanese: Annotated[JapaneseSettings | GroqSettings, Field(discriminator="backend")]
     financial: FinancialSettings = Field(default_factory=FinancialSettings)
 
     @classmethod

@@ -1,17 +1,26 @@
 """PaddleOCR-VL 1.6 region recognition; application IDs stay outside the model."""
 
+import base64
+import io
+import math
 import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Literal, Protocol
 
-from .config import OCRSettings
+from PIL import Image
+
+from .api import ChatAPI
+from .artifacts import sha256
+from .config import OCRSettings, VLMRunSettings
+from .table_format import otsl_to_html
 
 
 @dataclass
 class OCRPrediction:
     text: str
     raw: dict
+    error: str | None = None
 
 
 class OCRBackend(Protocol):
@@ -82,3 +91,85 @@ class PaddleOCR:
             raise ValueError("Expected exactly one PaddleOCR result for a crop")
         payload = results[0].json
         return OCRPrediction(text=decode_paddle_result(payload), raw=payload)
+
+
+class VLMRunOCR:
+    """Explicit 1.6 image requests; no page detector, implicit LLM, or model fallback."""
+
+    def __init__(self, settings: VLMRunSettings, env_file: Path):
+        self.settings = settings
+        self.api = ChatAPI(
+            "https://gateway.vlm.run/v1/openai/chat/completions",
+            settings.api_key_env,
+            env_file,
+            settings,
+        )
+
+    def recognize(self, path: Path, task: Literal["ocr", "table"]) -> OCRPrediction:
+        if task not in ("ocr", "table"):
+            raise ValueError("VLM Run task must be ocr or table")
+        with Image.open(path) as original:
+            image = original.convert("RGB")
+        original_size = image.size
+        if image.width * image.height > self.settings.max_pixels:
+            scale = math.sqrt(self.settings.max_pixels / (image.width * image.height))
+            resized = image.resize(
+                (max(1, math.floor(image.width * scale)), max(1, math.floor(image.height * scale))),
+                Image.Resampling.LANCZOS,
+            )
+            image.close()
+            image = resized
+        buffer = io.BytesIO()
+        image.save(buffer, format="PNG")
+        sent_size = image.size
+        image.close()
+        content = base64.b64encode(buffer.getvalue()).decode("ascii")
+        text, response = self.api.complete(
+            {
+                "model": self.settings.model_id,
+                "method": task,
+                "messages": [
+                    {
+                        "role": "user",
+                        "content": [
+                            {
+                                "type": "image_url",
+                                "image_url": {"url": f"data:image/png;base64,{content}"},
+                            }
+                        ],
+                    }
+                ],
+                # Live catalog advertises no generation parameters for this model.
+                # Do not send unsupported temperature/max_tokens or a postprocessing LLM.
+            }
+        )
+        raw = {
+            "provider": "vlmrun",
+            "method": task,
+            "response": response,
+            "input_sha256": sha256(path),
+            "original_size": list(original_size),
+            "sent_size": list(sent_size),
+            "sent_to_original": [
+                original_size[0] / sent_size[0],
+                0,
+                0,
+                0,
+                original_size[1] / sent_size[1],
+                0,
+            ],
+        }
+        if task == "table":
+            try:
+                converted = otsl_to_html(text)
+                raw["table_conversion"] = "otsl_to_html"
+                text = converted
+            except ValueError as exc:
+                # Preserve the original reading; validation will flag unknown topology.
+                raw["table_conversion_error"] = str(exc)
+        error = None
+        if task == "ocr" and len(text) > self.settings.max_cell_characters:
+            error = (
+                "Cell OCR exceeded the configured character limit; raw output retained for review"
+            )
+        return OCRPrediction(text=text, raw=raw, error=error)

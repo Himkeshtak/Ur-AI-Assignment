@@ -1,0 +1,51 @@
+{
+  "provider": "vlmrun",
+  "method": "table",
+  "response": {
+    "id": "chatcmpl-f29cb9eb533a4161a3d529242a6",
+    "object": "chat.completion",
+    "created": 1792612942,
+    "model": "paddlepaddle/paddleocr-vl-1.6",
+    "served_model_id": "paddlepaddle/paddleocr-vl-1.6",
+    "backend": "vllm",
+    "provider": null,
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "<fcel>R1<fcel>Item<fcel>Amount<nl><fcel>R2<fcel>Paper<fcel>2,000<nl>"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 845,
+      "completion_tokens": 21,
+      "total_tokens": 866,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": null,
+      "cost": 0.001
+    }
+  },
+  "input_sha256": "fb055f0140cc2d70723321f23494bf7ac13b2ea43aa01992159e8a5f7feeaa5b",
+  "original_size": [
+    1470,
+    450
+  ],
+  "sent_size": [
+    1470,
+    450
+  ],
+  "sent_to_original": [
+    1.0,
+    0,
+    0,
+    0,
+    1.0,
+    0
+  ],
+  "table_conversion": "otsl_to_html"
+}

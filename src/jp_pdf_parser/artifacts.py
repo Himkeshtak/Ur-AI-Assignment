@@ -66,6 +66,8 @@ class Artifacts:
             "pydantic",
             "pillow",
             "pypdfium2",
+            "httpx",
+            "python-dotenv",
             "torch",
             "transformers",
             "paddleocr",

@@ -1,109 +1,111 @@
 # Implementation checkpoint
 
-The implementation follows the approved A-L pipeline with M between K and L.
-This file distinguishes working code, tested behavior, and outstanding work.
+The approved stage order is unchanged: PDF rendering, CPU TATR detection and
+structure, fixed-grid/crop preparation, both PaddleOCR recognition branches,
+deterministic checks, Japanese review, then JSON/report export.
 
-## Code written
+## Changes completed
 
-1. **Repository and configuration:** `pyproject.toml`, `uv.lock`,
-   `.python-version`, and `config.toml` define the package, CLI, CPU defaults,
-   limits, explicit financial policies, and immutable model revisions.
-2. **A-B:** `pdf.py` inspects and hashes the PDF, enforces limits, renders pages
-   sequentially, and records pixel-to-PDF transforms.
-3. **C-D:** `structure.py` loads the pinned Microsoft detection and structure
-   checkpoints through Transformers on CPU. `checkpoints.py` and the packaged
-   `tatr_checkpoints.json` catalog download and verify all eight official assets.
-   Both checkpoints are present in `models/tatr/` and verified offline. Source
-   references remain isolated under `.reference/`.
-4. **E-G:** `grid.py` reconstructs rows/columns and merged cells, assigns IDs,
-   handles rotated table crops, generates coordinate legends, and extracts clean
-   crops with shared pixel boundaries.
-5. **H-I:** `ocr.py` loads the pinned PaddleOCR-VL 1.6 checkpoint through the
-   official PaddleOCR wrapper. Annotated tables and clean cells use distinct
-   task requests and retain their original responses.
-6. **J-K:** `tables.py` binds recognition to cell IDs and maps conservative
-   invoice layouts. `validation.py` checks topology agreement, text encoding,
-   numeric formatting, line amounts, subtotals, and totals using `Decimal`.
-7. **M:** `japanese.py` runs LLM-jp 3 1.8B Instruct after deterministic validation.
-   It budgets context, checks complete cell coverage, validates model JSON,
-   bounds format retries, and stores suggestions as findings.
-8. **L:** `pipeline.py`, `models.py`, and `artifacts.py` aggregate statuses and
-   export typed JSON, validation reports, evidence, timings, dependency versions,
-   and artifact hashes. `__main__.py` provides `run`, `doctor`, `schema`,
-   `download-tatr`, and `check-tatr`.
+1. **Configuration and dependencies:** the default `config.toml` selects VLM Run
+   PaddleOCR-VL-1.6 and Groq Qwen3.8-27B, alongside the pinned local CPU TATR assets.
+   Typed backend variants keep hosted model IDs separate from local checkpoint
+   revisions. httpx and python-dotenv are locked; reportlab is a development-only
+   dependency for the synthetic fixture generator. `.env.example` contains no keys.
+2. **API transport:** `api.py` loads literal credentials from environment or `.env`,
+   enforces request caps/spacing/timeouts, rejects unexpected model IDs and
+   incomplete completions, and sanitizes errors. Keys/headers are not exported.
+   No automatic network retry, implicit provider choice, or fallback model exists.
+3. **PaddleOCR:** `ocr.py` sends each clean image with `method="ocr"` and the
+   numbered image with `method="table"`. Image resizing, hashes, inverse scales,
+   returned model IDs, original responses and usage are retained. The live VLM Run
+   catalog supports no generation parameters for this model, so unsupported
+   max-token/temperature fields are omitted. Long clean-cell output is rejected
+   with its original evidence retained, rather than accepted or silently truncated.
+4. **Table adaptation:** `table_format.py` converts OTSL to HTML with explicit
+   ownership and rectangular-span checks, preserving blanks and rejecting malformed
+   continuations. This serves the annotated comparison only; it does not replace
+   TATR geometry or clean-cell text. Unsupported topology becomes a review issue.
+5. **Japanese review:** `japanese.py` shares coverage/chunking/format validation
+   between explicit local and hosted backends. Groq uses strict JSON Schema and
+   non-thinking generation. Every requested cell must be accounted for exactly
+   once; suggestions are never applied to amounts or source text. A provider
+   `json_validate_failed` rejection shares the single format-repair retry budget.
+6. **Pipeline/export:** `pipeline.py` selects the configured adapters and preserves
+   raw rejected OCR evidence without accepting it as a cell value. Config and
+   response provenance record hosted aliases honestly, without invented weight
+   commits. Earlier PDF limits, grid transforms, Decimal checks, and statuses remain.
+7. **Tools/documentation:** `doctor` checks required dependencies and credential
+   presence without network calls; `check-api` explicitly exercises both OCR tasks
+   and Japanese review with synthetic input. `scripts/create_demo.py` creates a
+   reproducible Japanese invoice using a supplied TrueType font. README, architecture,
+   CPU/API setup, source references and CI commands reflect the current implementation.
+
+The optional local PaddleOCR and LLM-jp adapters are retained as explicit choices,
+not API fallbacks. Reference source clones and MIT attribution remain available.
+No PaddleOCR or Japanese model weights were downloaded and no GPU is needed locally.
 
 ## Verification
 
-The model-free suite covers real PDF rendering and coordinate mapping, rotated
-crops, merged/blank cells, separator corruption, full-width numbers, fractional
-quantities, explicit rounding/tax policies, annotation contamination, partial
-page failure, cell failure without row shifting, malformed reviewer JSON, and
-review coverage. Injected model outputs are explicitly test fixtures, not real
-recognition results. The fixture invoice is synthetic and authored in this repo.
+**102 tests passed**, both in the full development environment and a separate core
+installation without PyTorch/Paddle/model extras. Ruff lint/format checks passed.
+Tests cover original PDF/grid/financial rules plus secret-safe errors, timeouts,
+request limits/spacing, exact model selection, malformed/truncated responses,
+OTSL spans/blanks, remote review coverage, oversized OCR evidence and provider-side
+JSON-repair errors. Automated tests use mock HTTP transports, never real keys.
 
-Current local results: **64 tests passed** on Python 3.11.14. Ruff lint and format
-checks passed. `schema` successfully exports the Pydantic contract without model
-dependencies. The dependency lock includes the optional inference runtime.
-The CI workflow is written and pinned to action commits; it has not run on GitHub
-in this session. The wheel and source distribution both build successfully.
+Both provided keys authenticated against their respective live model catalogs;
+the exact configured models were listed. A live synthetic provider check made
+**two VLM Run requests and one Groq request**. It preserved `2,000`, converted the
+annotated OTSL response, and reviewed all four Japanese probe cells successfully.
+Evidence: `output/api-check/run-20261021T200221Z-2e1e0ad2742f/`.
 
-The complete optional runtime is installed in `.venv`. `uv pip check` reports
-compatible installed dependencies. PyTorch 2.8.0 (CPU), Transformers 4.57.6 model
-classes, Paddle 3.3.1, and PaddleOCR 3.7.0 / `PaddleOCRVL` import successfully in
-one process. Paddle's standard user-cache initialization required execution
-outside the workspace sandbox; the application model snapshots and PaddleX cache
-are configured under `.cache/`. `doctor` reports all required dependencies present.
+The generated Japanese invoice was rendered and visually inspected. The full
+pipeline then ran with real local TATR and both real APIs. The final run extracted
+**one table, six rows, four columns and 24 cells**; Groq reviewed every cell in two
+requests. Amounts included observed `2,000` / parsed `2000`, and subtotal, 10%
+exclusive tax and final total checks passed. The known demo tax profile was set
+explicitly in that run and is captured in its manifest; default unknown tax policy
+was not weakened.
 
-On 2026-10-22, downloaded both actual TATR checkpoints plus their processor/config
-files and model cards: 230,835,538 bytes. Initial downloads were checked against
-upstream LFS SHA-256 or Git blob digests; every local file now has a locked SHA-256.
-No PaddleOCR or Japanese model weights were downloaded. A separate `tatr` extra
-allows installing the CPU table stages without the Paddle runtime.
+Final evidence: `output/live-pipeline/run-20261021T201124Z-58a48946f7c2/`, including
+`result.json`, `validation.json`, `manifest.json`, page/crop/overlay images, raw
+provider responses and Japanese traces. Its 25 VLM Run responses reported a total
+`usage.cost` of **0.029487**; this is provider-reported usage, not a billing-ledger
+verification or a general per-invoice estimate.
 
-Both real TATR models loaded and completed inference in a network-restricted
-process with `HF_HUB_OFFLINE=1` and `TRANSFORMERS_OFFLINE=1`. The synthetic check
-found one table; its structure passed through the actual grid, overlay, and crop
-utilities into four rows, four columns, and 16 cells with no geometry issues.
-Evidence is under `output/tatr-check/`: `report.json`, images, raw predictions,
-`grid.json`, `numbered.png`, and cell crops. Grid/overlay generation was an
-additional manual integration check; `check-tatr` itself writes the model report
-and two input images. This is execution evidence on synthetic English content,
-not a Japanese alignment benchmark.
+The final result is correctly **needs_review**, not checks_passed. The annotated
+reading includes painted labels/topology differences; clean OCR confused Japanese
+and simplified Chinese glyphs and hallucinated punctuation in blank cells. Groq
+flagged those observations without rewriting them. Line multiplication was not
+verified on this demo because the unit-price header was corrupted by OCR, although
+subtotal/tax/total reconciled. This exposes recognition limits rather than hiding
+or auto-correcting them.
 
-In the recorded run, inference took approximately 0.44 seconds for detection and
-0.43 seconds for structure (12 PyTorch threads, default processors). Loading took
-7.68 and 0.53 seconds, respectively; first-load timing includes library overhead.
-These are single-run observations on this workstation, not throughput guarantees.
-The structure checkpoint's longest-edge-only processor config needed an in-memory
-compatibility conversion for Transformers 4.57.6; regression tests cover this and
-checksum failure before model loading. Upstream files remain unchanged.
+An earlier run exposed a 21K-character blank-cell hallucination and one Groq JSON
+rejection. Output bounds and a bounded format-repair path were added with tests;
+the previously rejected review chunk then succeeded within two live attempts.
+The final full run completed review coverage. Synthetic checks establish execution
+and error handling, not representative Japanese invoice accuracy.
 
-[CPU setup](cpu-setup.md) records local reproduction and hosted API choices.
-Qwen3-4B-Instruct-2507 is recommended for hosted Japanese review but has not been
-selected in config, integrated, or evaluated. No credentials were collected and
-no remote inference or deployment was performed.
+TATR's 230,835,538 bytes of pinned assets remain verified under `models/tatr/`.
+Its processors and both real checkpoints also passed offline CPU inference. The
+structure processor compatibility conversion preserves upstream files. Wheel and
+source-distribution builds and installed-dependency checks pass locally; GitHub CI
+is configured but has not been executed remotely.
 
 ## Still to do
 
-- Integrate the chosen PaddleOCR-VL 1.6 API. The exact Hugging Face model currently
-  has no listed Inference Provider, so its token alone is insufficient: an actual
-  endpoint URL/Space request contract is needed. The current `run` adapter remains
-  local. Do not silently fall back to a different model/version.
-- Select and integrate the Japanese review API, then evaluate its findings and
-  structured response coverage. Configuration still selects local LLM-jp.
-- Run the full pipeline with real Japanese invoices, the downloaded CPU TATR
-  checkpoints, and both remote adapters. Core tests and synthetic inference do
-  not establish Japanese invoice accuracy.
-- Measure row/column alignment, Japanese text error, exact amount match, review
-  rate, memory use, and latency. Compare clean-cell and annotated-table results.
-- Add supplier-specific header and financial profiles where samples justify
-  them. Adjustment semantics and multiple tax bases currently require review.
-- Measure CPU memory, latency, and worker/thread settings on representative pages.
-  GPU installation is outside the target-machine plan.
-- Add cross-page table association or structural re-detection retries if needed.
-  The current automatic retry only re-reads failed/empty cell OCR, once per table.
-- Fine-tuning and evaluation-dataset collection remain deferred as agreed.
-
-There is no web application, database, training pipeline, or silent fake-model
-mode. Model inference is invoked only by a real parse; tests inject their own
-backends through the same pipeline interfaces.
+- Evaluate representative supplier/layout samples with ground-truth cell values;
+  measure Japanese character error, exact amounts, alignment, and review rate.
+- Address blank-cell hallucinations and corrupted header recognition with measured,
+  evidence-preserving preprocessing/re-read policies. Existing bounds flag risk;
+  they cannot prove a cell is blank or establish the correct Japanese glyph.
+- Assess whether the required annotated-image pass improves results; it currently
+  can recognize synthetic labels, so its readings stay secondary.
+- Measure total request count, reported/provider-ledger costs, quotas and latency
+  for realistic workloads. Use Groq's free plan if zero review charges are needed;
+  the application does not inspect or change account billing plans.
+- Add supplier-specific aliases and policies, multiple-tax-base/adjustment support,
+  cross-page association or structural retries only when samples justify them.
+- Fine-tuning/dataset collection remain deferred. No website, database, background
+  service, cloud deployment, account signup or subscription was created.

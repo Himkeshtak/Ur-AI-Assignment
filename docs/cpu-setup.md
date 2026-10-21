@@ -1,9 +1,9 @@
 # Local CPU TATR and hosted recognition
 
 Updated 2026-10-22. The target machine has no GPU. Keep stages C-D on its CPU;
-prepare image crops and validate/export JSON locally as before. Hosted PaddleOCR
-and Japanese-review integration remains outstanding. The approved diagram and
-cell-ID ownership do not change.
+prepare image crops and validate/export JSON locally as before. PaddleOCR-VL-1.6
+now runs through VLM Run and Japanese review through Groq Qwen3.8-27B. The
+approved stage order and cell-ID ownership do not change.
 
 ## Downloaded assets
 
@@ -70,7 +70,18 @@ unchanged. Detection uses the published 800/800 resize. The detection loader als
 reports three unused `num_batches_tracked` buffers; these are training counters
 for BatchNorm layers replaced by frozen normalization during inference.
 
-## Japanese model recommendation, pending selection
+## Hosted recognition and Japanese review
+
+The shipped config uses `backend="vlmrun"` / `paddlepaddle/paddleocr-vl-1.6`
+for OCR and `backend="groq"` / `qwen/qwen3.8-27b` for Japanese review. Supply
+`VLMRUN_API_KEY` and `GROQ_API_KEY` in the environment or `.env`. `doctor` checks
+presence without network calls, `check-api` makes a small explicit live check,
+and `run` calls both providers. The `tatr` extra is enough for the default run.
+See [API setup and observed behavior](api-providers.md).
+
+The earlier small-model comparison is retained below as an alternative, not the
+active runtime selection. HF's current policy gives free users no included
+inference credits.
 
 Recommend [Qwen/Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)
 for API-based review. It is a 4B-parameter instruction model, supports only
@@ -88,9 +99,11 @@ measured quality comparison on our documents.
 Hugging Face's [Nscale](https://huggingface.co/docs/inference-providers/providers/nscale)
 and [Featherless](https://huggingface.co/docs/inference-providers/providers/featherless-ai)
 integrations accept a Hugging Face token through its inference router, subject to
-account permissions, access, and billing. No API call or deployment was made.
-Current configuration and diagram still name LLM-jp 3 1.8B Instruct: Qwen is a
-recommendation only, and no new language-model weights were downloaded.
+account permissions, access, and billing. The application currently uses Groq
+instead; live checks and their limits are recorded in progress.md.
+The active review model is now Groq Qwen3.8-27B. The local LLM-jp adapter remains
+an explicit optional backend, with no automatic fallback. No new language-model
+weights were downloaded.
 
 The review model should return cell-referenced language findings. It cannot
 verify glyphs from text alone, rewrite OCR amounts silently, or replace exact
@@ -102,7 +115,9 @@ The [exact model page](https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6)
 currently lists no Inference Provider. An HF token grants authentication but
 does not create a running model service. HF-based integration also needs an
 existing dedicated endpoint URL or a chosen Space/API with a verified request
-contract. The project has not deployed one.
+contract. The project has not deployed one. Other exact-version hosts were
+subsequently found: VLM Run and OpenParser; see the [provider review](api-providers.md)
+for capabilities, costs, credentials, and the implemented adapters.
 
 The [official PaddleOCR API](https://www.paddleocr.ai/latest/en/version3.x/inference_deployment/serving/paddleocr_official_api/python.html)
 does list version 1.6 but requires its own AI Studio token. That is a separate

@@ -1,0 +1,1679 @@
+{
+  "schema_version": "1.0.0",
+  "source_name": "synthetic-invoice.pdf",
+  "source_sha256": "68732a0019df21230492c921d6d367733943222a3fe614be6d1b55ba5112acb6",
+  "page_count": 1,
+  "pages": [
+    {
+      "number": 1,
+      "width_points": 600.0,
+      "height_points": 700.0,
+      "rotation": 0,
+      "width_pixels": 2500,
+      "height_pixels": 2917,
+      "dpi": 300,
+      "image_to_pdf": [
+        0.24000000953674316,
+        0.0,
+        0.0,
+        0.0,
+        -0.239990234375,
+        700.0
+      ],
+      "image_path": "pages/p001.png",
+      "tables": [
+        {
+          "id": "p1-t1",
+          "page_number": 1,
+          "grid_revision": 1,
+          "bbox": [
+            241.0,
+            674.0,
+            1969.0,
+            1760.0
+          ],
+          "coordinate_frame": "rendered_page_pixels",
+          "table_to_page": [
+            1.0,
+            0.0,
+            241.0,
+            0.0,
+            1.0,
+            674.0
+          ],
+          "image_path": "tables/p1-t1/source.png",
+          "rows": [
+            {
+              "id": "p1-t1-g1-r1",
+              "index": 1,
+              "bbox": [
+                17.065414428710938,
+                18.615360260009766,
+                1716.615478515625,
+                147.70311737060547
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9996552467346191,
+              "is_header": true
+            },
+            {
+              "id": "p1-t1-g1-r2",
+              "index": 2,
+              "bbox": [
+                17.065414428710938,
+                147.70311737060547,
+                1716.615478515625,
+                346.73431396484375
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9989638328552246,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-r3",
+              "index": 3,
+              "bbox": [
+                17.065414428710938,
+                346.73431396484375,
+                1716.615478515625,
+                544.5742492675781
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9994885921478271,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-r4",
+              "index": 4,
+              "bbox": [
+                17.065414428710938,
+                544.5742492675781,
+                1716.615478515625,
+                747.7606201171875
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.999691367149353,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-r5",
+              "index": 5,
+              "bbox": [
+                17.065414428710938,
+                747.7606201171875,
+                1716.615478515625,
+                954.7781677246094
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9992668032646179,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-r6",
+              "index": 6,
+              "bbox": [
+                17.065414428710938,
+                954.7781677246094,
+                1716.615478515625,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.999398946762085,
+              "is_header": false
+            }
+          ],
+          "columns": [
+            {
+              "id": "p1-t1-g1-c1",
+              "index": 1,
+              "bbox": [
+                17.065414428710938,
+                18.615360260009766,
+                482.46202087402344,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9995046854019165,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-c2",
+              "index": 2,
+              "bbox": [
+                482.46202087402344,
+                18.615360260009766,
+                1005.3622131347656,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9999405145645142,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-c3",
+              "index": 3,
+              "bbox": [
+                1005.3622131347656,
+                18.615360260009766,
+                1416.9555053710938,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9991115927696228,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-c4",
+              "index": 4,
+              "bbox": [
+                1416.9555053710938,
+                18.615360260009766,
+                1716.615478515625,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.999792754650116,
+              "is_header": false
+            }
+          ],
+          "cells": [
+            {
+              "id": "p1-t1-g1-r1-c1",
+              "row": 1,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                258.06541442871094,
+                692.6153602600098,
+                723.4620208740234,
+                821.7031173706055
+              ],
+              "table_bbox": [
+                17.065414428710938,
+                18.615360260009766,
+                482.46202087402344,
+                147.70311737060547
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r1"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c1"
+              ],
+              "is_header": true,
+              "raw_text": "品目",
+              "normalized_text": "品目",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r1-c1-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r1-c1.png",
+                  "raw_path": "ocr/p1-t1-g1-r1-c1-a1.json",
+                  "text": "品目",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    465.0,
+                    129.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    258.0,
+                    0.0,
+                    1.0,
+                    693.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r1-c2",
+              "row": 1,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                723.4620208740234,
+                692.6153602600098,
+                1246.3622131347656,
+                821.7031173706055
+              ],
+              "table_bbox": [
+                482.46202087402344,
+                18.615360260009766,
+                1005.3622131347656,
+                147.70311737060547
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r1"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c2"
+              ],
+              "is_header": true,
+              "raw_text": "数量",
+              "normalized_text": "数量",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r1-c2-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r1-c2.png",
+                  "raw_path": "ocr/p1-t1-g1-r1-c2-a1.json",
+                  "text": "数量",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    523.0,
+                    129.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    723.0,
+                    0.0,
+                    1.0,
+                    693.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r1-c3",
+              "row": 1,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1246.3622131347656,
+                692.6153602600098,
+                1657.9555053710938,
+                821.7031173706055
+              ],
+              "table_bbox": [
+                1005.3622131347656,
+                18.615360260009766,
+                1416.9555053710938,
+                147.70311737060547
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r1"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c3"
+              ],
+              "is_header": true,
+              "raw_text": "| 单価",
+              "normalized_text": "| 单価",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r1-c3-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r1-c3.png",
+                  "raw_path": "ocr/p1-t1-g1-r1-c3-a1.json",
+                  "text": "| 单価",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    412.0,
+                    129.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1246.0,
+                    0.0,
+                    1.0,
+                    693.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r1-c4",
+              "row": 1,
+              "column": 4,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1657.9555053710938,
+                692.6153602600098,
+                1957.615478515625,
+                821.7031173706055
+              ],
+              "table_bbox": [
+                1416.9555053710938,
+                18.615360260009766,
+                1716.615478515625,
+                147.70311737060547
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r1"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c4"
+              ],
+              "is_header": true,
+              "raw_text": "金額",
+              "normalized_text": "金額",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r1-c4-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r1-c4.png",
+                  "raw_path": "ocr/p1-t1-g1-r1-c4-a1.json",
+                  "text": "金額",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    300.0,
+                    129.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1658.0,
+                    0.0,
+                    1.0,
+                    693.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r2-c1",
+              "row": 2,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                258.06541442871094,
+                821.7031173706055,
+                723.4620208740234,
+                1020.7343139648438
+              ],
+              "table_bbox": [
+                17.065414428710938,
+                147.70311737060547,
+                482.46202087402344,
+                346.73431396484375
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r2"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c1"
+              ],
+              "is_header": false,
+              "raw_text": "用紙",
+              "normalized_text": "用紙",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r2-c1-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r2-c1.png",
+                  "raw_path": "ocr/p1-t1-g1-r2-c1-a1.json",
+                  "text": "用紙",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    465.0,
+                    199.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    258.0,
+                    0.0,
+                    1.0,
+                    822.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r2-c2",
+              "row": 2,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                723.4620208740234,
+                821.7031173706055,
+                1246.3622131347656,
+                1020.7343139648438
+              ],
+              "table_bbox": [
+                482.46202087402344,
+                147.70311737060547,
+                1005.3622131347656,
+                346.73431396484375
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r2"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c2"
+              ],
+              "is_header": false,
+              "raw_text": "2",
+              "normalized_text": "2",
+              "number": "2",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r2-c2-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r2-c2.png",
+                  "raw_path": "ocr/p1-t1-g1-r2-c2-a1.json",
+                  "text": "2",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    523.0,
+                    199.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    723.0,
+                    0.0,
+                    1.0,
+                    822.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r2-c3",
+              "row": 2,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1246.3622131347656,
+                821.7031173706055,
+                1657.9555053710938,
+                1020.7343139648438
+              ],
+              "table_bbox": [
+                1005.3622131347656,
+                147.70311737060547,
+                1416.9555053710938,
+                346.73431396484375
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r2"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c3"
+              ],
+              "is_header": false,
+              "raw_text": "1,000",
+              "normalized_text": "1,000",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r2-c3-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r2-c3.png",
+                  "raw_path": "ocr/p1-t1-g1-r2-c3-a1.json",
+                  "text": "1,000",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    412.0,
+                    199.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1246.0,
+                    0.0,
+                    1.0,
+                    822.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r2-c4",
+              "row": 2,
+              "column": 4,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1657.9555053710938,
+                821.7031173706055,
+                1957.615478515625,
+                1020.7343139648438
+              ],
+              "table_bbox": [
+                1416.9555053710938,
+                147.70311737060547,
+                1716.615478515625,
+                346.73431396484375
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r2"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c4"
+              ],
+              "is_header": false,
+              "raw_text": "2,000",
+              "normalized_text": "2,000",
+              "number": "2000",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r2-c4-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r2-c4.png",
+                  "raw_path": "ocr/p1-t1-g1-r2-c4-a1.json",
+                  "text": "2,000",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    300.0,
+                    199.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1658.0,
+                    0.0,
+                    1.0,
+                    822.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r3-c1",
+              "row": 3,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                258.06541442871094,
+                1020.7343139648438,
+                723.4620208740234,
+                1218.5742492675781
+              ],
+              "table_bbox": [
+                17.065414428710938,
+                346.73431396484375,
+                482.46202087402344,
+                544.5742492675781
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r3"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c1"
+              ],
+              "is_header": false,
+              "raw_text": "封简",
+              "normalized_text": "封简",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r3-c1-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r3-c1.png",
+                  "raw_path": "ocr/p1-t1-g1-r3-c1-a1.json",
+                  "text": "封简",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    465.0,
+                    198.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    258.0,
+                    0.0,
+                    1.0,
+                    1021.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r3-c2",
+              "row": 3,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                723.4620208740234,
+                1020.7343139648438,
+                1246.3622131347656,
+                1218.5742492675781
+              ],
+              "table_bbox": [
+                482.46202087402344,
+                346.73431396484375,
+                1005.3622131347656,
+                544.5742492675781
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r3"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c2"
+              ],
+              "is_header": false,
+              "raw_text": "1",
+              "normalized_text": "1",
+              "number": "1",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r3-c2-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r3-c2.png",
+                  "raw_path": "ocr/p1-t1-g1-r3-c2-a1.json",
+                  "text": "1",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    523.0,
+                    198.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    723.0,
+                    0.0,
+                    1.0,
+                    1021.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r3-c3",
+              "row": 3,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1246.3622131347656,
+                1020.7343139648438,
+                1657.9555053710938,
+                1218.5742492675781
+              ],
+              "table_bbox": [
+                1005.3622131347656,
+                346.73431396484375,
+                1416.9555053710938,
+                544.5742492675781
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r3"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c3"
+              ],
+              "is_header": false,
+              "raw_text": "300",
+              "normalized_text": "300",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r3-c3-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r3-c3.png",
+                  "raw_path": "ocr/p1-t1-g1-r3-c3-a1.json",
+                  "text": "300",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    412.0,
+                    198.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1246.0,
+                    0.0,
+                    1.0,
+                    1021.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r3-c4",
+              "row": 3,
+              "column": 4,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1657.9555053710938,
+                1020.7343139648438,
+                1957.615478515625,
+                1218.5742492675781
+              ],
+              "table_bbox": [
+                1416.9555053710938,
+                346.73431396484375,
+                1716.615478515625,
+                544.5742492675781
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r3"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c4"
+              ],
+              "is_header": false,
+              "raw_text": "300",
+              "normalized_text": "300",
+              "number": "300",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r3-c4-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r3-c4.png",
+                  "raw_path": "ocr/p1-t1-g1-r3-c4-a1.json",
+                  "text": "300",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    300.0,
+                    198.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1658.0,
+                    0.0,
+                    1.0,
+                    1021.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r4-c1",
+              "row": 4,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                258.06541442871094,
+                1218.5742492675781,
+                723.4620208740234,
+                1421.7606201171875
+              ],
+              "table_bbox": [
+                17.065414428710938,
+                544.5742492675781,
+                482.46202087402344,
+                747.7606201171875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r4"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c1"
+              ],
+              "is_header": false,
+              "raw_text": "小計",
+              "normalized_text": "小計",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r4-c1-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r4-c1.png",
+                  "raw_path": "ocr/p1-t1-g1-r4-c1-a1.json",
+                  "text": "小計",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    465.0,
+                    203.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    258.0,
+                    0.0,
+                    1.0,
+                    1219.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r4-c2",
+              "row": 4,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                723.4620208740234,
+                1218.5742492675781,
+                1246.3622131347656,
+                1421.7606201171875
+              ],
+              "table_bbox": [
+                482.46202087402344,
+                544.5742492675781,
+                1005.3622131347656,
+                747.7606201171875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r4"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c2"
+              ],
+              "is_header": false,
+              "raw_text": "{}",
+              "normalized_text": "{}",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r4-c2-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r4-c2.png",
+                  "raw_path": "ocr/p1-t1-g1-r4-c2-a1.json",
+                  "text": "{}",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    523.0,
+                    203.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    723.0,
+                    0.0,
+                    1.0,
+                    1219.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r4-c3",
+              "row": 4,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1246.3622131347656,
+                1218.5742492675781,
+                1657.9555053710938,
+                1421.7606201171875
+              ],
+              "table_bbox": [
+                1005.3622131347656,
+                544.5742492675781,
+                1416.9555053710938,
+                747.7606201171875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r4"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c3"
+              ],
+              "is_header": false,
+              "raw_text": "!",
+              "normalized_text": "!",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r4-c3-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r4-c3.png",
+                  "raw_path": "ocr/p1-t1-g1-r4-c3-a1.json",
+                  "text": "!",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    412.0,
+                    203.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1246.0,
+                    0.0,
+                    1.0,
+                    1219.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r4-c4",
+              "row": 4,
+              "column": 4,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1657.9555053710938,
+                1218.5742492675781,
+                1957.615478515625,
+                1421.7606201171875
+              ],
+              "table_bbox": [
+                1416.9555053710938,
+                544.5742492675781,
+                1716.615478515625,
+                747.7606201171875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r4"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c4"
+              ],
+              "is_header": false,
+              "raw_text": "2,300",
+              "normalized_text": "2,300",
+              "number": "2300",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r4-c4-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r4-c4.png",
+                  "raw_path": "ocr/p1-t1-g1-r4-c4-a1.json",
+                  "text": "2,300",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    300.0,
+                    203.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1658.0,
+                    0.0,
+                    1.0,
+                    1219.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r5-c1",
+              "row": 5,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                258.06541442871094,
+                1421.7606201171875,
+                723.4620208740234,
+                1628.7781677246094
+              ],
+              "table_bbox": [
+                17.065414428710938,
+                747.7606201171875,
+                482.46202087402344,
+                954.7781677246094
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r5"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c1"
+              ],
+              "is_header": false,
+              "raw_text": "消費税",
+              "normalized_text": "消費税",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r5-c1-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r5-c1.png",
+                  "raw_path": "ocr/p1-t1-g1-r5-c1-a1.json",
+                  "text": "消費税",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    465.0,
+                    207.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    258.0,
+                    0.0,
+                    1.0,
+                    1422.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r5-c2",
+              "row": 5,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                723.4620208740234,
+                1421.7606201171875,
+                1246.3622131347656,
+                1628.7781677246094
+              ],
+              "table_bbox": [
+                482.46202087402344,
+                747.7606201171875,
+                1005.3622131347656,
+                954.7781677246094
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r5"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c2"
+              ],
+              "is_header": false,
+              "raw_text": "rho = 103.7 g/mol + 100.1 g/mol + 17.0 g/mol = 26.61619 g/mol + 12.9929 g/mol = 41.34044 g/mol + 2.0014 g/mol = 4.8627 g/mol + 3.5262 g/mol = 6.16709 g/mol + 3.4098 g/mol = 12.5891 g/mol + 1.9159 g/mol = 37.7115 g/mol + 1.4198 g/mol = 21.4357 g/mol + 1.3622 g/mol = 36.7857 g/mol + 1.0141 g/mol + 3.4091 g/mol = 52.4656 g/mol + 1.0058 g/mol = 59.8148 g/mol + 1.0015 g/mol = 69.8763 g/mol + 3.3947 g/mol + 1.0109 g/mol = 88.5544 g/mol + 1.0017 g/mol = 96.8794 g/mol + 1.0020 g/mol = 109.6048 g/mol + 1.0014 g/mol + 1.0040 g/mol = 153.5064 g/mol + 1.0042 g/mol = 174.3346 g/mol + 1.0038 g/mol + 1.0035 g/mol = 199.8340 g/mol + 1.0036 g/mol = 214.0082 g/mol + 1.0021 g/mol + 1.0044 g/mol = 232.0441 g/mol + 1.0031 g/mol + 1.0054 g/mol = 254.4351 g/mol + 1.0033 g/mol + 1.0041 g/mol = 279.8403 g/mol + 1.0021 g/mol + 1.0055 g/mol = 311.4702 g/mol + 1.0030 g/mol + 1.0056 g/mol = 337.6443 g/mol + 1.0028 g/mol + 1.0049 g/mol = 370.4945 g/mol + 1.0029 g/mol + 1.0035 g/mol = 408.9944 g/mol + 1.0025 g/mol + 1.0041 g/mol = 430.6262 g/mol + 1.0016 g/mol + 1.0041 g/mol = 456.7202 g/mol + 1.0021 g/mol + 1.0036 g/mol = 482.5214 g/mol + 1.0027 g/mol + 1.0041 g/mol = 506.5298 g/mol + 1.0026 g/mol + 1.0041 g/mol = 533.4250 g/mol + 1.0018 g/mol + 1.0040 g/mol = 562.2399 g/mol + 1.0025 g/mol + 1.0041 g/mol = 604.3802 g/mol + 1.0018 g/mol + 1.0039 g/mol = 646.0588 g/mol + 1.0023 g/mol + 1.0039 g/mol = 691.9812 g/mol + 1.0011 g/mol + 1.0040 g/mol = 734.8091 g/mol + 1.0014 g/mol + 1.0041 g/mol = 779.0918 g/mol + 1.0016 g/mol + 1.0041 g/mol = 826.8305 g/mol + 1.0017 g/mol + 1.0041 g/mol = 874.1395 g/mol + 1.0012 g/mol + 1.0042 g/mol = 925.5600 g/mol + 1.0013 g/mol + 1.0042 g/mol = 970.1318 g/mol + 1.0012 g/mol + 1.0043 g/mol = 1016.2319 g/mol + 1.0009 g/mol + 1.0044 g/mol = 1044.8042 g/mol + 1.0014 g/mol + 1.0044 g/mol = 1081.2604 g/mol + 1.0008 g/mol + 1.0045 g/mol = 1143.3812 g/mol + 1.0009 g/mol + 1.0045 g/mol = 1200.0396 g/mol + 1.0006 g/mol + 1.0046 g/mol = 1277.3968 g/mol + 1.0008 g/mol + 1.0046 g/mol = 1359.6950 g/mol + 1.0008 g/mol + 1.0046 g/mol = 1455.7016 g/mol + 1.0009 g/mol + 1.0047 g/mol = 1529.9214 g/mol + 1.0008 g/mol + 1.0047 g/mol = 1615.6050 g/mol + 1.0007 g/mol + 1.0048 g/mol = 1695.3019 g/mol + 1.0009 g/mol + 1.0048 g/mol = 1796.5813 g/mol + 1.0010 g/mol + 1.0049 g/mol = 1886.9020 g/mol + 1.0010 g/mol + 1.0049 g/mol = 2001.1337 g/mol + 1.0010 g/mol + 1.0050 g/mol = 2116.9809 g/mol + 1.0010 g/mol + 1.0051 g/mol = 2283.7000 g/mol + 1.0009 g/mol + 1.0052 g/mol = 2400.5711 g/mol + 1.0009 g/mol + 1.0052 g/mol = 2544.9503 g/mol + 1.0010 g/mol + 1.0052 g/mol = 2713.4344 g/mol + 1.0010 g/mol + 1.0052 g/mol = 2931.2451 g/mol + 1.0011 g/mol + 1.0053 g/mol = 3053.8924 g/mol + 1.0011 g/mol + 1.0053 g/mol = 3131.3572 g/mol + 1.0011 g/mol + 1.0054 g/mol = 3319.5166 g/mol + 1.0012 g/mol + 1.0055 g/mol = 3490.9335 g/mol + 1.0012 g/mol + 1.0055 g/mol = 3685.4370 g/mol + 1.0013 g/mol + 1.0055 g/mol = 3910.5354 g/mol + 1.0013 g/mol + 1.0055 g/mol = 4134.6509 g/mol + 1.0014 g/mol + 1.0056 g/mol = 4349.6544 g/mol + 1.0014 g/mol + 1.0056 g/mol = 4602.4621 g/mol + 1.0015 g/mol + 1.0056 g/mol = 4963.4018 g/mol + 1.0015 g/mol + 1.0057 g/mol = 5124.4601 g/mol + 1.0016 g/mol + 1.0057 g/mol = 5396.5210 g/mol + 1.0016 g/mol + 1.0057 g/mol = 5849.2270 g/mol + 1.0017 g/mol + 1.0058 g/mol = 6191.5831 g/mol + 1.0017 g/mol + 1.0058 g/mol = 6595.8660 g/mol + 1.0018 g/mol + 1.0058 g/mol = 7163.7004 g/mol + 1.0018 g/mol + 1.0058 g/mol = 7669.7573 g/mol + 1.0019 g/mol + 1.0059 g/mol = 8075.0454 g/mol + 1.0019 g/mol + 1.0059 g/mol = 8501.8645 g/mol + 1.0019 g/mol + 1.0059 g/mol = 9155.0012 g/mol + 1.0019 g/mol + 1.0060 g/mol = 8100.5512 g/mol + 1.0019 g/mol + 1.0060 g/mol = 8304.4914 g/mol + 1.0020 g/mol + 1.0060 g/mol = 8464.3959 g/mol + 1.0020 g/mol + 1.0060 g/mol = 8810.019 g/mol + 1.0021 g/mol + 1.0061 g/mol = 9048.1628 g/mol + 1.0021 g/mol + 1.0061 g/mol = 9363.1689 g/mol + 1.0022 g/mol + 1.0061 g/mol = 9760.4905 g/mol + 1.0022 g/mol + 1.0061 g/mol = 10475.4961 g/mol + 1.0023 g/mol + 1.0062 g/mol = 10959.9657 g/mol + 1.0023 g/mol + 1.0062 g/mol = 11442.6192 g/mol + 1.0024 g/mol + 1.0062 g/mol = 12415.1419 g/mol + 1.0024 g/mol + 1.0062 g/mol = 13373.2915 g/mol + 1.0024 g/mol + 1.0063 g/mol = 14126.9059 g/mol + 1.0025 g/mol + 1.0063 g/mol = 15260.2523 g/mol + 1.0025 g/mol + 1.0063 g/mol = 16017.0997 g/mol + 1.0025 g/mol + 1.0064 g/mol = 16948.2492 g/mol + 1.0026 g/mol + 1.0064 g/mol = 17802.7312 g/mol + 1.0026 g/mol + 1.0064 g/mol = 18906.0991 g/mol + 1.0026 g/mol + 1.0065 g/mol = 19987.0506 g/mol + 1.0026 g/mol + 1.0065 g/mol = 21136.6903 g/mol + 1.0027 g/mol + 1.0065 g/mol = 22410.2060 g/mol + 1.0027 g/mol + 1.0066 g/mol = 23448.9445 g/mol + 1.0027 g/mol + 1.0066 g/mol = 24466.1180 g/mol + 1.0028 g/mol + 1.0067 g/mol = 25484.7249 g/mol + 1.0028 g/mol + 1.0067 g/mol = 26645.5095 g/mol + 1.0028 g/mol + 1.0067 g/mol = 27804.1634 g/mol + 1.0029 g/mol + 1.0067 g/mol = 28936.7161 g/mol + 1.0029 g/mol + 1.0068 g/mol = 30038.9271 g/mol + 1.0029 g/mol + 1.0068 g/mol = 30910.2933 g/mol + 1.0029 g/mol + 1.0068 g/mol = 32682.5219 g/mol + 1.0030 g/mol + 1.0068 g/mol = 33915.9606 g/mol + 1.0030 g/mol + 1.0069 g/mol = 35282.0885 g/mol + 1.0030 g/mol + 1.0069 g/mol = 37162.0165 g/mol + 1.0031 g/mol + 1.0069 g/mol = 39321.9638 g/mol + 1.0031 g/mol + 1.0069 g/mol = 41406.4333 g/mol + 1.0031 g/mol + 1.0070 g/mol = 42921.3082 g/mol + 1.0032 g/mol + 1.0070 g/mol = 45081.5899 g/mol + 1.0032 g/mol + 1.0070 g/mol = 47960.9534 g/mol + 1.0032 g/mol + 1.0071 g/mol = 50184.9130 g/mol + 1.0033 g/mol + 1.0071 g/mol = 51857.2669 g/mol + 1.0033 g/mol + 1.0071 g/mol = 53764.2661 g/mol + 1.0034 g/mol + 1.0071 g/mol = 56187.0312 g/mol + 1.0034 g/mol + 1.0072 g/mol = 59720.0114 g/mol + 1.0035 g/mol + 1.0072 g/mol = 61664.7402 g/mol + 1.0035 g/mol + 1.0072 g/mol = 63714.2006 g/mol + 1.0035 g/mol + 1.0073 g/mol = 66612.9240 g/mol + 1.0036 g/mol + 1.0073 g/mol = 71072.2319 g/mol + 1.0036 g/mol + 1.0073 g/mol = 73830.1514 g/mol + 1.0037 g/mol + 1.0074 g/mol = 76605.2114 g/mol + 1.0037 g/mol + 1.0074 g/mol = 83113.1021 g/mol + 1.0037 g/mol + 1.0074 g/mol = 86099.1306 g/mol + 1.0038 g/mol + 1.0075 g/mol = 90008.4855 g/mol + 1.0038 g/mol + 1.0075 g/mol = 92441.6796 g/mol + 1.0039 g/mol + 1.0075 g/mol = 95546.4109 g/mol + 1.0039 g/mol + 1.0076 g/mol = 103315.6274 g/mol + 1.0039 g/mol + 1.0076 g/mol = 105181.6064 g/mol + 1.0039 g/mol + 1.0077 g/mol = 107911.6921 g/mol + 1.0040 g/mol + 1.0077 g/mol = 111581.1835 g/mol + 1.0040 g/mol + 1.0077 g/mol = 121006.4618 g/mol + 1.0041 g/mol + 1.0078 g/mol = 130472.3433 g/mol + 1.0041 g/mol + 1.0078 g/mol = 139393.6777 g/mol + 1.0042 g/mol + 1.0079 g/mol = 149716.9763 g/mol + 1.0042 g/mol + 1.0079 g/mol = 162583.8850 g/mol + 1.0043 g/mol + 1.0079 g/mol = 175062.6191 g/mol + 1.0044 g/mol + 1.0079 g/mol = 185710.3891 g/mol + 1.0045 g/mol + 1.0080 g/mol = 192936.6634 g/mol + 1.0045 g/mol + 1.0080 g/mol = 203949.6145 g/mol + 1.0046 g/mol + 1.0081 g/mol = 214605.9659 g/mol + 1.0047 g/mol + 1.0082 g/mol = 228406.5763 g/mol + 1.0047 g/mol + 1.0082 g/mol = 241398.6184 g/mol + 1.0048 g/mol + 1.0082 g/mol = 257665.9102 g/mol + 1.0049 g/mol + 1.0083 g/mol = 274019.0985 g/mol + 1.0049 g/mol + 1.0083 g/mol = 300861.9020 g/mol + 1.0050 g/mol + 1.0084 g/mol = 311572.0069 g/mol + 1.0051 g/mol + 1.0084 g/mol = 339213.0932 g/mol + 1.0051 g/mol + 1.0085 g/mol = 368589.1180 g/mol + 1.0052 g/mol + 1.0085 g/mol = 400922.2001 g/mol + 1.0053 g/mol + 1.0086 g/mol = 421831.1804 g/mol + 1.0053 g/mol + 1.0086 g/mol = 463211.9398 g/mol + 1.0054 g/mol + 1.0087 g/mol = 501239.1480 g/mol + 1.0054 g/mol + 1.0087 g/mol = 556912.7049 g/mol + 1.0055 g/mol + 1.0088 g/mol = 609014.6385 g/mol + 1.0056 g/mol + 1.0089 g/mol = 655648.7640 g/mol + 1.0056 g/mol + 1.0089 g/mol = 711294.6963 g/mol + 1.0057 g/mol + 1.0089 g/mol = 754016.7939 g/mol + 1.0058 g/mol + 1.0090 g/mol = 866378.7229 g/mol + 1.0059 g/mol + 1.0091 g/mol = 930191.0649 g/mol + 1.0059 g/mol + 1.0091 g/mol = 994572.4241 g/mol + 1.0060 g/mol + 1.0092 g/mol = 1085071.9850 g/mol + 1.0061 g/mol + 1.0092 g/mol = 119639.6556 g/mol + 1.0061 g/mol + 1.0093 g/mol = 125186.8906 g/mol + 1.0062 g/mol + 1.0094 g/mol = 134041.2793 g/mol + 1.0063 g/mol + 1.0094 g/mol = 146416.0290 g/mol + 1.0063 g/mol + 1.0095 g/mol = 155658.5477 g/mol + 1.0064 g/mol + 1.0096 g/mol = 165356.6971 g/mol + 1.0064 g/mol + 1.0096 g/mol = 174412.7512 g/mol + 1.0065 g/mol + 1.0097 g/mol = 185022.4256 g/mol + 1.0066 g/mol + 1.0097 g/mol = 194809.9930 g/mol + 1.0067 g/mol + 1.0098 g/mol = 203678.6980 g/mol + 1.0067 g/mol + 1.0098 g/mol = 212959.7028 g/mol + 1.0068 g/mol + 1.0099 g/mol = 224161.5738 g/mol + 1.0069 g/mol + 1.0099 g/mol = 234415.7908 g/mol + 1.0069 g/mol + 1.0099 g/mol = 246896.4452 g/mol + 1.0070 g/mol + 1.0100 g/mol = 255529.5901 g/mol + 1.0071 g/mol + 1.0101 g/mol = 265690.3168 g/mol + 1.0071 g/mol + 1.0102 g/mol = 279128.3203 g/mol + 1.0072 g/mol + 1.0102 g/mol = 290385.4576 g/mol + 1.0073 g/mol + 1.0101 g/mol = 301392.8006 g/mol + 1.0074 g/mol + 1.0101 g/mol = 319306.0524 g/mol + 1.0074 g/mol + 1.0101 g/mol = 334389.3980 g/mol + 1.0075 g/mol + 1.0102 g/mol = 346165.7094 g/mol + 1.0076 g/mol + 1.0101 g/mol = 361827.3369 g/mol + 1.0077 g/mol + 1.0102 g/mol = 390488.5068 g/mol + 1.0078 g/mol + 1.0102 g/mol = 418004.9338 g/mol + 1.0079 g/mol + 1.0102 g/mol = 450164.2524 g/mol + 1.0079 g/mol + 1.0102 g/mol = 482638.8090 g/mol + 1.0079 g/mol + 1.0102 g/mol = 500103.7056 g/mol + 1.0080 g/mol + 1.0102 g/mol = 524496.0907 g/mol + 1.0080 g/mol + 1.0102 g/mol = 556511.4189 g/mol + 1.0081 g/mol + 1.0103 g/mol = 610941.7709 g/mol + 1.0082 g/mol + 1.0103 g/mol = 646384.2645 g/mol + 1.0082 g/mol + 1.0103 g/mol = 701467.2165 g/mol + 1.0083 g/mol + 1.0103 g/mol = 804012.0400 g/mol + 1.0084 g/mol + 1.0103 g/mol = 907813.0672 g/mol + 1.0084 g/mol + 1.0102 g/mol = 100330.3038 g/mol + 1.0085 g/mol + 1.0102 g/mol = 100700.8214 g/mol + 1.0086 g/mol + 1.0102 g/mol = 112060.6308 g/mol + 1.0086 g/mol + 1.0102 g/mol = 123496.9119 g/mol + 1.0087 g/mol + 1.0103 g/mol = 134579.7246 g/mol + 1.0088 g/mol + 1.0104 g/mol = 144589.2637 g/mol + 1.0088 g/mol + 1.0104 g/mol = 158093.0372 g/mol + 1.0089 g/mol + 1.0104 g/mol = 174481.7501 g/mol + 1.0089 g/mol + 1.0104 g/mol = 200371.0440 g/mol + 1.0089 g/mol + 1.0104 g/mol = 223582.8585 g/mol + 1.0090 g/mol + 1.0104 g/mol = 246850.3575 g/mol + 1.0091 g/mol + 1.0103 g/mol = 271327.0192 g/mol + 1.0092 g/mol + 1.0103 g/mol = 300569.9818 g/mol + 1.0092 g/mol + 1.0103 g/mol = 334144.1860 g/mol + 1.0093 g/mol + 1.0103 g/mol = 369831.1625 g/mol + 1.0094 g/mol + 1.0102 g/mol = 417648.9259 g/mol + 1.0094 g/mol + 1.0102 g/mol = 473807.7010 g/mol + 1.0094 g/mol + 1.0102 g/mol = 514237.4476 g/mol + 1.0095 g/mol + 1.0103 g/mol = 534491.0398 g/mol + 1.0095 g/mol + 1.0103 g/mol = 638566.1285 g/mol + 1.0095 g/mol + 1.0104 g/mol = 731885.6577 g/mol + 1.0096 g/mol + 1.0104 g/mol = 834201.2236 g/mol + 1.0096 g/mol + 1.0104 g/mol = 933259.5122 g/mol + 1.0097 g/mol + 1.0104 g/mol = 101133.1192 g/mol + 1.0097 g/mol + 1.0105 g/mol = 117960.4236 g/mol + 1.0097 g/mol + 1.0104 g/mol = 130957.6191 g/mol + 1.0098 g/mol + 1.0104 g/mol = 148014.8303 g/mol + 1.0099 g/mol + 1.0104 g/mol = 159477.3448 g/mol + 1.0099 g/mol + 1.0104 g/mol = 182855.6031 g/mol + 1.0099 g/mol + 1.0104 g/mol = 207010.9383 g/mol + 1.0099 g/mol + 1.0104 g/mol = 229503.2431 g/mol + 1.0099 g/mol + 1.0103 g/mol = 258406.4561 g/mol + 1.0099 g/mol + 1.0104 g/mol = 292421.4491 g/mol + 1.0000 g/mol + 1.0103 g/mol = 315401.7710 g/mol + 1.0000 g/mol + 1.0103 g/mol = 347010.5943 g/mol + 1.0000 g/mol + 1.0104 g/mol = 393991.3425 g/mol + 1.0000 g/mol + 1.0104 g/mol = 425854.6924 g/mol + 1.0000 g/mol + 1.0104 g/mol = 501166.3883 g/mol + 1.0000 g/mol + 1.0104 g/mol = 638659.9903 g/mol + 1.0000 g/mol + 1.0104 g/mol = 788016.4997 g/mol + 1.0000 g/mol + 1.0105 g/mol = 913863.9826 g/mol + 1.0000 g/mol + 1.0104 g/mol = 104925.4047 g/mol + 1.0000 g/mol + 1.0104 g/mol = 128511.6289 g/mol + 1.0000 g/mol + 1.0104 g/mol = 176557.5662 g/mol + 1.0000 g/mol + 1.0104 g/mol = 213032.6727 g/mol + 1.0000 g/mol + 1.0104 g/mol = 258407.5273 g/mol + 1.0000 g/mol + 1.0104 g/mol = 286559.7006 g/mol + 1.0000 g/mol + 1.0105 g/mol = 332033.1312 g/mol + 1.0000 g/mol + 1.0104 g/mol = 378817.8692 g/mol + 1.0000 g/mol + 1.0104 g/mol = 458419.0938 g/mol + 1.0000 g/mol + 1.0104 g/mol = 591589.2558 g/mol + 1.0000 g/mol + 1.0105 g/mol = 627824.6769 g/mol + 1.0000 g/mol + 1.0104 g/mol = 761966.9468 g/mol + 1.0000 g/mol + 1.0104 g/mol = 759443.7680 g/mol + 1.0000 g/mol + 1.0104 g/mol = 863654.1488 g/mol + 1.0000 g/mol + 1.0104 g/mol = 930850.3032 g/mol + 1.0000 g/mol + 1.0104 g/mol = 122447.9887 g/mol + 1.0000 g/mol + 1.0104 g/mol = 138333.4008 g/mol + 1.0000 g/mol + 1.0104 g/mol = 190514.6922 g/mol + 1.0000 g/mol + 1.0104 g/mol = 217282.9918 g/mol + 1.0000 g/mol + 1.0104 g/mol = 250494.0432 g/mol + 1.0000 g/mol + 1.0104 g/mol = 324666.4442 g/mol + 1.0000 g/mol + 1.0104 g/mol = 393409.1100 g/mol + 1.0000 g/mol + 1.0104 g/mol = 493580.9719 g/mol + 1.0000 g/mol + 1.0104 g/mol = 577649.9369 g/mol + 1.0000 g/mol + 1.0104 g/mol = 662866.0923 g/mol + 1.0000 g/mol + 1.0104 g/mol = 777264.6672 g/mol + 1.0000 g/mol + 1.0104 g/mol = 855190.8311 g/mol + 1.0000 g/mol + 1.0104 g/mol = 924408.5124 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1078050.3429 g/mol + 1.0000 g/mol + 1.0104 g/mol = 123774.7405 g/mol + 1.0000 g/mol + 1.0104 g/mol = 140860.9261 g/mol + 1.0000 g/mol + 1.0104 g/mol = 170411.7379 g/mol + 1.0000 g/mol + 1.0104 g/mol = 200585.6362 g/mol + 1.0000 g/mol + 1.0104 g/mol = 228941.7377 g/mol + 1.0000 g/mol + 1.0104 g/mol = 286921.7111 g/mol + 1.0000 g/mol + 1.0104 g/mol = 331542.1962 g/mol + 1.0000 g/mol + 1.0104 g/mol = 351095.2436 g/mol + 1.0000 g/mol + 1.0104 g/mol = 410620.2343 g/mol + 1.0000 g/mol + 1.0104 g/mol = 463302.0300 g/mol + 1.0000 g/mol + 1.0104 g/mol = 465717.6121 g/mol + 1.0000 g/mol + 1.0104 g/mol = 511753.6142 g/mol + 1.0000 g/mol + 1.0104 g/mol = 526887.9752 g/mol + 1.0000 g/mol + 1.0104 g/mol = 610742.7544 g/mol + 1.0000 g/mol + 1.0104 g/mol = 716318.7691 g/mol + 1.0000 g/mol + 1.0104 g/mol = 763749.3011 g/mol + 1.0000 g/mol + 1.0104 g/mol = 881634.1713 g/mol + 1.0000 g/mol + 1.0104 g/mol = 97698.1191 g/mol + 1.0000 g/mol + 1.0104 g/mol = 103149.7000 g/mol + 1.0000 g/mol + 1.0104 g/mol = 106370.1306 g/mol + 1.0000 g/mol + 1.0104 g/mol = 109222.3109 g/mol + 1.0000 g/mol + 1.0104 g/mol = 117616.1528 g/mol + 1.0000 g/mol + 1.0104 g/mol = 133116.8851 g/mol + 1.0000 g/mol + 1.0104 g/mol = 185576.6339 g/mol + 1.0000 g/mol + 1.0104 g/mol = 200394.4911 g/mol + 1.0000 g/mol + 1.0104 g/mol = 233127.3758 g/mol + 1.0000 g/mol + 1.0104 g/mol = 284469.0310 g/mol + 1.0000 g/mol + 1.0104 g/mol = 347092.8331 g/mol + 1.0000 g/mol + 1.0104 g/mol = 440265.7422 g/mol + 1.0000 g/mol + 1.0104 g/mol = 562594.4784 g/mol + 1.0000 g/mol + 1.0104 g/mol = 701504.0234 g/mol + 1.0000 g/mol + 1.0104 g/mol = 93049.1906 g/mol + 1.0000 g/mol + 1.0104 g/mol = 108910.5271 g/mol + 1.0000 g/mol + 1.0104 g/mol = 190798.4510 g/mol + 1.0000 g/mol + 1.0104 g/mol = 211500.4238 g/mol + 1.0000 g/mol + 1.0104 g/mol = 252073.7915 g/mol + 1.0000 g/mol + 1.0104 g/mol = 303506.0713 g/mol + 1.0000 g/mol + 1.0104 g/mol = 324122.0143 g/mol + 1.0000 g/mol + 1.0104 g/mol = 296864.6024 g/mol + 1.0000 g/mol + 1.0104 g/mol = 37678.6772 g/mol + 1.0000 g/mol + 1.0104 g/mol = 441594.5762 g/mol + 1.0000 g/mol + 1.0104 g/mol = 52867.4645 g/mol + 1.0000 g/mol + 1.0104 g/mol = 57040.3024 g/mol + 1.0000 g/mol + 1.0104 g/mol = 63515.0111 g/mol + 1.0000 g/mol + 1.0104 g/mol = 73030.5296 g/mol + 1.0000 g/mol + 1.0104 g/mol = 77781.6411 g/mol + 1.0000 g/mol + 1.0104 g/mol = 84908.6285 g/mol + 1.0000 g/mol + 1.0104 g/mol = 90344.5693 g/mol + 1.0000 g/mol + 1.0104 g/mol = 97293.8245 g/mol + 1.0000 g/mol + 1.0104 g/mol = 11742.6001 g/mol + 1.0000 g/mol + 1.0104 g/mol = 11911.8595 g/mol + 1.0000 g/mol + 1.0104 g/mol = 12662.2336 g/mol + 1.0000 g/mol + 1.0104 g/mol = 16109.3018 g/mol + 1.0000 g/mol + 1.0104 g/mol = 19310.3591 g/mol + 1.0000 g/mol + 1.0104 g/mol = 23962.1012 g/mol + 1.0000 g/mol + 1.0104 g/mol = 30100.1310 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3423.6301 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3908.8810 g/mol + 1.0000 g/mol + 1.0104 g/mol = 4810.7010 g/mol + 1.0000 g/mol + 1.0104 g/mol = 5711.1027 g/mol + 1.0000 g/mol + 1.0104 g/mol = 6950.7905 g/mol + 1.0000 g/mol + 1.0104 g/mol = 7423.3779 g/mol + 1.0000 g/mol + 1.0104 g/mol = 8381.7207 g/mol + 1.0000 g/mol + 1.0104 g/mol = 9920.2411 g/mol + 1.0000 g/mol + 1.0104 g/mol = 11973.4813 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1368.7648 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1516.7194 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1855.3078 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2151.7354 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2802.4207 g/mol + 1.0000 g/mol + 1.0104 g/mol = 284.7523 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3002.3164 g/mol + 1.0000 g/mol + 1.0104 g/mol = 316.0513 g/mol + 1.0000 g/mol + 1.0104 g/mol = 368.9416 g/mol + 1.0000 g/mol + 1.0104 g/mol = 467.6213 g/mol + 1.0000 g/mol + 1.0104 g/mol = 502.5517 g/mol + 1.0000 g/mol + 1.0104 g/mol = 582.4410 g/mol + 1.0000 g/mol + 1.0104 g/mol = 544.1175 g/mol + 1.0000 g/mol + 1.0104 g/mol = 624.7836 g/mol + 1.0000 g/mol + 1.0104 g/mol = 708.1974 g/mol + 1.0000 g/mol + 1.0104 g/mol = 797.6588 g/mol + 1.0000 g/mol + 1.0104 g/mol = 949.8522 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1169.4261 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1336.8611 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1508.5660 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1762.6131 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1900.0204 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2098.5746 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2509.6608 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2801.9401 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2681.8410 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2811.0722 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3034.0108 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3076.2118 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3214.7002 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3552.0135 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3821.1539 g/mol + 1.0000 g/mol + 1.0104 g/mol = 4123.3802 g/mol + 1.0000 g/mol + 1.0104 g/mol = 4922.5110 g/mol + 1.0000 g/mol + 1.0104 g/mol = 4576.2114 g/mol + 1.0000 g/mol + 1.0104 g/mol = 9100.5208 g/mol + 1.0000 g/mol + 1.0104 g/mol = 992.9608 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1194.8111 g/mol + 1.0000 g/mol + 1.0104 g/mol = 6211.1551 g/mol + 1.0000 g/mol + 1.0104 g/mol = 684.4101 g/mol + 1.0000 g/mol + 1.0104 g/mol = 7015.2791 g/mol + 1.0000 g/mol + 1.0104 g/mol = 5621.1414 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1054.2020 g/mol + 1.0000 g/mol + 1.0104 g/mol = 351.7519 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1241.8733 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1413.6409 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1854.1309 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1617.9000 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1641.0411 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1431.1500 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1432.2001 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1332.8802 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1450.0597 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1094.3107 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1360.0619 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1609.8029 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1488.8018 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1338.3810 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1365.4721 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1440.6510 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1402.5302 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1318.4101 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1308.9502 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1245.0936 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1183.0985 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1198.4851 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1001.4082 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1050.3793 g/mol + 1.0000 g/mol + 1.0104 g/mol = 904.0501 g/mol + 1.0000 g/mol + 1.0104 g/mol = 883.1401 g/mol + 1.0000 g/mol + 1.0104 g/mol = 806.8212 g/mol + 1.0000 g/mol + 1.0104 g/mol = 787.0121 g/mol + 1.0000 g/mol + 1.0104 g/mol = 776.2908 g/mol + 1.0000 g/mol + 1.0104 g/mol = 488.0611 g/mol + 1.0000 g/mol + 1.0104 g/mol = 308.2909 g/mol + 1.0000 g/mol + 1.0104 g/mol = 286.8280 g/mol + 1.0000 g/mol + 1.0104 g/mol = 268.4468 g/mol + 1.0000 g/mol + 1.0104 g/mol = 216.9726 g/mol + 1.0000 g/mol + 1.0104 g/mol = 143.1308 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1309.8804 g/mol + 1.0000 g/mol + 1.0104 g/mol + 1.0122.123.6538 g/mol + 1.0000 g/mol + 1.0120.5904 g/mol + 1.0000 g/mol + 1.0120.402.4310.120.1847.0301.0112.2701.05081.3160.95647.6656.9768.2011.1923.5571.0925.0021.6219.9934.0882.9389.9988.1888.1989.19998.11967.28199.8286.9598.1090.5258.141.161.984.861.403.378.202.516.798.131.195.7398.747.425.558.651.726.454.016.857.708.809.486.804.425.635.826.913.190.311.888.895.125.1341.613.514.545.9265.6607.3232.2287.0047.783.465.9095.592.1012.772.001.688.562.7801.803.49.690.922.454.812.868.478.7945.10106.73.185.967.147.7203.091.3943.193.0439.193.003.164.835.015.031.108.911.114.281.465.306.18098.160.1559.411.139.776.413.148.111.728.880.429.959.414.438.818.819.647.668.917.870.681.873.030.882.813.603.135.805.801.768.802.927.712.911.815.291.894.802.816.720.606.128.10000.742.712.591.8001.306.305.580.495.106.143.818.858.708.685.101.438.724.154.171.123.219.845.912.870.4803.377.827.857.705.702.729.801.730.803.271",
+              "normalized_text": "rho = 103.7 g/mol + 100.1 g/mol + 17.0 g/mol = 26.61619 g/mol + 12.9929 g/mol = 41.34044 g/mol + 2.0014 g/mol = 4.8627 g/mol + 3.5262 g/mol = 6.16709 g/mol + 3.4098 g/mol = 12.5891 g/mol + 1.9159 g/mol = 37.7115 g/mol + 1.4198 g/mol = 21.4357 g/mol + 1.3622 g/mol = 36.7857 g/mol + 1.0141 g/mol + 3.4091 g/mol = 52.4656 g/mol + 1.0058 g/mol = 59.8148 g/mol + 1.0015 g/mol = 69.8763 g/mol + 3.3947 g/mol + 1.0109 g/mol = 88.5544 g/mol + 1.0017 g/mol = 96.8794 g/mol + 1.0020 g/mol = 109.6048 g/mol + 1.0014 g/mol + 1.0040 g/mol = 153.5064 g/mol + 1.0042 g/mol = 174.3346 g/mol + 1.0038 g/mol + 1.0035 g/mol = 199.8340 g/mol + 1.0036 g/mol = 214.0082 g/mol + 1.0021 g/mol + 1.0044 g/mol = 232.0441 g/mol + 1.0031 g/mol + 1.0054 g/mol = 254.4351 g/mol + 1.0033 g/mol + 1.0041 g/mol = 279.8403 g/mol + 1.0021 g/mol + 1.0055 g/mol = 311.4702 g/mol + 1.0030 g/mol + 1.0056 g/mol = 337.6443 g/mol + 1.0028 g/mol + 1.0049 g/mol = 370.4945 g/mol + 1.0029 g/mol + 1.0035 g/mol = 408.9944 g/mol + 1.0025 g/mol + 1.0041 g/mol = 430.6262 g/mol + 1.0016 g/mol + 1.0041 g/mol = 456.7202 g/mol + 1.0021 g/mol + 1.0036 g/mol = 482.5214 g/mol + 1.0027 g/mol + 1.0041 g/mol = 506.5298 g/mol + 1.0026 g/mol + 1.0041 g/mol = 533.4250 g/mol + 1.0018 g/mol + 1.0040 g/mol = 562.2399 g/mol + 1.0025 g/mol + 1.0041 g/mol = 604.3802 g/mol + 1.0018 g/mol + 1.0039 g/mol = 646.0588 g/mol + 1.0023 g/mol + 1.0039 g/mol = 691.9812 g/mol + 1.0011 g/mol + 1.0040 g/mol = 734.8091 g/mol + 1.0014 g/mol + 1.0041 g/mol = 779.0918 g/mol + 1.0016 g/mol + 1.0041 g/mol = 826.8305 g/mol + 1.0017 g/mol + 1.0041 g/mol = 874.1395 g/mol + 1.0012 g/mol + 1.0042 g/mol = 925.5600 g/mol + 1.0013 g/mol + 1.0042 g/mol = 970.1318 g/mol + 1.0012 g/mol + 1.0043 g/mol = 1016.2319 g/mol + 1.0009 g/mol + 1.0044 g/mol = 1044.8042 g/mol + 1.0014 g/mol + 1.0044 g/mol = 1081.2604 g/mol + 1.0008 g/mol + 1.0045 g/mol = 1143.3812 g/mol + 1.0009 g/mol + 1.0045 g/mol = 1200.0396 g/mol + 1.0006 g/mol + 1.0046 g/mol = 1277.3968 g/mol + 1.0008 g/mol + 1.0046 g/mol = 1359.6950 g/mol + 1.0008 g/mol + 1.0046 g/mol = 1455.7016 g/mol + 1.0009 g/mol + 1.0047 g/mol = 1529.9214 g/mol + 1.0008 g/mol + 1.0047 g/mol = 1615.6050 g/mol + 1.0007 g/mol + 1.0048 g/mol = 1695.3019 g/mol + 1.0009 g/mol + 1.0048 g/mol = 1796.5813 g/mol + 1.0010 g/mol + 1.0049 g/mol = 1886.9020 g/mol + 1.0010 g/mol + 1.0049 g/mol = 2001.1337 g/mol + 1.0010 g/mol + 1.0050 g/mol = 2116.9809 g/mol + 1.0010 g/mol + 1.0051 g/mol = 2283.7000 g/mol + 1.0009 g/mol + 1.0052 g/mol = 2400.5711 g/mol + 1.0009 g/mol + 1.0052 g/mol = 2544.9503 g/mol + 1.0010 g/mol + 1.0052 g/mol = 2713.4344 g/mol + 1.0010 g/mol + 1.0052 g/mol = 2931.2451 g/mol + 1.0011 g/mol + 1.0053 g/mol = 3053.8924 g/mol + 1.0011 g/mol + 1.0053 g/mol = 3131.3572 g/mol + 1.0011 g/mol + 1.0054 g/mol = 3319.5166 g/mol + 1.0012 g/mol + 1.0055 g/mol = 3490.9335 g/mol + 1.0012 g/mol + 1.0055 g/mol = 3685.4370 g/mol + 1.0013 g/mol + 1.0055 g/mol = 3910.5354 g/mol + 1.0013 g/mol + 1.0055 g/mol = 4134.6509 g/mol + 1.0014 g/mol + 1.0056 g/mol = 4349.6544 g/mol + 1.0014 g/mol + 1.0056 g/mol = 4602.4621 g/mol + 1.0015 g/mol + 1.0056 g/mol = 4963.4018 g/mol + 1.0015 g/mol + 1.0057 g/mol = 5124.4601 g/mol + 1.0016 g/mol + 1.0057 g/mol = 5396.5210 g/mol + 1.0016 g/mol + 1.0057 g/mol = 5849.2270 g/mol + 1.0017 g/mol + 1.0058 g/mol = 6191.5831 g/mol + 1.0017 g/mol + 1.0058 g/mol = 6595.8660 g/mol + 1.0018 g/mol + 1.0058 g/mol = 7163.7004 g/mol + 1.0018 g/mol + 1.0058 g/mol = 7669.7573 g/mol + 1.0019 g/mol + 1.0059 g/mol = 8075.0454 g/mol + 1.0019 g/mol + 1.0059 g/mol = 8501.8645 g/mol + 1.0019 g/mol + 1.0059 g/mol = 9155.0012 g/mol + 1.0019 g/mol + 1.0060 g/mol = 8100.5512 g/mol + 1.0019 g/mol + 1.0060 g/mol = 8304.4914 g/mol + 1.0020 g/mol + 1.0060 g/mol = 8464.3959 g/mol + 1.0020 g/mol + 1.0060 g/mol = 8810.019 g/mol + 1.0021 g/mol + 1.0061 g/mol = 9048.1628 g/mol + 1.0021 g/mol + 1.0061 g/mol = 9363.1689 g/mol + 1.0022 g/mol + 1.0061 g/mol = 9760.4905 g/mol + 1.0022 g/mol + 1.0061 g/mol = 10475.4961 g/mol + 1.0023 g/mol + 1.0062 g/mol = 10959.9657 g/mol + 1.0023 g/mol + 1.0062 g/mol = 11442.6192 g/mol + 1.0024 g/mol + 1.0062 g/mol = 12415.1419 g/mol + 1.0024 g/mol + 1.0062 g/mol = 13373.2915 g/mol + 1.0024 g/mol + 1.0063 g/mol = 14126.9059 g/mol + 1.0025 g/mol + 1.0063 g/mol = 15260.2523 g/mol + 1.0025 g/mol + 1.0063 g/mol = 16017.0997 g/mol + 1.0025 g/mol + 1.0064 g/mol = 16948.2492 g/mol + 1.0026 g/mol + 1.0064 g/mol = 17802.7312 g/mol + 1.0026 g/mol + 1.0064 g/mol = 18906.0991 g/mol + 1.0026 g/mol + 1.0065 g/mol = 19987.0506 g/mol + 1.0026 g/mol + 1.0065 g/mol = 21136.6903 g/mol + 1.0027 g/mol + 1.0065 g/mol = 22410.2060 g/mol + 1.0027 g/mol + 1.0066 g/mol = 23448.9445 g/mol + 1.0027 g/mol + 1.0066 g/mol = 24466.1180 g/mol + 1.0028 g/mol + 1.0067 g/mol = 25484.7249 g/mol + 1.0028 g/mol + 1.0067 g/mol = 26645.5095 g/mol + 1.0028 g/mol + 1.0067 g/mol = 27804.1634 g/mol + 1.0029 g/mol + 1.0067 g/mol = 28936.7161 g/mol + 1.0029 g/mol + 1.0068 g/mol = 30038.9271 g/mol + 1.0029 g/mol + 1.0068 g/mol = 30910.2933 g/mol + 1.0029 g/mol + 1.0068 g/mol = 32682.5219 g/mol + 1.0030 g/mol + 1.0068 g/mol = 33915.9606 g/mol + 1.0030 g/mol + 1.0069 g/mol = 35282.0885 g/mol + 1.0030 g/mol + 1.0069 g/mol = 37162.0165 g/mol + 1.0031 g/mol + 1.0069 g/mol = 39321.9638 g/mol + 1.0031 g/mol + 1.0069 g/mol = 41406.4333 g/mol + 1.0031 g/mol + 1.0070 g/mol = 42921.3082 g/mol + 1.0032 g/mol + 1.0070 g/mol = 45081.5899 g/mol + 1.0032 g/mol + 1.0070 g/mol = 47960.9534 g/mol + 1.0032 g/mol + 1.0071 g/mol = 50184.9130 g/mol + 1.0033 g/mol + 1.0071 g/mol = 51857.2669 g/mol + 1.0033 g/mol + 1.0071 g/mol = 53764.2661 g/mol + 1.0034 g/mol + 1.0071 g/mol = 56187.0312 g/mol + 1.0034 g/mol + 1.0072 g/mol = 59720.0114 g/mol + 1.0035 g/mol + 1.0072 g/mol = 61664.7402 g/mol + 1.0035 g/mol + 1.0072 g/mol = 63714.2006 g/mol + 1.0035 g/mol + 1.0073 g/mol = 66612.9240 g/mol + 1.0036 g/mol + 1.0073 g/mol = 71072.2319 g/mol + 1.0036 g/mol + 1.0073 g/mol = 73830.1514 g/mol + 1.0037 g/mol + 1.0074 g/mol = 76605.2114 g/mol + 1.0037 g/mol + 1.0074 g/mol = 83113.1021 g/mol + 1.0037 g/mol + 1.0074 g/mol = 86099.1306 g/mol + 1.0038 g/mol + 1.0075 g/mol = 90008.4855 g/mol + 1.0038 g/mol + 1.0075 g/mol = 92441.6796 g/mol + 1.0039 g/mol + 1.0075 g/mol = 95546.4109 g/mol + 1.0039 g/mol + 1.0076 g/mol = 103315.6274 g/mol + 1.0039 g/mol + 1.0076 g/mol = 105181.6064 g/mol + 1.0039 g/mol + 1.0077 g/mol = 107911.6921 g/mol + 1.0040 g/mol + 1.0077 g/mol = 111581.1835 g/mol + 1.0040 g/mol + 1.0077 g/mol = 121006.4618 g/mol + 1.0041 g/mol + 1.0078 g/mol = 130472.3433 g/mol + 1.0041 g/mol + 1.0078 g/mol = 139393.6777 g/mol + 1.0042 g/mol + 1.0079 g/mol = 149716.9763 g/mol + 1.0042 g/mol + 1.0079 g/mol = 162583.8850 g/mol + 1.0043 g/mol + 1.0079 g/mol = 175062.6191 g/mol + 1.0044 g/mol + 1.0079 g/mol = 185710.3891 g/mol + 1.0045 g/mol + 1.0080 g/mol = 192936.6634 g/mol + 1.0045 g/mol + 1.0080 g/mol = 203949.6145 g/mol + 1.0046 g/mol + 1.0081 g/mol = 214605.9659 g/mol + 1.0047 g/mol + 1.0082 g/mol = 228406.5763 g/mol + 1.0047 g/mol + 1.0082 g/mol = 241398.6184 g/mol + 1.0048 g/mol + 1.0082 g/mol = 257665.9102 g/mol + 1.0049 g/mol + 1.0083 g/mol = 274019.0985 g/mol + 1.0049 g/mol + 1.0083 g/mol = 300861.9020 g/mol + 1.0050 g/mol + 1.0084 g/mol = 311572.0069 g/mol + 1.0051 g/mol + 1.0084 g/mol = 339213.0932 g/mol + 1.0051 g/mol + 1.0085 g/mol = 368589.1180 g/mol + 1.0052 g/mol + 1.0085 g/mol = 400922.2001 g/mol + 1.0053 g/mol + 1.0086 g/mol = 421831.1804 g/mol + 1.0053 g/mol + 1.0086 g/mol = 463211.9398 g/mol + 1.0054 g/mol + 1.0087 g/mol = 501239.1480 g/mol + 1.0054 g/mol + 1.0087 g/mol = 556912.7049 g/mol + 1.0055 g/mol + 1.0088 g/mol = 609014.6385 g/mol + 1.0056 g/mol + 1.0089 g/mol = 655648.7640 g/mol + 1.0056 g/mol + 1.0089 g/mol = 711294.6963 g/mol + 1.0057 g/mol + 1.0089 g/mol = 754016.7939 g/mol + 1.0058 g/mol + 1.0090 g/mol = 866378.7229 g/mol + 1.0059 g/mol + 1.0091 g/mol = 930191.0649 g/mol + 1.0059 g/mol + 1.0091 g/mol = 994572.4241 g/mol + 1.0060 g/mol + 1.0092 g/mol = 1085071.9850 g/mol + 1.0061 g/mol + 1.0092 g/mol = 119639.6556 g/mol + 1.0061 g/mol + 1.0093 g/mol = 125186.8906 g/mol + 1.0062 g/mol + 1.0094 g/mol = 134041.2793 g/mol + 1.0063 g/mol + 1.0094 g/mol = 146416.0290 g/mol + 1.0063 g/mol + 1.0095 g/mol = 155658.5477 g/mol + 1.0064 g/mol + 1.0096 g/mol = 165356.6971 g/mol + 1.0064 g/mol + 1.0096 g/mol = 174412.7512 g/mol + 1.0065 g/mol + 1.0097 g/mol = 185022.4256 g/mol + 1.0066 g/mol + 1.0097 g/mol = 194809.9930 g/mol + 1.0067 g/mol + 1.0098 g/mol = 203678.6980 g/mol + 1.0067 g/mol + 1.0098 g/mol = 212959.7028 g/mol + 1.0068 g/mol + 1.0099 g/mol = 224161.5738 g/mol + 1.0069 g/mol + 1.0099 g/mol = 234415.7908 g/mol + 1.0069 g/mol + 1.0099 g/mol = 246896.4452 g/mol + 1.0070 g/mol + 1.0100 g/mol = 255529.5901 g/mol + 1.0071 g/mol + 1.0101 g/mol = 265690.3168 g/mol + 1.0071 g/mol + 1.0102 g/mol = 279128.3203 g/mol + 1.0072 g/mol + 1.0102 g/mol = 290385.4576 g/mol + 1.0073 g/mol + 1.0101 g/mol = 301392.8006 g/mol + 1.0074 g/mol + 1.0101 g/mol = 319306.0524 g/mol + 1.0074 g/mol + 1.0101 g/mol = 334389.3980 g/mol + 1.0075 g/mol + 1.0102 g/mol = 346165.7094 g/mol + 1.0076 g/mol + 1.0101 g/mol = 361827.3369 g/mol + 1.0077 g/mol + 1.0102 g/mol = 390488.5068 g/mol + 1.0078 g/mol + 1.0102 g/mol = 418004.9338 g/mol + 1.0079 g/mol + 1.0102 g/mol = 450164.2524 g/mol + 1.0079 g/mol + 1.0102 g/mol = 482638.8090 g/mol + 1.0079 g/mol + 1.0102 g/mol = 500103.7056 g/mol + 1.0080 g/mol + 1.0102 g/mol = 524496.0907 g/mol + 1.0080 g/mol + 1.0102 g/mol = 556511.4189 g/mol + 1.0081 g/mol + 1.0103 g/mol = 610941.7709 g/mol + 1.0082 g/mol + 1.0103 g/mol = 646384.2645 g/mol + 1.0082 g/mol + 1.0103 g/mol = 701467.2165 g/mol + 1.0083 g/mol + 1.0103 g/mol = 804012.0400 g/mol + 1.0084 g/mol + 1.0103 g/mol = 907813.0672 g/mol + 1.0084 g/mol + 1.0102 g/mol = 100330.3038 g/mol + 1.0085 g/mol + 1.0102 g/mol = 100700.8214 g/mol + 1.0086 g/mol + 1.0102 g/mol = 112060.6308 g/mol + 1.0086 g/mol + 1.0102 g/mol = 123496.9119 g/mol + 1.0087 g/mol + 1.0103 g/mol = 134579.7246 g/mol + 1.0088 g/mol + 1.0104 g/mol = 144589.2637 g/mol + 1.0088 g/mol + 1.0104 g/mol = 158093.0372 g/mol + 1.0089 g/mol + 1.0104 g/mol = 174481.7501 g/mol + 1.0089 g/mol + 1.0104 g/mol = 200371.0440 g/mol + 1.0089 g/mol + 1.0104 g/mol = 223582.8585 g/mol + 1.0090 g/mol + 1.0104 g/mol = 246850.3575 g/mol + 1.0091 g/mol + 1.0103 g/mol = 271327.0192 g/mol + 1.0092 g/mol + 1.0103 g/mol = 300569.9818 g/mol + 1.0092 g/mol + 1.0103 g/mol = 334144.1860 g/mol + 1.0093 g/mol + 1.0103 g/mol = 369831.1625 g/mol + 1.0094 g/mol + 1.0102 g/mol = 417648.9259 g/mol + 1.0094 g/mol + 1.0102 g/mol = 473807.7010 g/mol + 1.0094 g/mol + 1.0102 g/mol = 514237.4476 g/mol + 1.0095 g/mol + 1.0103 g/mol = 534491.0398 g/mol + 1.0095 g/mol + 1.0103 g/mol = 638566.1285 g/mol + 1.0095 g/mol + 1.0104 g/mol = 731885.6577 g/mol + 1.0096 g/mol + 1.0104 g/mol = 834201.2236 g/mol + 1.0096 g/mol + 1.0104 g/mol = 933259.5122 g/mol + 1.0097 g/mol + 1.0104 g/mol = 101133.1192 g/mol + 1.0097 g/mol + 1.0105 g/mol = 117960.4236 g/mol + 1.0097 g/mol + 1.0104 g/mol = 130957.6191 g/mol + 1.0098 g/mol + 1.0104 g/mol = 148014.8303 g/mol + 1.0099 g/mol + 1.0104 g/mol = 159477.3448 g/mol + 1.0099 g/mol + 1.0104 g/mol = 182855.6031 g/mol + 1.0099 g/mol + 1.0104 g/mol = 207010.9383 g/mol + 1.0099 g/mol + 1.0104 g/mol = 229503.2431 g/mol + 1.0099 g/mol + 1.0103 g/mol = 258406.4561 g/mol + 1.0099 g/mol + 1.0104 g/mol = 292421.4491 g/mol + 1.0000 g/mol + 1.0103 g/mol = 315401.7710 g/mol + 1.0000 g/mol + 1.0103 g/mol = 347010.5943 g/mol + 1.0000 g/mol + 1.0104 g/mol = 393991.3425 g/mol + 1.0000 g/mol + 1.0104 g/mol = 425854.6924 g/mol + 1.0000 g/mol + 1.0104 g/mol = 501166.3883 g/mol + 1.0000 g/mol + 1.0104 g/mol = 638659.9903 g/mol + 1.0000 g/mol + 1.0104 g/mol = 788016.4997 g/mol + 1.0000 g/mol + 1.0105 g/mol = 913863.9826 g/mol + 1.0000 g/mol + 1.0104 g/mol = 104925.4047 g/mol + 1.0000 g/mol + 1.0104 g/mol = 128511.6289 g/mol + 1.0000 g/mol + 1.0104 g/mol = 176557.5662 g/mol + 1.0000 g/mol + 1.0104 g/mol = 213032.6727 g/mol + 1.0000 g/mol + 1.0104 g/mol = 258407.5273 g/mol + 1.0000 g/mol + 1.0104 g/mol = 286559.7006 g/mol + 1.0000 g/mol + 1.0105 g/mol = 332033.1312 g/mol + 1.0000 g/mol + 1.0104 g/mol = 378817.8692 g/mol + 1.0000 g/mol + 1.0104 g/mol = 458419.0938 g/mol + 1.0000 g/mol + 1.0104 g/mol = 591589.2558 g/mol + 1.0000 g/mol + 1.0105 g/mol = 627824.6769 g/mol + 1.0000 g/mol + 1.0104 g/mol = 761966.9468 g/mol + 1.0000 g/mol + 1.0104 g/mol = 759443.7680 g/mol + 1.0000 g/mol + 1.0104 g/mol = 863654.1488 g/mol + 1.0000 g/mol + 1.0104 g/mol = 930850.3032 g/mol + 1.0000 g/mol + 1.0104 g/mol = 122447.9887 g/mol + 1.0000 g/mol + 1.0104 g/mol = 138333.4008 g/mol + 1.0000 g/mol + 1.0104 g/mol = 190514.6922 g/mol + 1.0000 g/mol + 1.0104 g/mol = 217282.9918 g/mol + 1.0000 g/mol + 1.0104 g/mol = 250494.0432 g/mol + 1.0000 g/mol + 1.0104 g/mol = 324666.4442 g/mol + 1.0000 g/mol + 1.0104 g/mol = 393409.1100 g/mol + 1.0000 g/mol + 1.0104 g/mol = 493580.9719 g/mol + 1.0000 g/mol + 1.0104 g/mol = 577649.9369 g/mol + 1.0000 g/mol + 1.0104 g/mol = 662866.0923 g/mol + 1.0000 g/mol + 1.0104 g/mol = 777264.6672 g/mol + 1.0000 g/mol + 1.0104 g/mol = 855190.8311 g/mol + 1.0000 g/mol + 1.0104 g/mol = 924408.5124 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1078050.3429 g/mol + 1.0000 g/mol + 1.0104 g/mol = 123774.7405 g/mol + 1.0000 g/mol + 1.0104 g/mol = 140860.9261 g/mol + 1.0000 g/mol + 1.0104 g/mol = 170411.7379 g/mol + 1.0000 g/mol + 1.0104 g/mol = 200585.6362 g/mol + 1.0000 g/mol + 1.0104 g/mol = 228941.7377 g/mol + 1.0000 g/mol + 1.0104 g/mol = 286921.7111 g/mol + 1.0000 g/mol + 1.0104 g/mol = 331542.1962 g/mol + 1.0000 g/mol + 1.0104 g/mol = 351095.2436 g/mol + 1.0000 g/mol + 1.0104 g/mol = 410620.2343 g/mol + 1.0000 g/mol + 1.0104 g/mol = 463302.0300 g/mol + 1.0000 g/mol + 1.0104 g/mol = 465717.6121 g/mol + 1.0000 g/mol + 1.0104 g/mol = 511753.6142 g/mol + 1.0000 g/mol + 1.0104 g/mol = 526887.9752 g/mol + 1.0000 g/mol + 1.0104 g/mol = 610742.7544 g/mol + 1.0000 g/mol + 1.0104 g/mol = 716318.7691 g/mol + 1.0000 g/mol + 1.0104 g/mol = 763749.3011 g/mol + 1.0000 g/mol + 1.0104 g/mol = 881634.1713 g/mol + 1.0000 g/mol + 1.0104 g/mol = 97698.1191 g/mol + 1.0000 g/mol + 1.0104 g/mol = 103149.7000 g/mol + 1.0000 g/mol + 1.0104 g/mol = 106370.1306 g/mol + 1.0000 g/mol + 1.0104 g/mol = 109222.3109 g/mol + 1.0000 g/mol + 1.0104 g/mol = 117616.1528 g/mol + 1.0000 g/mol + 1.0104 g/mol = 133116.8851 g/mol + 1.0000 g/mol + 1.0104 g/mol = 185576.6339 g/mol + 1.0000 g/mol + 1.0104 g/mol = 200394.4911 g/mol + 1.0000 g/mol + 1.0104 g/mol = 233127.3758 g/mol + 1.0000 g/mol + 1.0104 g/mol = 284469.0310 g/mol + 1.0000 g/mol + 1.0104 g/mol = 347092.8331 g/mol + 1.0000 g/mol + 1.0104 g/mol = 440265.7422 g/mol + 1.0000 g/mol + 1.0104 g/mol = 562594.4784 g/mol + 1.0000 g/mol + 1.0104 g/mol = 701504.0234 g/mol + 1.0000 g/mol + 1.0104 g/mol = 93049.1906 g/mol + 1.0000 g/mol + 1.0104 g/mol = 108910.5271 g/mol + 1.0000 g/mol + 1.0104 g/mol = 190798.4510 g/mol + 1.0000 g/mol + 1.0104 g/mol = 211500.4238 g/mol + 1.0000 g/mol + 1.0104 g/mol = 252073.7915 g/mol + 1.0000 g/mol + 1.0104 g/mol = 303506.0713 g/mol + 1.0000 g/mol + 1.0104 g/mol = 324122.0143 g/mol + 1.0000 g/mol + 1.0104 g/mol = 296864.6024 g/mol + 1.0000 g/mol + 1.0104 g/mol = 37678.6772 g/mol + 1.0000 g/mol + 1.0104 g/mol = 441594.5762 g/mol + 1.0000 g/mol + 1.0104 g/mol = 52867.4645 g/mol + 1.0000 g/mol + 1.0104 g/mol = 57040.3024 g/mol + 1.0000 g/mol + 1.0104 g/mol = 63515.0111 g/mol + 1.0000 g/mol + 1.0104 g/mol = 73030.5296 g/mol + 1.0000 g/mol + 1.0104 g/mol = 77781.6411 g/mol + 1.0000 g/mol + 1.0104 g/mol = 84908.6285 g/mol + 1.0000 g/mol + 1.0104 g/mol = 90344.5693 g/mol + 1.0000 g/mol + 1.0104 g/mol = 97293.8245 g/mol + 1.0000 g/mol + 1.0104 g/mol = 11742.6001 g/mol + 1.0000 g/mol + 1.0104 g/mol = 11911.8595 g/mol + 1.0000 g/mol + 1.0104 g/mol = 12662.2336 g/mol + 1.0000 g/mol + 1.0104 g/mol = 16109.3018 g/mol + 1.0000 g/mol + 1.0104 g/mol = 19310.3591 g/mol + 1.0000 g/mol + 1.0104 g/mol = 23962.1012 g/mol + 1.0000 g/mol + 1.0104 g/mol = 30100.1310 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3423.6301 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3908.8810 g/mol + 1.0000 g/mol + 1.0104 g/mol = 4810.7010 g/mol + 1.0000 g/mol + 1.0104 g/mol = 5711.1027 g/mol + 1.0000 g/mol + 1.0104 g/mol = 6950.7905 g/mol + 1.0000 g/mol + 1.0104 g/mol = 7423.3779 g/mol + 1.0000 g/mol + 1.0104 g/mol = 8381.7207 g/mol + 1.0000 g/mol + 1.0104 g/mol = 9920.2411 g/mol + 1.0000 g/mol + 1.0104 g/mol = 11973.4813 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1368.7648 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1516.7194 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1855.3078 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2151.7354 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2802.4207 g/mol + 1.0000 g/mol + 1.0104 g/mol = 284.7523 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3002.3164 g/mol + 1.0000 g/mol + 1.0104 g/mol = 316.0513 g/mol + 1.0000 g/mol + 1.0104 g/mol = 368.9416 g/mol + 1.0000 g/mol + 1.0104 g/mol = 467.6213 g/mol + 1.0000 g/mol + 1.0104 g/mol = 502.5517 g/mol + 1.0000 g/mol + 1.0104 g/mol = 582.4410 g/mol + 1.0000 g/mol + 1.0104 g/mol = 544.1175 g/mol + 1.0000 g/mol + 1.0104 g/mol = 624.7836 g/mol + 1.0000 g/mol + 1.0104 g/mol = 708.1974 g/mol + 1.0000 g/mol + 1.0104 g/mol = 797.6588 g/mol + 1.0000 g/mol + 1.0104 g/mol = 949.8522 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1169.4261 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1336.8611 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1508.5660 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1762.6131 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1900.0204 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2098.5746 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2509.6608 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2801.9401 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2681.8410 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2811.0722 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3034.0108 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3076.2118 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3214.7002 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3552.0135 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3821.1539 g/mol + 1.0000 g/mol + 1.0104 g/mol = 4123.3802 g/mol + 1.0000 g/mol + 1.0104 g/mol = 4922.5110 g/mol + 1.0000 g/mol + 1.0104 g/mol = 4576.2114 g/mol + 1.0000 g/mol + 1.0104 g/mol = 9100.5208 g/mol + 1.0000 g/mol + 1.0104 g/mol = 992.9608 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1194.8111 g/mol + 1.0000 g/mol + 1.0104 g/mol = 6211.1551 g/mol + 1.0000 g/mol + 1.0104 g/mol = 684.4101 g/mol + 1.0000 g/mol + 1.0104 g/mol = 7015.2791 g/mol + 1.0000 g/mol + 1.0104 g/mol = 5621.1414 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1054.2020 g/mol + 1.0000 g/mol + 1.0104 g/mol = 351.7519 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1241.8733 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1413.6409 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1854.1309 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1617.9000 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1641.0411 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1431.1500 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1432.2001 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1332.8802 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1450.0597 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1094.3107 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1360.0619 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1609.8029 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1488.8018 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1338.3810 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1365.4721 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1440.6510 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1402.5302 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1318.4101 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1308.9502 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1245.0936 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1183.0985 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1198.4851 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1001.4082 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1050.3793 g/mol + 1.0000 g/mol + 1.0104 g/mol = 904.0501 g/mol + 1.0000 g/mol + 1.0104 g/mol = 883.1401 g/mol + 1.0000 g/mol + 1.0104 g/mol = 806.8212 g/mol + 1.0000 g/mol + 1.0104 g/mol = 787.0121 g/mol + 1.0000 g/mol + 1.0104 g/mol = 776.2908 g/mol + 1.0000 g/mol + 1.0104 g/mol = 488.0611 g/mol + 1.0000 g/mol + 1.0104 g/mol = 308.2909 g/mol + 1.0000 g/mol + 1.0104 g/mol = 286.8280 g/mol + 1.0000 g/mol + 1.0104 g/mol = 268.4468 g/mol + 1.0000 g/mol + 1.0104 g/mol = 216.9726 g/mol + 1.0000 g/mol + 1.0104 g/mol = 143.1308 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1309.8804 g/mol + 1.0000 g/mol + 1.0104 g/mol + 1.0122.123.6538 g/mol + 1.0000 g/mol + 1.0120.5904 g/mol + 1.0000 g/mol + 1.0120.402.4310.120.1847.0301.0112.2701.05081.3160.95647.6656.9768.2011.1923.5571.0925.0021.6219.9934.0882.9389.9988.1888.1989.19998.11967.28199.8286.9598.1090.5258.141.161.984.861.403.378.202.516.798.131.195.7398.747.425.558.651.726.454.016.857.708.809.486.804.425.635.826.913.190.311.888.895.125.1341.613.514.545.9265.6607.3232.2287.0047.783.465.9095.592.1012.772.001.688.562.7801.803.49.690.922.454.812.868.478.7945.10106.73.185.967.147.7203.091.3943.193.0439.193.003.164.835.015.031.108.911.114.281.465.306.18098.160.1559.411.139.776.413.148.111.728.880.429.959.414.438.818.819.647.668.917.870.681.873.030.882.813.603.135.805.801.768.802.927.712.911.815.291.894.802.816.720.606.128.10000.742.712.591.8001.306.305.580.495.106.143.818.858.708.685.101.438.724.154.171.123.219.845.912.870.4803.377.827.857.705.702.729.801.730.803.271",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r5-c2-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r5-c2.png",
+                  "raw_path": "ocr/p1-t1-g1-r5-c2-a1.json",
+                  "text": "rho = 103.7 g/mol + 100.1 g/mol + 17.0 g/mol = 26.61619 g/mol + 12.9929 g/mol = 41.34044 g/mol + 2.0014 g/mol = 4.8627 g/mol + 3.5262 g/mol = 6.16709 g/mol + 3.4098 g/mol = 12.5891 g/mol + 1.9159 g/mol = 37.7115 g/mol + 1.4198 g/mol = 21.4357 g/mol + 1.3622 g/mol = 36.7857 g/mol + 1.0141 g/mol + 3.4091 g/mol = 52.4656 g/mol + 1.0058 g/mol = 59.8148 g/mol + 1.0015 g/mol = 69.8763 g/mol + 3.3947 g/mol + 1.0109 g/mol = 88.5544 g/mol + 1.0017 g/mol = 96.8794 g/mol + 1.0020 g/mol = 109.6048 g/mol + 1.0014 g/mol + 1.0040 g/mol = 153.5064 g/mol + 1.0042 g/mol = 174.3346 g/mol + 1.0038 g/mol + 1.0035 g/mol = 199.8340 g/mol + 1.0036 g/mol = 214.0082 g/mol + 1.0021 g/mol + 1.0044 g/mol = 232.0441 g/mol + 1.0031 g/mol + 1.0054 g/mol = 254.4351 g/mol + 1.0033 g/mol + 1.0041 g/mol = 279.8403 g/mol + 1.0021 g/mol + 1.0055 g/mol = 311.4702 g/mol + 1.0030 g/mol + 1.0056 g/mol = 337.6443 g/mol + 1.0028 g/mol + 1.0049 g/mol = 370.4945 g/mol + 1.0029 g/mol + 1.0035 g/mol = 408.9944 g/mol + 1.0025 g/mol + 1.0041 g/mol = 430.6262 g/mol + 1.0016 g/mol + 1.0041 g/mol = 456.7202 g/mol + 1.0021 g/mol + 1.0036 g/mol = 482.5214 g/mol + 1.0027 g/mol + 1.0041 g/mol = 506.5298 g/mol + 1.0026 g/mol + 1.0041 g/mol = 533.4250 g/mol + 1.0018 g/mol + 1.0040 g/mol = 562.2399 g/mol + 1.0025 g/mol + 1.0041 g/mol = 604.3802 g/mol + 1.0018 g/mol + 1.0039 g/mol = 646.0588 g/mol + 1.0023 g/mol + 1.0039 g/mol = 691.9812 g/mol + 1.0011 g/mol + 1.0040 g/mol = 734.8091 g/mol + 1.0014 g/mol + 1.0041 g/mol = 779.0918 g/mol + 1.0016 g/mol + 1.0041 g/mol = 826.8305 g/mol + 1.0017 g/mol + 1.0041 g/mol = 874.1395 g/mol + 1.0012 g/mol + 1.0042 g/mol = 925.5600 g/mol + 1.0013 g/mol + 1.0042 g/mol = 970.1318 g/mol + 1.0012 g/mol + 1.0043 g/mol = 1016.2319 g/mol + 1.0009 g/mol + 1.0044 g/mol = 1044.8042 g/mol + 1.0014 g/mol + 1.0044 g/mol = 1081.2604 g/mol + 1.0008 g/mol + 1.0045 g/mol = 1143.3812 g/mol + 1.0009 g/mol + 1.0045 g/mol = 1200.0396 g/mol + 1.0006 g/mol + 1.0046 g/mol = 1277.3968 g/mol + 1.0008 g/mol + 1.0046 g/mol = 1359.6950 g/mol + 1.0008 g/mol + 1.0046 g/mol = 1455.7016 g/mol + 1.0009 g/mol + 1.0047 g/mol = 1529.9214 g/mol + 1.0008 g/mol + 1.0047 g/mol = 1615.6050 g/mol + 1.0007 g/mol + 1.0048 g/mol = 1695.3019 g/mol + 1.0009 g/mol + 1.0048 g/mol = 1796.5813 g/mol + 1.0010 g/mol + 1.0049 g/mol = 1886.9020 g/mol + 1.0010 g/mol + 1.0049 g/mol = 2001.1337 g/mol + 1.0010 g/mol + 1.0050 g/mol = 2116.9809 g/mol + 1.0010 g/mol + 1.0051 g/mol = 2283.7000 g/mol + 1.0009 g/mol + 1.0052 g/mol = 2400.5711 g/mol + 1.0009 g/mol + 1.0052 g/mol = 2544.9503 g/mol + 1.0010 g/mol + 1.0052 g/mol = 2713.4344 g/mol + 1.0010 g/mol + 1.0052 g/mol = 2931.2451 g/mol + 1.0011 g/mol + 1.0053 g/mol = 3053.8924 g/mol + 1.0011 g/mol + 1.0053 g/mol = 3131.3572 g/mol + 1.0011 g/mol + 1.0054 g/mol = 3319.5166 g/mol + 1.0012 g/mol + 1.0055 g/mol = 3490.9335 g/mol + 1.0012 g/mol + 1.0055 g/mol = 3685.4370 g/mol + 1.0013 g/mol + 1.0055 g/mol = 3910.5354 g/mol + 1.0013 g/mol + 1.0055 g/mol = 4134.6509 g/mol + 1.0014 g/mol + 1.0056 g/mol = 4349.6544 g/mol + 1.0014 g/mol + 1.0056 g/mol = 4602.4621 g/mol + 1.0015 g/mol + 1.0056 g/mol = 4963.4018 g/mol + 1.0015 g/mol + 1.0057 g/mol = 5124.4601 g/mol + 1.0016 g/mol + 1.0057 g/mol = 5396.5210 g/mol + 1.0016 g/mol + 1.0057 g/mol = 5849.2270 g/mol + 1.0017 g/mol + 1.0058 g/mol = 6191.5831 g/mol + 1.0017 g/mol + 1.0058 g/mol = 6595.8660 g/mol + 1.0018 g/mol + 1.0058 g/mol = 7163.7004 g/mol + 1.0018 g/mol + 1.0058 g/mol = 7669.7573 g/mol + 1.0019 g/mol + 1.0059 g/mol = 8075.0454 g/mol + 1.0019 g/mol + 1.0059 g/mol = 8501.8645 g/mol + 1.0019 g/mol + 1.0059 g/mol = 9155.0012 g/mol + 1.0019 g/mol + 1.0060 g/mol = 8100.5512 g/mol + 1.0019 g/mol + 1.0060 g/mol = 8304.4914 g/mol + 1.0020 g/mol + 1.0060 g/mol = 8464.3959 g/mol + 1.0020 g/mol + 1.0060 g/mol = 8810.019 g/mol + 1.0021 g/mol + 1.0061 g/mol = 9048.1628 g/mol + 1.0021 g/mol + 1.0061 g/mol = 9363.1689 g/mol + 1.0022 g/mol + 1.0061 g/mol = 9760.4905 g/mol + 1.0022 g/mol + 1.0061 g/mol = 10475.4961 g/mol + 1.0023 g/mol + 1.0062 g/mol = 10959.9657 g/mol + 1.0023 g/mol + 1.0062 g/mol = 11442.6192 g/mol + 1.0024 g/mol + 1.0062 g/mol = 12415.1419 g/mol + 1.0024 g/mol + 1.0062 g/mol = 13373.2915 g/mol + 1.0024 g/mol + 1.0063 g/mol = 14126.9059 g/mol + 1.0025 g/mol + 1.0063 g/mol = 15260.2523 g/mol + 1.0025 g/mol + 1.0063 g/mol = 16017.0997 g/mol + 1.0025 g/mol + 1.0064 g/mol = 16948.2492 g/mol + 1.0026 g/mol + 1.0064 g/mol = 17802.7312 g/mol + 1.0026 g/mol + 1.0064 g/mol = 18906.0991 g/mol + 1.0026 g/mol + 1.0065 g/mol = 19987.0506 g/mol + 1.0026 g/mol + 1.0065 g/mol = 21136.6903 g/mol + 1.0027 g/mol + 1.0065 g/mol = 22410.2060 g/mol + 1.0027 g/mol + 1.0066 g/mol = 23448.9445 g/mol + 1.0027 g/mol + 1.0066 g/mol = 24466.1180 g/mol + 1.0028 g/mol + 1.0067 g/mol = 25484.7249 g/mol + 1.0028 g/mol + 1.0067 g/mol = 26645.5095 g/mol + 1.0028 g/mol + 1.0067 g/mol = 27804.1634 g/mol + 1.0029 g/mol + 1.0067 g/mol = 28936.7161 g/mol + 1.0029 g/mol + 1.0068 g/mol = 30038.9271 g/mol + 1.0029 g/mol + 1.0068 g/mol = 30910.2933 g/mol + 1.0029 g/mol + 1.0068 g/mol = 32682.5219 g/mol + 1.0030 g/mol + 1.0068 g/mol = 33915.9606 g/mol + 1.0030 g/mol + 1.0069 g/mol = 35282.0885 g/mol + 1.0030 g/mol + 1.0069 g/mol = 37162.0165 g/mol + 1.0031 g/mol + 1.0069 g/mol = 39321.9638 g/mol + 1.0031 g/mol + 1.0069 g/mol = 41406.4333 g/mol + 1.0031 g/mol + 1.0070 g/mol = 42921.3082 g/mol + 1.0032 g/mol + 1.0070 g/mol = 45081.5899 g/mol + 1.0032 g/mol + 1.0070 g/mol = 47960.9534 g/mol + 1.0032 g/mol + 1.0071 g/mol = 50184.9130 g/mol + 1.0033 g/mol + 1.0071 g/mol = 51857.2669 g/mol + 1.0033 g/mol + 1.0071 g/mol = 53764.2661 g/mol + 1.0034 g/mol + 1.0071 g/mol = 56187.0312 g/mol + 1.0034 g/mol + 1.0072 g/mol = 59720.0114 g/mol + 1.0035 g/mol + 1.0072 g/mol = 61664.7402 g/mol + 1.0035 g/mol + 1.0072 g/mol = 63714.2006 g/mol + 1.0035 g/mol + 1.0073 g/mol = 66612.9240 g/mol + 1.0036 g/mol + 1.0073 g/mol = 71072.2319 g/mol + 1.0036 g/mol + 1.0073 g/mol = 73830.1514 g/mol + 1.0037 g/mol + 1.0074 g/mol = 76605.2114 g/mol + 1.0037 g/mol + 1.0074 g/mol = 83113.1021 g/mol + 1.0037 g/mol + 1.0074 g/mol = 86099.1306 g/mol + 1.0038 g/mol + 1.0075 g/mol = 90008.4855 g/mol + 1.0038 g/mol + 1.0075 g/mol = 92441.6796 g/mol + 1.0039 g/mol + 1.0075 g/mol = 95546.4109 g/mol + 1.0039 g/mol + 1.0076 g/mol = 103315.6274 g/mol + 1.0039 g/mol + 1.0076 g/mol = 105181.6064 g/mol + 1.0039 g/mol + 1.0077 g/mol = 107911.6921 g/mol + 1.0040 g/mol + 1.0077 g/mol = 111581.1835 g/mol + 1.0040 g/mol + 1.0077 g/mol = 121006.4618 g/mol + 1.0041 g/mol + 1.0078 g/mol = 130472.3433 g/mol + 1.0041 g/mol + 1.0078 g/mol = 139393.6777 g/mol + 1.0042 g/mol + 1.0079 g/mol = 149716.9763 g/mol + 1.0042 g/mol + 1.0079 g/mol = 162583.8850 g/mol + 1.0043 g/mol + 1.0079 g/mol = 175062.6191 g/mol + 1.0044 g/mol + 1.0079 g/mol = 185710.3891 g/mol + 1.0045 g/mol + 1.0080 g/mol = 192936.6634 g/mol + 1.0045 g/mol + 1.0080 g/mol = 203949.6145 g/mol + 1.0046 g/mol + 1.0081 g/mol = 214605.9659 g/mol + 1.0047 g/mol + 1.0082 g/mol = 228406.5763 g/mol + 1.0047 g/mol + 1.0082 g/mol = 241398.6184 g/mol + 1.0048 g/mol + 1.0082 g/mol = 257665.9102 g/mol + 1.0049 g/mol + 1.0083 g/mol = 274019.0985 g/mol + 1.0049 g/mol + 1.0083 g/mol = 300861.9020 g/mol + 1.0050 g/mol + 1.0084 g/mol = 311572.0069 g/mol + 1.0051 g/mol + 1.0084 g/mol = 339213.0932 g/mol + 1.0051 g/mol + 1.0085 g/mol = 368589.1180 g/mol + 1.0052 g/mol + 1.0085 g/mol = 400922.2001 g/mol + 1.0053 g/mol + 1.0086 g/mol = 421831.1804 g/mol + 1.0053 g/mol + 1.0086 g/mol = 463211.9398 g/mol + 1.0054 g/mol + 1.0087 g/mol = 501239.1480 g/mol + 1.0054 g/mol + 1.0087 g/mol = 556912.7049 g/mol + 1.0055 g/mol + 1.0088 g/mol = 609014.6385 g/mol + 1.0056 g/mol + 1.0089 g/mol = 655648.7640 g/mol + 1.0056 g/mol + 1.0089 g/mol = 711294.6963 g/mol + 1.0057 g/mol + 1.0089 g/mol = 754016.7939 g/mol + 1.0058 g/mol + 1.0090 g/mol = 866378.7229 g/mol + 1.0059 g/mol + 1.0091 g/mol = 930191.0649 g/mol + 1.0059 g/mol + 1.0091 g/mol = 994572.4241 g/mol + 1.0060 g/mol + 1.0092 g/mol = 1085071.9850 g/mol + 1.0061 g/mol + 1.0092 g/mol = 119639.6556 g/mol + 1.0061 g/mol + 1.0093 g/mol = 125186.8906 g/mol + 1.0062 g/mol + 1.0094 g/mol = 134041.2793 g/mol + 1.0063 g/mol + 1.0094 g/mol = 146416.0290 g/mol + 1.0063 g/mol + 1.0095 g/mol = 155658.5477 g/mol + 1.0064 g/mol + 1.0096 g/mol = 165356.6971 g/mol + 1.0064 g/mol + 1.0096 g/mol = 174412.7512 g/mol + 1.0065 g/mol + 1.0097 g/mol = 185022.4256 g/mol + 1.0066 g/mol + 1.0097 g/mol = 194809.9930 g/mol + 1.0067 g/mol + 1.0098 g/mol = 203678.6980 g/mol + 1.0067 g/mol + 1.0098 g/mol = 212959.7028 g/mol + 1.0068 g/mol + 1.0099 g/mol = 224161.5738 g/mol + 1.0069 g/mol + 1.0099 g/mol = 234415.7908 g/mol + 1.0069 g/mol + 1.0099 g/mol = 246896.4452 g/mol + 1.0070 g/mol + 1.0100 g/mol = 255529.5901 g/mol + 1.0071 g/mol + 1.0101 g/mol = 265690.3168 g/mol + 1.0071 g/mol + 1.0102 g/mol = 279128.3203 g/mol + 1.0072 g/mol + 1.0102 g/mol = 290385.4576 g/mol + 1.0073 g/mol + 1.0101 g/mol = 301392.8006 g/mol + 1.0074 g/mol + 1.0101 g/mol = 319306.0524 g/mol + 1.0074 g/mol + 1.0101 g/mol = 334389.3980 g/mol + 1.0075 g/mol + 1.0102 g/mol = 346165.7094 g/mol + 1.0076 g/mol + 1.0101 g/mol = 361827.3369 g/mol + 1.0077 g/mol + 1.0102 g/mol = 390488.5068 g/mol + 1.0078 g/mol + 1.0102 g/mol = 418004.9338 g/mol + 1.0079 g/mol + 1.0102 g/mol = 450164.2524 g/mol + 1.0079 g/mol + 1.0102 g/mol = 482638.8090 g/mol + 1.0079 g/mol + 1.0102 g/mol = 500103.7056 g/mol + 1.0080 g/mol + 1.0102 g/mol = 524496.0907 g/mol + 1.0080 g/mol + 1.0102 g/mol = 556511.4189 g/mol + 1.0081 g/mol + 1.0103 g/mol = 610941.7709 g/mol + 1.0082 g/mol + 1.0103 g/mol = 646384.2645 g/mol + 1.0082 g/mol + 1.0103 g/mol = 701467.2165 g/mol + 1.0083 g/mol + 1.0103 g/mol = 804012.0400 g/mol + 1.0084 g/mol + 1.0103 g/mol = 907813.0672 g/mol + 1.0084 g/mol + 1.0102 g/mol = 100330.3038 g/mol + 1.0085 g/mol + 1.0102 g/mol = 100700.8214 g/mol + 1.0086 g/mol + 1.0102 g/mol = 112060.6308 g/mol + 1.0086 g/mol + 1.0102 g/mol = 123496.9119 g/mol + 1.0087 g/mol + 1.0103 g/mol = 134579.7246 g/mol + 1.0088 g/mol + 1.0104 g/mol = 144589.2637 g/mol + 1.0088 g/mol + 1.0104 g/mol = 158093.0372 g/mol + 1.0089 g/mol + 1.0104 g/mol = 174481.7501 g/mol + 1.0089 g/mol + 1.0104 g/mol = 200371.0440 g/mol + 1.0089 g/mol + 1.0104 g/mol = 223582.8585 g/mol + 1.0090 g/mol + 1.0104 g/mol = 246850.3575 g/mol + 1.0091 g/mol + 1.0103 g/mol = 271327.0192 g/mol + 1.0092 g/mol + 1.0103 g/mol = 300569.9818 g/mol + 1.0092 g/mol + 1.0103 g/mol = 334144.1860 g/mol + 1.0093 g/mol + 1.0103 g/mol = 369831.1625 g/mol + 1.0094 g/mol + 1.0102 g/mol = 417648.9259 g/mol + 1.0094 g/mol + 1.0102 g/mol = 473807.7010 g/mol + 1.0094 g/mol + 1.0102 g/mol = 514237.4476 g/mol + 1.0095 g/mol + 1.0103 g/mol = 534491.0398 g/mol + 1.0095 g/mol + 1.0103 g/mol = 638566.1285 g/mol + 1.0095 g/mol + 1.0104 g/mol = 731885.6577 g/mol + 1.0096 g/mol + 1.0104 g/mol = 834201.2236 g/mol + 1.0096 g/mol + 1.0104 g/mol = 933259.5122 g/mol + 1.0097 g/mol + 1.0104 g/mol = 101133.1192 g/mol + 1.0097 g/mol + 1.0105 g/mol = 117960.4236 g/mol + 1.0097 g/mol + 1.0104 g/mol = 130957.6191 g/mol + 1.0098 g/mol + 1.0104 g/mol = 148014.8303 g/mol + 1.0099 g/mol + 1.0104 g/mol = 159477.3448 g/mol + 1.0099 g/mol + 1.0104 g/mol = 182855.6031 g/mol + 1.0099 g/mol + 1.0104 g/mol = 207010.9383 g/mol + 1.0099 g/mol + 1.0104 g/mol = 229503.2431 g/mol + 1.0099 g/mol + 1.0103 g/mol = 258406.4561 g/mol + 1.0099 g/mol + 1.0104 g/mol = 292421.4491 g/mol + 1.0000 g/mol + 1.0103 g/mol = 315401.7710 g/mol + 1.0000 g/mol + 1.0103 g/mol = 347010.5943 g/mol + 1.0000 g/mol + 1.0104 g/mol = 393991.3425 g/mol + 1.0000 g/mol + 1.0104 g/mol = 425854.6924 g/mol + 1.0000 g/mol + 1.0104 g/mol = 501166.3883 g/mol + 1.0000 g/mol + 1.0104 g/mol = 638659.9903 g/mol + 1.0000 g/mol + 1.0104 g/mol = 788016.4997 g/mol + 1.0000 g/mol + 1.0105 g/mol = 913863.9826 g/mol + 1.0000 g/mol + 1.0104 g/mol = 104925.4047 g/mol + 1.0000 g/mol + 1.0104 g/mol = 128511.6289 g/mol + 1.0000 g/mol + 1.0104 g/mol = 176557.5662 g/mol + 1.0000 g/mol + 1.0104 g/mol = 213032.6727 g/mol + 1.0000 g/mol + 1.0104 g/mol = 258407.5273 g/mol + 1.0000 g/mol + 1.0104 g/mol = 286559.7006 g/mol + 1.0000 g/mol + 1.0105 g/mol = 332033.1312 g/mol + 1.0000 g/mol + 1.0104 g/mol = 378817.8692 g/mol + 1.0000 g/mol + 1.0104 g/mol = 458419.0938 g/mol + 1.0000 g/mol + 1.0104 g/mol = 591589.2558 g/mol + 1.0000 g/mol + 1.0105 g/mol = 627824.6769 g/mol + 1.0000 g/mol + 1.0104 g/mol = 761966.9468 g/mol + 1.0000 g/mol + 1.0104 g/mol = 759443.7680 g/mol + 1.0000 g/mol + 1.0104 g/mol = 863654.1488 g/mol + 1.0000 g/mol + 1.0104 g/mol = 930850.3032 g/mol + 1.0000 g/mol + 1.0104 g/mol = 122447.9887 g/mol + 1.0000 g/mol + 1.0104 g/mol = 138333.4008 g/mol + 1.0000 g/mol + 1.0104 g/mol = 190514.6922 g/mol + 1.0000 g/mol + 1.0104 g/mol = 217282.9918 g/mol + 1.0000 g/mol + 1.0104 g/mol = 250494.0432 g/mol + 1.0000 g/mol + 1.0104 g/mol = 324666.4442 g/mol + 1.0000 g/mol + 1.0104 g/mol = 393409.1100 g/mol + 1.0000 g/mol + 1.0104 g/mol = 493580.9719 g/mol + 1.0000 g/mol + 1.0104 g/mol = 577649.9369 g/mol + 1.0000 g/mol + 1.0104 g/mol = 662866.0923 g/mol + 1.0000 g/mol + 1.0104 g/mol = 777264.6672 g/mol + 1.0000 g/mol + 1.0104 g/mol = 855190.8311 g/mol + 1.0000 g/mol + 1.0104 g/mol = 924408.5124 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1078050.3429 g/mol + 1.0000 g/mol + 1.0104 g/mol = 123774.7405 g/mol + 1.0000 g/mol + 1.0104 g/mol = 140860.9261 g/mol + 1.0000 g/mol + 1.0104 g/mol = 170411.7379 g/mol + 1.0000 g/mol + 1.0104 g/mol = 200585.6362 g/mol + 1.0000 g/mol + 1.0104 g/mol = 228941.7377 g/mol + 1.0000 g/mol + 1.0104 g/mol = 286921.7111 g/mol + 1.0000 g/mol + 1.0104 g/mol = 331542.1962 g/mol + 1.0000 g/mol + 1.0104 g/mol = 351095.2436 g/mol + 1.0000 g/mol + 1.0104 g/mol = 410620.2343 g/mol + 1.0000 g/mol + 1.0104 g/mol = 463302.0300 g/mol + 1.0000 g/mol + 1.0104 g/mol = 465717.6121 g/mol + 1.0000 g/mol + 1.0104 g/mol = 511753.6142 g/mol + 1.0000 g/mol + 1.0104 g/mol = 526887.9752 g/mol + 1.0000 g/mol + 1.0104 g/mol = 610742.7544 g/mol + 1.0000 g/mol + 1.0104 g/mol = 716318.7691 g/mol + 1.0000 g/mol + 1.0104 g/mol = 763749.3011 g/mol + 1.0000 g/mol + 1.0104 g/mol = 881634.1713 g/mol + 1.0000 g/mol + 1.0104 g/mol = 97698.1191 g/mol + 1.0000 g/mol + 1.0104 g/mol = 103149.7000 g/mol + 1.0000 g/mol + 1.0104 g/mol = 106370.1306 g/mol + 1.0000 g/mol + 1.0104 g/mol = 109222.3109 g/mol + 1.0000 g/mol + 1.0104 g/mol = 117616.1528 g/mol + 1.0000 g/mol + 1.0104 g/mol = 133116.8851 g/mol + 1.0000 g/mol + 1.0104 g/mol = 185576.6339 g/mol + 1.0000 g/mol + 1.0104 g/mol = 200394.4911 g/mol + 1.0000 g/mol + 1.0104 g/mol = 233127.3758 g/mol + 1.0000 g/mol + 1.0104 g/mol = 284469.0310 g/mol + 1.0000 g/mol + 1.0104 g/mol = 347092.8331 g/mol + 1.0000 g/mol + 1.0104 g/mol = 440265.7422 g/mol + 1.0000 g/mol + 1.0104 g/mol = 562594.4784 g/mol + 1.0000 g/mol + 1.0104 g/mol = 701504.0234 g/mol + 1.0000 g/mol + 1.0104 g/mol = 93049.1906 g/mol + 1.0000 g/mol + 1.0104 g/mol = 108910.5271 g/mol + 1.0000 g/mol + 1.0104 g/mol = 190798.4510 g/mol + 1.0000 g/mol + 1.0104 g/mol = 211500.4238 g/mol + 1.0000 g/mol + 1.0104 g/mol = 252073.7915 g/mol + 1.0000 g/mol + 1.0104 g/mol = 303506.0713 g/mol + 1.0000 g/mol + 1.0104 g/mol = 324122.0143 g/mol + 1.0000 g/mol + 1.0104 g/mol = 296864.6024 g/mol + 1.0000 g/mol + 1.0104 g/mol = 37678.6772 g/mol + 1.0000 g/mol + 1.0104 g/mol = 441594.5762 g/mol + 1.0000 g/mol + 1.0104 g/mol = 52867.4645 g/mol + 1.0000 g/mol + 1.0104 g/mol = 57040.3024 g/mol + 1.0000 g/mol + 1.0104 g/mol = 63515.0111 g/mol + 1.0000 g/mol + 1.0104 g/mol = 73030.5296 g/mol + 1.0000 g/mol + 1.0104 g/mol = 77781.6411 g/mol + 1.0000 g/mol + 1.0104 g/mol = 84908.6285 g/mol + 1.0000 g/mol + 1.0104 g/mol = 90344.5693 g/mol + 1.0000 g/mol + 1.0104 g/mol = 97293.8245 g/mol + 1.0000 g/mol + 1.0104 g/mol = 11742.6001 g/mol + 1.0000 g/mol + 1.0104 g/mol = 11911.8595 g/mol + 1.0000 g/mol + 1.0104 g/mol = 12662.2336 g/mol + 1.0000 g/mol + 1.0104 g/mol = 16109.3018 g/mol + 1.0000 g/mol + 1.0104 g/mol = 19310.3591 g/mol + 1.0000 g/mol + 1.0104 g/mol = 23962.1012 g/mol + 1.0000 g/mol + 1.0104 g/mol = 30100.1310 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3423.6301 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3908.8810 g/mol + 1.0000 g/mol + 1.0104 g/mol = 4810.7010 g/mol + 1.0000 g/mol + 1.0104 g/mol = 5711.1027 g/mol + 1.0000 g/mol + 1.0104 g/mol = 6950.7905 g/mol + 1.0000 g/mol + 1.0104 g/mol = 7423.3779 g/mol + 1.0000 g/mol + 1.0104 g/mol = 8381.7207 g/mol + 1.0000 g/mol + 1.0104 g/mol = 9920.2411 g/mol + 1.0000 g/mol + 1.0104 g/mol = 11973.4813 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1368.7648 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1516.7194 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1855.3078 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2151.7354 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2802.4207 g/mol + 1.0000 g/mol + 1.0104 g/mol = 284.7523 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3002.3164 g/mol + 1.0000 g/mol + 1.0104 g/mol = 316.0513 g/mol + 1.0000 g/mol + 1.0104 g/mol = 368.9416 g/mol + 1.0000 g/mol + 1.0104 g/mol = 467.6213 g/mol + 1.0000 g/mol + 1.0104 g/mol = 502.5517 g/mol + 1.0000 g/mol + 1.0104 g/mol = 582.4410 g/mol + 1.0000 g/mol + 1.0104 g/mol = 544.1175 g/mol + 1.0000 g/mol + 1.0104 g/mol = 624.7836 g/mol + 1.0000 g/mol + 1.0104 g/mol = 708.1974 g/mol + 1.0000 g/mol + 1.0104 g/mol = 797.6588 g/mol + 1.0000 g/mol + 1.0104 g/mol = 949.8522 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1169.4261 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1336.8611 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1508.5660 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1762.6131 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1900.0204 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2098.5746 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2509.6608 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2801.9401 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2681.8410 g/mol + 1.0000 g/mol + 1.0104 g/mol = 2811.0722 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3034.0108 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3076.2118 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3214.7002 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3552.0135 g/mol + 1.0000 g/mol + 1.0104 g/mol = 3821.1539 g/mol + 1.0000 g/mol + 1.0104 g/mol = 4123.3802 g/mol + 1.0000 g/mol + 1.0104 g/mol = 4922.5110 g/mol + 1.0000 g/mol + 1.0104 g/mol = 4576.2114 g/mol + 1.0000 g/mol + 1.0104 g/mol = 9100.5208 g/mol + 1.0000 g/mol + 1.0104 g/mol = 992.9608 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1194.8111 g/mol + 1.0000 g/mol + 1.0104 g/mol = 6211.1551 g/mol + 1.0000 g/mol + 1.0104 g/mol = 684.4101 g/mol + 1.0000 g/mol + 1.0104 g/mol = 7015.2791 g/mol + 1.0000 g/mol + 1.0104 g/mol = 5621.1414 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1054.2020 g/mol + 1.0000 g/mol + 1.0104 g/mol = 351.7519 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1241.8733 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1413.6409 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1854.1309 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1617.9000 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1641.0411 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1431.1500 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1432.2001 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1332.8802 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1450.0597 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1094.3107 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1360.0619 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1609.8029 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1488.8018 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1338.3810 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1365.4721 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1440.6510 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1402.5302 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1318.4101 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1308.9502 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1245.0936 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1183.0985 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1198.4851 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1001.4082 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1050.3793 g/mol + 1.0000 g/mol + 1.0104 g/mol = 904.0501 g/mol + 1.0000 g/mol + 1.0104 g/mol = 883.1401 g/mol + 1.0000 g/mol + 1.0104 g/mol = 806.8212 g/mol + 1.0000 g/mol + 1.0104 g/mol = 787.0121 g/mol + 1.0000 g/mol + 1.0104 g/mol = 776.2908 g/mol + 1.0000 g/mol + 1.0104 g/mol = 488.0611 g/mol + 1.0000 g/mol + 1.0104 g/mol = 308.2909 g/mol + 1.0000 g/mol + 1.0104 g/mol = 286.8280 g/mol + 1.0000 g/mol + 1.0104 g/mol = 268.4468 g/mol + 1.0000 g/mol + 1.0104 g/mol = 216.9726 g/mol + 1.0000 g/mol + 1.0104 g/mol = 143.1308 g/mol + 1.0000 g/mol + 1.0104 g/mol = 1309.8804 g/mol + 1.0000 g/mol + 1.0104 g/mol + 1.0122.123.6538 g/mol + 1.0000 g/mol + 1.0120.5904 g/mol + 1.0000 g/mol + 1.0120.402.4310.120.1847.0301.0112.2701.05081.3160.95647.6656.9768.2011.1923.5571.0925.0021.6219.9934.0882.9389.9988.1888.1989.19998.11967.28199.8286.9598.1090.5258.141.161.984.861.403.378.202.516.798.131.195.7398.747.425.558.651.726.454.016.857.708.809.486.804.425.635.826.913.190.311.888.895.125.1341.613.514.545.9265.6607.3232.2287.0047.783.465.9095.592.1012.772.001.688.562.7801.803.49.690.922.454.812.868.478.7945.10106.73.185.967.147.7203.091.3943.193.0439.193.003.164.835.015.031.108.911.114.281.465.306.18098.160.1559.411.139.776.413.148.111.728.880.429.959.414.438.818.819.647.668.917.870.681.873.030.882.813.603.135.805.801.768.802.927.712.911.815.291.894.802.816.720.606.128.10000.742.712.591.8001.306.305.580.495.106.143.818.858.708.685.101.438.724.154.171.123.219.845.912.870.4803.377.827.857.705.702.729.801.730.803.271",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    523.0,
+                    207.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    723.0,
+                    0.0,
+                    1.0,
+                    1422.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r5-c3",
+              "row": 5,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1246.3622131347656,
+                1421.7606201171875,
+                1657.9555053710938,
+                1628.7781677246094
+              ],
+              "table_bbox": [
+                1005.3622131347656,
+                747.7606201171875,
+                1416.9555053710938,
+                954.7781677246094
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r5"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c3"
+              ],
+              "is_header": false,
+              "raw_text": "）",
+              "normalized_text": ")",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r5-c3-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r5-c3.png",
+                  "raw_path": "ocr/p1-t1-g1-r5-c3-a1.json",
+                  "text": "）",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    412.0,
+                    207.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1246.0,
+                    0.0,
+                    1.0,
+                    1422.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r5-c4",
+              "row": 5,
+              "column": 4,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1657.9555053710938,
+                1421.7606201171875,
+                1957.615478515625,
+                1628.7781677246094
+              ],
+              "table_bbox": [
+                1416.9555053710938,
+                747.7606201171875,
+                1716.615478515625,
+                954.7781677246094
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r5"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c4"
+              ],
+              "is_header": false,
+              "raw_text": "230",
+              "normalized_text": "230",
+              "number": "230",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r5-c4-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r5-c4.png",
+                  "raw_path": "ocr/p1-t1-g1-r5-c4-a1.json",
+                  "text": "230",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    300.0,
+                    207.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1658.0,
+                    0.0,
+                    1.0,
+                    1422.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r6-c1",
+              "row": 6,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                258.06541442871094,
+                1628.7781677246094,
+                723.4620208740234,
+                1759.2469482421875
+              ],
+              "table_bbox": [
+                17.065414428710938,
+                954.7781677246094,
+                482.46202087402344,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r6"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c1"
+              ],
+              "is_header": false,
+              "raw_text": "合計",
+              "normalized_text": "合計",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r6-c1-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r6-c1.png",
+                  "raw_path": "ocr/p1-t1-g1-r6-c1-a1.json",
+                  "text": "合計",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    465.0,
+                    130.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    258.0,
+                    0.0,
+                    1.0,
+                    1629.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r6-c2",
+              "row": 6,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                723.4620208740234,
+                1628.7781677246094,
+                1246.3622131347656,
+                1759.2469482421875
+              ],
+              "table_bbox": [
+                482.46202087402344,
+                954.7781677246094,
+                1005.3622131347656,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r6"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c2"
+              ],
+              "is_header": false,
+              "raw_text": "|",
+              "normalized_text": "|",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r6-c2-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r6-c2.png",
+                  "raw_path": "ocr/p1-t1-g1-r6-c2-a1.json",
+                  "text": "|",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    523.0,
+                    130.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    723.0,
+                    0.0,
+                    1.0,
+                    1629.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r6-c3",
+              "row": 6,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1246.3622131347656,
+                1628.7781677246094,
+                1657.9555053710938,
+                1759.2469482421875
+              ],
+              "table_bbox": [
+                1005.3622131347656,
+                954.7781677246094,
+                1416.9555053710938,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r6"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c3"
+              ],
+              "is_header": false,
+              "raw_text": "I",
+              "normalized_text": "I",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r6-c3-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r6-c3.png",
+                  "raw_path": "ocr/p1-t1-g1-r6-c3-a1.json",
+                  "text": "I",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    412.0,
+                    130.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1246.0,
+                    0.0,
+                    1.0,
+                    1629.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r6-c4",
+              "row": 6,
+              "column": 4,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1657.9555053710938,
+                1628.7781677246094,
+                1957.615478515625,
+                1759.2469482421875
+              ],
+              "table_bbox": [
+                1416.9555053710938,
+                954.7781677246094,
+                1716.615478515625,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r6"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c4"
+              ],
+              "is_header": false,
+              "raw_text": "2,530",
+              "normalized_text": "2,530",
+              "number": "2530",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r6-c4-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r6-c4.png",
+                  "raw_path": "ocr/p1-t1-g1-r6-c4-a1.json",
+                  "text": "2,530",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    300.0,
+                    130.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1658.0,
+                    0.0,
+                    1.0,
+                    1629.0
+                  ]
+                }
+              ]
+            }
+          ],
+          "geometry_valid": true,
+          "issues": [
+            {
+              "code": "annotated_alignment_uncertain",
+              "stage": "K",
+              "message": "Annotated table topology differs from the fixed grid",
+              "cell_ids": [],
+              "severity": "warning"
+            }
+          ],
+          "annotated_reading": {
+            "request_id": "p1-t1-annotated-a1",
+            "variant": "annotated_table",
+            "image_path": "tables/p1-t1/numbered.png",
+            "raw_path": "ocr/p1-t1-annotated-a1.json",
+            "text": "<ecel><fcel>C1<fcel>C2<fcel>C3<fcel>C4<fcel>CellID[page ibbox b0,y0,x1,y1]\\np t1t g1+c1=[258.1.6826.7235.521.7]\\np t1t g1+c2=[223.5.5923.149.4821.7]\\np t1t g1+c3=[229.4.4592.6.1558.0.821.7]\\np t1t g1+c4=[1658.0.6922.6.1957.6.821.7]\\np t1t g1+c5=[258.1.821.7.733.5.1020.7]\\np t1t g1+c6=[253.5.321.7.1248.4.1002.7]\\np t1t g1+c7=[212.1.521.7.1660.0.1020.7]\\np t1t g1+c8=[1240.4.4821.7.3650.0.1020.7]\\np t1t g1+c9=[1658.0.821.7.1957.6.1020.7]\\np t1t g1+c10=[1258.1.1020.7.7235.1218.6]\\np t1t g1+c11=[225.6.1020.7.1246.4.1218.6]\\np t1t g1+c12=[2048.4.1020.7.1958.0.1218.6]\\np t1t g1+c13=[1658.0.1020.7.1957.6.1218.6]\\np t1t g1+c4=[1658.0.1020.7.1957.6.1218.6]\\np t1t g1+c5=[2058.1.1218.6.7235.1421.6]\\np t1t g1+c6=[229.4.1218.6.1558.0.1421.6]<nl><ecel><fcel>品目<ecel><fcel>数量<fcel>单佃<fcel>金額<ecel><nl><ecel><fcel>用紙<ecel><fcel>2<fcel>1,000<fcel>2,000<ecel><nl><ecel><fcel>封筒<ecel><fcel>1<fcel>300<fcel>300<ecel><nl><ecel><fcel>小計<ecel><ecel><ecel><fcel>2,300<ecel><nl><ecel><fcel>消費税<ecel><ecel><ecel><fcel>230<ecel><nl><ecel><fcel>合計<ecel><ecel><ecel><fcel>2,530<ecel><nl>",
+            "error": null,
+            "source_bbox_in_image": [
+              50.0,
+              50.0,
+              1778.0,
+              1136.0
+            ],
+            "image_to_page": [
+              1.0,
+              0.0,
+              191.0,
+              0.0,
+              1.0,
+              624.0
+            ]
+          },
+          "invoice": {
+            "header_row": 1,
+            "columns": {
+              "quantity": 2,
+              "amount": 4
+            },
+            "lines": [
+              {
+                "row": 2,
+                "amount_id": "p1-t1-g1-r2-c4",
+                "quantity_id": "p1-t1-g1-r2-c2",
+                "unit_price_id": null
+              },
+              {
+                "row": 3,
+                "amount_id": "p1-t1-g1-r3-c4",
+                "quantity_id": "p1-t1-g1-r3-c2",
+                "unit_price_id": null
+              }
+            ],
+            "subtotal_id": "p1-t1-g1-r4-c4",
+            "total_id": "p1-t1-g1-r6-c4",
+            "tax_ids": [
+              "p1-t1-g1-r5-c4"
+            ],
+            "adjustment_ids": []
+          }
+        }
+      ],
+      "issues": []
+    }
+  ],
+  "status": "needs_review",
+  "checks": [
+    {
+      "rule": "subtotal",
+      "status": "passed",
+      "cell_ids": [
+        "p1-t1-g1-r2-c4",
+        "p1-t1-g1-r3-c4",
+        "p1-t1-g1-r4-c4"
+      ],
+      "expected": "2300",
+      "observed": "2300",
+      "difference": "0",
+      "detail": "sum(line amounts)"
+    },
+    {
+      "rule": "tax",
+      "status": "passed",
+      "cell_ids": [
+        "p1-t1-g1-r5-c4"
+      ],
+      "expected": "230",
+      "observed": "230",
+      "difference": "0",
+      "detail": "Configured rate, tax mode, and rounding"
+    },
+    {
+      "rule": "total",
+      "status": "passed",
+      "cell_ids": [
+        "p1-t1-g1-r2-c4",
+        "p1-t1-g1-r3-c4",
+        "p1-t1-g1-r5-c4",
+        "p1-t1-g1-r6-c4"
+      ],
+      "expected": "2530",
+      "observed": "2530",
+      "difference": "0",
+      "detail": "line sum plus exclusive tax, or tax-inclusive line sum"
+    }
+  ],
+  "issues": [],
+  "japanese_review": {
+    "completed": false,
+    "reviewed_cell_ids": [
+      "p1-t1-g1-r1-c1",
+      "p1-t1-g1-r1-c2",
+      "p1-t1-g1-r1-c3",
+      "p1-t1-g1-r1-c4",
+      "p1-t1-g1-r2-c1",
+      "p1-t1-g1-r2-c2",
+      "p1-t1-g1-r2-c3",
+      "p1-t1-g1-r2-c4",
+      "p1-t1-g1-r3-c1",
+      "p1-t1-g1-r3-c2",
+      "p1-t1-g1-r3-c3",
+      "p1-t1-g1-r3-c4",
+      "p1-t1-g1-r4-c1",
+      "p1-t1-g1-r4-c2",
+      "p1-t1-g1-r5-c3",
+      "p1-t1-g1-r5-c4",
+      "p1-t1-g1-r6-c1",
+      "p1-t1-g1-r6-c2",
+      "p1-t1-g1-r6-c3",
+      "p1-t1-g1-r6-c4"
+    ],
+    "issues": [
+      {
+        "code": "encoding_error",
+        "stage": "M",
+        "message": "「単価」の「単」が中国語簡体字の「单」になっている。 Suggested reading (not applied): 単価",
+        "cell_ids": [
+          "p1-t1-g1-r1-c3"
+        ],
+        "severity": "warning"
+      },
+      {
+        "code": "encoding_error",
+        "stage": "M",
+        "message": "「封筒」の「筒」が中国語簡体字の「简」になっている。 Suggested reading (not applied): 封筒",
+        "cell_ids": [
+          "p1-t1-g1-r3-c1"
+        ],
+        "severity": "warning"
+      },
+      {
+        "code": "japanese_generation_failed",
+        "stage": "M",
+        "message": "API returned HTTP 400; no fallback model was used",
+        "cell_ids": [
+          "p1-t1-g1-r4-c3",
+          "p1-t1-g1-r4-c4",
+          "p1-t1-g1-r5-c1"
+        ],
+        "severity": "warning"
+      },
+      {
+        "code": "review_context_limit",
+        "stage": "M",
+        "message": "Cell exceeds reviewer context; text was not truncated",
+        "cell_ids": [
+          "p1-t1-g1-r5-c2"
+        ],
+        "severity": "warning"
+      },
+      {
+        "code": "review_coverage",
+        "stage": "M",
+        "message": "Japanese review must cover every cell exactly once",
+        "cell_ids": [],
+        "severity": "warning"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1710 @@
+{
+  "schema_version": "1.0.0",
+  "source_name": "synthetic-invoice.pdf",
+  "source_sha256": "68732a0019df21230492c921d6d367733943222a3fe614be6d1b55ba5112acb6",
+  "page_count": 1,
+  "pages": [
+    {
+      "number": 1,
+      "width_points": 600.0,
+      "height_points": 700.0,
+      "rotation": 0,
+      "width_pixels": 2500,
+      "height_pixels": 2917,
+      "dpi": 300,
+      "image_to_pdf": [
+        0.24000000953674316,
+        0.0,
+        0.0,
+        0.0,
+        -0.239990234375,
+        700.0
+      ],
+      "image_path": "pages/p001.png",
+      "tables": [
+        {
+          "id": "p1-t1",
+          "page_number": 1,
+          "grid_revision": 1,
+          "bbox": [
+            241.0,
+            674.0,
+            1969.0,
+            1760.0
+          ],
+          "coordinate_frame": "rendered_page_pixels",
+          "table_to_page": [
+            1.0,
+            0.0,
+            241.0,
+            0.0,
+            1.0,
+            674.0
+          ],
+          "image_path": "tables/p1-t1/source.png",
+          "rows": [
+            {
+              "id": "p1-t1-g1-r1",
+              "index": 1,
+              "bbox": [
+                17.065414428710938,
+                18.615360260009766,
+                1716.615478515625,
+                147.70311737060547
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9996552467346191,
+              "is_header": true
+            },
+            {
+              "id": "p1-t1-g1-r2",
+              "index": 2,
+              "bbox": [
+                17.065414428710938,
+                147.70311737060547,
+                1716.615478515625,
+                346.73431396484375
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9989638328552246,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-r3",
+              "index": 3,
+              "bbox": [
+                17.065414428710938,
+                346.73431396484375,
+                1716.615478515625,
+                544.5742492675781
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9994885921478271,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-r4",
+              "index": 4,
+              "bbox": [
+                17.065414428710938,
+                544.5742492675781,
+                1716.615478515625,
+                747.7606201171875
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.999691367149353,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-r5",
+              "index": 5,
+              "bbox": [
+                17.065414428710938,
+                747.7606201171875,
+                1716.615478515625,
+                954.7781677246094
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9992668032646179,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-r6",
+              "index": 6,
+              "bbox": [
+                17.065414428710938,
+                954.7781677246094,
+                1716.615478515625,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.999398946762085,
+              "is_header": false
+            }
+          ],
+          "columns": [
+            {
+              "id": "p1-t1-g1-c1",
+              "index": 1,
+              "bbox": [
+                17.065414428710938,
+                18.615360260009766,
+                482.46202087402344,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9995046854019165,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-c2",
+              "index": 2,
+              "bbox": [
+                482.46202087402344,
+                18.615360260009766,
+                1005.3622131347656,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9999405145645142,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-c3",
+              "index": 3,
+              "bbox": [
+                1005.3622131347656,
+                18.615360260009766,
+                1416.9555053710938,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.9991115927696228,
+              "is_header": false
+            },
+            {
+              "id": "p1-t1-g1-c4",
+              "index": 4,
+              "bbox": [
+                1416.9555053710938,
+                18.615360260009766,
+                1716.615478515625,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "upright_table_pixels",
+              "score": 0.999792754650116,
+              "is_header": false
+            }
+          ],
+          "cells": [
+            {
+              "id": "p1-t1-g1-r1-c1",
+              "row": 1,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                258.06541442871094,
+                692.6153602600098,
+                723.4620208740234,
+                821.7031173706055
+              ],
+              "table_bbox": [
+                17.065414428710938,
+                18.615360260009766,
+                482.46202087402344,
+                147.70311737060547
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r1"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c1"
+              ],
+              "is_header": true,
+              "raw_text": "品目",
+              "normalized_text": "品目",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r1-c1-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r1-c1.png",
+                  "raw_path": "ocr/p1-t1-g1-r1-c1-a1.json",
+                  "text": "品目",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    465.0,
+                    129.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    258.0,
+                    0.0,
+                    1.0,
+                    693.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r1-c2",
+              "row": 1,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                723.4620208740234,
+                692.6153602600098,
+                1246.3622131347656,
+                821.7031173706055
+              ],
+              "table_bbox": [
+                482.46202087402344,
+                18.615360260009766,
+                1005.3622131347656,
+                147.70311737060547
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r1"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c2"
+              ],
+              "is_header": true,
+              "raw_text": "数量",
+              "normalized_text": "数量",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r1-c2-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r1-c2.png",
+                  "raw_path": "ocr/p1-t1-g1-r1-c2-a1.json",
+                  "text": "数量",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    523.0,
+                    129.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    723.0,
+                    0.0,
+                    1.0,
+                    693.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r1-c3",
+              "row": 1,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1246.3622131347656,
+                692.6153602600098,
+                1657.9555053710938,
+                821.7031173706055
+              ],
+              "table_bbox": [
+                1005.3622131347656,
+                18.615360260009766,
+                1416.9555053710938,
+                147.70311737060547
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r1"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c3"
+              ],
+              "is_header": true,
+              "raw_text": "| 単価",
+              "normalized_text": "| 単価",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r1-c3-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r1-c3.png",
+                  "raw_path": "ocr/p1-t1-g1-r1-c3-a1.json",
+                  "text": "| 単価",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    412.0,
+                    129.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1246.0,
+                    0.0,
+                    1.0,
+                    693.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r1-c4",
+              "row": 1,
+              "column": 4,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1657.9555053710938,
+                692.6153602600098,
+                1957.615478515625,
+                821.7031173706055
+              ],
+              "table_bbox": [
+                1416.9555053710938,
+                18.615360260009766,
+                1716.615478515625,
+                147.70311737060547
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r1"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c4"
+              ],
+              "is_header": true,
+              "raw_text": "金額",
+              "normalized_text": "金額",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r1-c4-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r1-c4.png",
+                  "raw_path": "ocr/p1-t1-g1-r1-c4-a1.json",
+                  "text": "金額",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    300.0,
+                    129.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1658.0,
+                    0.0,
+                    1.0,
+                    693.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r2-c1",
+              "row": 2,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                258.06541442871094,
+                821.7031173706055,
+                723.4620208740234,
+                1020.7343139648438
+              ],
+              "table_bbox": [
+                17.065414428710938,
+                147.70311737060547,
+                482.46202087402344,
+                346.73431396484375
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r2"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c1"
+              ],
+              "is_header": false,
+              "raw_text": "用紙",
+              "normalized_text": "用紙",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r2-c1-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r2-c1.png",
+                  "raw_path": "ocr/p1-t1-g1-r2-c1-a1.json",
+                  "text": "用紙",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    465.0,
+                    199.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    258.0,
+                    0.0,
+                    1.0,
+                    822.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r2-c2",
+              "row": 2,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                723.4620208740234,
+                821.7031173706055,
+                1246.3622131347656,
+                1020.7343139648438
+              ],
+              "table_bbox": [
+                482.46202087402344,
+                147.70311737060547,
+                1005.3622131347656,
+                346.73431396484375
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r2"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c2"
+              ],
+              "is_header": false,
+              "raw_text": "2",
+              "normalized_text": "2",
+              "number": "2",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r2-c2-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r2-c2.png",
+                  "raw_path": "ocr/p1-t1-g1-r2-c2-a1.json",
+                  "text": "2",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    523.0,
+                    199.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    723.0,
+                    0.0,
+                    1.0,
+                    822.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r2-c3",
+              "row": 2,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1246.3622131347656,
+                821.7031173706055,
+                1657.9555053710938,
+                1020.7343139648438
+              ],
+              "table_bbox": [
+                1005.3622131347656,
+                147.70311737060547,
+                1416.9555053710938,
+                346.73431396484375
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r2"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c3"
+              ],
+              "is_header": false,
+              "raw_text": "1,000",
+              "normalized_text": "1,000",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r2-c3-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r2-c3.png",
+                  "raw_path": "ocr/p1-t1-g1-r2-c3-a1.json",
+                  "text": "1,000",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    412.0,
+                    199.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1246.0,
+                    0.0,
+                    1.0,
+                    822.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r2-c4",
+              "row": 2,
+              "column": 4,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1657.9555053710938,
+                821.7031173706055,
+                1957.615478515625,
+                1020.7343139648438
+              ],
+              "table_bbox": [
+                1416.9555053710938,
+                147.70311737060547,
+                1716.615478515625,
+                346.73431396484375
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r2"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c4"
+              ],
+              "is_header": false,
+              "raw_text": "2,000",
+              "normalized_text": "2,000",
+              "number": "2000",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r2-c4-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r2-c4.png",
+                  "raw_path": "ocr/p1-t1-g1-r2-c4-a1.json",
+                  "text": "2,000",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    300.0,
+                    199.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1658.0,
+                    0.0,
+                    1.0,
+                    822.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r3-c1",
+              "row": 3,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                258.06541442871094,
+                1020.7343139648438,
+                723.4620208740234,
+                1218.5742492675781
+              ],
+              "table_bbox": [
+                17.065414428710938,
+                346.73431396484375,
+                482.46202087402344,
+                544.5742492675781
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r3"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c1"
+              ],
+              "is_header": false,
+              "raw_text": "封简",
+              "normalized_text": "封简",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r3-c1-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r3-c1.png",
+                  "raw_path": "ocr/p1-t1-g1-r3-c1-a1.json",
+                  "text": "封简",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    465.0,
+                    198.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    258.0,
+                    0.0,
+                    1.0,
+                    1021.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r3-c2",
+              "row": 3,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                723.4620208740234,
+                1020.7343139648438,
+                1246.3622131347656,
+                1218.5742492675781
+              ],
+              "table_bbox": [
+                482.46202087402344,
+                346.73431396484375,
+                1005.3622131347656,
+                544.5742492675781
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r3"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c2"
+              ],
+              "is_header": false,
+              "raw_text": "1",
+              "normalized_text": "1",
+              "number": "1",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r3-c2-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r3-c2.png",
+                  "raw_path": "ocr/p1-t1-g1-r3-c2-a1.json",
+                  "text": "1",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    523.0,
+                    198.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    723.0,
+                    0.0,
+                    1.0,
+                    1021.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r3-c3",
+              "row": 3,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1246.3622131347656,
+                1020.7343139648438,
+                1657.9555053710938,
+                1218.5742492675781
+              ],
+              "table_bbox": [
+                1005.3622131347656,
+                346.73431396484375,
+                1416.9555053710938,
+                544.5742492675781
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r3"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c3"
+              ],
+              "is_header": false,
+              "raw_text": "300",
+              "normalized_text": "300",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r3-c3-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r3-c3.png",
+                  "raw_path": "ocr/p1-t1-g1-r3-c3-a1.json",
+                  "text": "300",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    412.0,
+                    198.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1246.0,
+                    0.0,
+                    1.0,
+                    1021.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r3-c4",
+              "row": 3,
+              "column": 4,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1657.9555053710938,
+                1020.7343139648438,
+                1957.615478515625,
+                1218.5742492675781
+              ],
+              "table_bbox": [
+                1416.9555053710938,
+                346.73431396484375,
+                1716.615478515625,
+                544.5742492675781
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r3"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c4"
+              ],
+              "is_header": false,
+              "raw_text": "300",
+              "normalized_text": "300",
+              "number": "300",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r3-c4-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r3-c4.png",
+                  "raw_path": "ocr/p1-t1-g1-r3-c4-a1.json",
+                  "text": "300",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    300.0,
+                    198.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1658.0,
+                    0.0,
+                    1.0,
+                    1021.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r4-c1",
+              "row": 4,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                258.06541442871094,
+                1218.5742492675781,
+                723.4620208740234,
+                1421.7606201171875
+              ],
+              "table_bbox": [
+                17.065414428710938,
+                544.5742492675781,
+                482.46202087402344,
+                747.7606201171875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r4"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c1"
+              ],
+              "is_header": false,
+              "raw_text": "小計",
+              "normalized_text": "小計",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r4-c1-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r4-c1.png",
+                  "raw_path": "ocr/p1-t1-g1-r4-c1-a1.json",
+                  "text": "小計",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    465.0,
+                    203.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    258.0,
+                    0.0,
+                    1.0,
+                    1219.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r4-c2",
+              "row": 4,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                723.4620208740234,
+                1218.5742492675781,
+                1246.3622131347656,
+                1421.7606201171875
+              ],
+              "table_bbox": [
+                482.46202087402344,
+                544.5742492675781,
+                1005.3622131347656,
+                747.7606201171875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r4"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c2"
+              ],
+              "is_header": false,
+              "raw_text": ".",
+              "normalized_text": ".",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r4-c2-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r4-c2.png",
+                  "raw_path": "ocr/p1-t1-g1-r4-c2-a1.json",
+                  "text": ".",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    523.0,
+                    203.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    723.0,
+                    0.0,
+                    1.0,
+                    1219.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r4-c3",
+              "row": 4,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1246.3622131347656,
+                1218.5742492675781,
+                1657.9555053710938,
+                1421.7606201171875
+              ],
+              "table_bbox": [
+                1005.3622131347656,
+                544.5742492675781,
+                1416.9555053710938,
+                747.7606201171875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r4"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c3"
+              ],
+              "is_header": false,
+              "raw_text": ")",
+              "normalized_text": ")",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r4-c3-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r4-c3.png",
+                  "raw_path": "ocr/p1-t1-g1-r4-c3-a1.json",
+                  "text": ")",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    412.0,
+                    203.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1246.0,
+                    0.0,
+                    1.0,
+                    1219.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r4-c4",
+              "row": 4,
+              "column": 4,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1657.9555053710938,
+                1218.5742492675781,
+                1957.615478515625,
+                1421.7606201171875
+              ],
+              "table_bbox": [
+                1416.9555053710938,
+                544.5742492675781,
+                1716.615478515625,
+                747.7606201171875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r4"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c4"
+              ],
+              "is_header": false,
+              "raw_text": "2,300",
+              "normalized_text": "2,300",
+              "number": "2300",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r4-c4-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r4-c4.png",
+                  "raw_path": "ocr/p1-t1-g1-r4-c4-a1.json",
+                  "text": "2,300",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    300.0,
+                    203.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1658.0,
+                    0.0,
+                    1.0,
+                    1219.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r5-c1",
+              "row": 5,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                258.06541442871094,
+                1421.7606201171875,
+                723.4620208740234,
+                1628.7781677246094
+              ],
+              "table_bbox": [
+                17.065414428710938,
+                747.7606201171875,
+                482.46202087402344,
+                954.7781677246094
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r5"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c1"
+              ],
+              "is_header": false,
+              "raw_text": "消費税",
+              "normalized_text": "消費税",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r5-c1-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r5-c1.png",
+                  "raw_path": "ocr/p1-t1-g1-r5-c1-a1.json",
+                  "text": "消費税",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    465.0,
+                    207.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    258.0,
+                    0.0,
+                    1.0,
+                    1422.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r5-c2",
+              "row": 5,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                723.4620208740234,
+                1421.7606201171875,
+                1246.3622131347656,
+                1628.7781677246094
+              ],
+              "table_bbox": [
+                482.46202087402344,
+                747.7606201171875,
+                1005.3622131347656,
+                954.7781677246094
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r5"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c2"
+              ],
+              "is_header": false,
+              "raw_text": "僧",
+              "normalized_text": "僧",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r5-c2-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r5-c2.png",
+                  "raw_path": "ocr/p1-t1-g1-r5-c2-a1.json",
+                  "text": "僧",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    523.0,
+                    207.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    723.0,
+                    0.0,
+                    1.0,
+                    1422.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r5-c3",
+              "row": 5,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1246.3622131347656,
+                1421.7606201171875,
+                1657.9555053710938,
+                1628.7781677246094
+              ],
+              "table_bbox": [
+                1005.3622131347656,
+                747.7606201171875,
+                1416.9555053710938,
+                954.7781677246094
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r5"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c3"
+              ],
+              "is_header": false,
+              "raw_text": "銓",
+              "normalized_text": "銓",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r5-c3-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r5-c3.png",
+                  "raw_path": "ocr/p1-t1-g1-r5-c3-a1.json",
+                  "text": "銓",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    412.0,
+                    207.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1246.0,
+                    0.0,
+                    1.0,
+                    1422.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r5-c4",
+              "row": 5,
+              "column": 4,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1657.9555053710938,
+                1421.7606201171875,
+                1957.615478515625,
+                1628.7781677246094
+              ],
+              "table_bbox": [
+                1416.9555053710938,
+                747.7606201171875,
+                1716.615478515625,
+                954.7781677246094
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r5"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c4"
+              ],
+              "is_header": false,
+              "raw_text": "230",
+              "normalized_text": "230",
+              "number": "230",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r5-c4-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r5-c4.png",
+                  "raw_path": "ocr/p1-t1-g1-r5-c4-a1.json",
+                  "text": "230",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    300.0,
+                    207.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1658.0,
+                    0.0,
+                    1.0,
+                    1422.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r6-c1",
+              "row": 6,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                258.06541442871094,
+                1628.7781677246094,
+                723.4620208740234,
+                1759.2469482421875
+              ],
+              "table_bbox": [
+                17.065414428710938,
+                954.7781677246094,
+                482.46202087402344,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r6"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c1"
+              ],
+              "is_header": false,
+              "raw_text": "合計",
+              "normalized_text": "合計",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r6-c1-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r6-c1.png",
+                  "raw_path": "ocr/p1-t1-g1-r6-c1-a1.json",
+                  "text": "合計",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    465.0,
+                    130.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    258.0,
+                    0.0,
+                    1.0,
+                    1629.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r6-c2",
+              "row": 6,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                723.4620208740234,
+                1628.7781677246094,
+                1246.3622131347656,
+                1759.2469482421875
+              ],
+              "table_bbox": [
+                482.46202087402344,
+                954.7781677246094,
+                1005.3622131347656,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r6"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c2"
+              ],
+              "is_header": false,
+              "raw_text": "|",
+              "normalized_text": "|",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r6-c2-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r6-c2.png",
+                  "raw_path": "ocr/p1-t1-g1-r6-c2-a1.json",
+                  "text": "|",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    523.0,
+                    130.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    723.0,
+                    0.0,
+                    1.0,
+                    1629.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r6-c3",
+              "row": 6,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1246.3622131347656,
+                1628.7781677246094,
+                1657.9555053710938,
+                1759.2469482421875
+              ],
+              "table_bbox": [
+                1005.3622131347656,
+                954.7781677246094,
+                1416.9555053710938,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r6"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c3"
+              ],
+              "is_header": false,
+              "raw_text": "l",
+              "normalized_text": "l",
+              "number": null,
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r6-c3-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r6-c3.png",
+                  "raw_path": "ocr/p1-t1-g1-r6-c3-a1.json",
+                  "text": "l",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    412.0,
+                    130.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1246.0,
+                    0.0,
+                    1.0,
+                    1629.0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1-t1-g1-r6-c4",
+              "row": 6,
+              "column": 4,
+              "row_span": 1,
+              "column_span": 1,
+              "bbox": [
+                1657.9555053710938,
+                1628.7781677246094,
+                1957.615478515625,
+                1759.2469482421875
+              ],
+              "table_bbox": [
+                1416.9555053710938,
+                954.7781677246094,
+                1716.615478515625,
+                1085.2469482421875
+              ],
+              "coordinate_frame": "rendered_page_pixels",
+              "bbox_source": "tatr_grid_reconstruction",
+              "row_ids": [
+                "p1-t1-g1-r6"
+              ],
+              "column_ids": [
+                "p1-t1-g1-c4"
+              ],
+              "is_header": false,
+              "raw_text": "2,530",
+              "normalized_text": "2,530",
+              "number": "2530",
+              "readings": [
+                {
+                  "request_id": "p1-t1-g1-r6-c4-a1",
+                  "variant": "clean_cell",
+                  "image_path": "tables/p1-t1/cells/p1-t1-g1-r6-c4.png",
+                  "raw_path": "ocr/p1-t1-g1-r6-c4-a1.json",
+                  "text": "2,530",
+                  "error": null,
+                  "source_bbox_in_image": [
+                    0.0,
+                    0.0,
+                    300.0,
+                    130.0
+                  ],
+                  "image_to_page": [
+                    1.0,
+                    0.0,
+                    1658.0,
+                    0.0,
+                    1.0,
+                    1629.0
+                  ]
+                }
+              ]
+            }
+          ],
+          "geometry_valid": true,
+          "issues": [
+            {
+              "code": "annotated_alignment_uncertain",
+              "stage": "K",
+              "message": "Annotated table topology differs from the fixed grid",
+              "cell_ids": [],
+              "severity": "warning"
+            }
+          ],
+          "annotated_reading": {
+            "request_id": "p1-t1-annotated-a1",
+            "variant": "annotated_table",
+            "image_path": "tables/p1-t1/numbered.png",
+            "raw_path": "ocr/p1-t1-annotated-a1.json",
+            "text": "<table><tr><td rowspan=\"1\" colspan=\"1\"></td><td rowspan=\"1\" colspan=\"1\">C1</td><td rowspan=\"1\" colspan=\"1\">C2</td><td rowspan=\"1\" colspan=\"1\">C3</td><td rowspan=\"1\" colspan=\"1\">C4</td><td rowspan=\"1\" colspan=\"1\">CellID[page ibox [k0.y0.x1.y]]pt+t[y1+c1][298.16828.7235.6217]pt+t[g1+c1][223.5207.17296.4821.7]pt+t[g1+c1][225.5253.8217.7]pt+t[g1+c4][1658.0.6922.6.1957.6.821.7]pt+t[g1+c4][208.1.8217.7235.1020.7]pt+t[g1+c4][223.521.71248.4.1020.7]pt+t[g1+c2-c4][1240.4821.7.1658.0.1020.7]pt+t[g1+c2-c4][1658.0.8217.1957.6.1020.7]pt+t[g1+c2-c4][1258.1.1020.7.2235.1218.6]pt+t[g1+c2-c4][223.5.1020.7.1246.4.1218.6]pt+t[g1+c3-c4][1248.4.1030.7.15050.7.1284.6]pt+t[g1+c3-c4][1658.0.1020.7.1957.6.1218.6]pt+t[g1+c4-c4][258.1.1218.6.7235.1421.8]pt+t[g1+c4-c4][223.5.1218.6.1246.4.1421.8]pt+t[g1+c4-c4][1248.4.1218.6.13550.1421.8]pt+t[g1+c4-c4][1658.0.1218.6.1957.6.1421.8]pt+t[g1-c5-c4][258.1.1421.8.7235.16288]pt+t[g1-c5-c4][223.5.1421.8.1246.4.16288]pt+t[g1-c5-c4][1248.4.1421.8.16580.13288]pt+t[g1-c5-c4][1658.0.1421.8.1957.6.16288]pt+t[g1-c5-c4][223.5.1628.7235.1759.2]pt+t[g1-c5-c4][223.5.1628.7235.1759.2]pt+t[g1-c5-c4][1658.0.12308.1240.41759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][258.1.1628.8.2325.1759.2]pt+t[g1-c6-c4][1658.0.1828.8.19560.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.8.2325.1759.2]pt+t[g1-c6-c4][223.5.1628.8.2325.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.2325.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c5-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c5-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][223.5.1628.1258.0.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759.2]pt+t[g1-c6-c4][1658.0.1628.8.1957.6.1759</td></tr></table>",
+            "error": null,
+            "source_bbox_in_image": [
+              50.0,
+              50.0,
+              1778.0,
+              1136.0
+            ],
+            "image_to_page": [
+              1.0,
+              0.0,
+              191.0,
+              0.0,
+              1.0,
+              624.0
+            ]
+          },
+          "invoice": {
+            "header_row": 1,
+            "columns": {
+              "quantity": 2,
+              "amount": 4
+            },
+            "lines": [
+              {
+                "row": 2,
+                "amount_id": "p1-t1-g1-r2-c4",
+                "quantity_id": "p1-t1-g1-r2-c2",
+                "unit_price_id": null
+              },
+              {
+                "row": 3,
+                "amount_id": "p1-t1-g1-r3-c4",
+                "quantity_id": "p1-t1-g1-r3-c2",
+                "unit_price_id": null
+              }
+            ],
+            "subtotal_id": "p1-t1-g1-r4-c4",
+            "total_id": "p1-t1-g1-r6-c4",
+            "tax_ids": [
+              "p1-t1-g1-r5-c4"
+            ],
+            "adjustment_ids": []
+          }
+        }
+      ],
+      "issues": []
+    }
+  ],
+  "status": "needs_review",
+  "checks": [
+    {
+      "rule": "subtotal",
+      "status": "passed",
+      "cell_ids": [
+        "p1-t1-g1-r2-c4",
+        "p1-t1-g1-r3-c4",
+        "p1-t1-g1-r4-c4"
+      ],
+      "expected": "2300",
+      "observed": "2300",
+      "difference": "0",
+      "detail": "sum(line amounts)"
+    },
+    {
+      "rule": "tax",
+      "status": "passed",
+      "cell_ids": [
+        "p1-t1-g1-r5-c4"
+      ],
+      "expected": "230",
+      "observed": "230",
+      "difference": "0",
+      "detail": "Configured rate, tax mode, and rounding"
+    },
+    {
+      "rule": "total",
+      "status": "passed",
+      "cell_ids": [
+        "p1-t1-g1-r2-c4",
+        "p1-t1-g1-r3-c4",
+        "p1-t1-g1-r5-c4",
+        "p1-t1-g1-r6-c4"
+      ],
+      "expected": "2530",
+      "observed": "2530",
+      "difference": "0",
+      "detail": "line sum plus exclusive tax, or tax-inclusive line sum"
+    }
+  ],
+  "issues": [],
+  "japanese_review": {
+    "completed": true,
+    "reviewed_cell_ids": [
+      "p1-t1-g1-r1-c1",
+      "p1-t1-g1-r1-c2",
+      "p1-t1-g1-r1-c3",
+      "p1-t1-g1-r1-c4",
+      "p1-t1-g1-r2-c1",
+      "p1-t1-g1-r2-c2",
+      "p1-t1-g1-r2-c3",
+      "p1-t1-g1-r2-c4",
+      "p1-t1-g1-r3-c1",
+      "p1-t1-g1-r3-c2",
+      "p1-t1-g1-r3-c3",
+      "p1-t1-g1-r3-c4",
+      "p1-t1-g1-r4-c1",
+      "p1-t1-g1-r4-c2",
+      "p1-t1-g1-r4-c3",
+      "p1-t1-g1-r4-c4",
+      "p1-t1-g1-r5-c1",
+      "p1-t1-g1-r5-c2",
+      "p1-t1-g1-r5-c3",
+      "p1-t1-g1-r5-c4",
+      "p1-t1-g1-r6-c1",
+      "p1-t1-g1-r6-c2",
+      "p1-t1-g1-r6-c3",
+      "p1-t1-g1-r6-c4"
+    ],
+    "issues": [
+      {
+        "code": "suspicious_text",
+        "stage": "M",
+        "message": "テキストの先頭に不要なパイプ記号 '|' が含まれています。",
+        "cell_ids": [
+          "p1-t1-g1-r1-c3"
+        ],
+        "severity": "warning"
+      },
+      {
+        "code": "suspicious_text",
+        "stage": "M",
+        "message": "「封简」は中国語の表記であり、日本語の請求書では「封筒」が一般的です。OCR誤認識または文字化けの可能性があります。",
+        "cell_ids": [
+          "p1-t1-g1-r3-c1"
+        ],
+        "severity": "warning"
+      },
+      {
+        "code": "suspicious_text",
+        "stage": "M",
+        "message": "数値のセルにピリオド '.' のみが入力されており、数値として不自然です。",
+        "cell_ids": [
+          "p1-t1-g1-r4-c2"
+        ],
+        "severity": "warning"
+      },
+      {
+        "code": "suspicious_text",
+        "stage": "M",
+        "message": "単独の閉じ括弧「)」のみが検出されました。通常、単位や注釈の一部であるはずですが、対応する開き括弧やテキストが欠落している可能性があります。",
+        "cell_ids": [
+          "p1-t1-g1-r4-c3"
+        ],
+        "severity": "warning"
+      },
+      {
+        "code": "encoding_error",
+        "stage": "M",
+        "message": "「僧」は消費税の税率欄（通常は「10%」など）として不自然です。文字化けまたはOCR誤認識の疑いがあります。",
+        "cell_ids": [
+          "p1-t1-g1-r5-c2"
+        ],
+        "severity": "warning"
+      },
+      {
+        "code": "encoding_error",
+        "stage": "M",
+        "message": "「銓」は消費税の金額欄（通常は数値）として不自然です。文字化けまたはOCR誤認識の疑いがあります。",
+        "cell_ids": [
+          "p1-t1-g1-r5-c3"
+        ],
+        "severity": "warning"
+      },
+      {
+        "code": "suspicious_text",
+        "stage": "M",
+        "message": "「|」は合計行の税率欄として不自然です。通常は空欄または「-」であるべきですが、OCRで誤認識された可能性があります。",
+        "cell_ids": [
+          "p1-t1-g1-r6-c2"
+        ],
+        "severity": "warning"
+      },
+      {
+        "code": "suspicious_text",
+        "stage": "M",
+        "message": "「l」は合計行の金額欄として不自然です。通常は空欄または「-」であるべきですが、OCRで誤認識された可能性があります。",
+        "cell_ids": [
+          "p1-t1-g1-r6-c3"
+        ],
+        "severity": "warning"
+      }
+    ]
+  }
+}

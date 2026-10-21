@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "reviewed_cell_ids": [
+    "p1-t1-g1-r1-c1",
+    "p1-t1-g1-r1-c2",
+    "p1-t1-g1-r2-c1",
+    "p1-t1-g1-r2-c2"
+  ],
+  "issues": []
+}

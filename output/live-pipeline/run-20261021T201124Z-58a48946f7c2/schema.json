@@ -1,0 +1,898 @@
+{
+  "$defs": {
+    "Axis": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "index": {
+          "minimum": 1,
+          "title": "Index",
+          "type": "integer"
+        },
+        "bbox": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Bbox",
+          "type": "array"
+        },
+        "coordinate_frame": {
+          "const": "upright_table_pixels",
+          "default": "upright_table_pixels",
+          "title": "Coordinate Frame",
+          "type": "string"
+        },
+        "score": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Score",
+          "type": "number"
+        },
+        "is_header": {
+          "default": false,
+          "title": "Is Header",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "index",
+        "bbox",
+        "score"
+      ],
+      "title": "Axis",
+      "type": "object"
+    },
+    "Cell": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "row": {
+          "minimum": 1,
+          "title": "Row",
+          "type": "integer"
+        },
+        "column": {
+          "minimum": 1,
+          "title": "Column",
+          "type": "integer"
+        },
+        "row_span": {
+          "default": 1,
+          "minimum": 1,
+          "title": "Row Span",
+          "type": "integer"
+        },
+        "column_span": {
+          "default": 1,
+          "minimum": 1,
+          "title": "Column Span",
+          "type": "integer"
+        },
+        "bbox": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Bbox",
+          "type": "array"
+        },
+        "table_bbox": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Table Bbox",
+          "type": "array"
+        },
+        "coordinate_frame": {
+          "const": "rendered_page_pixels",
+          "default": "rendered_page_pixels",
+          "title": "Coordinate Frame",
+          "type": "string"
+        },
+        "bbox_source": {
+          "const": "tatr_grid_reconstruction",
+          "default": "tatr_grid_reconstruction",
+          "title": "Bbox Source",
+          "type": "string"
+        },
+        "row_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Row Ids",
+          "type": "array"
+        },
+        "column_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Column Ids",
+          "type": "array"
+        },
+        "is_header": {
+          "default": false,
+          "title": "Is Header",
+          "type": "boolean"
+        },
+        "raw_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw Text"
+        },
+        "normalized_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Normalized Text"
+        },
+        "number": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Number"
+        },
+        "readings": {
+          "items": {
+            "$ref": "#/$defs/Reading"
+          },
+          "title": "Readings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "row",
+        "column",
+        "bbox",
+        "table_bbox",
+        "row_ids",
+        "column_ids"
+      ],
+      "title": "Cell",
+      "type": "object"
+    },
+    "Check": {
+      "additionalProperties": false,
+      "properties": {
+        "rule": {
+          "title": "Rule",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "passed",
+            "failed",
+            "incomplete",
+            "not_applicable"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "cell_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Cell Ids",
+          "type": "array"
+        },
+        "expected": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expected"
+        },
+        "observed": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Observed"
+        },
+        "difference": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Difference"
+        },
+        "detail": {
+          "title": "Detail",
+          "type": "string"
+        }
+      },
+      "required": [
+        "rule",
+        "status",
+        "detail"
+      ],
+      "title": "Check",
+      "type": "object"
+    },
+    "InvoiceLine": {
+      "additionalProperties": false,
+      "properties": {
+        "row": {
+          "title": "Row",
+          "type": "integer"
+        },
+        "amount_id": {
+          "title": "Amount Id",
+          "type": "string"
+        },
+        "quantity_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quantity Id"
+        },
+        "unit_price_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit Price Id"
+        }
+      },
+      "required": [
+        "row",
+        "amount_id"
+      ],
+      "title": "InvoiceLine",
+      "type": "object"
+    },
+    "InvoiceView": {
+      "additionalProperties": false,
+      "properties": {
+        "header_row": {
+          "title": "Header Row",
+          "type": "integer"
+        },
+        "columns": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Columns",
+          "type": "object"
+        },
+        "lines": {
+          "items": {
+            "$ref": "#/$defs/InvoiceLine"
+          },
+          "title": "Lines",
+          "type": "array"
+        },
+        "subtotal_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Subtotal Id"
+        },
+        "total_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Total Id"
+        },
+        "tax_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Tax Ids",
+          "type": "array"
+        },
+        "adjustment_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Adjustment Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "header_row",
+        "columns"
+      ],
+      "title": "InvoiceView",
+      "type": "object"
+    },
+    "Issue": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "stage": {
+          "title": "Stage",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "cell_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Cell Ids",
+          "type": "array"
+        },
+        "severity": {
+          "default": "warning",
+          "enum": [
+            "warning",
+            "error"
+          ],
+          "title": "Severity",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "stage",
+        "message"
+      ],
+      "title": "Issue",
+      "type": "object"
+    },
+    "JapaneseReview": {
+      "additionalProperties": false,
+      "properties": {
+        "completed": {
+          "default": false,
+          "title": "Completed",
+          "type": "boolean"
+        },
+        "reviewed_cell_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reviewed Cell Ids",
+          "type": "array"
+        },
+        "issues": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Issues",
+          "type": "array"
+        }
+      },
+      "title": "JapaneseReview",
+      "type": "object"
+    },
+    "Page": {
+      "additionalProperties": false,
+      "properties": {
+        "number": {
+          "title": "Number",
+          "type": "integer"
+        },
+        "width_points": {
+          "title": "Width Points",
+          "type": "number"
+        },
+        "height_points": {
+          "title": "Height Points",
+          "type": "number"
+        },
+        "rotation": {
+          "title": "Rotation",
+          "type": "integer"
+        },
+        "width_pixels": {
+          "title": "Width Pixels",
+          "type": "integer"
+        },
+        "height_pixels": {
+          "title": "Height Pixels",
+          "type": "integer"
+        },
+        "dpi": {
+          "title": "Dpi",
+          "type": "integer"
+        },
+        "image_to_pdf": {
+          "maxItems": 6,
+          "minItems": 6,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Image To Pdf",
+          "type": "array"
+        },
+        "image_path": {
+          "title": "Image Path",
+          "type": "string"
+        },
+        "tables": {
+          "items": {
+            "$ref": "#/$defs/Table"
+          },
+          "title": "Tables",
+          "type": "array"
+        },
+        "issues": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Issues",
+          "type": "array"
+        }
+      },
+      "required": [
+        "number",
+        "width_points",
+        "height_points",
+        "rotation",
+        "width_pixels",
+        "height_pixels",
+        "dpi",
+        "image_to_pdf",
+        "image_path"
+      ],
+      "title": "Page",
+      "type": "object"
+    },
+    "Reading": {
+      "additionalProperties": false,
+      "properties": {
+        "request_id": {
+          "title": "Request Id",
+          "type": "string"
+        },
+        "variant": {
+          "enum": [
+            "clean_cell",
+            "annotated_table"
+          ],
+          "title": "Variant",
+          "type": "string"
+        },
+        "image_path": {
+          "title": "Image Path",
+          "type": "string"
+        },
+        "raw_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw Path"
+        },
+        "text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Text"
+        },
+        "error": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error"
+        },
+        "source_bbox_in_image": {
+          "anyOf": [
+            {
+              "maxItems": 4,
+              "minItems": 4,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Bbox In Image"
+        },
+        "image_to_page": {
+          "anyOf": [
+            {
+              "maxItems": 6,
+              "minItems": 6,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Image To Page"
+        }
+      },
+      "required": [
+        "request_id",
+        "variant",
+        "image_path"
+      ],
+      "title": "Reading",
+      "type": "object"
+    },
+    "Table": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "page_number": {
+          "title": "Page Number",
+          "type": "integer"
+        },
+        "grid_revision": {
+          "default": 1,
+          "title": "Grid Revision",
+          "type": "integer"
+        },
+        "bbox": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Bbox",
+          "type": "array"
+        },
+        "coordinate_frame": {
+          "const": "rendered_page_pixels",
+          "default": "rendered_page_pixels",
+          "title": "Coordinate Frame",
+          "type": "string"
+        },
+        "table_to_page": {
+          "maxItems": 6,
+          "minItems": 6,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Table To Page",
+          "type": "array"
+        },
+        "image_path": {
+          "title": "Image Path",
+          "type": "string"
+        },
+        "rows": {
+          "items": {
+            "$ref": "#/$defs/Axis"
+          },
+          "title": "Rows",
+          "type": "array"
+        },
+        "columns": {
+          "items": {
+            "$ref": "#/$defs/Axis"
+          },
+          "title": "Columns",
+          "type": "array"
+        },
+        "cells": {
+          "items": {
+            "$ref": "#/$defs/Cell"
+          },
+          "title": "Cells",
+          "type": "array"
+        },
+        "geometry_valid": {
+          "default": false,
+          "title": "Geometry Valid",
+          "type": "boolean"
+        },
+        "issues": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Issues",
+          "type": "array"
+        },
+        "annotated_reading": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Reading"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "invoice": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/InvoiceView"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "page_number",
+        "bbox",
+        "table_to_page",
+        "image_path"
+      ],
+      "title": "Table",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_name": {
+      "title": "Source Name",
+      "type": "string"
+    },
+    "source_sha256": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Sha256"
+    },
+    "page_count": {
+      "default": 0,
+      "title": "Page Count",
+      "type": "integer"
+    },
+    "pages": {
+      "items": {
+        "$ref": "#/$defs/Page"
+      },
+      "title": "Pages",
+      "type": "array"
+    },
+    "status": {
+      "default": "failed",
+      "enum": [
+        "checks_passed",
+        "needs_review",
+        "failed"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "checks": {
+      "items": {
+        "$ref": "#/$defs/Check"
+      },
+      "title": "Checks",
+      "type": "array"
+    },
+    "issues": {
+      "items": {
+        "$ref": "#/$defs/Issue"
+      },
+      "title": "Issues",
+      "type": "array"
+    },
+    "japanese_review": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/JapaneseReview"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "source_name"
+  ],
+  "title": "Document",
+  "type": "object"
+}

@@ -12,6 +12,8 @@ dependencies = [
   "pydantic>=2.11,<3",
   "pillow>=11.3,<12",
   "pypdfium2>=5.5,<6",
+  "httpx>=0.28,<0.29",
+  "python-dotenv>=1.1,<2",
 ]
 
 [project.optional-dependencies]
@@ -30,7 +32,7 @@ models = [
 ]
 
 [dependency-groups]
-dev = ["pytest>=9,<10", "ruff>=0.16,<0.17"]
+dev = ["pytest>=9,<10", "ruff>=0.16,<0.17", "reportlab>=4.4,<5"]
 
 [project.scripts]
 jp-pdf-parser = "jp_pdf_parser.__main__:main"

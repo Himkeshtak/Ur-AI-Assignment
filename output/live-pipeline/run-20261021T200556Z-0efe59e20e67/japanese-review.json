@@ -1,0 +1,72 @@
+{
+  "completed": false,
+  "reviewed_cell_ids": [
+    "p1-t1-g1-r1-c1",
+    "p1-t1-g1-r1-c2",
+    "p1-t1-g1-r1-c3",
+    "p1-t1-g1-r1-c4",
+    "p1-t1-g1-r2-c1",
+    "p1-t1-g1-r2-c2",
+    "p1-t1-g1-r2-c3",
+    "p1-t1-g1-r2-c4",
+    "p1-t1-g1-r3-c1",
+    "p1-t1-g1-r3-c2",
+    "p1-t1-g1-r3-c3",
+    "p1-t1-g1-r3-c4",
+    "p1-t1-g1-r4-c1",
+    "p1-t1-g1-r4-c2",
+    "p1-t1-g1-r5-c3",
+    "p1-t1-g1-r5-c4",
+    "p1-t1-g1-r6-c1",
+    "p1-t1-g1-r6-c2",
+    "p1-t1-g1-r6-c3",
+    "p1-t1-g1-r6-c4"
+  ],
+  "issues": [
+    {
+      "code": "encoding_error",
+      "stage": "M",
+      "message": "「単価」の「単」が中国語簡体字の「单」になっている。 Suggested reading (not applied): 単価",
+      "cell_ids": [
+        "p1-t1-g1-r1-c3"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "encoding_error",
+      "stage": "M",
+      "message": "「封筒」の「筒」が中国語簡体字の「简」になっている。 Suggested reading (not applied): 封筒",
+      "cell_ids": [
+        "p1-t1-g1-r3-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "japanese_generation_failed",
+      "stage": "M",
+      "message": "API returned HTTP 400; no fallback model was used",
+      "cell_ids": [
+        "p1-t1-g1-r4-c3",
+        "p1-t1-g1-r4-c4",
+        "p1-t1-g1-r5-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "review_context_limit",
+      "stage": "M",
+      "message": "Cell exceeds reviewer context; text was not truncated",
+      "cell_ids": [
+        "p1-t1-g1-r5-c2"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "review_coverage",
+      "stage": "M",
+      "message": "Japanese review must cover every cell exactly once",
+      "cell_ids": [],
+      "severity": "warning"
+    }
+  ]
+}

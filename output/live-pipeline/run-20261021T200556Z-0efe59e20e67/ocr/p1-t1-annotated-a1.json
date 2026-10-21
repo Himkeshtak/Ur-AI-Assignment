@@ -1,0 +1,51 @@
+{
+  "provider": "vlmrun",
+  "method": "table",
+  "response": {
+    "id": "chatcmpl-3f2e9f9c3e2248a6a26db6c763e",
+    "object": "chat.completion",
+    "created": 1792613170,
+    "model": "paddlepaddle/paddleocr-vl-1.6",
+    "served_model_id": "paddlepaddle/paddleocr-vl-1.6",
+    "backend": "vllm",
+    "provider": null,
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "<ecel><fcel>C1<fcel>C2<fcel>C3<fcel>C4<fcel>CellID[page ibbox b0,y0,x1,y1]\\np t1t g1+c1=[258.1.6826.7235.521.7]\\np t1t g1+c2=[223.5.5923.149.4821.7]\\np t1t g1+c3=[229.4.4592.6.1558.0.821.7]\\np t1t g1+c4=[1658.0.6922.6.1957.6.821.7]\\np t1t g1+c5=[258.1.821.7.733.5.1020.7]\\np t1t g1+c6=[253.5.321.7.1248.4.1002.7]\\np t1t g1+c7=[212.1.521.7.1660.0.1020.7]\\np t1t g1+c8=[1240.4.4821.7.3650.0.1020.7]\\np t1t g1+c9=[1658.0.821.7.1957.6.1020.7]\\np t1t g1+c10=[1258.1.1020.7.7235.1218.6]\\np t1t g1+c11=[225.6.1020.7.1246.4.1218.6]\\np t1t g1+c12=[2048.4.1020.7.1958.0.1218.6]\\np t1t g1+c13=[1658.0.1020.7.1957.6.1218.6]\\np t1t g1+c4=[1658.0.1020.7.1957.6.1218.6]\\np t1t g1+c5=[2058.1.1218.6.7235.1421.6]\\np t1t g1+c6=[229.4.1218.6.1558.0.1421.6]<nl><ecel><fcel>品目<ecel><fcel>数量<fcel>单佃<fcel>金額<ecel><nl><ecel><fcel>用紙<ecel><fcel>2<fcel>1,000<fcel>2,000<ecel><nl><ecel><fcel>封筒<ecel><fcel>1<fcel>300<fcel>300<ecel><nl><ecel><fcel>小計<ecel><ecel><ecel><fcel>2,300<ecel><nl><ecel><fcel>消費税<ecel><ecel><ecel><fcel>230<ecel><nl><ecel><fcel>合計<ecel><ecel><ecel><fcel>2,530<ecel><nl>"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1237,
+      "completion_tokens": 718,
+      "total_tokens": 1955,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": null,
+      "cost": 0.001
+    }
+  },
+  "input_sha256": "e99fde3eb8c89c204e71513c5d3d354de167c2d7009792c6417d7d51a5f8ad40",
+  "original_size": [
+    2398,
+    1136
+  ],
+  "sent_size": [
+    1841,
+    872
+  ],
+  "sent_to_original": [
+    1.3025529603476371,
+    0,
+    0,
+    0,
+    1.3027522935779816,
+    0
+  ],
+  "table_conversion_error": "OTSL rows must have equal widths"
+}

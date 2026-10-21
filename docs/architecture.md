@@ -28,24 +28,24 @@ PaddleOCR-VL 1.6 recognizes the text inside these externally defined regions.
 Code associates each recognition request and response with its cell ID, rather
 than asking the VLM to regenerate the final row assignments.
 
-For clean cell crops, use the documented region-recognition path with
-`use_layout_detection=False` and the OCR task prompt. This revises the original
-full-page-only design: TATR now supplies table segmentation. The numbered table
-image uses a separate annotated-table recognition request. Preserve original
-model outputs and convert them into our schema in code; neither model directly
-guarantees application-specific JSON.
+The default VLM Run adapter submits clean cell crops with `method="ocr"` and
+numbered tables with `method="table"`, selecting PaddleOCR-VL-1.6 explicitly.
+TATR supplies segmentation. OTSL table responses are normalized to HTML with
+strict span checks for the secondary annotated comparison. Preserve original
+provider outputs; neither model directly guarantees application-specific JSON.
 
-Select `llm-jp/llm-jp-3-1.8b-instruct` as the initial Japanese language validator.
-Its official model card describes Japanese instruction tuning. Run it after the
-structural and deterministic financial checks, immediately before final status
-assignment and JSON export. It has not been evaluated on this project's invoices,
-so the model remains replaceable. PaddleOCR-VL fine-tuning is deferred for this
+Select Groq's `qwen/qwen3.8-27b` as the hosted Japanese language reviewer, using
+the provider's free plan where applicable. Run it after structural and
+deterministic financial checks, immediately before final status assignment and
+JSON export. Strict JSON still requires application-side coverage checks.
+Its invoice accuracy needs evaluation. PaddleOCR-VL fine-tuning is deferred for this
 phase because a suitable dataset and training time are unavailable. No custom
 training is included in the current scope.
 
-Proposed libraries are `pypdfium2` for rasterization, Pillow for image handling,
-Transformers/PyTorch for TATR and Japanese text review, PaddleOCR for text
-recognition, and Pydantic for typed contracts. Arithmetic uses Python's
+Libraries are `pypdfium2` for rasterization, Pillow for image handling,
+Transformers/PyTorch for CPU TATR, httpx for hosted recognition/review,
+python-dotenv for literal credential loading, and Pydantic for contracts.
+Explicit optional local Paddle/LLM-jp adapters remain available. Arithmetic uses Python's
 standard-library `Decimal`.
 Use `argparse` for the initial CLI and TOML for configuration. Avoid a web server,
 database, queue, or agent framework until a concrete requirement calls for one.
@@ -54,9 +54,10 @@ Python 3.11.14, the dependency graph, and model revisions are now pinned. Core
 tests run in the repository's managed virtual environment; the workstation's
 system Python is 3.13.5. Model-runtime verification is tracked separately in
 progress.md. TATR checkpoints now live under `models/tatr/`, load only verified
-local files, and run on this Windows CPU machine. Hosted PaddleOCR and Japanese
-review are the planned next integration; the current full-run adapters still use
-local inference. See [CPU setup and API choices](cpu-setup.md).
+local files, and run on this Windows CPU machine. The default recognizer and
+Japanese reviewer now use VLM Run and Groq. The manifest records configured API
+model IDs and original responses record returned IDs/usage; hosted weight commits
+cannot be pinned like the local TATR assets. See [API setup](api-providers.md).
 
 ## Pipeline responsibilities
 
@@ -72,7 +73,7 @@ local inference. See [CPU setup and API choices](cpu-setup.md).
 | Adaptation            | Attach text to the fixed grid; map known headers and totals without changing cell ownership.                                                                                           | Generic table cells, optional invoice view, competing readings.                |
 | Schema validation     | Check structure, spans, coordinates, field types, references, cell coverage, and page coverage.                                                                                        | Machine-readable structural and alignment issues.                              |
 | Financial validation  | Parse amounts strictly and evaluate applicable document formulas with exact decimals.                                                                                                  | Rule, operands, expected value, observed value, difference, source references. |
-| Japanese review       | As the final model stage before export, use LLM-jp 3 1.8B Instruct to flag suspicious wording and uncertain field interpretation using table/header context and earlier rule findings. | Prompt/model revision, structured findings, generation status.                 |
+| Japanese review       | As the final model stage before export, use Groq Qwen3.8-27B to flag suspicious wording with table/header context and earlier rule findings. | Prompt, API model/usage, structured findings, generation status.                 |
 | Resolution            | Combine required checks and assign a document status. A bounded targeted re-read returns through validation, including Japanese review, before export.                                 | Both recognition attempts, unresolved issues, retry count.                     |
 | Export                | Write result JSON, a validation report, and a run manifest atomically.                                                                                                                 | Complete run folder and artifact digests.                                      |
 
@@ -263,7 +264,7 @@ can still balance. Never change a recognized value merely to satisfy arithmetic.
 
 ## Japanese language model boundary
 
-The selected model is `llm-jp/llm-jp-3-1.8b-instruct`. This is the final model stage
+The selected API model is Groq `qwen/qwen3.8-27b`. This is the final model stage
 before writing the final JSON file. The model receives draft structured data,
 table headers, nearby text, and completed deterministic rule findings. It returns
 cell-referenced review findings; Python attaches those findings, computes the
@@ -286,11 +287,13 @@ unavailable model means this required stage is incomplete. Request one bounded
 format retry, then mark `needs_review` if still incomplete. Treat document text
 as data, not as instructions to the reviewer model.
 
-The model's documented context window is 4,096 tokens. Split long tables into
-bounded groups, repeat the relevant headers and minimal surrounding context, and
-record which cells were reviewed. Do not silently truncate a document. Start
-with greedy decoding and record parameters; exact reproduction across different
-devices or inference engines is not promised.
+The application uses a conservative 4,096-token review budget rather than the
+model's larger context window, including output and schema overhead. UTF-8 byte
+length bounds byte-BPE inputs without downloading a tokenizer. Split long tables
+into bounded groups and record every reviewed cell. Do not silently truncate.
+Groq uses strict JSON Schema, `reasoning_effort="none"` and temperature zero;
+the response ID, returned model and usage are retained. Exact reproduction on a
+hosted backend is not promised.
 
 ## Resolution and result status
 
@@ -345,6 +348,9 @@ accuracy is separate from core pipeline verification.
 |       |-- structure.py         # TATR detection and structure model adapters
 |       |-- checkpoints.py       # Reproducible TATR downloads and CPU verification
 |       |-- tatr_checkpoints.json # Pinned asset sizes and SHA-256 digests
+|       |-- api.py               # Literal credentials and bounded chat transport
+|       |-- check_api.py         # Opt-in synthetic live checks
+|       |-- table_format.py      # Strict OTSL adaptation for annotated comparison
 |       |-- grid.py              # Geometry, spans, transforms, IDs, coverage
 |       |-- ocr.py               # Paddle cell and annotated-table recognition
 |       |-- tables.py            # Bind cell readings and map invoice fields
@@ -361,6 +367,9 @@ accuracy is separate from core pipeline verification.
 |   |-- test_ocr.py              # Paddle adapter contract
 |   |-- test_japanese.py         # Reviewer JSON and coverage
 |   |-- test_checkpoints.py      # Corruption, offline loading, resize compatibility
+|   |-- test_api.py              # Secret-safe errors, budgets, spacing, model identity
+|   |-- test_remote.py           # Provider contracts, strict review, coverage
+|   |-- test_table_format.py     # OTSL spans, blanks, malformed geometry
 |   `-- fixtures/               # Small synthetic/licensed PDFs and expected data
 |-- docs/
 |   |-- architecture.md
@@ -371,6 +380,7 @@ accuracy is separate from core pipeline verification.
 |-- .reference/PaddleOCR/        # Ignored, pinned upstream reference checkout
 |-- .reference/table-transformer/ # Ignored, pinned Microsoft reference
 |-- models/tatr/                # Ignored, verified local CPU model assets
+|-- scripts/create_demo.py      # Reproducible synthetic Japanese invoice fixture
 |-- data/                       # Ignored local input PDFs
 `-- output/                     # Ignored generated run artifacts
 ```
@@ -414,18 +424,22 @@ correct rows and columns, with a structure metric such as GriTS where applicable
 Record added model latency and total crop count. Accuracy targets and final
 model/input settings depend on those measurements.
 
+## Pipeline diagram
+
+```mermaid
 flowchart TD
     A["PDF"] --> B["Render page images"]
     B --> C["TATR: detect tables"]
-    C --> D["TATR: recognize structureRows, columns, headers, merged cells"]
-    D --> E["Reconstruct cell gridAssign IDs and bounding coordinates"]
-    E --> F["Numbered table imageBoxes and coordinate labels"]
-    E --> G["Clean cell cropsEach tied to a cell ID"]
-    F --> H["PaddleOCR-VLAnnotated-table recognition"]
-    G --> I["PaddleOCR-VLCell text recognition"]
+    C --> D["TATR: recognize structure<br/>Rows, columns, headers, merged cells"]
+    D --> E["Reconstruct cell grid<br/>Assign IDs and bounding coordinates"]
+    E --> F["Numbered table image<br/>Boxes and coordinate labels"]
+    E --> G["Clean cell crops<br/>Each tied to a cell ID"]
+    F --> H["PaddleOCR-VL<br/>Annotated-table recognition"]
+    G --> I["PaddleOCR-VL<br/>Cell text recognition"]
     E --> J["Assemble JSON against the fixed grid"]
     H --> J
     I --> J
-    J --> K["Validate alignment, Japanese text,number formatting and arithmetic"]
-    K --> M["Japanese language validationLLM-jp 3 1.8B Instruct"]
+    J --> K["Validate alignment, Japanese text,<br/>number formatting and arithmetic"]
+    K --> M["Japanese language validation<br/>Qwen3.8-27B via Groq"]
     M --> L["Result JSON and review report"]
+```

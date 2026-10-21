@@ -91,6 +91,28 @@ def test_failed_cell_does_not_shift_other_responses(config, pdf, tmp_path, table
     assert cells[2, 4].raw_text == "2,000"
 
 
+def test_rejected_ocr_preserves_evidence_without_accepting_cell_value(config, pdf, tmp_path, table):
+    class NoisyOCR(FixtureOCR):
+        def recognize(self, path, task):
+            if task == "ocr" and "-r2-c2" in path.stem:
+                return OCRPrediction(
+                    text="noise" * 1000,
+                    raw={"original": "noise" * 1000},
+                    error="Cell OCR exceeded character limit",
+                )
+            return super().recognize(path, task)
+
+    result = Pipeline(
+        config, structure=FixtureStructure(), ocr=NoisyOCR(table), japanese=FixtureReviewer()
+    ).run(pdf, tmp_path / "output")
+    cell = next(c for c in result.document.all_cells() if c.row == 2 and c.column == 2)
+    assert cell.raw_text is None
+    assert len(cell.readings) == 2
+    assert all(reading.error for reading in cell.readings)
+    assert (result.directory / cell.readings[0].raw_path).is_file()
+    assert result.document.status == "needs_review"
+
+
 def test_missing_pdf_still_exports_failure(config, tmp_path):
     result = Pipeline(config, japanese=FixtureReviewer()).run(tmp_path / "missing.pdf", tmp_path)
     assert result.document.status == "failed"

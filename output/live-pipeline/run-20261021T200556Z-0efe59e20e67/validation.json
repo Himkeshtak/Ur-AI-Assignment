@@ -1,0 +1,97 @@
+{
+  "status": "needs_review",
+  "issues": [
+    {
+      "code": "annotated_alignment_uncertain",
+      "stage": "K",
+      "message": "Annotated table topology differs from the fixed grid",
+      "cell_ids": [],
+      "severity": "warning"
+    },
+    {
+      "code": "encoding_error",
+      "stage": "M",
+      "message": "「単価」の「単」が中国語簡体字の「单」になっている。 Suggested reading (not applied): 単価",
+      "cell_ids": [
+        "p1-t1-g1-r1-c3"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "encoding_error",
+      "stage": "M",
+      "message": "「封筒」の「筒」が中国語簡体字の「简」になっている。 Suggested reading (not applied): 封筒",
+      "cell_ids": [
+        "p1-t1-g1-r3-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "japanese_generation_failed",
+      "stage": "M",
+      "message": "API returned HTTP 400; no fallback model was used",
+      "cell_ids": [
+        "p1-t1-g1-r4-c3",
+        "p1-t1-g1-r4-c4",
+        "p1-t1-g1-r5-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "review_context_limit",
+      "stage": "M",
+      "message": "Cell exceeds reviewer context; text was not truncated",
+      "cell_ids": [
+        "p1-t1-g1-r5-c2"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "review_coverage",
+      "stage": "M",
+      "message": "Japanese review must cover every cell exactly once",
+      "cell_ids": [],
+      "severity": "warning"
+    }
+  ],
+  "checks": [
+    {
+      "rule": "subtotal",
+      "status": "passed",
+      "cell_ids": [
+        "p1-t1-g1-r2-c4",
+        "p1-t1-g1-r3-c4",
+        "p1-t1-g1-r4-c4"
+      ],
+      "expected": "2300",
+      "observed": "2300",
+      "difference": "0",
+      "detail": "sum(line amounts)"
+    },
+    {
+      "rule": "tax",
+      "status": "passed",
+      "cell_ids": [
+        "p1-t1-g1-r5-c4"
+      ],
+      "expected": "230",
+      "observed": "230",
+      "difference": "0",
+      "detail": "Configured rate, tax mode, and rounding"
+    },
+    {
+      "rule": "total",
+      "status": "passed",
+      "cell_ids": [
+        "p1-t1-g1-r2-c4",
+        "p1-t1-g1-r3-c4",
+        "p1-t1-g1-r5-c4",
+        "p1-t1-g1-r6-c4"
+      ],
+      "expected": "2530",
+      "observed": "2530",
+      "difference": "0",
+      "detail": "line sum plus exclusive tax, or tax-inclusive line sum"
+    }
+  ]
+}

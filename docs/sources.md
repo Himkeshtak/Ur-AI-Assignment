@@ -129,7 +129,7 @@ The initial source review above was followed by the implementation described in
 [progress.md](progress.md). Core code and PDF rendering now have automated tests;
 model inference and Japanese invoice accuracy remain separate verification tasks.
 
-## Implementation model pins
+## Local model pins and hosted model selection
 
 The official Hugging Face model metadata was read to record these revisions:
 
@@ -137,8 +137,17 @@ The official Hugging Face model metadata was read to record these revisions:
 | --- | --- | --- |
 | TATR detection | `microsoft/table-transformer-detection` | `2357cbe2b5a5d1c03e54f32764f06058933b65ab` |
 | TATR structure | `microsoft/table-transformer-structure-recognition-v1.1-all` | `7587a7ef111d9dcbf8ac695f1376ab7014340a0c` |
-| PaddleOCR-VL | `PaddlePaddle/PaddleOCR-VL-1.6` | `c5630abae1d940eafe0697512a0325494b02ab42` |
-| Japanese reviewer | `llm-jp/llm-jp-3-1.8b-instruct` | `413b7929df092690b0f9449f3045baaf8deba0a5` |
+| Optional local PaddleOCR-VL | `PaddlePaddle/PaddleOCR-VL-1.6` | `c5630abae1d940eafe0697512a0325494b02ab42` |
+| Optional local Japanese reviewer | `llm-jp/llm-jp-3-1.8b-instruct` | `413b7929df092690b0f9449f3045baaf8deba0a5` |
+
+The default hosted model IDs are now `paddlepaddle/paddleocr-vl-1.6` on VLM Run
+and `qwen/qwen3.8-27b` on Groq. Their returned IDs and usage are retained in raw
+responses; the provider weight revisions cannot be pinned as local HF commits.
+Both live catalogs and synthetic inference were verified with the user's keys.
+Sources: [VLM Run methods](https://docs.vlm.run/gateway/methods),
+[Paddle model contract](https://vlm.run/gateway/models/paddlepaddle-paddleocr-vl-1.6),
+[Groq Qwen model](https://console.groq.com/docs/model/qwen/qwen3.8-27b),
+[strict JSON output](https://console.groq.com/docs/structured-outputs).
 
 The official PaddleOCR package release selected for implementation is `3.7.0`.
 Its crop recognition path is exposed by the pinned wrapper, and the
