@@ -9,6 +9,9 @@ tmp/
 
 # Python environments and caches
 .venv/
+.cache/
+htmlcov/
+.coverage
 __pycache__/
 *.py[cod]
 .pytest_cache/

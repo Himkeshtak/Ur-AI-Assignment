@@ -1,8 +1,9 @@
 # Architecture proposal
 
 Review date: 2026-10-21. Revised to put Microsoft Table Transformer before
-PaddleOCR-VL. The main flow diagram is in [README.md](../README.md). This is a
-design checkpoint, not a working parser or an accuracy claim.
+PaddleOCR-VL. The main flow diagram is in [README.md](../README.md). The initial
+parser is implemented; [progress.md](progress.md) records verification and
+remaining work. Recognition accuracy still requires real-document evaluation.
 
 The diagram follows the user's supplied A-L pipeline exactly, with only the
 Japanese model block M inserted between K and L. Additional model branches are
@@ -49,10 +50,10 @@ standard-library `Decimal`.
 Use `argparse` for the initial CLI and TOML for configuration. Avoid a web server,
 database, queue, or agent framework until a concrete requirement calls for one.
 
-Start dependency compatibility testing on Python 3.11. The current workstation
-has Python 3.13.5; Paddle/model dependency installation has not been tested here.
-Pin the verified Python patch version, dependency graph, and model revisions
-during implementation. Direct local inference is the initial integration path;
+Python 3.11.14, the dependency graph, and model revisions are now pinned. Core
+tests run in the repository's managed virtual environment; the workstation's
+system Python is 3.13.5. Model-runtime verification is tracked separately in
+progress.md. Direct local inference is the initial integration path;
 GPU serving can use Linux/WSL2 or containers after hardware is established. Native
 Windows support for every acceleration backend is not assumed.
 
@@ -202,36 +203,27 @@ Raw source strings are immutable. Normalized strings are separate fields. Use
 Unicode normalization on a parsing copy of numeric text to handle full-width
 digits and punctuation; do not overwrite company names or descriptions.
 
-Serialize decimal values as JSON strings to avoid binary floating-point loss:
+Serialize decimal values as JSON strings to avoid binary floating-point loss.
+This is a subset of an actual cell record; `schema.json` defines the full contract:
 
 ```json
 {
+  "id": "p1-t1-g1-r2-c4",
+  "row": 2,
+  "column": 4,
+  "row_span": 1,
+  "column_span": 1,
   "raw_text": "2,000",
   "normalized_text": "2,000",
-  "parsed_number": {
-    "decimal": "2000",
-    "currency": "JPY"
-  },
-  "evidence": {
-    "page": 1,
-    "table_id": "p1-t1",
-    "grid_revision": 1,
-    "cell_id": "p1-t1-g1-r2-c4",
-    "row": 2,
-    "column": 4,
-    "row_span": 1,
-    "column_span": 1,
-    "cell_bbox": [1240, 600, 1540, 650],
-    "coordinate_frame": "rendered_page_pixels",
-    "bbox_source": "tatr_grid_reconstruction",
-    "ocr_request_id": "req-p1-t1-g1-r2-c4-a1",
-    "input_variant": "clean_cell"
-  }
+  "number": "2000",
+  "bbox": [1240, 600, 1540, 650],
+  "coordinate_frame": "rendered_page_pixels",
+  "bbox_source": "tatr_grid_reconstruction"
 }
 ```
 
-Currency in this example comes from explicit document evidence or configuration.
-Unknown currency stays unknown. Coordinates above are illustrative. Cell boxes
+Currency is not inferred from Japanese language; the configured financial profile
+sets the supported monetary scale. Coordinates above are illustrative. Cell boxes
 come from explicit TATR grid reconstruction, not an assumption that PaddleOCR
 returns cell geometry. A cell without usable geometry cannot enter cell-crop
 recognition; retain it as an unresolved structural candidate. Scores from either
@@ -327,14 +319,16 @@ a review interface is outside the initial repository scope.
 
 ## Proposed repository structure
 
-This is the implementation target. Only the review documentation and ignore
-rules are created at this checkpoint; empty modules and placeholder code are
-intentionally not generated.
+This structure is now implemented. See [progress.md](progress.md) for the exact
+implementation scope, verification evidence, and remaining work. Model inference
+accuracy is separate from core pipeline verification.
 
 ```text
 .
 |-- README.md
 |-- .gitignore
+|-- .gitattributes                # Consistent source line endings
+|-- .github/workflows/ci.yml      # Locked core checks on GitHub
 |-- .python-version              # Verified Python patch version
 |-- pyproject.toml               # Package, CLI, development checks
 |-- uv.lock                      # Verified dependency lock
@@ -360,10 +354,14 @@ intentionally not generated.
 |   |-- test_grid.py             # Alignment, transforms, blank/merged cells
 |   |-- test_tables.py           # Structure, merged cells, provenance
 |   |-- test_pipeline.py         # Failures, incomplete checks, bounded retries
+|   |-- test_pdf.py              # Real PDF rasterization and resource limits
+|   |-- test_ocr.py              # Paddle adapter contract
+|   |-- test_japanese.py         # Reviewer JSON and coverage
 |   `-- fixtures/               # Small synthetic/licensed PDFs and expected data
 |-- docs/
 |   |-- architecture.md
-|   `-- sources.md
+|   |-- sources.md
+|   `-- progress.md
 |-- .reference/PaddleOCR/        # Ignored, pinned upstream reference checkout
 |-- .reference/table-transformer/ # Ignored, pinned Microsoft reference
 |-- data/                       # Ignored local input PDFs

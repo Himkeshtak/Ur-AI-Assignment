@@ -1,0 +1,9 @@
+{
+  "description": "Synthetic Japanese invoice values; authored for these tests, not an OCR benchmark.",
+  "cells": [
+    ["品名", "数量", "単価", "金額"],
+    ["用紙", "2", "1,000", "2,000"],
+    ["小計", null, null, "2,000"],
+    ["合計", null, null, "2,000"]
+  ]
+}

@@ -96,8 +96,8 @@ export:
 The card identifies the National Institute of Informatics development team,
 Japanese instruction-tuning data, Apache-2.0 licensing, Transformers usage, and a
 4,096-token context window. It does not establish invoice OCR validation quality.
-The exact weights/tokenizer revision and inference dependencies will be pinned
-after compatibility and task evaluation; no model has been downloaded yet.
+The weights/tokenizer revision is pinned in `config.toml`; runtime dependencies
+are locked in `uv.lock`. No Japanese model weights have been downloaded yet.
 PaddleOCR-VL fine-tuning is deferred under the current dataset and time constraints.
 
 ## PDF rasterization
@@ -118,5 +118,23 @@ point is our evaluation setting, not an official PaddleOCR requirement.
 - Updated the diagram, module boundaries, geometry contracts, recognition input
   variants, and alignment evaluation plan.
 
-Application code, package compatibility, GPU availability, model inference, and
-Japanese invoice accuracy have not been tested at this architecture checkpoint.
+The initial source review above was followed by the implementation described in
+[progress.md](progress.md). Core code and PDF rendering now have automated tests;
+model inference and Japanese invoice accuracy remain separate verification tasks.
+
+## Implementation model pins
+
+The official Hugging Face model metadata was read to record these revisions:
+
+| Component | Model | Revision |
+| --- | --- | --- |
+| TATR detection | `microsoft/table-transformer-detection` | `2357cbe2b5a5d1c03e54f32764f06058933b65ab` |
+| TATR structure | `microsoft/table-transformer-structure-recognition-v1.1-all` | `7587a7ef111d9dcbf8ac695f1376ab7014340a0c` |
+| PaddleOCR-VL | `PaddlePaddle/PaddleOCR-VL-1.6` | `c5630abae1d940eafe0697512a0325494b02ab42` |
+| Japanese reviewer | `llm-jp/llm-jp-3-1.8b-instruct` | `413b7929df092690b0f9449f3045baaf8deba0a5` |
+
+The official PaddleOCR package release selected for implementation is `3.7.0`.
+Its crop recognition path is exposed by the pinned wrapper, and the
+[official PaddleX predictor](https://github.com/PaddlePaddle/PaddleX/blob/release/3.7/paddlex/inference/models/doc_vlm/predictor.py)
+shows loading Hugging Face weights into the native Paddle model. This source
+review does not substitute for a completed real-model inference test.
