@@ -1,0 +1,7 @@
+{
+  "execution": "cached replay; no network inference",
+  "cached_live_run": "output\\balance-sheet-full-page\\run-20261021T205235Z-a2d7b3bad5a2",
+  "cached_manifest_sha256": "67a7f3c38c953e0b70db196d0f19b78bee670237868f030cecacc118a9979804",
+  "ocr_input_pixels_sha256_verified": true,
+  "new_remote_requests": 0
+}

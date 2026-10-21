@@ -1,4 +1,4 @@
-"""PaddleOCR-VL 1.6 region recognition; application IDs stay outside the model."""
+"""PaddleOCR-VL 1.6 full-page recognition; application IDs stay outside the model."""
 
 import base64
 import io
@@ -88,7 +88,7 @@ class PaddleOCR:
             max_pixels=self.settings.max_pixels,
         )
         if len(results) != 1:
-            raise ValueError("Expected exactly one PaddleOCR result for a crop")
+            raise ValueError("Expected exactly one PaddleOCR result for a page")
         payload = results[0].json
         return OCRPrediction(text=decode_paddle_result(payload), raw=payload)
 
@@ -168,8 +168,8 @@ class VLMRunOCR:
                 # Preserve the original reading; validation will flag unknown topology.
                 raw["table_conversion_error"] = str(exc)
         error = None
-        if task == "ocr" and len(text) > self.settings.max_cell_characters:
+        if len(text) > self.settings.max_page_characters:
             error = (
-                "Cell OCR exceeded the configured character limit; raw output retained for review"
+                "Page OCR exceeded the configured character limit; raw output retained for review"
             )
         return OCRPrediction(text=text, raw=raw, error=error)

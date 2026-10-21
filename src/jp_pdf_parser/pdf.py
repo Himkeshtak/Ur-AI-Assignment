@@ -1,4 +1,4 @@
-"""Sequential, bounded PDF rendering and invertible table crops."""
+"""Sequential, bounded PDF rendering; page images remain intact."""
 
 import math
 from collections.abc import Iterator
@@ -6,11 +6,10 @@ from contextlib import closing
 from pathlib import Path
 
 import pypdfium2 as pdfium
-from PIL import Image
 
 from .artifacts import Artifacts, sha256
 from .config import RenderSettings
-from .models import Affine, Detection, Page
+from .models import Page
 
 
 def inspect_pdf(path: Path, settings: RenderSettings) -> tuple[str, int]:
@@ -69,24 +68,3 @@ def render_pages(path: Path, settings: RenderSettings, artifacts: Artifacts) -> 
                 finally:
                     bitmap.close()
             yield result
-
-
-def crop_table(
-    image: Image.Image,
-    detection: Detection,
-    padding: int,
-) -> tuple[Image.Image, Affine]:
-    x0, y0, x1, y1 = detection.bbox
-    left = max(0, math.floor(x0) - padding)
-    top = max(0, math.floor(y0) - padding)
-    right = min(image.width, math.ceil(x1) + padding)
-    bottom = min(image.height, math.ceil(y1) + padding)
-    if right <= left or bottom <= top:
-        raise ValueError("Table detection lies outside the page")
-    crop = image.crop((left, top, right, bottom))
-    if detection.label == "table rotated":
-        height = crop.height
-        rotated = crop.transpose(Image.Transpose.ROTATE_270)
-        crop.close()
-        return rotated, (0, 1, left, -1, 0, top + height)
-    return crop, (1, 0, left, 0, 1, top)

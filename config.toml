@@ -7,7 +7,6 @@ max_pages = 30
 max_file_mb = 50
 max_pixels = 24000000
 max_cells_per_table = 500
-table_padding = 12
 
 [detection]
 model_id = "microsoft/table-transformer-detection"
@@ -27,24 +26,22 @@ threshold = 0.6
 backend = "vlmrun"
 model_id = "paddlepaddle/paddleocr-vl-1.6"
 api_key_env = "VLMRUN_API_KEY"
-max_cell_characters = 2000
+max_page_characters = 100000
 max_pixels = 1605632
 timeout_seconds = 120
 min_interval_seconds = 1.0
-max_requests = 2000
-# One retry per table, shared by failed/empty clean-cell requests.
-max_retries_per_table = 1
+max_requests = 30
 
 [japanese]
 backend = "groq"
 model_id = "qwen/qwen3.8-27b"
 api_key_env = "GROQ_API_KEY"
-context_tokens = 4096
-max_new_tokens = 512
-format_retries = 1
+context_tokens = 32768
+max_new_tokens = 2048
+format_retries = 0 # Exactly one document-level attempt; no automatic retry.
 timeout_seconds = 120
 min_interval_seconds = 2.1
-max_requests = 100
+max_requests = 1
 
 [financial]
 mode = "invoice" # "table" explicitly permits inapplicable invoice checks.

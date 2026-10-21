@@ -41,14 +41,16 @@ class Axis(Record):
     id: str
     index: int = Field(ge=1)
     bbox: Box
-    coordinate_frame: Literal["upright_table_pixels"] = "upright_table_pixels"
+    coordinate_frame: Literal["upright_table_pixels", "rendered_page_pixels"] = (
+        "upright_table_pixels"
+    )
     score: float = Field(ge=0, le=1)
     is_header: bool = False
 
 
 class Reading(Record):
     request_id: str
-    variant: Literal["clean_cell", "annotated_table"]
+    variant: Literal["clean_cell", "annotated_table", "annotated_page"]
     image_path: str
     raw_path: str | None = None
     text: str | None = None
@@ -100,6 +102,9 @@ class Table(Record):
     bbox: Box
     coordinate_frame: Literal["rendered_page_pixels"] = "rendered_page_pixels"
     table_to_page: Affine
+    structure_coordinate_frame: Literal["upright_table_pixels", "rendered_page_pixels"] = (
+        "upright_table_pixels"
+    )
     image_path: str
     rows: list[Axis] = Field(default_factory=list)
     columns: list[Axis] = Field(default_factory=list)
@@ -120,6 +125,7 @@ class Page(Record):
     dpi: int
     image_to_pdf: Affine
     image_path: str
+    annotated_reading: Reading | None = None
     tables: list[Table] = Field(default_factory=list)
     issues: list[Issue] = Field(default_factory=list)
 
@@ -141,7 +147,7 @@ class JapaneseReview(Record):
 
 
 class Document(Record):
-    schema_version: str = "1.0.0"
+    schema_version: str = "1.1.0"
     source_name: str
     source_sha256: str | None = None
     page_count: int = 0

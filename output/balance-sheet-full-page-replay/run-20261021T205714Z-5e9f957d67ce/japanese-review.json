@@ -1,0 +1,20 @@
+{
+  "completed": false,
+  "reviewed_cell_ids": [],
+  "issues": [
+    {
+      "code": "no_reviewable_cells",
+      "stage": "M",
+      "message": "No OCR text is mapped to cells; no language-model request was sent",
+      "cell_ids": [],
+      "severity": "warning"
+    },
+    {
+      "code": "review_coverage",
+      "stage": "M",
+      "message": "Japanese review must cover every cell exactly once",
+      "cell_ids": [],
+      "severity": "warning"
+    }
+  ]
+}

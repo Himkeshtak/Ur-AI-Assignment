@@ -11,33 +11,33 @@ invoice recognition accuracy. See [implementation status](docs/progress.md).
 
 ```mermaid
 flowchart TD
-    A["PDF"] --> B["Render page images"]
-    B --> C["TATR: detect tables"]
-    C --> D["TATR: recognize structure<br/>Rows, columns, headers, merged cells"]
-    D --> E["Reconstruct cell grid<br/>Assign IDs and bounding coordinates"]
-    E --> F["Numbered table image<br/>Boxes and coordinate labels"]
-    E --> G["Clean cell crops<br/>Each tied to a cell ID"]
-    F --> H["PaddleOCR-VL<br/>Annotated-table recognition"]
-    G --> I["PaddleOCR-VL<br/>Cell text recognition"]
-    E --> J["Assemble JSON against the fixed grid"]
+    A["PDF"] --> B["Render complete page images"]
+    B --> C["TATR: detect tables on full page"]
+    C --> D["TATR: recognize rows, columns and spans<br/>Full page; no cropping"]
+    D --> E["Reconstruct fixed grids<br/>Assign IDs and page coordinates"]
+    E --> F["Full-page annotated image<br/>Table, row and column boxes"]
+    F --> H["PaddleOCR-VL 1.6<br/>One table-recognition request per page"]
+    E --> J["Match returned topology to fixed grids<br/>Keep uncertain text unassigned"]
     H --> J
-    I --> J
-    J --> K["Validate alignment, Japanese text,<br/>number formatting and arithmetic"]
-    K --> M["Japanese language validation<br/>LLM-jp 3 1.8B Instruct"]
+    J --> K["Validate geometry, number formatting<br/>and applicable arithmetic"]
+    K --> M["Japanese review: Qwen3.8-27B via Groq<br/>One request for the whole document"]
     M --> L["Result JSON and review report"]
 ```
 
-The reconstructed Table Transformer grid determines row and column membership.
-PaddleOCR-VL supplies text; Python attaches each clean-crop result to the cell ID
-used in its request. The numbered overlay is also sent to PaddleOCR-VL as
-requested, but generated labels are synthetic content and its output cannot
-silently replace the grid or the clean-crop readings.
+Each complete rendered page goes through TATR detection and structure recognition.
+The page receives table, row and column boxes without cropping or changing its
+coordinate origin. PaddleOCR-VL 1.6 reads that full annotated image once per page.
+Python accepts text into the fixed TATR grid only when returned table topology
+matches uniquely; mismatches remain reviewable raw evidence.
 
-Use [LLM-jp 3 1.8B Instruct](https://huggingface.co/llm-jp/llm-jp-3-1.8b-instruct)
-for Japanese language validation after the structural and numerical checks, just
-before final status assignment and JSON export. It flags suspicious Japanese text
-and returns findings associated with cell IDs. PaddleOCR-VL fine-tuning is deferred
-because an appropriate dataset and training time are unavailable for this phase.
+Qwen3.8-27B on Groq reviews the assembled document in one compact request, immediately
+before final JSON export. The shipped configuration disables automatic retries and
+batch splitting. Oversized or rejected reviews remain incomplete. One request can
+still exceed a provider's token quota. Fine-tuning remains deferred.
+
+Full-page TATR structure inference requires accuracy evaluation: Microsoft's
+reference extraction pipeline uses detected table regions for structure recognition. This adaptation reduces
+requests but does not guarantee correct boxes or Japanese transcription.
 
 Python `Decimal` calculations decide whether amounts reconcile. Geometry
 predictions, recognition, and the selected language validator still need
@@ -63,22 +63,18 @@ uv run --locked ruff check src tests
 uv run --locked ruff format --check src tests
 ```
 
-For real model inference, install the optional runtime dependencies:
+For the configured CPU TATR + remote OCR/review setup:
 
 ```powershell
-uv sync --locked --extra models
-uv run --locked --extra models jp-pdf-parser doctor --config config.toml
-uv run --locked --extra models jp-pdf-parser run data/invoice.pdf --config config.toml --output-dir output
+uv sync --locked --extra tatr
+uv run --locked --extra tatr jp-pdf-parser doctor --config config.toml
+uv run --locked --extra tatr jp-pdf-parser run data/invoice.pdf --config config.toml --output-dir output
 ```
 
-`doctor` checks dependency presence and configuration; it does not download
-weights or certify inference. A real `run` downloads the fixed checkpoint
-revisions into `.cache/huggingface` on first use. The CPU defaults prioritize
-compatibility and can require substantial RAM and time. Configure devices before
-a GPU run: TATR/LLM-jp use PyTorch device names such as `cuda:0`; Paddle uses
-Paddle device names such as `gpu:0` and requires a matching GPU runtime.
-The tested Windows installation uses CPU builds of PyTorch and Paddle. GPU runs
-require matching GPU runtime packages and separate verification.
+Keep `VLMRUN_API_KEY` and `GROQ_API_KEY` in the ignored `.env` file. Local TATR
+weights are pinned and verified; see [CPU setup](docs/cpu-setup.md). Optional local
+OCR/reviewer adapters remain available through the `models` extra and explicit
+configuration; they are never an automatic fallback.
 
 Export the JSON Schema without installing model dependencies:
 
@@ -89,8 +85,8 @@ uv run --locked jp-pdf-parser schema --output output/schema.json
 Each run creates a new folder containing:
 
 - `result.json`, `validation.json`, `schema.json`, and `manifest.json`.
-- Rendered pages, raw TATR detections, versioned cell grids, numbered overlays,
-  clean cell crops, and original PaddleOCR JSON.
+- Complete page images, raw TATR predictions, versioned cell grids, full-page
+  overlays, original PaddleOCR JSON, and `request-counts.json`.
 - OCR request IDs and coordinate transforms, plus Japanese review findings and
   prompt/response traces.
 
@@ -112,10 +108,10 @@ tax bases, and totals outside detected tables remain review issues. Cross-page
 table merging and custom model fine-tuning are not implemented. Use
 `financial.mode = "table"` for generic tables without invoice reconciliation.
 
-The numbered-table result is compared only when its HTML cell topology matches
-the fixed grid. It never supplies missing cell text by ordinal position. The
-language model returns cell-referenced findings; suggestions are not silently
-applied to OCR text or financial values.
+The full-page table response supplies text only after exact, unique topology
+matching. Unknown or ambiguous row ownership remains unassigned. The language
+model returns cell-referenced findings; suggestions never change source text or
+financial values. Generic-table mode does not implement balance-sheet arithmetic.
 
 ##### **Why I used the PaddleOCR VL 1.6** 
 

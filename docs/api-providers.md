@@ -1,3 +1,8 @@
+> Current pipeline: one full-page PaddleOCR-VL request per page with tables and
+> at most one document-level Groq review request, with no automatic batching or
+> retries in the shipped configuration. Crop-based request estimates below are
+> historical provider research, not the active request policy.
+
 # Hosted API options
 
 Checked 2026-10-22 against provider documentation and live public catalogs.

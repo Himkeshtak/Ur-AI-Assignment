@@ -4,8 +4,6 @@ from PIL import Image, ImageDraw, ImageFont
 
 from .models import Affine, Axis, Box, Cell, Detection, Issue, Table
 
-OVERLAY_MARGIN = 50
-
 
 def transform_box(box: Box, transform: Affine) -> Box:
     a, b, c, d, e, f = transform
@@ -60,17 +58,42 @@ def reconstruct_grid(
     objects: list[Detection],
     threshold: float,
     max_cells: int,
+    *,
+    region: Box | None = None,
 ) -> Table:
     """Refine axes, intersect them, then replace covered positions with merged cells."""
     width, height = size
+    bounds = region or (0, 0, width, height)
+    frame = "rendered_page_pixels" if region is not None else "upright_table_pixels"
     table = Table(
         id=table_id,
         page_number=page_number,
         image_path=image_path,
-        bbox=transform_box((0, 0, width, height), table_to_page),
+        bbox=transform_box(bounds, table_to_page),
+        structure_coordinate_frame=frame,
         table_to_page=table_to_page,
     )
-    candidates = [obj for obj in objects if obj.score >= threshold]
+    candidates = []
+    for obj in objects:
+        if obj.score < threshold:
+            continue
+        if region is not None:
+            cx, cy = (obj.bbox[0] + obj.bbox[2]) / 2, (obj.bbox[1] + obj.bbox[3]) / 2
+            if not (bounds[0] <= cx <= bounds[2] and bounds[1] <= cy <= bounds[3]):
+                continue
+            if intersection_area(obj.bbox, bounds) / area(obj.bbox) < 0.5:
+                continue
+            obj = obj.model_copy(
+                update={
+                    "bbox": (
+                        max(bounds[0], obj.bbox[0]),
+                        max(bounds[1], obj.bbox[1]),
+                        min(bounds[2], obj.bbox[2]),
+                        min(bounds[3], obj.bbox[3]),
+                    )
+                }
+            )
+        candidates.append(obj)
     rows = sorted(
         suppress_duplicates([o for o in candidates if o.label == "table row"]),
         key=lambda o: (o.bbox[1], o.bbox[0]),
@@ -99,10 +122,10 @@ def reconstruct_grid(
             )
         )
         return table
-    x0 = max(0.0, min(o.bbox[0] for o in columns))
-    x1 = min(float(width), max(o.bbox[2] for o in columns))
-    y0 = max(0.0, min(o.bbox[1] for o in rows))
-    y1 = min(float(height), max(o.bbox[3] for o in rows))
+    x0 = max(bounds[0], min(o.bbox[0] for o in columns))
+    x1 = min(bounds[2], max(o.bbox[2] for o in columns))
+    y0 = max(bounds[1], min(o.bbox[1] for o in rows))
+    y1 = min(bounds[3], max(o.bbox[3] for o in rows))
     xs, ys = _boundaries(columns, x0, x1, 0), _boundaries(rows, y0, y1, 1)
     if any(a >= b for bounds in (xs, ys) for a, b in zip(bounds, bounds[1:], strict=False)):
         table.issues.append(
@@ -121,6 +144,7 @@ def reconstruct_grid(
             id=f"{prefix}-r{i + 1}",
             index=i + 1,
             bbox=(x0, ys[i], x1, ys[i + 1]),
+            coordinate_frame=frame,
             score=obj.score,
             is_header=any(
                 intersection_area(obj.bbox, h.bbox) / area(obj.bbox) > 0.5 for h in headers
@@ -133,6 +157,7 @@ def reconstruct_grid(
             id=f"{prefix}-c{i + 1}",
             index=i + 1,
             bbox=(xs[i], y0, xs[i + 1], y1),
+            coordinate_frame=frame,
             score=obj.score,
         )
         for i, obj in enumerate(columns)
@@ -196,58 +221,27 @@ def reconstruct_grid(
     return table
 
 
-def cell_pixel_box(image: Image.Image, cell: Cell) -> tuple[int, int, int, int]:
-    # Round shared boundaries identically so adjacent crops cannot overlap.
-    x0, y0, x1, y1 = cell.table_bbox
-    box = (
-        max(0, round(x0)),
-        max(0, round(y0)),
-        min(image.width, round(x1)),
-        min(image.height, round(y1)),
-    )
-    if box[0] >= box[2] or box[1] >= box[3]:
-        raise ValueError("Cell is smaller than one source-image pixel")
-    return box
-
-
-def cell_crop(image: Image.Image, cell: Cell) -> Image.Image:
-    box = cell_pixel_box(image, cell)
-    return image.crop(box)
-
-
-def translate_input(transform: Affine, left: float, top: float) -> Affine:
-    a, b, c, d, e, f = transform
-    return a, b, a * left + b * top + c, d, e, d * left + e * top + f
-
-
-def numbered_overlay(image: Image.Image, table: Table, max_pixels: int) -> Image.Image:
-    """Put synthetic labels in a margin, preserving invoice glyphs underneath outlines."""
-    margin, legend_width, line_height = OVERLAY_MARGIN, 620, 18
-    width = image.width + margin + legend_width
-    height = max(image.height + margin, 30 + line_height * (len(table.cells) + 1))
-    if width * height > max_pixels:
-        raise ValueError("Numbered overlay exceeds configured pixel limit")
-    overlay = Image.new("RGB", (width, height), "white")
-    overlay.paste(image, (margin, margin))
+def annotated_page(image: Image.Image, tables: list[Table], max_pixels: int) -> Image.Image:
+    """Draw page-coordinate boxes without cropping, resizing, or adding a legend canvas."""
+    if image.width * image.height > max_pixels:
+        raise ValueError("Annotated page exceeds configured pixel limit")
+    overlay = image.convert("RGB")
     draw = ImageDraw.Draw(overlay)
-    font = ImageFont.load_default()
-    draw.text(
-        (image.width + margin + 12, 5), "Cell ID | page bbox [x0,y0,x1,y1]", fill="black", font=font
-    )
-    for row in table.rows:
-        draw.text((2, margin + row.bbox[1]), f"R{row.index}", fill="blue", font=font)
-    for column in table.columns:
-        draw.text((margin + column.bbox[0], 18), f"C{column.index}", fill="blue", font=font)
-    for index, cell in enumerate(table.cells):
-        x0, y0, x1, y1 = cell.table_bbox
-        draw.rectangle(
-            (x0 + margin, y0 + margin, x1 + margin, y1 + margin), outline="blue", width=1
-        )
-        coords = ",".join(f"{value:.1f}" for value in cell.bbox)
-        draw.text(
-            (image.width + margin + 12, 25 + index * line_height),
-            f"{cell.id} | [{coords}]",
-            fill="black",
-            font=font,
-        )
+    font = ImageFont.load_default(size=12)
+    for table in tables:
+        x0, y0, x1, y1 = table.bbox
+        draw.rectangle(table.bbox, outline="green", width=2)
+        coords = ",".join(f"{v:.0f}" for v in table.bbox)
+        draw.text((x0, max(0, y0 - 32)), f"{table.id} [{coords}]", fill="green", font=font)
+        for row in table.rows:
+            draw.rectangle(row.bbox, outline="blue", width=1)
+            draw.text((max(0, x0 - 48), row.bbox[1]), f"R{row.index}", fill="blue", font=font)
+        for column in table.columns:
+            draw.rectangle(column.bbox, outline="darkorange", width=1)
+            draw.text(
+                (column.bbox[0], max(0, y0 - 16)),
+                f"C{column.index}",
+                fill="darkorange",
+                font=font,
+            )
     return overlay

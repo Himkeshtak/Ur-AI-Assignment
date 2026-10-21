@@ -1,7 +1,7 @@
 import json
-import re
 
-from conftest import ROOT, structure_objects, write_pdf
+from conftest import structure_objects, write_pdf
+from PIL import Image
 from test_tables import html_for
 
 from jp_pdf_parser.artifacts import sha256
@@ -16,30 +16,21 @@ class FixtureStructure:
         return [Detection(label="table", score=0.99, bbox=(50, 50, 450, 210))]
 
     def recognize(self, image):
-        return structure_objects()
+        return [
+            obj.model_copy(update={"bbox": tuple(v + 38 for v in obj.bbox)})
+            for obj in structure_objects()
+        ]
 
 
 class FixtureOCR:
-    def __init__(self, table, fail_cell=None):
-        self.values = json.loads(
-            (ROOT / "tests/fixtures/simple_invoice.json").read_text(encoding="utf-8")
-        )["cells"]
+    def __init__(self, table):
         self.html = html_for(table)
-        self.fail_cell = fail_cell
         self.calls = []
 
     def recognize(self, path, task):
         self.calls.append((path.name, task))
-        if task == "table":
-            text = self.html
-        else:
-            if self.fail_cell and self.fail_cell in path.stem:
-                raise RuntimeError("Deliberate OCR failure for one test cell")
-            row, column = map(int, re.search(r"-r(\d+)-c(\d+)$", path.stem).groups())
-            text = self.values[row - 1][column - 1]
-        return OCRPrediction(
-            text=text, raw={"res": {"parsing_res_list": [{"block_content": text}]}}
-        )
+        assert task == "table"
+        return OCRPrediction(text=self.html, raw={"table_html": self.html})
 
 
 class FixtureReviewer:
@@ -64,7 +55,9 @@ def test_pipeline_renders_and_exports_with_injected_models(config, pdf, tmp_path
     assert reviewer.saw_financial_checks
     assert len(result.document.all_cells()) == 12
     assert sum(task == "table" for _, task in ocr.calls) == 1
-    assert sum(task == "ocr" for _, task in ocr.calls) == 12
+    assert len(ocr.calls) == 1
+    assert not list(result.directory.rglob("cells"))
+    assert not list(result.directory.rglob("source.png"))
     serialized = json.loads((result.directory / "result.json").read_text(encoding="utf-8"))
     assert serialized["pages"][0]["tables"][0]["cells"][7]["raw_text"] == "2,000"
     manifest = json.loads((result.directory / "manifest.json").read_text())
@@ -74,43 +67,62 @@ def test_pipeline_renders_and_exports_with_injected_models(config, pdf, tmp_path
     assert manifest["artifact_sha256"]["result.json"] == sha256(result.directory / "result.json")
     stages = [item["stage"] for item in manifest["timings"]]
     assert stages.index("K.validate") < stages.index("M.japanese") < stages.index("L.export")
-    assert (result.directory / "tables/p1-t1/numbered.png").is_file()
+    with Image.open(result.directory / "pages/p001.png") as original:
+        with Image.open(result.directory / "pages/p001-annotated.png") as annotated:
+            assert annotated.size == original.size == (500, 300)
+    assert all(c.bbox == c.table_bbox for c in result.document.all_cells())
     assert (result.directory / "schema.json").is_file()
 
 
-def test_failed_cell_does_not_shift_other_responses(config, pdf, tmp_path, table):
-    ocr = FixtureOCR(table, fail_cell="-r2-c2")
+def test_failed_page_ocr_preserves_grid_without_cell_fallback(config, pdf, tmp_path, table):
+    class FailedOCR(FixtureOCR):
+        def recognize(self, path, task):
+            self.calls.append((path.name, task))
+            raise RuntimeError("Deliberate page OCR failure")
+
+    ocr = FailedOCR(table)
     result = Pipeline(
         config, structure=FixtureStructure(), ocr=ocr, japanese=FixtureReviewer()
-    ).run(pdf, tmp_path / "output")
+    ).run(pdf, tmp_path)
     assert result.document.status == "needs_review"
-    cells = {(c.row, c.column): c for c in result.document.all_cells()}
-    assert cells[2, 2].raw_text is None
-    assert len(cells[2, 2].readings) == 2
-    assert cells[2, 3].raw_text == "1,000"
-    assert cells[2, 4].raw_text == "2,000"
+    assert len(ocr.calls) == 1
+    assert all(c.raw_text is None for c in result.document.all_cells())
+    assert result.document.pages[0].annotated_reading.error
+    assert result.document.pages[0].issues[0].code == "page_alignment_uncertain"
 
 
-def test_rejected_ocr_preserves_evidence_without_accepting_cell_value(config, pdf, tmp_path, table):
+def test_rejected_page_reading_retains_raw_evidence(config, pdf, tmp_path, table):
     class NoisyOCR(FixtureOCR):
         def recognize(self, path, task):
-            if task == "ocr" and "-r2-c2" in path.stem:
-                return OCRPrediction(
-                    text="noise" * 1000,
-                    raw={"original": "noise" * 1000},
-                    error="Cell OCR exceeded character limit",
-                )
-            return super().recognize(path, task)
+            return OCRPrediction(text=self.html, raw={"original": self.html}, error="Rejected OCR")
 
     result = Pipeline(
         config, structure=FixtureStructure(), ocr=NoisyOCR(table), japanese=FixtureReviewer()
-    ).run(pdf, tmp_path / "output")
-    cell = next(c for c in result.document.all_cells() if c.row == 2 and c.column == 2)
-    assert cell.raw_text is None
-    assert len(cell.readings) == 2
-    assert all(reading.error for reading in cell.readings)
-    assert (result.directory / cell.readings[0].raw_path).is_file()
-    assert result.document.status == "needs_review"
+    ).run(pdf, tmp_path)
+    reading = result.document.pages[0].annotated_reading
+    assert reading.error and reading.text
+    assert (result.directory / reading.raw_path).is_file()
+    assert all(c.raw_text is None for c in result.document.all_cells())
+
+
+def test_two_pages_use_two_ocr_calls_and_one_review(config, tmp_path, table, monkeypatch):
+    class CountingReviewer(FixtureReviewer):
+        count = 0
+
+        def review(self, document):
+            self.count += 1
+            return super().review(document)
+
+    def forbid_crop(*args, **kwargs):
+        raise AssertionError("Cropping is forbidden in the page pipeline")
+
+    monkeypatch.setattr(Image.Image, "crop", forbid_crop)
+    ocr, reviewer = FixtureOCR(table), CountingReviewer()
+    result = Pipeline(config, structure=FixtureStructure(), ocr=ocr, japanese=reviewer).run(
+        write_pdf(tmp_path / "two.pdf", pages=2), tmp_path / "output"
+    )
+    assert result.document.status == "checks_passed"
+    assert len(ocr.calls) == 2 and reviewer.count == 1
 
 
 def test_missing_pdf_still_exports_failure(config, tmp_path):
@@ -167,3 +179,32 @@ def test_valid_pdf_with_no_detected_tables_requires_review(config, pdf, tmp_path
     result = Pipeline(config, structure=NoTables(), japanese=FixtureReviewer()).run(pdf, tmp_path)
     assert result.document.status == "needs_review"
     assert result.document.pages[0].issues[0].code == "no_tables"
+
+
+def test_mismatched_full_page_stays_reviewable_and_retains_raw_text(config, pdf, tmp_path, table):
+    ocr = FixtureOCR(table)
+    ocr.html = "<table><tr><td>unassigned text</td></tr></table>"
+    result = Pipeline(
+        config, structure=FixtureStructure(), ocr=ocr, japanese=FixtureReviewer()
+    ).run(pdf, tmp_path)
+    assert result.document.status == "needs_review"
+    assert all(c.raw_text is None for c in result.document.all_cells())
+    assert "unassigned text" in result.document.pages[0].annotated_reading.text
+    assert len(ocr.calls) == 1
+
+
+def test_multiple_tables_still_send_one_page_request(config, pdf, tmp_path, table):
+    class TwoTables(FixtureStructure):
+        def detect(self, image):
+            return [
+                Detection(label="table", score=1, bbox=(10, 10, 210, 120)),
+                Detection(label="table", score=1, bbox=(260, 150, 460, 280)),
+            ]
+
+    ocr = FixtureOCR(table)
+    result = Pipeline(config, structure=TwoTables(), ocr=ocr, japanese=FixtureReviewer()).run(
+        pdf, tmp_path
+    )
+    assert len(result.document.pages[0].tables) == 2
+    assert len(ocr.calls) == 1
+    assert result.document.status == "needs_review"

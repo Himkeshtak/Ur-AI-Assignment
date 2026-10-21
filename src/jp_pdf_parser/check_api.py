@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 from .artifacts import Artifacts
 from .config import Config, GroqSettings, VLMRunSettings
-from .grid import numbered_overlay, reconstruct_grid
+from .grid import annotated_page, reconstruct_grid
 from .japanese import GroqReviewer
 from .models import Detection, Document, Page
 from .ocr import VLMRunOCR
@@ -31,8 +31,6 @@ def check_api(config: Config, output_dir: Path) -> tuple[bool, Path]:
             )
             draw.text((40 + c * 380, 110 + r * 140), text, font=font, fill="black")
     page.save(artifacts.path("table.png"))
-    with page.crop((405, 205, 775, 335)) as cell:
-        cell.save(artifacts.path("cell.png"))
     objects = [Detection(label="table", score=1, bbox=(20, 60, 780, 340))]
     objects += [
         Detection(label="table row", score=1, bbox=(20, 60 + r * 140, 780, 200 + r * 140))
@@ -52,23 +50,18 @@ def check_api(config: Config, output_dir: Path) -> tuple[bool, Path]:
         config.structure.threshold,
         10,
     )
-    with numbered_overlay(page, table, config.render.max_pixels) as overlay:
+    with annotated_page(page, [table], config.render.max_pixels) as overlay:
         overlay.save(artifacts.path("numbered.png"))
     page.close()
     results = {}
-    for name, filename, method in (
-        ("clean_cell", "cell.png", "ocr"),
-        ("annotated_table", "numbered.png", "table"),
-    ):
+    for name, filename, method in (("annotated_page", "numbered.png", "table"),):
         try:
             prediction = ocr.recognize(artifacts.path(filename), method)
             artifacts.write(f"{name}.json", prediction.raw)
             artifacts.write(f"{name}-text.json", {"text": prediction.text})
             results[name] = {"completed": True, "has_text": bool(prediction.text.strip())}
-            if name == "clean_cell":
-                results[name]["comma_preserved"] = prediction.text.strip() == "2,000"
-            else:
-                results[name]["html_available"] = prediction.text.lstrip().startswith("<table")
+            results[name]["comma_preserved"] = "2,000" in prediction.text
+            results[name]["html_available"] = prediction.text.lstrip().startswith("<table")
         except Exception as exc:
             results[name] = {"completed": False, "error": str(exc)}
     # This independent Japanese probe tests review format/coverage, not visual recognition.

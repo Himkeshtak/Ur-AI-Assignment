@@ -19,6 +19,7 @@ def config():
         revision="c5630abae1d940eafe0697512a0325494b02ab42",
     )
     result.japanese = JapaneseSettings(
+        format_retries=1,
         model_id="llm-jp/llm-jp-3-1.8b-instruct",
         revision="413b7929df092690b0f9449f3045baaf8deba0a5",
     )

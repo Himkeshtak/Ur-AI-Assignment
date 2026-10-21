@@ -4,7 +4,7 @@ import re
 import unicodedata
 from html.parser import HTMLParser
 
-from .models import InvoiceLine, InvoiceView, Issue, Table
+from .models import InvoiceLine, InvoiceView, Issue, Page, Table
 
 ALIASES = {
     "quantity": {"数量", "個数", "qty", "quantity"},
@@ -21,23 +21,6 @@ TOTAL_LABELS = {
 
 def normalized(value: str) -> str:
     return re.sub(r"\s+", "", unicodedata.normalize("NFKC", value)).casefold()
-
-
-def attach_readings(table: Table) -> None:
-    """Each reading is owned by its request's cell; no positional text matching."""
-    for cell in table.cells:
-        if not cell.readings:
-            continue
-        reading = cell.readings[-1]
-        if not reading.request_id.startswith(f"{cell.id}-a"):
-            raise ValueError("OCR request ID does not belong to the target cell")
-        cell.raw_text = reading.text if not reading.error else None
-        cell.normalized_text = (
-            unicodedata.normalize("NFKC", cell.raw_text).strip()
-            if cell.raw_text is not None
-            else None
-        )
-    table.invoice = map_invoice(table)
 
 
 def map_invoice(table: Table) -> InvoiceView | None:
@@ -124,24 +107,30 @@ def map_invoice(table: Table) -> InvoiceView | None:
 
 
 class _TableHTML(HTMLParser):
+    """Read explicit cell spans; reject malformed or nested table ownership."""
+
     def __init__(self):
         super().__init__(convert_charrefs=True)
-        self.cells: dict[tuple[int, int, int, int], str] = {}
+        self.tables: list[dict[tuple[int, int, int, int], str]] = []
+        self.cells: dict[tuple[int, int, int, int], str] | None = None
         self.occupied: set[tuple[int, int]] = set()
         self.row = 0
-        self.table_count = 0
-        self.depth = 0
+        self.in_row = False
         self.active: tuple[int, int, int, int] | None = None
         self.parts: list[str] = []
 
     def handle_starttag(self, tag, attrs):
         if tag == "table":
-            self.table_count += 1
-            self.depth += 1
-        elif tag == "tr" and self.depth:
+            if self.cells is not None:
+                raise ValueError("Nested tables cannot be mapped to the grid")
+            self.cells, self.occupied, self.row = {}, set(), 0
+        elif tag == "tr" and self.cells is not None:
+            if self.in_row:
+                raise ValueError("Unclosed table row")
             self.row += 1
-        elif tag in {"td", "th"} and self.depth:
-            if self.active or not self.row:
+            self.in_row = True
+        elif tag in {"td", "th"} and self.cells is not None:
+            if self.active or not self.in_row:
                 raise ValueError("Malformed table cell")
             attributes = dict(attrs)
             rs, cs = int(attributes.get("rowspan", "1")), int(attributes.get("colspan", "1"))
@@ -165,47 +154,74 @@ class _TableHTML(HTMLParser):
             self.parts.append(data)
 
     def handle_endtag(self, tag):
-        if tag in {"td", "th"} and self.active:
+        if tag in {"td", "th"} and self.cells is not None:
+            if self.active is None:
+                raise ValueError("Unexpected cell end")
             self.cells[self.active] = "".join(self.parts)
             self.active = None
+        elif tag == "tr" and self.cells is not None:
+            if self.active or not self.in_row:
+                raise ValueError("Unclosed table cell")
+            self.in_row = False
         elif tag == "table":
-            self.depth -= 1
+            if self.cells is None or self.active or self.in_row:
+                raise ValueError("Unclosed table row or unexpected table end")
+            if any(r > self.row for r, _ in self.occupied):
+                raise ValueError("Row span extends beyond the table")
+            self.tables.append(self.cells)
+            self.cells = None
 
 
-def compare_annotated_reading(table: Table) -> None:
-    reading = table.annotated_reading
-    if reading is None or reading.error or not reading.text:
-        table.issues.append(
-            Issue(
-                code="annotated_reading_incomplete",
-                stage="K",
-                message="Annotated-table recognition did not complete",
-            )
-        )
-        return
+def attach_page_reading(page: Page) -> None:
+    """Bind one page response only through an exact, unique grid topology match.
+
+    Paddle's table endpoint returns OTSL/HTML, not grounded cell IDs or boxes.
+    A mismatch is retained as evidence instead of shifting text into nearby cells.
+    """
+    reading = page.annotated_reading
     try:
+        if reading is None or reading.error or not reading.text:
+            raise ValueError(
+                reading.error if reading and reading.error else "Page OCR is incomplete"
+            )
         parser = _TableHTML()
         parser.feed(reading.text)
         parser.close()
-        expected = {(c.row, c.column, c.row_span, c.column_span): c for c in table.cells}
-        if (
-            parser.table_count != 1
-            or parser.active
-            or parser.depth
-            or parser.cells.keys() != expected.keys()
-        ):
-            raise ValueError("Annotated table topology differs from the fixed grid")
-        for position, cell in expected.items():
-            if normalized(parser.cells[position]) != normalized(cell.raw_text or ""):
-                table.issues.append(
-                    Issue(
-                        code="annotated_disagreement",
-                        stage="K",
-                        cell_ids=[cell.id],
-                        message="Annotated and clean-cell text disagree",
-                    )
+        if parser.cells is not None or not parser.tables:
+            raise ValueError("OCR did not return complete table HTML")
+        if len(parser.tables) != len(page.tables):
+            raise ValueError("OCR table count differs from the detected table count")
+        if any(not t.geometry_valid for t in page.tables):
+            raise ValueError(
+                "TATR geometry is unresolved; OCR tables were retained without assignment"
+            )
+        grids = {
+            t.id: {(c.row, c.column, c.row_span, c.column_span): c for c in t.cells}
+            for t in page.tables
+        }
+        matches = []
+        for parsed in parser.tables:
+            targets = [t for t in page.tables if grids[t.id].keys() == parsed.keys()]
+            if len(targets) != 1:
+                raise ValueError(
+                    "OCR topology differs from the fixed grid or matches multiple tables"
                 )
+            matches.append((targets[0], parsed))
+        if len({t.id for t, _ in matches}) != len(page.tables):
+            raise ValueError("OCR tables cannot be assigned uniquely")
     except (ValueError, KeyError) as exc:
-        table.issues.append(
-            Issue(code="annotated_alignment_uncertain", stage="K", message=str(exc))
-        )
+        page.issues.append(Issue(code="page_alignment_uncertain", stage="J", message=str(exc)))
+        return
+    for table, parsed in matches:
+        for position, cell in grids[table.id].items():
+            cell.raw_text = parsed[position]
+            cell.normalized_text = unicodedata.normalize("NFKC", cell.raw_text).strip()
+            cell.readings.append(
+                reading.model_copy(
+                    update={
+                        "text": cell.raw_text,
+                        "source_bbox_in_image": cell.bbox,
+                    }
+                )
+            )
+        table.invoice = map_invoice(table)

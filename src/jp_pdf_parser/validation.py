@@ -7,7 +7,7 @@ from decimal import Decimal, localcontext
 from .config import FinancialSettings
 from .grid import transform_box
 from .models import Check, Document, Issue, Table
-from .tables import compare_annotated_reading, map_invoice
+from .tables import map_invoice
 
 
 class NumberError(ValueError):
@@ -339,12 +339,18 @@ def validate_document(document: Document, settings: FinancialSettings) -> None:
                             message="Text contains replacement/control characters",
                         )
                     )
-            compare_annotated_reading(table)
             document.checks.extend(validate_invoice(table, settings))
 
 
 def final_status(document: Document) -> str:
     readable = any(cell.raw_text and cell.raw_text.strip() for cell in document.all_cells())
+    readable = readable or any(
+        page.annotated_reading
+        and not page.annotated_reading.error
+        and page.annotated_reading.text
+        and page.annotated_reading.text.strip()
+        for page in document.pages
+    )
     if not readable:
         fatal = any(
             issue.severity == "error" or issue.code == "cell_ocr_failed"

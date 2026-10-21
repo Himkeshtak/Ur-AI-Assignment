@@ -154,3 +154,21 @@ Its crop recognition path is exposed by the pinned wrapper, and the
 [official PaddleX predictor](https://github.com/PaddlePaddle/PaddleX/blob/release/3.7/paddlex/inference/models/doc_vlm/predictor.py)
 shows loading Hugging Face weights into the native Paddle model. This source
 review does not substitute for a completed real-model inference test.
+
+
+## Full-page revision (2026-10-22)
+
+- [VLM Run's official PaddleOCR-VL 1.6 contract](https://vlm.run/gateway/models/paddlepaddle-paddleocr-vl-1.6):
+  one image per request, explicit `table` method returning OTSL, and ignored text
+  beside the image. We cannot prompt this endpoint to emit canonical cell IDs.
+- [Groq's official Qwen3.8-27B model page](https://console.groq.com/docs/model/qwen/qwen3.8-27b):
+  131,072-token model context and 16,384 maximum output tokens. Our defaults use
+  smaller 32,768 / 2,048 budgets and a compact document-level request.
+- [Groq's rate-limit documentation](https://console.groq.com/docs/rate-limits):
+  token limits apply separately from request limits; a single request may fail.
+- Microsoft's local reference `src/inference.py`, `TableExtractionPipeline.extract`,
+  detects tables and passes table regions into structure recognition. The requested
+  no-crop full-page mode deliberately differs from this reference and needs evaluation.
+
+See [progress.md](progress.md) for actual call counts and unresolved alignment;
+provider descriptions and mocked tests do not establish accuracy on this document.

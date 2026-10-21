@@ -1,0 +1,34 @@
+{
+  "status": "needs_review",
+  "issues": [
+    {
+      "code": "page_alignment_uncertain",
+      "stage": "J",
+      "message": "TATR geometry is unresolved; OCR tables were retained without assignment",
+      "cell_ids": [],
+      "severity": "warning"
+    },
+    {
+      "code": "conflicting_span",
+      "stage": "E",
+      "message": "Spanning-cell predictions have conflicting ownership",
+      "cell_ids": [],
+      "severity": "error"
+    },
+    {
+      "code": "no_reviewable_cells",
+      "stage": "M",
+      "message": "No OCR text is mapped to cells; no language-model request was sent",
+      "cell_ids": [],
+      "severity": "warning"
+    },
+    {
+      "code": "review_coverage",
+      "stage": "M",
+      "message": "Japanese review must cover every cell exactly once",
+      "cell_ids": [],
+      "severity": "warning"
+    }
+  ],
+  "checks": []
+}

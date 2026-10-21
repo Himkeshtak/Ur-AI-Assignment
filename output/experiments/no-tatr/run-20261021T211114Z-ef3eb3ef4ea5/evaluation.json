@@ -1,0 +1,95 @@
+{
+  "reference_method": "Manual visual spot checks on four source rows; not full ground truth",
+  "source_name": "balance_sheet_after_correction.pdf",
+  "source_sha256": "0764bba6f5f0e7984a837e4cc19d8bb95db4a7ac22c26f18c95bbe652c983c74",
+  "numeric_spot_checks": [
+    {
+      "label": "現金及び預金",
+      "column": 2,
+      "cell_id": "p1-t1-ocr-r5-c2",
+      "raw_text": "2, 002, 429",
+      "expected": "2002429",
+      "observed": "2002429",
+      "numeric_match": true,
+      "raw_format_valid": false
+    },
+    {
+      "label": "現金及び預金",
+      "column": 3,
+      "cell_id": "p1-t1-ocr-r5-c3",
+      "raw_text": "608, 281",
+      "expected": "608281",
+      "observed": "608281",
+      "numeric_match": true,
+      "raw_format_valid": false
+    },
+    {
+      "label": "流動資産合計",
+      "column": 2,
+      "cell_id": "p1-t1-ocr-r15-c2",
+      "raw_text": "5, 863, 684",
+      "expected": "5863684",
+      "observed": "5863684",
+      "numeric_match": true,
+      "raw_format_valid": false
+    },
+    {
+      "label": "流動資産合計",
+      "column": 3,
+      "cell_id": "p1-t1-ocr-r15-c3",
+      "raw_text": "3, 377, 407",
+      "expected": "3377407",
+      "observed": "3377407",
+      "numeric_match": true,
+      "raw_format_valid": false
+    },
+    {
+      "label": "固定資産合計",
+      "column": 2,
+      "cell_id": "p1-t1-ocr-r44-c2",
+      "raw_text": "1, 670, 426",
+      "expected": "1670426",
+      "observed": "1670426",
+      "numeric_match": true,
+      "raw_format_valid": false
+    },
+    {
+      "label": "固定資産合計",
+      "column": 3,
+      "cell_id": "p1-t1-ocr-r44-c3",
+      "raw_text": "1, 757, 841",
+      "expected": "1757841",
+      "observed": "1757841",
+      "numeric_match": true,
+      "raw_format_valid": false
+    },
+    {
+      "label": "資産合計",
+      "column": 2,
+      "cell_id": "p1-t1-ocr-r45-c2",
+      "raw_text": "7, 534, 110",
+      "expected": "7534110",
+      "observed": "7534110",
+      "numeric_match": true,
+      "raw_format_valid": false
+    },
+    {
+      "label": "資産合計",
+      "column": 3,
+      "cell_id": "p1-t1-ocr-r45-c3",
+      "raw_text": "5, 135, 249",
+      "expected": "5135249",
+      "observed": "5135249",
+      "numeric_match": true,
+      "raw_format_valid": false
+    }
+  ],
+  "matched": 8,
+  "checked": 8,
+  "raw_text_unchanged": true,
+  "paddle_layout_issue": "Correction note and unit label were included as an extra first table row",
+  "japanese_requested_ids": 134,
+  "japanese_returned_ids": 64,
+  "japanese_completed": false,
+  "production_unchanged": true
+}

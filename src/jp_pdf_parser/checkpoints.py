@@ -10,7 +10,6 @@ from PIL import Image, ImageDraw
 
 from .artifacts import sha256, write_json
 from .config import Config, ObjectSettings
-from .pdf import crop_table
 
 
 def checkpoint_entry(spec: ObjectSettings) -> dict:
@@ -123,24 +122,7 @@ def check_tatr(config: Config, output_dir: Path, image_path: Path | None = None)
         started = time.perf_counter()
         processor, _ = backend.load(spec)
         load_seconds = time.perf_counter() - started
-        # For a real page, structure recognition receives the highest-scoring table crop.
-        if name == "structure":
-            tables = [
-                d
-                for d in detections
-                if d.label in ("table", "table rotated") and d.score >= config.detection.threshold
-            ]
-            if tables:
-                table = max(tables, key=lambda d: d.score)
-                crop, transform = crop_table(image, table, config.render.table_padding)
-                image.close()
-                image = crop
-                source_frame = "detected table crop"
-            else:
-                source_frame = "whole input; no table passed the detection threshold"
-            image.save(output_dir / "structure-input.png")
-        else:
-            source_frame = "input image"
+        source_frame = "complete input image; no cropping"
         started = time.perf_counter()
         detections = backend.detect(image) if name == "detection" else backend.recognize(image)
         inference_seconds = time.perf_counter() - started

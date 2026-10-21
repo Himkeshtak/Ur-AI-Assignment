@@ -8,7 +8,7 @@ def parsed(text):
     parser = _TableHTML()
     parser.feed(otsl_to_html(text))
     parser.close()
-    return parser.cells
+    return parser.tables[0]
 
 
 def test_otsl_preserves_numbers_empty_cells_and_escapes_html():

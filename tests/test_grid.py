@@ -3,14 +3,11 @@ from conftest import structure_objects
 from PIL import Image
 
 from jp_pdf_parser.grid import (
-    cell_crop,
-    cell_pixel_box,
-    numbered_overlay,
+    annotated_page,
     reconstruct_grid,
     transform_box,
 )
 from jp_pdf_parser.models import Detection
-from jp_pdf_parser.pdf import crop_table
 from jp_pdf_parser.validation import validate_geometry
 
 
@@ -40,26 +37,37 @@ def test_missing_axes_and_cell_limits_fail_closed():
     assert limited.issues[0].code == "cell_limit"
 
 
-def test_rotated_crop_coordinate_transform():
-    with Image.new("RGB", (200, 150), "white") as image:
-        detection = Detection(label="table rotated", score=1, bbox=(20, 30, 120, 90))
-        crop, transform = crop_table(image, detection, 0)
-        with crop:
-            assert crop.size == (60, 100)
-            assert transform_box((0, 0, 60, 100), transform) == (20, 30, 120, 90)
-            assert transform_box((0, 0, 10, 20), transform) == (20, 80, 40, 90)
-
-
-def test_overlay_labels_do_not_change_source_or_clean_crops(table):
-    with Image.new("RGB", (424, 184), "white") as image:
+def test_full_page_overlay_preserves_dimensions_coordinates_and_source(table):
+    with Image.new("RGB", (500, 300), "white") as image:
         original = image.tobytes()
-        with numbered_overlay(image, table, 10_000_000) as overlay:
-            assert overlay.width > image.width
+        # The runtime uses page coordinates with an identity transform.
+        for axis in [*table.rows, *table.columns]:
+            axis.bbox = transform_box(axis.bbox, table.table_to_page)
+        with annotated_page(image, [table], 10_000_000) as overlay:
+            assert overlay.size == image.size
+            assert overlay.getpixel((38, 38)) == (0, 128, 0)
         assert image.tobytes() == original
-        with cell_crop(image, table.cells[0]) as crop:
-            assert crop.size == (100, 40)
         with pytest.raises(ValueError, match="pixel limit"):
-            numbered_overlay(image, table, 100)
+            annotated_page(image, [table], 100)
+
+
+def test_page_grid_limits_axes_to_detected_table():
+    result = reconstruct_grid(
+        "p1-t1",
+        1,
+        "page.png",
+        (500, 300),
+        (1, 0, 0, 0, 1, 0),
+        structure_objects(),
+        0.6,
+        500,
+        region=(12, 12, 412, 172),
+    )
+    assert result.geometry_valid
+    assert result.bbox == (12, 12, 412, 172)
+    assert result.structure_coordinate_frame == "rendered_page_pixels"
+    assert all(a.coordinate_frame == "rendered_page_pixels" for a in result.rows + result.columns)
+    assert all(c.bbox == c.table_bbox for c in result.cells)
 
 
 def test_conflicting_spans_require_review():
@@ -81,11 +89,3 @@ def test_conflicting_spans_require_review():
 def test_missing_grid_position_is_detected(table):
     table.cells.pop()
     assert any(issue.code == "grid_coverage" for issue in validate_geometry(table))
-
-
-def test_fractional_shared_boundaries_do_not_overlap(table):
-    left, right = table.cells[0], table.cells[1]
-    left.table_bbox = (12, 12, 112.4, 52)
-    right.table_bbox = (112.4, 12, 212, 52)
-    with Image.new("RGB", (424, 184)) as image:
-        assert cell_pixel_box(image, left)[2] == cell_pixel_box(image, right)[0]

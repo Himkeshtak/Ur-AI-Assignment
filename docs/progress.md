@@ -1,3 +1,42 @@
+# Current pipeline update: full pages only
+
+The current architecture is [architecture.md](architecture.md). It supersedes the
+cell-crop recognition flow described in the historical implementation notes below.
+The active code creates no table/cell crops: both TATR passes see a complete page,
+one annotated full-page PaddleOCR request is sent per page, and Groq receives one
+compact document-level review. The shipped config disables automatic retries and
+batch splitting. Raw evidence is retained when topology or review fails.
+
+The balance-sheet results from the earlier crop pipeline are historical outputs.
+They do not validate the new recognition path. Live verification of the new path
+and remaining alignment limitations are recorded separately below.
+
+## Verification of the full-page revision
+
+- **111 tests pass**, with Ruff lint and formatting checks passing. The tests forbid
+  PIL cropping in the main page pipeline, check full-page dimensions, verify one
+  OCR request per page even with multiple tables, and exercise a single compact
+  Japanese-review request containing 240 cells.
+- Live balance-sheet run: `output/balance-sheet-full-page/run-20261021T205235Z-a2d7b3bad5a2/`.
+  It sent one PaddleOCR-VL request and one Groq request. The provider reported
+  `$0.001` for the OCR response (not an independent billing-ledger verification).
+  The complete 2481 x 3508 image was resized to 1065 x 1506 for OCR; no crop was made.
+- That live run did **not** produce accepted cell text: TATR reconstructed 44 rows
+  and conflicting merged spans; OCR returned a 48-row table. Assignment was rejected.
+  Groq returned HTTP 429. A lower request count did not remove the token/quota limit.
+- A guard now skips language review when no OCR text is mapped to cells. The final
+  code was checked by a cached replay at
+  `output/balance-sheet-full-page-replay/run-20261021T205714Z-5e9f957d67ce/`.
+  The replay verified identical OCR input pixels, used no new network inference,
+  checked all 14 artifact hashes and exported `needs_review` with the original
+  raw table response intact. Its provenance identifies the live source run.
+- **Remaining:** resolve full-page row/merged-cell alignment and evaluate Japanese
+  review on successfully mapped documents. The full-page adaptation is not a
+  production-accuracy result. Generic-table mode still has no balance-sheet
+  arithmetic profile.
+
+## Historical implementation notes
+
 # Implementation checkpoint
 
 The approved stage order is unchanged: PDF rendering, CPU TATR detection and

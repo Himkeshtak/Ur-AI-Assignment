@@ -33,8 +33,11 @@
           "type": "array"
         },
         "coordinate_frame": {
-          "const": "upright_table_pixels",
           "default": "upright_table_pixels",
+          "enum": [
+            "upright_table_pixels",
+            "rendered_page_pixels"
+          ],
           "title": "Coordinate Frame",
           "type": "string"
         },
@@ -525,6 +528,17 @@
           "title": "Image Path",
           "type": "string"
         },
+        "annotated_reading": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Reading"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
         "tables": {
           "items": {
             "$ref": "#/$defs/Table"
@@ -564,7 +578,8 @@
         "variant": {
           "enum": [
             "clean_cell",
-            "annotated_table"
+            "annotated_table",
+            "annotated_page"
           ],
           "title": "Variant",
           "type": "string"
@@ -748,6 +763,15 @@
           "title": "Table To Page",
           "type": "array"
         },
+        "structure_coordinate_frame": {
+          "default": "upright_table_pixels",
+          "enum": [
+            "upright_table_pixels",
+            "rendered_page_pixels"
+          ],
+          "title": "Structure Coordinate Frame",
+          "type": "string"
+        },
         "image_path": {
           "title": "Image Path",
           "type": "string"
@@ -822,7 +846,7 @@
   "additionalProperties": false,
   "properties": {
     "schema_version": {
-      "default": "1.0.0",
+      "default": "1.1.0",
       "title": "Schema Version",
       "type": "string"
     },

@@ -1,5 +1,7 @@
-from jp_pdf_parser.models import Reading
-from jp_pdf_parser.tables import compare_annotated_reading, map_invoice
+import pytest
+
+from jp_pdf_parser.models import Page, Reading
+from jp_pdf_parser.tables import attach_page_reading, map_invoice
 
 
 def html_for(table):
@@ -24,32 +26,68 @@ def test_invoice_mapping_uses_header_and_ids(table):
     assert view.total_id == "p1-t1-g1-r4-c4"
 
 
-def test_annotated_table_agreement(table):
-    table.annotated_reading = Reading(
-        request_id="x", variant="annotated_table", image_path="x.png", text=html_for(table)
+def page_for(tables, text):
+    return Page(
+        number=1,
+        width_points=500,
+        height_points=300,
+        rotation=0,
+        width_pixels=500,
+        height_pixels=300,
+        dpi=72,
+        image_to_pdf=(1, 0, 0, 0, 1, 0),
+        image_path="page.png",
+        tables=tables,
+        annotated_reading=Reading(
+            request_id="p1-annotated-a1",
+            variant="annotated_page",
+            image_path="annotated.png",
+            raw_path="ocr/page.json",
+            text=text,
+            image_to_page=(1, 0, 0, 0, 1, 0),
+        ),
     )
-    compare_annotated_reading(table)
-    assert not table.issues
 
 
-def test_overlay_digits_cannot_replace_clean_amounts(table):
-    table.annotated_reading = Reading(
-        request_id="x",
-        variant="annotated_table",
-        image_path="x.png",
-        text=html_for(table).replace("2,000", "R2 C4 2,000"),
-    )
-    compare_annotated_reading(table)
-    assert any(i.code == "annotated_disagreement" for i in table.issues)
+def test_page_table_binds_exact_topology_and_shared_evidence(table):
+    text = html_for(table)
+    for cell in table.cells:
+        cell.raw_text = None
+    page = page_for([table], text)
+    attach_page_reading(page)
+    assert not page.issues
     assert next(c for c in table.cells if (c.row, c.column) == (2, 4)).raw_text == "2,000"
+    assert all(c.readings[0].raw_path == "ocr/page.json" for c in table.cells)
+    assert all(c.readings[0].variant == "annotated_page" for c in table.cells)
 
 
-def test_different_annotated_topology_is_not_matched_by_position(table):
-    table.annotated_reading = Reading(
-        request_id="x",
-        variant="annotated_table",
-        image_path="x.png",
-        text="<table><tr><td>2,000</td></tr></table>",
-    )
-    compare_annotated_reading(table)
-    assert table.issues[-1].code == "annotated_alignment_uncertain"
+@pytest.mark.parametrize(
+    "text",
+    [
+        "<table><tr><td>2,000</td></tr></table>",
+        "<table><tr><td>unclosed",
+        "<table><table><tr><td>nested</td></tr></table></table>",
+        "<table><tr><td rowspan='2'>past end</td></tr></table>",
+        "not a table",
+    ],
+)
+def test_uncertain_topology_is_retained_without_positional_mapping(table, text):
+    for cell in table.cells:
+        cell.raw_text = None
+    page = page_for([table], text)
+    attach_page_reading(page)
+    assert page.issues[0].code == "page_alignment_uncertain"
+    assert all(c.raw_text is None for c in table.cells)
+    assert page.annotated_reading.text == text
+
+
+def test_multiple_tables_with_identical_topology_are_not_guessed(table):
+    other = table.model_copy(deep=True)
+    other.id = "p1-t2"
+    text = html_for(table) + html_for(other)
+    for target in (table, other):
+        for cell in target.cells:
+            cell.raw_text = None
+    page = page_for([table, other], text)
+    attach_page_reading(page)
+    assert page.issues and all(c.raw_text is None for t in page.tables for c in t.cells)

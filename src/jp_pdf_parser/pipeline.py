@@ -7,21 +7,13 @@ from PIL import Image
 
 from .artifacts import Artifacts
 from .config import Config, GroqSettings, VLMRunSettings
-from .grid import (
-    OVERLAY_MARGIN,
-    cell_crop,
-    cell_pixel_box,
-    numbered_overlay,
-    reconstruct_grid,
-    suppress_duplicates,
-    translate_input,
-)
+from .grid import annotated_page, area, intersection_area, reconstruct_grid, suppress_duplicates
 from .japanese import GroqReviewer, JapaneseBackend, JapaneseValidator
-from .models import Document, Issue, JapaneseReview, Reading, Table
+from .models import Document, Issue, JapaneseReview, Page, Reading
 from .ocr import OCRBackend, PaddleOCR, VLMRunOCR
-from .pdf import crop_table, inspect_pdf, render_pages
+from .pdf import inspect_pdf, render_pages
 from .structure import TATR, StructureBackend
-from .tables import attach_readings
+from .tables import attach_page_reading
 from .validation import final_status, validate_document
 
 
@@ -56,6 +48,10 @@ class Pipeline:
     def run(self, source: Path, output_root: Path) -> RunResult:
         artifacts = Artifacts(output_root)
         document = Document(source_name=source.name)
+        api_counts = {
+            name: getattr(getattr(backend, "api", None), "requests", None)
+            for name, backend in {"ocr": self.ocr, "japanese": self.japanese}.items()
+        }
         try:
             with artifacts.stage("A.inspect"):
                 document.source_sha256, document.page_count = inspect_pdf(
@@ -66,46 +62,10 @@ class Pipeline:
                 document.pages.append(page)
                 try:
                     with Image.open(artifacts.path(page.image_path)) as image:
-                        with artifacts.stage(f"C.detect.p{page.number}"):
-                            detections = self.structure.detect(image)
-                        artifacts.write(
-                            f"pages/p{page.number:03d}-detections.json",
-                            [d.model_dump(mode="json") for d in detections],
-                        )
-                        tables = suppress_duplicates(
-                            [
-                                d
-                                for d in detections
-                                if d.score >= self.config.detection.threshold
-                                and d.label in {"table", "table rotated"}
-                            ]
-                        )
-                        tables.sort(key=lambda d: (d.bbox[1], d.bbox[0]))
-                        for index, detection in enumerate(tables, 1):
-                            table_id = f"p{page.number}-t{index}"
-                            try:
-                                crop, transform = crop_table(
-                                    image,
-                                    detection,
-                                    self.config.render.table_padding,
-                                )
-                                with crop:
-                                    table = self._table(
-                                        table_id, page.number, crop, transform, artifacts
-                                    )
-                                page.tables.append(table)
-                            except Exception as exc:
-                                page.issues.append(
-                                    Issue(
-                                        code="table_failed",
-                                        stage="D-I",
-                                        severity="error",
-                                        message=f"{table_id}: {exc}",
-                                    )
-                                )
+                        self._page(image, page, artifacts)
                 except Exception as exc:
                     page.issues.append(
-                        Issue(code="page_failed", stage="C", severity="error", message=str(exc))
+                        Issue(code="page_failed", stage="C-J", severity="error", message=str(exc))
                     )
         except Exception as exc:
             document.issues.append(
@@ -160,6 +120,17 @@ class Pipeline:
                 },
             )
             artifacts.write("result.json", document)
+            artifacts.write(
+                "request-counts.json",
+                {
+                    name: (
+                        backend.api.requests - api_counts[name]
+                        if api_counts[name] is not None
+                        else None
+                    )
+                    for name, backend in {"ocr": self.ocr, "japanese": self.japanese}.items()
+                },
+            )
         artifacts.finish(
             self.config,
             document.source_sha256,
@@ -174,112 +145,101 @@ class Pipeline:
         )
         return RunResult(document=document, directory=artifacts.root)
 
-    def _read(self, request_id: str, relative: str, variant: str, artifacts: Artifacts) -> Reading:
-        reading = Reading(request_id=request_id, variant=variant, image_path=relative)
-        try:
-            task = "table" if variant == "annotated_table" else "ocr"
-            with artifacts.stage(f"{'H' if task == 'table' else 'I'}.{request_id}"):
-                prediction = self.ocr.recognize(artifacts.path(relative), task)
-            raw_path = f"ocr/{request_id}.json"
-            artifacts.write(raw_path, prediction.raw)
-            reading.raw_path, reading.text = raw_path, prediction.text
-            reading.error = prediction.error
-        except Exception as exc:
-            reading.error = str(exc)
-        return reading
-
-    def _table(self, table_id, page_number, crop, transform, artifacts: Artifacts) -> Table:
-        relative = f"tables/{table_id}/source.png"
-        crop.save(artifacts.path(relative))
-        with artifacts.stage(f"D.structure.{table_id}"):
-            objects = self.structure.recognize(crop)
+    def _page(self, image: Image.Image, page: Page, artifacts: Artifacts) -> None:
+        prefix = f"pages/p{page.number:03d}"
+        with artifacts.stage(f"C.detect.p{page.number}"):
+            detections = self.structure.detect(image)
         artifacts.write(
-            f"tables/{table_id}/structure.json", [obj.model_dump(mode="json") for obj in objects]
+            f"{prefix}-detections.json", [d.model_dump(mode="json") for d in detections]
         )
-        with artifacts.stage(f"E.grid.{table_id}"):
-            table = reconstruct_grid(
-                table_id,
-                page_number,
-                relative,
-                crop.size,
-                transform,
-                objects,
-                self.config.structure.threshold,
-                self.config.render.max_cells_per_table,
-            )
-        artifacts.write(f"tables/{table_id}/grid-g1.json", table)
-        if not table.geometry_valid:
-            return table
+        detections = suppress_duplicates(
+            [
+                d
+                for d in detections
+                if d.score >= self.config.detection.threshold
+                and d.label in {"table", "table rotated"}
+            ]
+        )
+        detections.sort(key=lambda d: (d.bbox[1], d.bbox[0]))
+        if not detections:
+            return
+        # Both TATR passes receive the complete original page. No image is cropped.
         try:
-            with artifacts.stage(f"F.overlay.{table_id}"):
-                overlay = numbered_overlay(crop, table, self.config.render.max_pixels)
-                with overlay:
-                    overlay_path = f"tables/{table_id}/numbered.png"
-                    overlay.save(artifacts.path(overlay_path))
-            table.annotated_reading = self._read(
-                f"{table_id}-annotated-a1",
-                overlay_path,
-                "annotated_table",
-                artifacts,
-            )
-            table.annotated_reading.source_bbox_in_image = (
-                OVERLAY_MARGIN,
-                OVERLAY_MARGIN,
-                OVERLAY_MARGIN + crop.width,
-                OVERLAY_MARGIN + crop.height,
-            )
-            table.annotated_reading.image_to_page = translate_input(
-                transform,
-                -OVERLAY_MARGIN,
-                -OVERLAY_MARGIN,
-            )
+            with artifacts.stage(f"D.structure.p{page.number}"):
+                objects = self.structure.recognize(image)
         except Exception as exc:
-            table.issues.append(Issue(code="overlay_failed", stage="F", message=str(exc)))
-        retry_budget = self.config.ocr.max_retries_per_table
-        for cell in table.cells:
-            relative = f"tables/{table_id}/cells/{cell.id}.png"
-            try:
-                with artifacts.stage(f"G.crop.{cell.id}"):
-                    pixel_box = cell_pixel_box(crop, cell)
-                    with cell_crop(crop, cell) as image:
-                        image.save(artifacts.path(relative))
-            except ValueError as exc:
-                table.issues.append(
-                    Issue(code="invalid_cell_crop", stage="G", cell_ids=[cell.id], message=str(exc))
+            page.issues.append(Issue(code="structure_failed", stage="D", message=str(exc)))
+            objects = []
+        artifacts.write(f"{prefix}-structure.json", [o.model_dump(mode="json") for o in objects])
+        for index, detection in enumerate(detections, 1):
+            x0, y0, x1, y1 = detection.bbox
+            region = (max(0, x0), max(0, y0), min(image.width, x1), min(image.height, y1))
+            if region[0] >= region[2] or region[1] >= region[3]:
+                page.issues.append(
+                    Issue(code="invalid_table_box", stage="D", message="Table outside page")
                 )
                 continue
-            reading = self._read(f"{cell.id}-a1", relative, "clean_cell", artifacts)
-            reading.source_bbox_in_image = (
-                0,
-                0,
-                pixel_box[2] - pixel_box[0],
-                pixel_box[3] - pixel_box[1],
+            owned = []
+            ambiguous = False
+            for obj in objects:
+                owners = [
+                    d
+                    for d in detections
+                    if intersection_area(obj.bbox, d.bbox) / area(obj.bbox) > 0.5
+                ]
+                if detection in owners:
+                    if len(owners) == 1:
+                        owned.append(obj)
+                    elif obj.score >= self.config.structure.threshold and obj.label != "table":
+                        ambiguous = True
+            table = reconstruct_grid(
+                f"p{page.number}-t{index}",
+                page.number,
+                page.image_path,
+                image.size,
+                (1, 0, 0, 0, 1, 0),
+                owned,
+                self.config.structure.threshold,
+                self.config.render.max_cells_per_table,
+                region=region,
             )
-            reading.image_to_page = translate_input(transform, pixel_box[0], pixel_box[1])
-            cell.readings.append(reading)
-            if (reading.error or not reading.text or not reading.text.strip()) and retry_budget:
-                retry_budget -= 1
-                reading = self._read(f"{cell.id}-a2", relative, "clean_cell", artifacts)
-                reading.source_bbox_in_image = cell.readings[0].source_bbox_in_image
-                reading.image_to_page = cell.readings[0].image_to_page
-                cell.readings.append(reading)
-            if reading.error:
+            if ambiguous or detection.label == "table rotated":
+                table.geometry_valid = False
                 table.issues.append(
                     Issue(
-                        code="cell_ocr_failed", stage="I", cell_ids=[cell.id], message=reading.error
+                        code="unsupported_page_structure",
+                        stage="E",
+                        severity="error",
+                        message=(
+                            "Ambiguous table ownership or rotation requires layout review; "
+                            "no crop fallback was used"
+                        ),
                     )
                 )
-        with artifacts.stage(f"J.assemble.{table_id}"):
-            attach_readings(table)
-        artifacts.write(
-            f"tables/{table_id}/ocr-requests.json",
-            {
-                "annotated": (
-                    table.annotated_reading.model_dump(mode="json")
-                    if table.annotated_reading
-                    else None
-                ),
-                "cells": [r.model_dump(mode="json") for c in table.cells for r in c.readings],
-            },
+            page.tables.append(table)
+            artifacts.write(f"tables/{table.id}/grid-g1.json", table)
+        if not page.tables:
+            return
+        relative = f"{prefix}-annotated.png"
+        with artifacts.stage(f"F.overlay.p{page.number}"):
+            with annotated_page(image, page.tables, self.config.render.max_pixels) as overlay:
+                overlay.save(artifacts.path(relative))
+        reading = Reading(
+            request_id=f"p{page.number}-annotated-a1",
+            variant="annotated_page",
+            image_path=relative,
+            source_bbox_in_image=(0, 0, image.width, image.height),
+            image_to_page=(1, 0, 0, 0, 1, 0),
         )
-        return table
+        page.annotated_reading = reading
+        try:
+            with artifacts.stage(f"H.{reading.request_id}"):
+                prediction = self.ocr.recognize(artifacts.path(relative), "table")
+            reading.raw_path = f"ocr/{reading.request_id}.json"
+            artifacts.write(reading.raw_path, prediction.raw)
+            reading.text, reading.error = prediction.text, prediction.error
+        except Exception as exc:
+            reading.error = str(exc)
+        with artifacts.stage(f"J.assemble.p{page.number}"):
+            attach_page_reading(page)
+        artifacts.write(f"{prefix}-ocr-request.json", reading)

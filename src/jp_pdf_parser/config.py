@@ -38,12 +38,10 @@ class RenderSettings(Settings):
     max_file_mb: int = Field(default=50, ge=1)
     max_pixels: int = Field(default=24_000_000, ge=1000)
     max_cells_per_table: int = Field(default=500, ge=1)
-    table_padding: int = Field(default=12, ge=0, le=100)
 
 
 class OCRLimits(Settings):
     max_pixels: int = Field(default=1_605_632, ge=1024)
-    max_retries_per_table: int = Field(default=1, ge=0, le=1)
 
 
 class OCRSettings(ModelSettings, OCRLimits):
@@ -61,13 +59,13 @@ class VLMRunSettings(OCRLimits, APISettings):
     backend: Literal["vlmrun"] = "vlmrun"
     model_id: Literal["paddlepaddle/paddleocr-vl-1.6"] = "paddlepaddle/paddleocr-vl-1.6"
     api_key_env: str = "VLMRUN_API_KEY"
-    max_cell_characters: int = Field(default=2000, ge=32, le=16000)
+    max_page_characters: int = Field(default=100000, ge=32, le=1000000)
 
 
 class ReviewSettings(Settings):
     context_tokens: int = Field(default=4096, ge=1024, le=4096)
     max_new_tokens: int = Field(default=512, ge=128, le=1024)
-    format_retries: int = Field(default=1, ge=0, le=1)
+    format_retries: int = Field(default=0, ge=0, le=1)
 
 
 class JapaneseSettings(ModelSettings, ReviewSettings):
@@ -79,7 +77,9 @@ class GroqSettings(ReviewSettings, APISettings):
     model_id: Literal["qwen/qwen3.8-27b"] = "qwen/qwen3.8-27b"
     api_key_env: str = "GROQ_API_KEY"
     min_interval_seconds: float = Field(default=2.1, ge=0, le=60)
-    max_requests: int = Field(default=100, ge=1, le=1000)
+    context_tokens: int = Field(default=32768, ge=1024, le=131072)
+    max_new_tokens: int = Field(default=2048, ge=128, le=16384)
+    max_requests: int = Field(default=1, ge=1, le=1000)
 
 
 class FinancialSettings(Settings):

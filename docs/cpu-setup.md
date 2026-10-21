@@ -1,7 +1,7 @@
 # Local CPU TATR and hosted recognition
 
 Updated 2026-10-22. The target machine has no GPU. Keep stages C-D on its CPU;
-prepare image crops and validate/export JSON locally as before. PaddleOCR-VL-1.6
+prepare full-page annotations and validate/export JSON locally. PaddleOCR-VL-1.6
 now runs through VLM Run and Japanese review through Groq Qwen3.8-27B. The
 approved stage order and cell-ID ownership do not change.
 
@@ -57,8 +57,8 @@ downloads by removing the two offline environment variables. Local inference
 uses `local_files_only=True` even without those variables.
 
 The check saves input images, model/processor versions, file checksums, effective
-resize settings, timings, and raw predictions. `--image data/page.png` uses a
-supplied page image and the highest-scoring detected table crop for structure.
+resize settings, timings, and raw predictions. `--image data/page.png` uses the
+same complete supplied page image for both detection and structure; no crop is made.
 With no image, it generates a small synthetic English table. It tests model
 execution, not Japanese recognition or alignment accuracy.
 
