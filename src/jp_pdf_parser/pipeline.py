@@ -11,7 +11,7 @@ from .grid import annotated_page, area, intersection_area, reconstruct_grid, sup
 from .japanese import GroqReviewer, JapaneseBackend, JapaneseValidator
 from .models import Document, Issue, JapaneseReview, Page, Reading
 from .ocr import OCRBackend, PaddleOCR, VLMRunOCR
-from .pdf import inspect_pdf, render_pages
+from .pdf import inspect_source, render_source
 from .structure import TATR, StructureBackend
 from .tables import attach_page_reading
 from .validation import final_status, validate_document
@@ -54,10 +54,10 @@ class Pipeline:
         }
         try:
             with artifacts.stage("A.inspect"):
-                document.source_sha256, document.page_count = inspect_pdf(
+                document.source_sha256, document.page_count = inspect_source(
                     source, self.config.render
                 )
-            pages = render_pages(source, self.config.render, artifacts)
+            pages = render_source(source, self.config.render, artifacts)
             for page in pages:
                 document.pages.append(page)
                 try:

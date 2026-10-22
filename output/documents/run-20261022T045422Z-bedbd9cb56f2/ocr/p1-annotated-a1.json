@@ -1,0 +1,51 @@
+{
+  "provider": "vlmrun",
+  "method": "table",
+  "response": {
+    "id": "chatcmpl-bce5425a6bc44d3ca77f548dd78",
+    "object": "chat.completion",
+    "created": 1792644881,
+    "model": "paddlepaddle/paddleocr-vl-1.6",
+    "served_model_id": "paddlepaddle/paddleocr-vl-1.6",
+    "backend": "vllm",
+    "provider": null,
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "<fcel>(訂正後)3. 連結財務諸表及び主な注記 (1) 連結貸借対照表 (単位：千円)<lcel><lcel><nl><ecel><fcel>前連結会計年度 (2025年3月31日)<fcel>当連結会計年度 (2026年3月31日)<nl><fcel>資産の部<ecel><ecel><nl><fcel>流動資產<ecel><ecel><nl><fcel>现金及び預金<fcel>2,002,429<fcel>608,281<nl><fcel>受取手形<fcel>20,659<fcel>26,333<nl><fcel>売掛金<fcel>2,019,476<fcel>884,339<nl><fcel>電子記録債権<fcel>564,667<fcel>370,468<nl><fcel>商品及〜製品<fcel>589,488<fcel>1,019,663<nl><fcel>仕掛品<fcel>186,748<fcel>55,344<nl><fcel>原材料及び貯蔵品<fcel>370,403<fcel>136,082<nl><fcel>短期貸付金<fcel>7,530<fcel>30,000<nl><fcel>その他<fcel>105,260<fcel>246,895<nl><fcel>貸倒引当金<fcel>△2,979<fcel>△0<nl><fcel>流動資産合計<fcel>5,863,684<fcel>3,377,407<nl><fcel>固定資産<ecel><ecel><nl><fcel>有形固定資産<ecel><ecel><nl><fcel>建物及び構築物<fcel>2,121,360<fcel>1,880,082<nl><fcel>減佈備却累計額<fcel>△1,923,585<fcel>△1,640,253<nl><fcel>建物及び構築物 (純額)<fcel>197,775<fcel>239,828<nl><fcel>機械装置及び運搬具<fcel>4,024,922<fcel>2,250,799<nl><fcel>減佈備却累計額<fcel>△3,634,165<fcel>△1,914,091<nl><fcel>機械装置及び運搬具 (純額)<fcel>390,757<fcel>336,708<nl><fcel>土地<fcel>768,976<fcel>705,403<nl><fcel>リース資産<fcel>210,746<fcel>213,939<nl><fcel>減佈備却累計額<fcel>△147,599<fcel>△172,066<nl><fcel>リース資産 (純額)<fcel>63,146<fcel>41,872<nl><fcel>建設仮勘定<fcel>—<fcel>4,553<nl><fcel>その他<fcel>848,814<fcel>446,126<nl><fcel>減佈備却累計額<fcel>△840,375<fcel>△421,883<nl><fcel>その他 (純額)<fcel>8,439<fcel>24,243<nl><fcel>有形固定資産合計<fcel>1,429,094<fcel>1,352,610<nl><fcel>無形固定資産<ecel><ecel><nl><fcel>リース資産<fcel>34,190<fcel>21,402<nl><fcel>その他<fcel>10,070<fcel>14,466<nl><fcel>無形固定資産合計<fcel>44,261<fcel>35,869<nl><fcel>投資その他の資産<ecel><ecel><nl><fcel>投資有価証券<fcel>44,180<fcel>218,836<nl><fcel>関係会社株式<fcel>1,123<fcel>1,123<nl><fcel>長期貸付金<fcel>—<fcel>62,000<nl><fcel>退職給付に係る資産<fcel>18,404<fcel>16,435<nl><fcel>その他<fcel>133,361<fcel>70,967<nl><fcel>投資その他の資産合計<fcel>197,069<fcel>369,362<nl><fcel>固定資産合計<fcel>1,670,426<fcel>1,757,841<nl><fcel>資産合計<fcel>7,534,110<fcel>5,135,249<nl>"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1273,
+      "completion_tokens": 1087,
+      "total_tokens": 2360,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": null,
+      "cost": 0.001
+    }
+  },
+  "input_sha256": "c54c37ee8308a6e614801f8dfbfce0ba9289260f738423a3b93c32665515ab6d",
+  "original_size": [
+    2481,
+    3508
+  ],
+  "sent_size": [
+    1065,
+    1506
+  ],
+  "sent_to_original": [
+    2.3295774647887324,
+    0,
+    0,
+    0,
+    2.3293492695883136,
+    0
+  ],
+  "table_conversion": "otsl_to_html"
+}

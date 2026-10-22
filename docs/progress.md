@@ -1,3 +1,24 @@
+# Full-architecture entry point
+
+`parse_document.py` now calls the production `Pipeline`: local CPU TATR detection
+and structure, fixed-grid/page annotations, PaddleOCR-VL, deterministic validation,
+Japanese review and export. It no longer imports experiment code. The no-TATR
+control remains in `experiments/`. Shared PDF/image intake supports both entry points
+without cropping. See [usage](../PARSE_DOCUMENT.md) and [improvements](improvements.md).
+
+Verification: 123 tests pass, including two TATR passes per input page, real box
+coordinates in compact JSON, full-page image preservation and provider failures.
+The real CPU run is `output/documents/run-20261022T045422Z-bedbd9cb56f2/`.
+Its manifest identifies `TATR`, `VLMRunOCR`, and `GroqReviewer`, and all 15 artifact
+hashes were checked. It saved compact/full JSON, their schemas and clean/annotated
+PNGs. One OCR request was made. Japanese review was skipped because conflicting
+spans prevented text assignment; status is correctly `needs_review`.
+
+The fine-tuning/LoRA and server/edge section is a proposed improvement plan.
+No training, accuracy improvement or edge deployment has been performed.
+
+---
+
 # Current pipeline update: full pages only
 
 The current architecture is [architecture.md](architecture.md). It supersedes the

@@ -156,3 +156,17 @@ Before treating extraction as reliable, evaluate full-page TATR alignment and
 Japanese/amount transcription against annotated documents. Resolve uncertain
 structure and recognition without silently assigning mismatched rows. Add explicit
 balance-sheet accounting profiles separately when required.
+
+
+## Improvements: Japanese-domain fine-tuning and deployment
+
+Improve layout and recognition using well-annotated Japanese table data: exact
+cell text, table/row/column boxes, spans, reading order, units and amount formatting.
+Evaluate LoRA for both TATR and PaddleOCR-VL 1.6, with compatible adapter targets,
+conventional fine-tuning baselines and held-out layouts. Small updates may help,
+but improvement must be measured. Compact models make modest server hosting and
+TATR on capable edge devices worth investigating; no device suitability is guaranteed.
+
+See [improvements.md](improvements.md) for source-backed training options, dataset
+requirements, deployment constraints and acceptance measurements. Training/custom
+serving is future work; the final script currently runs the existing pinned models.

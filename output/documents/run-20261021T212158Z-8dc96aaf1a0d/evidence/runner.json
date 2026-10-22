@@ -1,0 +1,11 @@
+{
+  "script_sha256": "2a7f8a2a76de986a08966544d49158b1f43e7f27fe09c953344709d78e08ef94",
+  "direct_helpers_sha256": "1493bddc06d6a2ce34a6f898e6d752e3ae93adf86fe4a20ef80a2b311aaffca0",
+  "route": "direct-page-no-tatr",
+  "source_type": "pdf",
+  "raster_coordinate_note": "Image inputs use a nominal 72-DPI virtual page; no source PDF coordinates exist",
+  "requests": {
+    "ocr": 1,
+    "japanese": 1
+  }
+}

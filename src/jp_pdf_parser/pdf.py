@@ -6,10 +6,55 @@ from contextlib import closing
 from pathlib import Path
 
 import pypdfium2 as pdfium
+from PIL import Image, ImageOps
 
 from .artifacts import Artifacts, sha256
 from .config import RenderSettings
 from .models import Page
+
+IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".bmp", ".tif", ".tiff", ".webp"}
+
+
+def inspect_source(path: Path, settings: RenderSettings) -> tuple[str, int]:
+    if path.suffix.lower() == ".pdf":
+        return inspect_pdf(path, settings)
+    if not path.is_file():
+        raise ValueError(f"Input does not exist: {path}")
+    if path.suffix.lower() not in IMAGE_EXTENSIONS:
+        raise ValueError("Use a PDF, PNG, JPEG, BMP, single-frame TIFF or WebP file")
+    if path.stat().st_size > settings.max_file_mb * 1024 * 1024:
+        raise ValueError("Input exceeds the configured file-size limit")
+    with Image.open(path) as image:
+        if getattr(image, "n_frames", 1) != 1:
+            raise ValueError("Multi-frame images are unsupported; supply a PDF or single image")
+        if image.width * image.height > settings.max_pixels:
+            raise ValueError("Image exceeds the configured pixel limit")
+    return sha256(path), 1
+
+
+def render_source(path: Path, settings: RenderSettings, artifacts: Artifacts) -> Iterator[Page]:
+    if path.suffix.lower() == ".pdf":
+        yield from render_pages(path, settings, artifacts)
+        return
+    with artifacts.stage("B.normalize-image"), Image.open(path) as original:
+        with ImageOps.exif_transpose(original) as oriented:
+            with oriented.convert("RGBA") as rgba, Image.new("RGB", rgba.size, "white") as image:
+                with rgba.getchannel("A") as alpha:
+                    image.paste(rgba, mask=alpha)
+                image.save(artifacts.path("pages/p001.png"))
+                # Raster inputs use a nominal 72-DPI virtual page, with pixel coordinates.
+                page = Page(
+                    number=1,
+                    width_points=image.width,
+                    height_points=image.height,
+                    rotation=0,
+                    width_pixels=image.width,
+                    height_pixels=image.height,
+                    dpi=72,
+                    image_to_pdf=(1, 0, 0, 0, 1, 0),
+                    image_path="pages/p001.png",
+                )
+    yield page
 
 
 def inspect_pdf(path: Path, settings: RenderSettings) -> tuple[str, int]:

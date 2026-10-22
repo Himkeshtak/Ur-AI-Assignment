@@ -1,0 +1,165 @@
+{
+  "started_at": "2026-10-22T04:54:22.008484+00:00",
+  "finished_at": "2026-10-22T04:54:40.921127+00:00",
+  "source_sha256": "0764bba6f5f0e7984a837e4cc19d8bb95db4a7ac22c26f18c95bbe652c983c74",
+  "application_revision": "943330af6ce8ae4040e78c5b77cb5b36ec1e88ad",
+  "working_tree_dirty": true,
+  "python": "3.11.14",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "jp-pdf-parser": "0.1.0",
+    "pydantic": "2.14.1",
+    "pillow": "11.3.0",
+    "pypdfium2": "5.14.0",
+    "httpx": "0.28.1",
+    "python-dotenv": "1.2.4",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "paddleocr": "3.7.0",
+    "paddlex": "3.7.2",
+    "paddlepaddle": "3.3.1"
+  },
+  "config": {
+    "env_file": "D:\\Projects\\Ur AI Assignment\\.env",
+    "render": {
+      "dpi": 300,
+      "max_pages": 30,
+      "max_file_mb": 50,
+      "max_pixels": 24000000,
+      "max_cells_per_table": 500
+    },
+    "detection": {
+      "model_id": "microsoft/table-transformer-detection",
+      "revision": "2357cbe2b5a5d1c03e54f32764f06058933b65ab",
+      "cache_dir": "D:\\Projects\\Ur AI Assignment\\.cache\\huggingface",
+      "device": "cpu",
+      "threshold": 0.7,
+      "local_dir": "D:\\Projects\\Ur AI Assignment\\models\\tatr\\detection"
+    },
+    "structure": {
+      "model_id": "microsoft/table-transformer-structure-recognition-v1.1-all",
+      "revision": "7587a7ef111d9dcbf8ac695f1376ab7014340a0c",
+      "cache_dir": "D:\\Projects\\Ur AI Assignment\\.cache\\huggingface",
+      "device": "cpu",
+      "threshold": 0.6,
+      "local_dir": "D:\\Projects\\Ur AI Assignment\\models\\tatr\\structure"
+    },
+    "ocr": {
+      "timeout_seconds": 120.0,
+      "max_requests": 30,
+      "min_interval_seconds": 1.0,
+      "max_pixels": 1605632,
+      "backend": "vlmrun",
+      "model_id": "paddlepaddle/paddleocr-vl-1.6",
+      "api_key_env": "VLMRUN_API_KEY",
+      "max_page_characters": 100000
+    },
+    "japanese": {
+      "timeout_seconds": 120.0,
+      "max_requests": 1,
+      "min_interval_seconds": 2.1,
+      "context_tokens": 32768,
+      "max_new_tokens": 2048,
+      "format_retries": 0,
+      "backend": "groq",
+      "model_id": "qwen/qwen3.8-27b",
+      "api_key_env": "GROQ_API_KEY"
+    },
+    "financial": {
+      "mode": "table",
+      "tax_mode": "unknown",
+      "money_scale": 0,
+      "rounding": null,
+      "tax_rate": null
+    }
+  },
+  "backends": {
+    "structure": "jp_pdf_parser.structure.TATR",
+    "ocr": "jp_pdf_parser.ocr.VLMRunOCR",
+    "japanese": "jp_pdf_parser.japanese.GroqReviewer"
+  },
+  "application_source_sha256": {
+    "__init__.py": "586d50b867b432e466cc440ccbf9b7a0d80a9532a348f56d822e370ca9afbd1f",
+    "__main__.py": "2e92b15df0fa76e7ee8c3c670ebb8353a8792af2b08c9df3515479ddc7c0d281",
+    "api.py": "9163c08645d156a7ea9c544de6b20b518d960260b1fed5ee551f97e35ef823c7",
+    "artifacts.py": "b794165f8ea31a4d4e484f94a582ba2b05caa385b3d82ceb203aa15f65275e78",
+    "check_api.py": "60b07706022be385fca87494e670451aa9cce5ed11eb273d033f5b6195107416",
+    "checkpoints.py": "4dfae84759ddf052620048e1b8f825df5000a9d9593da090333fb6ea813be563",
+    "config.py": "9d090aca851addf290dfc856c682b9f551f50d1b91bfa48096f17a89c6d9b9d3",
+    "grid.py": "f39082b137b4c42a16d8a8cb6a9edf3b3a7b2b438afaeff9b5b08a3c51f481bf",
+    "japanese.py": "f918f327b86581797c101bdf17065b9a07a0912158a53a88ef619ee2f4ba8fbe",
+    "models.py": "d97efcbaf309e14bac6ae867fb1bb40006758fc3f519ea169592f3fa35878fab",
+    "ocr.py": "55790bcf8dea972709d28a4f1ae92f139b2d76cd641ef6a90318cd74b11a38a4",
+    "pdf.py": "8daa8e83361bfb219710d4f5fe9440b7ff790d54d85cb3479dfe4f12cbd00caf",
+    "pipeline.py": "b11be8d1bef203b631a828444d23c54b3de80f0f7c9e520470ecb11a6218141d",
+    "structure.py": "3698fa71154d832690792aa0574a558ed3d2ff181462b438563035bef7c8d519",
+    "table_format.py": "5f29ab5d9e05be46e844fd852e2a86216f777c453b2159dbeb8f5136a9087b3d",
+    "tables.py": "99c4eb765658637a9fe6fbab93eb3dc694f45a9ec0ea99b2542a01ff8d39c853",
+    "validation.py": "1f578377a6fdd832a502d7668ff8e00b2219abd13b3c36e6548ccc8133205e0d"
+  },
+  "dependency_lock_sha256": "b09ab291b5a45c0e0766e0a5a8296514db5454f4d1bf62792ce9816b43a34989",
+  "timings": [
+    {
+      "stage": "A.inspect",
+      "seconds": 0.023830499965697527
+    },
+    {
+      "stage": "B.render.p1",
+      "seconds": 0.20464519993402064
+    },
+    {
+      "stage": "C.detect.p1",
+      "seconds": 12.710536299971864
+    },
+    {
+      "stage": "D.structure.p1",
+      "seconds": 0.6439340999349952
+    },
+    {
+      "stage": "F.overlay.p1",
+      "seconds": 0.14053730003070086
+    },
+    {
+      "stage": "H.p1-annotated-a1",
+      "seconds": 4.729753399966285
+    },
+    {
+      "stage": "J.assemble.p1",
+      "seconds": 0.004424800048582256
+    },
+    {
+      "stage": "K.validate",
+      "seconds": 2.589996438473463e-05
+    },
+    {
+      "stage": "M.japanese",
+      "seconds": 0.0002676999429240823
+    },
+    {
+      "stage": "L.export",
+      "seconds": 0.06582500005606562
+    }
+  ],
+  "artifact_sha256": {
+    "japanese-review.json": "204ba49ddfc7a303a0d4c12d0044cefb61a6b66179ab43900ca4efcaf390dda9",
+    "japanese-traces.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "ocr/p1-annotated-a1.json": "ad660af252d62cebfbd9396ab2fac537b7c6d47bd411c4b87305e6a1663ec1df",
+    "pages/p001-annotated.png": "c54c37ee8308a6e614801f8dfbfce0ba9289260f738423a3b93c32665515ab6d",
+    "pages/p001-detections.json": "83feee05a7c97eeda574e21d836253d60a130350521f7728b881fa9efb6679c5",
+    "pages/p001-ocr-request.json": "94e52a340d33b809e7e91a84dc666bdc23dda84809354899f564483c3573fa9c",
+    "pages/p001-structure.json": "f57b98ddadc609b960b2489865a373ac24816de41ac5bb1ea377971a7f931929",
+    "pages/p001.png": "78cfaa539da42b8a0b47c87b0303c1eaaed6fbd4173806d05c3589454302af64",
+    "request-counts.json": "b87ef24805777bdd6bfef6a82cb54667eb2b5e9076c20d24ed4338f6eb38d80d",
+    "result.json": "146e2ef54045887e011fb1a6b2d0a363936fe5bb07cdb885538b09999c0732e6",
+    "schema.json": "aab377db9ebf191f8169c7b32a541363dc48b8d96ce1cc1525c6f2db0379f8c8",
+    "tables/p1-t1/grid-g1.json": "ad063adc6cb5eb66c6737ed187625e6a57ea00db54843a26bde201cffead98cb",
+    "validation.json": "b59605152c050f0b7a0664b07a4a91fa466e2175416a79554beaaad39e9746a4",
+    "simple.json": "52de042af41084cd51100ecca901c58a29767527d2d9dbacdbc5a09a078903d9",
+    "simple.schema.json": "a4e61e09d7496c6a67d913295b455b1108e6a17556b4f9e4f856a5b01c8b4c63"
+  },
+  "entrypoint": {
+    "script": "parse_document.py",
+    "sha256": "5cf67ac38ac242c180d4fce967e71c53af99a7706ef840ac5e8c37fd507632d8",
+    "route": "tatr-full-architecture"
+  }
+}

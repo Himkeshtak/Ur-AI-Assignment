@@ -9,6 +9,17 @@ validation, and artifact export follow the approved pipeline below. Core tests u
 real PDF rendering and injected model responses; they do not establish Japanese
 invoice recognition accuracy. See [implementation status](docs/progress.md).
 
+Run the **full architecture**, including both CPU TATR models:
+
+```powershell
+.venv/Scripts/python.exe parse_document.py "input.pdf"
+```
+
+See [one-command usage](PARSE_DOCUMENT.md) for setup, compact/full JSON, schemas
+and annotated PNGs. The direct-Paddle control remains in `experiments/`.
+The [improvement plan](docs/improvements.md) covers annotated Japanese data,
+LoRA/fine-tuning of TATR and PaddleOCR-VL 1.6, and server/edge deployment evaluation.
+
 ```mermaid
 flowchart TD
     A["PDF"] --> B["Render complete page images"]

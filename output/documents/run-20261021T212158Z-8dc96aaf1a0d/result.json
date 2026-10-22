@@ -1,0 +1,1266 @@
+{
+  "schema_version": "1.0",
+  "source": "balance_sheet_after_correction.pdf",
+  "status": "needs_review",
+  "japanese_review_completed": false,
+  "pages": [
+    {
+      "page": 1,
+      "image": "pages/p001.png",
+      "width": 2481,
+      "height": 3508,
+      "tables": [
+        {
+          "id": "p1-t1",
+          "row_count": 45,
+          "column_count": 3,
+          "cells": [
+            {
+              "id": "p1-t1-ocr-r1-c1",
+              "row": 1,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 3,
+              "text": "（訂正後）3. 連結財務諸表及び主な注記\\n（1）連結貸借対照表\\n(単位：千円)",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r2-c1",
+              "row": 2,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r2-c2",
+              "row": 2,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "前連結会計年度\\n(2025年3月31日)",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r2-c3",
+              "row": 2,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "当連結会計年度\\n(2026年3月31日)",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r3-c1",
+              "row": 3,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 3,
+              "text": "資産の部",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r4-c1",
+              "row": 4,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 3,
+              "text": "流動資産",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r5-c1",
+              "row": 5,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "現金及び預金",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r5-c2",
+              "row": 5,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "2, 002, 429",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r5-c3",
+              "row": 5,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "608, 281",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r6-c1",
+              "row": 6,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "受取手形",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r6-c2",
+              "row": 6,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "20, 659",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r6-c3",
+              "row": 6,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "26, 333",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r7-c1",
+              "row": 7,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "売掛金",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r7-c2",
+              "row": 7,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "2, 019, 476",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r7-c3",
+              "row": 7,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "884, 339",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r8-c1",
+              "row": 8,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "電子記録債権",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r8-c2",
+              "row": 8,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "564, 667",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r8-c3",
+              "row": 8,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "370, 468",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r9-c1",
+              "row": 9,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "商品及び製品",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r9-c2",
+              "row": 9,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "589, 488",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r9-c3",
+              "row": 9,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1, 019, 663",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r10-c1",
+              "row": 10,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "仕掛品",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r10-c2",
+              "row": 10,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "186, 748",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r10-c3",
+              "row": 10,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "55, 344",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r11-c1",
+              "row": 11,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "原材料及び貯備品",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r11-c2",
+              "row": 11,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "370, 403",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r11-c3",
+              "row": 11,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "136, 082",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r12-c1",
+              "row": 12,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "短期貸付金",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r12-c2",
+              "row": 12,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "7, 530",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r12-c3",
+              "row": 12,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "30, 000",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r13-c1",
+              "row": 13,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "その他",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r13-c2",
+              "row": 13,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "105, 260",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r13-c3",
+              "row": 13,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "246, 895",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r14-c1",
+              "row": 14,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "貸倒引当金",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r14-c2",
+              "row": 14,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "△2, 979",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r14-c3",
+              "row": 14,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "△0",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r15-c1",
+              "row": 15,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "流動資産合計",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r15-c2",
+              "row": 15,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "5, 863, 684",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r15-c3",
+              "row": 15,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3, 377, 407",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r16-c1",
+              "row": 16,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 3,
+              "text": "固定資産",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r17-c1",
+              "row": 17,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 3,
+              "text": "有形固定資産",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r18-c1",
+              "row": 18,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "建物及び構築物",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r18-c2",
+              "row": 18,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "2, 121, 360",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r18-c3",
+              "row": 18,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1, 880, 082",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r19-c1",
+              "row": 19,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "減価償却累計額",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r19-c2",
+              "row": 19,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "△1, 923, 585",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r19-c3",
+              "row": 19,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "△1, 640, 253",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r20-c1",
+              "row": 20,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "建物及び構築物（純額）",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r20-c2",
+              "row": 20,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "197, 775",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r20-c3",
+              "row": 20,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "239, 828",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r21-c1",
+              "row": 21,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "機械装置及び運搬具",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r21-c2",
+              "row": 21,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "4, 024, 922",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r21-c3",
+              "row": 21,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "2, 250, 799",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r22-c1",
+              "row": 22,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "減価償却累計額",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r22-c2",
+              "row": 22,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "△3, 634, 165",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r22-c3",
+              "row": 22,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "△1, 914, 091",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r23-c1",
+              "row": 23,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "機械装置及び運搬具（純額）",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r23-c2",
+              "row": 23,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "390, 757",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r23-c3",
+              "row": 23,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "336, 708",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r24-c1",
+              "row": 24,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "土地",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r24-c2",
+              "row": 24,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "768, 976",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r24-c3",
+              "row": 24,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "705, 403",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r25-c1",
+              "row": 25,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "リース資産",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r25-c2",
+              "row": 25,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "210, 746",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r25-c3",
+              "row": 25,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "213, 939",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r26-c1",
+              "row": 26,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "減価償却累計額",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r26-c2",
+              "row": 26,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "△147, 599",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r26-c3",
+              "row": 26,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "△172, 066",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r27-c1",
+              "row": 27,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "リース資産（純額）",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r27-c2",
+              "row": 27,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "63, 146",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r27-c3",
+              "row": 27,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "41, 872",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r28-c1",
+              "row": 28,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "建設仮勘定",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r28-c2",
+              "row": 28,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "-",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r28-c3",
+              "row": 28,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "4, 553",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r29-c1",
+              "row": 29,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "その他",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r29-c2",
+              "row": 29,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "848, 814",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r29-c3",
+              "row": 29,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "446, 126",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r30-c1",
+              "row": 30,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "減価償却累計額",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r30-c2",
+              "row": 30,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "△840, 375",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r30-c3",
+              "row": 30,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "△421, 883",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r31-c1",
+              "row": 31,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "その他（純額）",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r31-c2",
+              "row": 31,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "8, 439",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r31-c3",
+              "row": 31,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "24, 243",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r32-c1",
+              "row": 32,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "有形固定資産合計",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r32-c2",
+              "row": 32,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1, 429, 094",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r32-c3",
+              "row": 32,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1, 352, 610",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r33-c1",
+              "row": 33,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 3,
+              "text": "無形固定資産",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r34-c1",
+              "row": 34,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "リース資産",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r34-c2",
+              "row": 34,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "34, 190",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r34-c3",
+              "row": 34,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "21, 402",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r35-c1",
+              "row": 35,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "その他",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r35-c2",
+              "row": 35,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "10, 070",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r35-c3",
+              "row": 35,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "14, 466",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r36-c1",
+              "row": 36,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "無形固定資産合計",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r36-c2",
+              "row": 36,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "44, 261",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r36-c3",
+              "row": 36,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "35, 869",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r37-c1",
+              "row": 37,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 3,
+              "text": "投資その他の資産",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r38-c1",
+              "row": 38,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "投資有価証券",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r38-c2",
+              "row": 38,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "44, 180",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r38-c3",
+              "row": 38,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "218, 836",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r39-c1",
+              "row": 39,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "関係会社株式",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r39-c2",
+              "row": 39,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1, 123",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r39-c3",
+              "row": 39,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1, 123",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r40-c1",
+              "row": 40,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "長期貸付金",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r40-c2",
+              "row": 40,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "-",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r40-c3",
+              "row": 40,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "62, 000",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r41-c1",
+              "row": 41,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "退職給付に係る資産",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r41-c2",
+              "row": 41,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "18, 404",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r41-c3",
+              "row": 41,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "16, 435",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r42-c1",
+              "row": 42,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "その他",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r42-c2",
+              "row": 42,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "133, 361",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r42-c3",
+              "row": 42,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "70, 967",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r43-c1",
+              "row": 43,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "投資その他の資産合計",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r43-c2",
+              "row": 43,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "197, 069",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r43-c3",
+              "row": 43,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "369, 362",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r44-c1",
+              "row": 44,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "固定資産合計",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r44-c2",
+              "row": 44,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1, 670, 426",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r44-c3",
+              "row": 44,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1, 757, 841",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r45-c1",
+              "row": 45,
+              "column": 1,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "資産合計",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r45-c2",
+              "row": 45,
+              "column": 2,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "7, 534, 110",
+              "number": null
+            },
+            {
+              "id": "p1-t1-ocr-r45-c3",
+              "row": 45,
+              "column": 3,
+              "row_span": 1,
+              "column_span": 1,
+              "text": "5, 135, 249",
+              "number": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "code": "no_independent_geometry",
+      "stage": "K",
+      "message": "Paddle supplies logical topology only; pixel alignment is not verified",
+      "cell_ids": [],
+      "severity": "warning"
+    },
+    {
+      "code": "empty_or_unreadable",
+      "stage": "K",
+      "message": "Empty OCR does not establish a blank cell",
+      "cell_ids": [
+        "p1-t1-ocr-r2-c1"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "invalid_japanese_review",
+      "stage": "M",
+      "message": "Reviewer did not return valid, complete JSON",
+      "cell_ids": [
+        "p1-t1-ocr-r1-c1",
+        "p1-t1-ocr-r2-c1",
+        "p1-t1-ocr-r2-c2",
+        "p1-t1-ocr-r2-c3",
+        "p1-t1-ocr-r3-c1",
+        "p1-t1-ocr-r4-c1",
+        "p1-t1-ocr-r5-c1",
+        "p1-t1-ocr-r5-c2",
+        "p1-t1-ocr-r5-c3",
+        "p1-t1-ocr-r6-c1",
+        "p1-t1-ocr-r6-c2",
+        "p1-t1-ocr-r6-c3",
+        "p1-t1-ocr-r7-c1",
+        "p1-t1-ocr-r7-c2",
+        "p1-t1-ocr-r7-c3",
+        "p1-t1-ocr-r8-c1",
+        "p1-t1-ocr-r8-c2",
+        "p1-t1-ocr-r8-c3",
+        "p1-t1-ocr-r9-c1",
+        "p1-t1-ocr-r9-c2",
+        "p1-t1-ocr-r9-c3",
+        "p1-t1-ocr-r10-c1",
+        "p1-t1-ocr-r10-c2",
+        "p1-t1-ocr-r10-c3",
+        "p1-t1-ocr-r11-c1",
+        "p1-t1-ocr-r11-c2",
+        "p1-t1-ocr-r11-c3",
+        "p1-t1-ocr-r12-c1",
+        "p1-t1-ocr-r12-c2",
+        "p1-t1-ocr-r12-c3",
+        "p1-t1-ocr-r13-c1",
+        "p1-t1-ocr-r13-c2",
+        "p1-t1-ocr-r13-c3",
+        "p1-t1-ocr-r14-c1",
+        "p1-t1-ocr-r14-c2",
+        "p1-t1-ocr-r14-c3",
+        "p1-t1-ocr-r15-c1",
+        "p1-t1-ocr-r15-c2",
+        "p1-t1-ocr-r15-c3",
+        "p1-t1-ocr-r16-c1",
+        "p1-t1-ocr-r17-c1",
+        "p1-t1-ocr-r18-c1",
+        "p1-t1-ocr-r18-c2",
+        "p1-t1-ocr-r18-c3",
+        "p1-t1-ocr-r19-c1",
+        "p1-t1-ocr-r19-c2",
+        "p1-t1-ocr-r19-c3",
+        "p1-t1-ocr-r20-c1",
+        "p1-t1-ocr-r20-c2",
+        "p1-t1-ocr-r20-c3",
+        "p1-t1-ocr-r21-c1",
+        "p1-t1-ocr-r21-c2",
+        "p1-t1-ocr-r21-c3",
+        "p1-t1-ocr-r22-c1",
+        "p1-t1-ocr-r22-c2",
+        "p1-t1-ocr-r22-c3",
+        "p1-t1-ocr-r23-c1",
+        "p1-t1-ocr-r23-c2",
+        "p1-t1-ocr-r23-c3",
+        "p1-t1-ocr-r24-c1",
+        "p1-t1-ocr-r24-c2",
+        "p1-t1-ocr-r24-c3",
+        "p1-t1-ocr-r25-c1",
+        "p1-t1-ocr-r25-c2",
+        "p1-t1-ocr-r25-c3",
+        "p1-t1-ocr-r26-c1",
+        "p1-t1-ocr-r26-c2",
+        "p1-t1-ocr-r26-c3",
+        "p1-t1-ocr-r27-c1",
+        "p1-t1-ocr-r27-c2",
+        "p1-t1-ocr-r27-c3",
+        "p1-t1-ocr-r28-c1",
+        "p1-t1-ocr-r28-c2",
+        "p1-t1-ocr-r28-c3",
+        "p1-t1-ocr-r29-c1",
+        "p1-t1-ocr-r29-c2",
+        "p1-t1-ocr-r29-c3",
+        "p1-t1-ocr-r30-c1",
+        "p1-t1-ocr-r30-c2",
+        "p1-t1-ocr-r30-c3",
+        "p1-t1-ocr-r31-c1",
+        "p1-t1-ocr-r31-c2",
+        "p1-t1-ocr-r31-c3",
+        "p1-t1-ocr-r32-c1",
+        "p1-t1-ocr-r32-c2",
+        "p1-t1-ocr-r32-c3",
+        "p1-t1-ocr-r33-c1",
+        "p1-t1-ocr-r34-c1",
+        "p1-t1-ocr-r34-c2",
+        "p1-t1-ocr-r34-c3",
+        "p1-t1-ocr-r35-c1",
+        "p1-t1-ocr-r35-c2",
+        "p1-t1-ocr-r35-c3",
+        "p1-t1-ocr-r36-c1",
+        "p1-t1-ocr-r36-c2",
+        "p1-t1-ocr-r36-c3",
+        "p1-t1-ocr-r37-c1",
+        "p1-t1-ocr-r38-c1",
+        "p1-t1-ocr-r38-c2",
+        "p1-t1-ocr-r38-c3",
+        "p1-t1-ocr-r39-c1",
+        "p1-t1-ocr-r39-c2",
+        "p1-t1-ocr-r39-c3",
+        "p1-t1-ocr-r40-c1",
+        "p1-t1-ocr-r40-c2",
+        "p1-t1-ocr-r40-c3",
+        "p1-t1-ocr-r41-c1",
+        "p1-t1-ocr-r41-c2",
+        "p1-t1-ocr-r41-c3",
+        "p1-t1-ocr-r42-c1",
+        "p1-t1-ocr-r42-c2",
+        "p1-t1-ocr-r42-c3",
+        "p1-t1-ocr-r43-c1",
+        "p1-t1-ocr-r43-c2",
+        "p1-t1-ocr-r43-c3",
+        "p1-t1-ocr-r44-c1",
+        "p1-t1-ocr-r44-c2",
+        "p1-t1-ocr-r44-c3",
+        "p1-t1-ocr-r45-c1",
+        "p1-t1-ocr-r45-c2",
+        "p1-t1-ocr-r45-c3"
+      ],
+      "severity": "warning"
+    },
+    {
+      "code": "review_coverage",
+      "stage": "M",
+      "message": "Incomplete cell review coverage",
+      "cell_ids": [],
+      "severity": "warning"
+    }
+  ]
+}
