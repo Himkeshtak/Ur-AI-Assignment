@@ -70,8 +70,8 @@ $env:UV_CACHE_DIR = Join-Path $PWD '.cache/uv'
 $env:UV_PYTHON_INSTALL_DIR = Join-Path $PWD '.cache/python'
 uv sync --locked
 uv run --locked pytest
-uv run --locked ruff check src tests
-uv run --locked ruff format --check src tests
+uv run --locked ruff check src tests scripts experiments parse_document.py
+uv run --locked ruff format --check src tests scripts experiments parse_document.py
 ```
 
 For the configured CPU TATR + remote OCR/review setup:

@@ -1,3 +1,22 @@
+# CI repair for commit 5732906
+
+[GitHub Actions job 119649567973](https://github.com/Himkeshtak/Ur-AI-Assignment/actions/runs/39725891160/job/119649567973)
+failed in step 7, `uv run --locked pytest`, while collecting
+`tests/test_parse_document.py:12`: `ModuleNotFoundError: No module named 'parse_document'`.
+Dependency installation, Ruff lint and formatting passed. Pytest's configured
+import path included `src` but omitted the repository root containing the public
+script. Running `python -m pytest` locally had masked the missing path.
+
+The pytest configuration now includes the root and discovers the experiment tests.
+CI and README lint/format commands also cover `parse_document.py` and `experiments/`.
+The original console-entry-point failure was reproduced before the fix. After it,
+the locked core environment passed sync, lint, formatting (38 files) and all 123
+tests on Windows/Python 3.11.14. No model weights or API requests were needed.
+The fix still needs committing/pushing and a new GitHub Actions run; local checks
+do not establish a passing Ubuntu run.
+
+---
+
 # Full-architecture entry point
 
 `parse_document.py` now calls the production `Pipeline`: local CPU TATR detection

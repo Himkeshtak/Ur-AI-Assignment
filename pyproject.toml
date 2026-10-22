@@ -41,8 +41,9 @@ jp-pdf-parser = "jp_pdf_parser.__main__:main"
 packages = ["src/jp_pdf_parser"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
-pythonpath = ["src"]
+testpaths = ["tests", "experiments"]
+# Include the public root script when pytest is invoked through its console entry point.
+pythonpath = ["src", "."]
 addopts = "-ra"
 
 [tool.ruff]
